@@ -1,4 +1,4 @@
-=== WPSSO FAQ Manager ===
+=== FAQ Manager | WPSSO Add-on ===
 Plugin Name: WPSSO FAQ Manager
 Plugin Slug: wpsso-faq
 Text Domain: wpsso-faq
@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.2.2
 Stable Tag: 1.0.0
 
-WPSSO Core add-on to manage FAQ categories with Question and Answer pages.
+Manage FAQ categories with Question and Answer pages.
 
 == Description ==
 
