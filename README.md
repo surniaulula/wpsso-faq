@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO FAQ Manager</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to manage FAQ categories with Question (and Answer) pages.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to manage FAQ categories with Question and Answer pages.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.2.2</td></tr>
@@ -15,11 +15,11 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-<p>Adds a FAQs admin menu item to manage FAQ categories with Question (and Answer) pages.</p>
+<p>Adds a FAQs admin menu item to manage FAQ categories with Question and Answer pages.</p>
 
 <p>See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">Theme Handbook &gt; Custom Taxonomy section</a> for information on (optionally) creating specific theme templates for FAQ category archives from your existing theme archive templates.</p>
 
-<p>Note that this add-on only manages FAQ categories and Question (and Answer) pages -- it does not create any meta tags or Schema markup in those pages. If you need Schema FAQPage and Schema Question markup (in JSON-LD format) for your pages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
+<p>Note that this add-on only manages FAQ categories and Question and Answer pages -- it does not create any meta tags or Schema markup in those pages. If you need Schema FAQPage and Schema Question markup (in JSON-LD format) for your pages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
 
 <h3>WPSSO Core Plugin Required</h3>
 
