@@ -1,0 +1,277 @@
+# Copyright (C) 2019 WPSSO FAQ Manager
+# This file is distributed under the same license as the WPSSO FAQ Manager package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPSSO FAQ Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
+"POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: lib/gettext-config.php:6
+msgctxt "plugin description"
+msgid "WPSSO Core add-on to manage FAQs."
+msgstr ""
+
+#: lib/register.php:126
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:127
+msgid "Category"
+msgstr ""
+
+#: lib/register.php:128
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:129
+msgid "All Categories"
+msgstr ""
+
+#: lib/register.php:130
+msgid "Edit Category"
+msgstr ""
+
+#: lib/register.php:131
+msgid "View Category"
+msgstr ""
+
+#: lib/register.php:132
+msgid "Update Category"
+msgstr ""
+
+#: lib/register.php:133
+msgid "Add New Category"
+msgstr ""
+
+#: lib/register.php:134
+msgid "New Category Name"
+msgstr ""
+
+#: lib/register.php:135
+msgid "Parent Category"
+msgstr ""
+
+#: lib/register.php:136
+msgid "Parent Category:"
+msgstr ""
+
+#: lib/register.php:137
+msgid "Search Categories"
+msgstr ""
+
+#: lib/register.php:138
+msgid "Popular Categories"
+msgstr ""
+
+#: lib/register.php:139
+msgid "Separate categories with commas"
+msgstr ""
+
+#: lib/register.php:140
+msgid "Add or remove categories"
+msgstr ""
+
+#: lib/register.php:141
+msgid "Choose from the most used"
+msgstr ""
+
+#: lib/register.php:142
+msgid "Not categories found."
+msgstr ""
+
+#: lib/register.php:143
+msgid "← Back to categories"
+msgstr ""
+
+#: lib/register.php:147
+msgctxt "Taxonomy label"
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:158
+msgctxt "Taxonomy description"
+msgid "Categories for Questions"
+msgstr ""
+
+#: lib/register.php:169
+msgid "Questions"
+msgstr ""
+
+#: lib/register.php:170
+msgid "Question"
+msgstr ""
+
+#: lib/register.php:171
+msgid "Add New"
+msgstr ""
+
+#: lib/register.php:172
+msgid "Add New Question"
+msgstr ""
+
+#: lib/register.php:173
+msgid "Edit Question"
+msgstr ""
+
+#: lib/register.php:174
+msgid "New Question"
+msgstr ""
+
+#: lib/register.php:175
+msgid "View Question"
+msgstr ""
+
+#: lib/register.php:176
+msgid "View FAQs"
+msgstr ""
+
+#: lib/register.php:177
+msgid "Search Questions"
+msgstr ""
+
+#: lib/register.php:178
+msgid "No questions found"
+msgstr ""
+
+#: lib/register.php:179
+msgid "No questions found in Trash"
+msgstr ""
+
+#: lib/register.php:180
+msgid "Parent Question:"
+msgstr ""
+
+#: lib/register.php:181
+msgid "All Questions"
+msgstr ""
+
+#: lib/register.php:182
+msgid "Question Archives"
+msgstr ""
+
+#: lib/register.php:183
+msgid "Question Attributes"
+msgstr ""
+
+#: lib/register.php:184
+msgid "Insert into answer"
+msgstr ""
+
+#: lib/register.php:185
+msgid "Uploaded to this question"
+msgstr ""
+
+#: lib/register.php:186
+msgid "Question Image"
+msgstr ""
+
+#: lib/register.php:187
+msgid "Set question image"
+msgstr ""
+
+#: lib/register.php:188
+msgid "Remove question image"
+msgstr ""
+
+#: lib/register.php:189
+msgid "Use as question image"
+msgstr ""
+
+#: lib/register.php:190
+msgctxt "Admin menu name"
+msgid "FAQs"
+msgstr ""
+
+#: lib/register.php:191
+msgid "Filter questions"
+msgstr ""
+
+#: lib/register.php:192
+msgid "Questions navigation"
+msgstr ""
+
+#: lib/register.php:193
+msgid "Questions list"
+msgstr ""
+
+#: lib/register.php:194
+msgctxt "Admin bar name"
+msgid "Question"
+msgstr ""
+
+#: lib/register.php:195
+msgid "Question published."
+msgstr ""
+
+#: lib/register.php:196
+msgid "Question published privately."
+msgstr ""
+
+#: lib/register.php:197
+msgid "Question reverted to draft."
+msgstr ""
+
+#: lib/register.php:198
+msgid "Question scheduled."
+msgstr ""
+
+#: lib/register.php:199
+msgid "Question updated."
+msgstr ""
+
+#: lib/register.php:203
+msgctxt "Post type label"
+msgid "Question"
+msgstr ""
+
+#: lib/register.php:205
+msgctxt "Post type description"
+msgid "Question and Answer"
+msgstr ""
+
+#: wpsso-faq.php:107
+msgid ""
+"%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
+"the %3$s plugin before activating %4$s."
+msgstr ""
+
+#: wpsso-faq.php:109
+msgid ""
+"The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
+"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
+msgstr ""
+
+#: wpsso-faq.php:216
+msgid ""
+"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
+"%5$s is currently installed)."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WPSSO FAQ Manager"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
+"Google's preferred Schema JSON-LD for SEO Rich Results."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "JS Morisset"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpsso.com/"
+msgstr ""

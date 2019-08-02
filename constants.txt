@@ -1,0 +1,11 @@
+
+/**
+ * Hard-coded / fixed constants. These values cannot be modified.
+ */
+WPSSOFAQ_FILEPATH
+WPSSOFAQ_PLUGINBASE
+WPSSOFAQ_PLUGINDIR
+WPSSOFAQ_PLUGINSLUG
+WPSSOFAQ_URLPATH
+WPSSOFAQ_VERSION
+
