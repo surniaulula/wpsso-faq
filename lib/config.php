@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
-					'desc'        => 'WPSSO Core add-on to manage FAQs.',
+					'desc'        => 'WPSSO Core add-on to manage FAQ categories with Question and Answer pages.',
 					'slug'        => 'wpsso-faq',
 					'base'        => 'wpsso-faq/wpsso-faq.php',
 					'update_auth' => '',

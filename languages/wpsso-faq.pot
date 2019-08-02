@@ -14,7 +14,8 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
-msgid "WPSSO Core add-on to manage FAQs."
+msgid ""
+"WPSSO Core add-on to manage FAQ categories with Question and Answer pages."
 msgstr ""
 
 #: lib/register.php:126
