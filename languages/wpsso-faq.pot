@@ -263,9 +263,7 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
-"Google's preferred Schema JSON-LD for SEO Rich Results."
+msgid "Manage FAQ categories with Question and Answer pages."
 msgstr ""
 
 #. Author of the plugin/theme
