@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 1.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2019-08-02 08:37-0700\n"
-"PO-Revision-Date: 2019-08-02 08:39-0700\n"
+"POT-Creation-Date: 2019-08-05 08:42-0700\n"
+"PO-Revision-Date: 2019-08-05 08:50-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,8 +17,8 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
-msgid "WPSSO Core add-on to manage FAQ categories with Question and Answer pages."
-msgstr "Ajout WPSSO Core pour gérer les catégories de FAQ avec des pages de questions et réponses."
+msgid "Manage FAQ categories with Question and Answer pages."
+msgstr "Gérez les catégories de FAQ avec pages de questions et réponses."
 
 #: lib/register.php:126
 msgid "Categories"
@@ -35,63 +35,63 @@ msgstr "Catégories"
 
 #: lib/register.php:129
 msgid "All Categories"
-msgstr ""
+msgstr "Toutes catégories"
 
 #: lib/register.php:130
 msgid "Edit Category"
-msgstr ""
+msgstr "Modifier la catégorie"
 
 #: lib/register.php:131
 msgid "View Category"
-msgstr ""
+msgstr "Voir la catégorie"
 
 #: lib/register.php:132
 msgid "Update Category"
-msgstr ""
+msgstr "Mettre à jour la catégorie"
 
 #: lib/register.php:133
 msgid "Add New Category"
-msgstr ""
+msgstr "Ajouter une nouvelle catégorie"
 
 #: lib/register.php:134
 msgid "New Category Name"
-msgstr ""
+msgstr "Nom de la nouvelle catégorie"
 
 #: lib/register.php:135
 msgid "Parent Category"
-msgstr ""
+msgstr "Catégorie parente"
 
 #: lib/register.php:136
 msgid "Parent Category:"
-msgstr ""
+msgstr "Catégorie parente :"
 
 #: lib/register.php:137
 msgid "Search Categories"
-msgstr ""
+msgstr "Rechercher dans les catégories"
 
 #: lib/register.php:138
 msgid "Popular Categories"
-msgstr ""
+msgstr "Catégories populaires"
 
 #: lib/register.php:139
 msgid "Separate categories with commas"
-msgstr ""
+msgstr "Séparez les catégories avec des virgules"
 
 #: lib/register.php:140
 msgid "Add or remove categories"
-msgstr ""
+msgstr "Ajouter ou retirer des catégories"
 
 #: lib/register.php:141
 msgid "Choose from the most used"
-msgstr ""
+msgstr "Choisir parmi les plus utilisées"
 
 #: lib/register.php:142
 msgid "Not categories found."
-msgstr ""
+msgstr "Aucune catégorie trouvée."
 
 #: lib/register.php:143
 msgid "← Back to categories"
-msgstr ""
+msgstr "← Retour aux catégories"
 
 #: lib/register.php:147
 msgctxt "Taxonomy label"
@@ -113,79 +113,79 @@ msgstr "Question"
 
 #: lib/register.php:171
 msgid "Add New"
-msgstr ""
+msgstr "Ajouter"
 
 #: lib/register.php:172
 msgid "Add New Question"
-msgstr ""
+msgstr "Ajouter une nouvelle question"
 
 #: lib/register.php:173
 msgid "Edit Question"
-msgstr ""
+msgstr "Modifier la question"
 
 #: lib/register.php:174
 msgid "New Question"
-msgstr ""
+msgstr "Nouvelle question"
 
 #: lib/register.php:175
 msgid "View Question"
-msgstr ""
+msgstr "Voir la question"
 
 #: lib/register.php:176
 msgid "View FAQs"
-msgstr ""
+msgstr "Voir les FAQs"
 
 #: lib/register.php:177
 msgid "Search Questions"
-msgstr ""
+msgstr "Rechercher dans les questions"
 
 #: lib/register.php:178
 msgid "No questions found"
-msgstr ""
+msgstr "Aucune question trouvée"
 
 #: lib/register.php:179
 msgid "No questions found in Trash"
-msgstr ""
+msgstr "Aucune question trouvée dans la corbeille"
 
 #: lib/register.php:180
 msgid "Parent Question:"
-msgstr ""
+msgstr "Question parente :"
 
 #: lib/register.php:181
 msgid "All Questions"
-msgstr ""
+msgstr "Toutes questions"
 
 #: lib/register.php:182
 msgid "Question Archives"
-msgstr ""
+msgstr "Archives de questions"
 
 #: lib/register.php:183
 msgid "Question Attributes"
-msgstr ""
+msgstr "Attributs de question"
 
 #: lib/register.php:184
 msgid "Insert into answer"
-msgstr ""
+msgstr "Insérer dans la réponse"
 
 #: lib/register.php:185
 msgid "Uploaded to this question"
-msgstr ""
+msgstr "Téléchargé à cette question"
 
 #: lib/register.php:186
 msgid "Question Image"
-msgstr ""
+msgstr "Image de question"
 
 #: lib/register.php:187
 msgid "Set question image"
-msgstr ""
+msgstr "Définir l'image de la question"
 
 #: lib/register.php:188
 msgid "Remove question image"
-msgstr ""
+msgstr "Supprimer l'image de la question"
 
 #: lib/register.php:189
 msgid "Use as question image"
-msgstr ""
+msgstr "Utiliser comme image de question"
 
 #: lib/register.php:190
 msgctxt "Admin menu name"
@@ -194,15 +194,15 @@ msgstr "FAQs"
 
 #: lib/register.php:191
 msgid "Filter questions"
-msgstr ""
+msgstr "Filtrer les questions"
 
 #: lib/register.php:192
-msgid "Questions navigation"
-msgstr ""
+msgid "Questions list navigation"
+msgstr "Navigation de la liste des questions"
 
 #: lib/register.php:193
 msgid "Questions list"
-msgstr ""
+msgstr "Liste des questions"
 
 #: lib/register.php:194
 msgctxt "Admin bar name"
@@ -211,23 +211,23 @@ msgstr "Question"
 
 #: lib/register.php:195
 msgid "Question published."
-msgstr ""
+msgstr "Question publiée."
 
 #: lib/register.php:196
 msgid "Question published privately."
-msgstr ""
+msgstr "Question publiée en privé."
 
 #: lib/register.php:197
 msgid "Question reverted to draft."
-msgstr ""
+msgstr "Question remis en brouillon."
 
 #: lib/register.php:198
 msgid "Question scheduled."
-msgstr ""
+msgstr "Question planifiée."
 
 #: lib/register.php:199
 msgid "Question updated."
-msgstr ""
+msgstr "Question mise à jour."
 
 #: lib/register.php:203
 msgctxt "Post type label"
@@ -260,8 +260,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-faq/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for SEO Rich Results."
-msgstr "Ajout WPSSO Core pour supprimer les microdonnées de Schéma obsolètes / incomplètes afin d'utiliser le balisage Schéma JSON-LD préféré par Google."
+msgid "Manage FAQ categories with Question and Answer pages."
+msgstr "Gérez les catégories de FAQ avec pages de questions et réponses."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

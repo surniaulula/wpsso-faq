@@ -189,7 +189,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'use_featured_image'       => __( 'Use as question image', 'wpsso-faq' ),
 				'menu_name'                => _x( 'FAQs', 'Admin menu name', 'wpsso-faq' ),
 				'filter_items_list'        => __( 'Filter questions', 'wpsso-faq' ),
-				'items_list_navigation'    => __( 'Questions navigation', 'wpsso-faq' ),
+				'items_list_navigation'    => __( 'Questions list navigation', 'wpsso-faq' ),
 				'items_list'               => __( 'Questions list', 'wpsso-faq' ),
 				'name_admin_bar'           => _x( 'Question', 'Admin bar name', 'wpsso-faq' ),
 				'item_published'	   => __( 'Question published.', 'wpsso-faq' ),

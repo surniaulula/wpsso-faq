@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 1.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 1.0.1-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -194,7 +194,7 @@ msgid "Filter questions"
 msgstr ""
 
 #: lib/register.php:192
-msgid "Questions navigation"
+msgid "Questions list navigation"
 msgstr ""
 
 #: lib/register.php:193
