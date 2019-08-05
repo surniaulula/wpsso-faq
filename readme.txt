@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.0.0 (2019/08/01)**
 
 * **New Features**
-	* None.
+	* Initial release.
 * **Improvements**
 	* None.
 * **Bugfixes**
@@ -87,5 +87,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.0.0 =
 
-(2019/08/01) None.
+(2019/08/01) Initial release.
 
