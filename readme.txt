@@ -10,7 +10,7 @@ Tags: faq, faqpage, question, answer, schema
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.2
-Stable Tag: 1.0.0
+Stable Tag: 1.0.1
 
 Manage FAQ categories with Question and Answer pages.
 
