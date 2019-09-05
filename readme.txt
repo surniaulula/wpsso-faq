@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: faq, faqpage, question, answer, schema
 Contributors: jsmoriss
 Requires At Least: 3.9
-Tested Up To: 5.2.2
+Tested Up To: 5.2.3
 Stable Tag: 1.0.1
 
 Manage FAQ categories with Question and Answer pages.
