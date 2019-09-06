@@ -17,238 +17,232 @@ msgctxt "plugin description"
 msgid "Manage FAQ categories with Question and Answer pages."
 msgstr ""
 
-#: lib/register.php:126
+#: lib/register.php:123
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:127
+#: lib/register.php:124
 msgid "Category"
 msgstr ""
 
-#: lib/register.php:128
+#: lib/register.php:125
 msgctxt "Admin menu name"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:129
+#: lib/register.php:126
 msgid "All Categories"
 msgstr ""
 
-#: lib/register.php:130
+#: lib/register.php:127
 msgid "Edit Category"
 msgstr ""
 
-#: lib/register.php:131
+#: lib/register.php:128
 msgid "View Category"
 msgstr ""
 
-#: lib/register.php:132
+#: lib/register.php:129
 msgid "Update Category"
 msgstr ""
 
-#: lib/register.php:133
+#: lib/register.php:130
 msgid "Add New Category"
 msgstr ""
 
-#: lib/register.php:134
+#: lib/register.php:131
 msgid "New Category Name"
 msgstr ""
 
-#: lib/register.php:135
+#: lib/register.php:132
 msgid "Parent Category"
 msgstr ""
 
-#: lib/register.php:136
+#: lib/register.php:133
 msgid "Parent Category:"
 msgstr ""
 
-#: lib/register.php:137
+#: lib/register.php:134
 msgid "Search Categories"
 msgstr ""
 
-#: lib/register.php:138
+#: lib/register.php:135
 msgid "Popular Categories"
 msgstr ""
 
-#: lib/register.php:139
+#: lib/register.php:136
 msgid "Separate categories with commas"
 msgstr ""
 
-#: lib/register.php:140
+#: lib/register.php:137
 msgid "Add or remove categories"
 msgstr ""
 
-#: lib/register.php:141
+#: lib/register.php:138
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:142
+#: lib/register.php:139
 msgid "Not categories found."
 msgstr ""
 
-#: lib/register.php:143
+#: lib/register.php:140
 msgid "← Back to categories"
 msgstr ""
 
-#: lib/register.php:147
+#: lib/register.php:144
 msgctxt "Taxonomy label"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:158
+#: lib/register.php:155
 msgctxt "Taxonomy description"
 msgid "Categories for Questions"
 msgstr ""
 
-#: lib/register.php:169
+#: lib/register.php:166
 msgid "Questions"
 msgstr ""
 
-#: lib/register.php:170
+#: lib/register.php:167
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:171
+#: lib/register.php:168
 msgid "Add New"
 msgstr ""
 
-#: lib/register.php:172
+#: lib/register.php:169
 msgid "Add New Question"
 msgstr ""
 
-#: lib/register.php:173
+#: lib/register.php:170
 msgid "Edit Question"
 msgstr ""
 
-#: lib/register.php:174
+#: lib/register.php:171
 msgid "New Question"
 msgstr ""
 
-#: lib/register.php:175
+#: lib/register.php:172
 msgid "View Question"
 msgstr ""
 
-#: lib/register.php:176
+#: lib/register.php:173
 msgid "View FAQs"
 msgstr ""
 
-#: lib/register.php:177
+#: lib/register.php:174
 msgid "Search Questions"
 msgstr ""
 
-#: lib/register.php:178
+#: lib/register.php:175
 msgid "No questions found"
 msgstr ""
 
-#: lib/register.php:179
+#: lib/register.php:176
 msgid "No questions found in Trash"
 msgstr ""
 
-#: lib/register.php:180
+#: lib/register.php:177
 msgid "Parent Question:"
 msgstr ""
 
-#: lib/register.php:181
+#: lib/register.php:178
 msgid "All Questions"
 msgstr ""
 
-#: lib/register.php:182
+#: lib/register.php:179
 msgid "Question Archives"
 msgstr ""
 
-#: lib/register.php:183
+#: lib/register.php:180
 msgid "Question Attributes"
 msgstr ""
 
-#: lib/register.php:184
+#: lib/register.php:181
 msgid "Insert into answer"
 msgstr ""
 
-#: lib/register.php:185
+#: lib/register.php:182
 msgid "Uploaded to this question"
 msgstr ""
 
-#: lib/register.php:186
+#: lib/register.php:183
 msgid "Question Image"
 msgstr ""
 
-#: lib/register.php:187
+#: lib/register.php:184
 msgid "Set question image"
 msgstr ""
 
-#: lib/register.php:188
+#: lib/register.php:185
 msgid "Remove question image"
 msgstr ""
 
-#: lib/register.php:189
+#: lib/register.php:186
 msgid "Use as question image"
 msgstr ""
 
-#: lib/register.php:190
+#: lib/register.php:187
 msgctxt "Admin menu name"
 msgid "FAQs"
 msgstr ""
 
-#: lib/register.php:191
+#: lib/register.php:188
 msgid "Filter questions"
 msgstr ""
 
-#: lib/register.php:192
+#: lib/register.php:189
 msgid "Questions list navigation"
 msgstr ""
 
-#: lib/register.php:193
+#: lib/register.php:190
 msgid "Questions list"
 msgstr ""
 
-#: lib/register.php:194
+#: lib/register.php:191
 msgctxt "Admin bar name"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:195
+#: lib/register.php:192
 msgid "Question published."
 msgstr ""
 
-#: lib/register.php:196
+#: lib/register.php:193
 msgid "Question published privately."
 msgstr ""
 
-#: lib/register.php:197
+#: lib/register.php:194
 msgid "Question reverted to draft."
 msgstr ""
 
-#: lib/register.php:198
+#: lib/register.php:195
 msgid "Question scheduled."
 msgstr ""
 
-#: lib/register.php:199
+#: lib/register.php:196
 msgid "Question updated."
 msgstr ""
 
-#: lib/register.php:203
+#: lib/register.php:200
 msgctxt "Post type label"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:205
+#: lib/register.php:202
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr ""
 
-#: wpsso-faq.php:107
-msgid ""
-"%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
-"the %3$s plugin before activating %4$s."
-msgstr ""
-
-#: wpsso-faq.php:109
+#: wpsso-faq.php:104
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-faq.php:216
+#: wpsso-faq.php:198
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

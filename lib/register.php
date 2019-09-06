@@ -108,9 +108,6 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 					WpssoUtil::save_all_times( 'wpssofaq', $version );
 				}
-
-			} else {
-				WpssoFaq::required_notice( $deactivate = true );
 			}
 		}
 
