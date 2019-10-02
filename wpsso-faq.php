@@ -13,7 +13,7 @@
  * Description: Manage FAQ categories with Question and Answer pages.
  * Requires At Least: 3.9
  * Tested Up To: 5.2.3
- * Version: 1.0.2-dev.3
+ * Version: 1.0.2-b.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
