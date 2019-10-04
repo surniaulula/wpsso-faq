@@ -57,23 +57,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.2-rc.1 (2019/10/03)**
+**Version 1.0.2 (2019/10/04)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Maintenance release for WPSSO Core v6.6.1.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
-**Version 1.0.1 (2019/08/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update for "fr_FR" translations.
+	* Maintenance release for WPSSO Core v6.7.0.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -81,11 +70,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.0.2-rc.1 =
+= 1.0.2 =
 
-(2019/10/03) Maintenance release for WPSSO Core v6.6.1.
-
-= 1.0.1 =
-
-(2019/08/07) Minor update for "fr_FR" translations.
+(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
