@@ -1,4 +1,4 @@
-<h1>FAQ Manager | WPSSO Add-on</h1>
+<h1>FAQ Manager</h1><h3>WPSSO Add-on</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO FAQ Manager</td></tr>
