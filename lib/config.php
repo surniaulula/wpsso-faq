@@ -49,8 +49,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 
 		public static function get_version( $add_slug = false ) {
 
-			$ext  = 'wpssofaq';
-			$info =& self::$cf[ 'plugin' ][$ext];
+			$info =& self::$cf[ 'plugin' ][ 'wpssofaq' ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
@@ -61,12 +60,17 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 				return;
 			}
 
+			$info =& self::$cf[ 'plugin' ][ 'wpssofaq' ];
+
+			/**
+			 * Define fixed constants.
+			 */
 			define( 'WPSSOFAQ_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOFAQ_PLUGINBASE', self::$cf[ 'plugin' ][ 'wpssofaq' ][ 'base' ] );		// wpsso-faq/wpsso-faq.php
+			define( 'WPSSOFAQ_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-faq/wpsso-faq.php.
 			define( 'WPSSOFAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOFAQ_PLUGINSLUG', self::$cf[ 'plugin' ][ 'wpssofaq' ][ 'slug' ] );		// wpsso-faq
+			define( 'WPSSOFAQ_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-faq.
 			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOFAQ_VERSION', self::$cf[ 'plugin' ][ 'wpssofaq' ][ 'version' ] );						
+			define( 'WPSSOFAQ_VERSION', $info[ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
