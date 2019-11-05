@@ -75,8 +75,8 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOFAQ_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOFAQ_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssofaq_load_lib', array( 'WpssoFaqConfig', 'load_lib' ), 10, 3 );
 		}
