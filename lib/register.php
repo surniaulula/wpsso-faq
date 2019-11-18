@@ -106,7 +106,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 					$version = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ][ 'version' ];
 
-					WpssoUtil::save_all_times( 'wpssofaq', $version );
+					WpssoUtil::register_ext_version( 'wpssofaq', $version );
 				}
 			}
 		}
