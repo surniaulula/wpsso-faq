@@ -57,7 +57,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.3-dev.2 (2019/11/21)**
+**Version 1.0.3-dev.3 (2019/11/22)**
 
 * **New Features**
 	* None.
@@ -81,9 +81,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.0.3-dev.2 =
+= 1.0.3-dev.3 =
 
-(2019/11/21) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
+(2019/11/22) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
 = 1.0.2 =
 
