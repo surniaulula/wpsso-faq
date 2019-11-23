@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '1.0.3-dev.3',	// Plugin version.
+					'version'     => '1.0.3-b.1',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.13.0-dev.3',
+						'min_version' => '6.13.0-b.1',
 					),
 					'assets' => array(
 						'icons' => array(
