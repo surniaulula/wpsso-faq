@@ -10,7 +10,7 @@ Tags: faq, faqpage, question, answer, schema
 Contributors: jsmoriss
 Requires At Least: 3.9
 Tested Up To: 5.3
-Stable Tag: 1.0.2
+Stable Tag: 1.0.3
 
 Manage FAQ categories with Question and Answer pages.
 
@@ -68,24 +68,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated `WpssoFaqRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
-**Version 1.0.2 (2019/10/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Maintenance release for WPSSO Core v6.7.0.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
 = 1.0.3 =
 
 (2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
-
-= 1.0.2 =
-
-(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
