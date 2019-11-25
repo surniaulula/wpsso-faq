@@ -17,221 +17,221 @@ msgctxt "plugin description"
 msgid "Manage FAQ categories with Question and Answer pages."
 msgstr ""
 
-#: lib/register.php:126
+#: lib/register.php:129
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:127
+#: lib/register.php:130
 msgid "Category"
 msgstr ""
 
-#: lib/register.php:128
+#: lib/register.php:131
 msgctxt "Admin menu name"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:129
+#: lib/register.php:132
 msgid "All Categories"
 msgstr ""
 
-#: lib/register.php:130
+#: lib/register.php:133
 msgid "Edit Category"
 msgstr ""
 
-#: lib/register.php:131
+#: lib/register.php:134
 msgid "View Category"
 msgstr ""
 
-#: lib/register.php:132
+#: lib/register.php:135
 msgid "Update Category"
 msgstr ""
 
-#: lib/register.php:133
+#: lib/register.php:136
 msgid "Add New Category"
 msgstr ""
 
-#: lib/register.php:134
+#: lib/register.php:137
 msgid "New Category Name"
 msgstr ""
 
-#: lib/register.php:135
+#: lib/register.php:138
 msgid "Parent Category"
 msgstr ""
 
-#: lib/register.php:136
+#: lib/register.php:139
 msgid "Parent Category:"
 msgstr ""
 
-#: lib/register.php:137
+#: lib/register.php:140
 msgid "Search Categories"
 msgstr ""
 
-#: lib/register.php:138
+#: lib/register.php:141
 msgid "Popular Categories"
 msgstr ""
 
-#: lib/register.php:139
+#: lib/register.php:142
 msgid "Separate categories with commas"
 msgstr ""
 
-#: lib/register.php:140
+#: lib/register.php:143
 msgid "Add or remove categories"
 msgstr ""
 
-#: lib/register.php:141
+#: lib/register.php:144
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:142
+#: lib/register.php:145
 msgid "Not categories found."
 msgstr ""
 
-#: lib/register.php:143
+#: lib/register.php:146
 msgid "← Back to categories"
 msgstr ""
 
-#: lib/register.php:147
+#: lib/register.php:150
 msgctxt "Taxonomy label"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:158
+#: lib/register.php:161
 msgctxt "Taxonomy description"
 msgid "Categories for Questions"
 msgstr ""
 
-#: lib/register.php:169
+#: lib/register.php:172
 msgid "Questions"
 msgstr ""
 
-#: lib/register.php:170
+#: lib/register.php:173
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:171
+#: lib/register.php:174
 msgid "Add New"
 msgstr ""
 
-#: lib/register.php:172
+#: lib/register.php:175
 msgid "Add New Question"
 msgstr ""
 
-#: lib/register.php:173
+#: lib/register.php:176
 msgid "Edit Question"
 msgstr ""
 
-#: lib/register.php:174
+#: lib/register.php:177
 msgid "New Question"
 msgstr ""
 
-#: lib/register.php:175
+#: lib/register.php:178
 msgid "View Question"
 msgstr ""
 
-#: lib/register.php:176
+#: lib/register.php:179
 msgid "View FAQs"
 msgstr ""
 
-#: lib/register.php:177
+#: lib/register.php:180
 msgid "Search Questions"
 msgstr ""
 
-#: lib/register.php:178
+#: lib/register.php:181
 msgid "No questions found"
 msgstr ""
 
-#: lib/register.php:179
+#: lib/register.php:182
 msgid "No questions found in Trash"
 msgstr ""
 
-#: lib/register.php:180
+#: lib/register.php:183
 msgid "Parent Question:"
 msgstr ""
 
-#: lib/register.php:181
+#: lib/register.php:184
 msgid "All Questions"
 msgstr ""
 
-#: lib/register.php:182
+#: lib/register.php:185
 msgid "Question Archives"
 msgstr ""
 
-#: lib/register.php:183
+#: lib/register.php:186
 msgid "Question Attributes"
 msgstr ""
 
-#: lib/register.php:184
+#: lib/register.php:187
 msgid "Insert into answer"
 msgstr ""
 
-#: lib/register.php:185
+#: lib/register.php:188
 msgid "Uploaded to this question"
 msgstr ""
 
-#: lib/register.php:186
+#: lib/register.php:189
 msgid "Question Image"
 msgstr ""
 
-#: lib/register.php:187
+#: lib/register.php:190
 msgid "Set question image"
 msgstr ""
 
-#: lib/register.php:188
+#: lib/register.php:191
 msgid "Remove question image"
 msgstr ""
 
-#: lib/register.php:189
+#: lib/register.php:192
 msgid "Use as question image"
 msgstr ""
 
-#: lib/register.php:190
+#: lib/register.php:193
 msgctxt "Admin menu name"
 msgid "FAQs"
 msgstr ""
 
-#: lib/register.php:191
+#: lib/register.php:194
 msgid "Filter questions"
 msgstr ""
 
-#: lib/register.php:192
+#: lib/register.php:195
 msgid "Questions list navigation"
 msgstr ""
 
-#: lib/register.php:193
+#: lib/register.php:196
 msgid "Questions list"
 msgstr ""
 
-#: lib/register.php:194
+#: lib/register.php:197
 msgctxt "Admin bar name"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:195
+#: lib/register.php:198
 msgid "Question published."
 msgstr ""
 
-#: lib/register.php:196
+#: lib/register.php:199
 msgid "Question published privately."
 msgstr ""
 
-#: lib/register.php:197
+#: lib/register.php:200
 msgid "Question reverted to draft."
 msgstr ""
 
-#: lib/register.php:198
+#: lib/register.php:201
 msgid "Question scheduled."
 msgstr ""
 
-#: lib/register.php:199
+#: lib/register.php:202
 msgid "Question updated."
 msgstr ""
 
-#: lib/register.php:203
+#: lib/register.php:206
 msgctxt "Post type label"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:205
+#: lib/register.php:208
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr ""
