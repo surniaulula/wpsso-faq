@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOFAQ_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -65,15 +65,15 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOFAQ_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOFAQ_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOFAQ_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-faq/wpsso-faq.php.
-			define( 'WPSSOFAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOFAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOFAQ_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-faq.
-			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOFAQ_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/register.php';
@@ -85,11 +85,11 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOFAQ_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOFAQ_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssofaq' . $filespec, $allow_underscore = false );
