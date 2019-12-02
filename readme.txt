@@ -20,9 +20,9 @@ Manage FAQ categories with Question and Answer pages.
 
 Adds a FAQs admin menu item to manage FAQ categories with Question and Answer pages.
 
-Note that this add-on only manages FAQ categories and Question and Answer pages -- it does not create any meta tags or Schema markup in those pages. If you need Schema FAQPage and Schema Question markup (in JSON-LD format) for your pages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create that markup.
+Note that this add-on manages FAQ categories, along with Question and Answer pages -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup in JSON-LD format for your webpages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create that markup.
 
-> Optionally, see the [Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a different template for FAQ category archives using your existing theme archive template.
+Optionally, see the [Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a different template for FAQ category archives using your existing theme archive template.
 
 <h3>WPSSO Core Plugin Required</h3>
 
