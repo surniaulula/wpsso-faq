@@ -11,6 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Manage FAQ categories with Question and Answer pages.
+ * Requires PHP: 5.5
  * Requires At Least: 3.9
  * Tested Up To: 5.3
  * Version: 1.1.0-b.1
