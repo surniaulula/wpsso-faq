@@ -60,6 +60,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.1.0-b.1 (2019/12/07)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a `flush_rewrite_rules()` function call on plugin activation / deactivation to refresh the 'faq_category' taxonomy and 'question' post type URLs.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 1.0.3 (2019/11/23)**
 
 * **New Features**
@@ -72,6 +83,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Updated `WpssoFaqRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
 
 == Upgrade Notice ==
+
+= 1.1.0-b.1 =
+
+(2019/12/07) Added a `flush_rewrite_rules()` function call on plugin activation / deactivation to refresh the 'faq_category' taxonomy and 'question' post type URLs.
 
 = 1.0.3 =
 
