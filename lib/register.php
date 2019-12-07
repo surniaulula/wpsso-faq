@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 			register_activation_hook( WPSSOFAQ_FILEPATH, array( $this, 'network_activate' ) );
 
-			//register_deactivation_hook( WPSSOFAQ_FILEPATH, array( $this, 'network_deactivate' ) );
+			register_deactivation_hook( WPSSOFAQ_FILEPATH, array( $this, 'network_deactivate' ) );
 
 			if ( is_multisite() ) {
 
@@ -26,9 +26,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			add_action( 'wpsso_init_options', array( $this, 'taxonomy_faq_category' ) );
+			add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_faq_category' ) );
 
-			add_action( 'wpsso_init_options', array( $this, 'post_type_question' ) );
+			add_action( 'wpsso_init_options', array( $this, 'register_post_type_question' ) );
 		}
 
 		/**
@@ -114,16 +114,28 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 					WpssoUtilReg::update_ext_version( 'wpssofaq', $version );
 				}
+
+				$this->register_taxonomy_faq_category();
+
+				$this->register_post_type_question();
+
+				flush_rewrite_rules();
 			}
 		}
 
 		private function deactivate_plugin() {
+
+			unregister_taxonomy( 'faq_category' );
+
+			unregister_post_type( 'question' );
+
+			flush_rewrite_rules();
 		}
 
 		private static function uninstall_plugin() {
 		}
 
-		public function taxonomy_faq_category() {
+		public function register_taxonomy_faq_category() {
 
 			$labels = array(
 				'name'                       => __( 'Categories', 'wpsso-faq' ),
@@ -166,7 +178,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 		
 		}
 
-		public function post_type_question() {
+		public function register_post_type_question() {
 
 			$labels = array(
 				'name'                     => __( 'Questions', 'Post type general name', 'wpsso-faq' ),
