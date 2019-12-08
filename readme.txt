@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
 Tested Up To: 5.3
-Stable Tag: 1.0.3
+Stable Tag: 1.1.0
 
 Manage FAQ categories with Question and Answer pages.
 
@@ -61,7 +61,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0 (2019/12/07)**
+**Version 1.1.0 (2019/12/08)**
 
 * **New Features**
 	* None.
@@ -91,5 +91,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.1.0 =
 
-(2019/12/07) Added a `flush_rewrite_rules()` function call on plugin activation / deactivation to refresh the 'faq_category' taxonomy and 'question' post type URLs.
+(2019/12/08) Added a `flush_rewrite_rules()` function call on plugin activation / deactivation to refresh the 'faq_category' taxonomy and 'question' post type URLs.
 
