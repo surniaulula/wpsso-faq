@@ -13,19 +13,19 @@ Requires At Least: 3.9
 Tested Up To: 5.3
 Stable Tag: 2.0.0
 
-Manage FAQ categories with Question and Answer pages, along with shortcodes to include FAQs in your content.
+Manage FAQ categories with Question / Answer pages, along with shortcodes to include FAQs in your content.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-Adds a FAQs admin menu item (like Posts and Pages) to manage Question and Answer pages along with FAQ categories.
+Adds a FAQs admin menu item (like Posts and Pages) to manage Question / Answer pages along with FAQ categories.
 
 Offers a `[faq]` and `[question]` shortcode to include a list of FAQs by category, or individual Questions and Answers in your post/page content.
 
-Note that this add-on manages Question and Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create that markup.
+Optional: See the [Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a different template for FAQ category archive webpages using your existing theme archive template.
 
-Optionally, see the [Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a different template for FAQ category archive webpages using your existing theme archive template.
+> Note that this add-on manages Question / Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create that markup.
 
 <h3>WPSSO Core Plugin Required</h3>
 
