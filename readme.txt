@@ -61,7 +61,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-b.1 (2019/12/11)**
+**Version 2.0.0-rc.1 (2019/12/11)**
 
 * **New Features**
 	* Added a `[faq]` shortcode to include a FAQ category in post/page content.
@@ -105,7 +105,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-b.1 =
+= 2.0.0-rc.1 =
 
 (2019/12/11) Added a `[faq]` and `[question]` shortcode to include FAQs or individual Questions in post/page content.
 
