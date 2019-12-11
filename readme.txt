@@ -61,6 +61,33 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-b.1 (2019/12/11)**
+
+* **New Features**
+	* Added a `[faq]` shortcode to include a FAQ category in post/page content.
+	* Added a `[question]` shortcode to include individual Questions in post/page content.
+* **Improvements**
+	* Added a "Shortcode" column to the "All Questions" and FAQ "Category" lists.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added new library files:
+		* lib/post.php
+		* lib/style.php
+		* lib/term.php
+		* lib/shortcode/faq.php
+		* lib/shortcode/question.php
+	* Added new hard-coded / fixed constants:
+		* WPSSOFAQ_CATEGORY_TAXONOMY = 'faq_category'
+		* WPSSOFAQ_QUESTION_POST_TYPE = 'question'
+	* Added new variable constants:
+		* WPSSOFAQ_FAQ_SHORTCODE_NAME = 'faq'
+		* WPSSOFAQ_QUESTION_SHORTCODE_NAME = 'question'
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v3.9.
+	* WPSSO Core v6.15.0.
+
 **Version 1.1.0 (2019/12/08)**
 
 * **New Features**
@@ -76,18 +103,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v3.9.
 	* WPSSO Core v6.15.0.
 
-**Version 1.0.3 (2019/11/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `WpssoFaqRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
-
 == Upgrade Notice ==
+
+= 2.0.0-b.1 =
+
+(2019/12/11) Added a `[faq]` and `[question]` shortcode to include FAQs or individual Questions in post/page content.
 
 = 1.1.0 =
 
