@@ -6,14 +6,14 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
-Tags: faq, faqpage, question, answer, schema, schema.org, google, rich results, faq page
+Tags: shortcodes, faq, faqpage, question, answer, schema, schema.org, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
 Tested Up To: 5.3
 Stable Tag: 2.0.0
 
-Manage FAQ categories with Question and Answer pages, with shortcodes to include FAQs in your content.
+Manage FAQ categories with Question and Answer pages, along with shortcodes to include FAQs in your content.
 
 == Description ==
 
