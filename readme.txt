@@ -11,15 +11,17 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
 Tested Up To: 5.3
-Stable Tag: 1.1.0
+Stable Tag: 2.0.0
 
-Manage FAQ categories with Question and Answer pages.
+Manage FAQ categories with Question and Answer pages, with shortcodes to include FAQs in your content.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
 Adds a FAQs admin menu item (like Posts and Pages) to manage Question and Answer pages along with FAQ categories.
+
+Offers a `[faq]` and `[question]` shortcode to include a list of FAQs by category, or individual Questions and Answers in your post/page content.
 
 Note that this add-on manages Question and Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create that markup.
 

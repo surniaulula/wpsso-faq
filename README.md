@@ -2,8 +2,8 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO FAQ Manager</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Manage FAQ categories with Question and Answer pages.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.1.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Manage FAQ categories with Question and Answer pages, with shortcodes to include FAQs in your content.</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>3.9 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3</td></tr>
@@ -17,6 +17,8 @@
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
 <p>Adds a FAQs admin menu item (like Posts and Pages) to manage Question and Answer pages along with FAQ categories.</p>
+
+<p>Offers a <code>[faq]</code> and <code>[question]</code> shortcode to include a list of FAQs by category, or individual Questions and Answers in your post/page content.</p>
 
 <p>Note that this add-on manages Question and Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
 
