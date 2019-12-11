@@ -20,7 +20,7 @@
 
 <p>Offers a <code>[faq]</code> and <code>[question]</code> shortcode to include a list of FAQs by category, or individual Questions and Answers in your post/page content.</p>
 
-<p>Optional: See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a different template for FAQ category archive webpages using your existing theme archive template.</p>
+<p>Optional: See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on (optionally) creating a different template for FAQ category archive webpages using your existing theme archive template.</p>
 
 <blockquote>
   <p>Note that this add-on manages Question / Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
