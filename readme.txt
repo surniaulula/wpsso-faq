@@ -21,7 +21,7 @@ Manages Question / Answer pages and FAQ categories, along with offering shortcod
 
 Adds a FAQs admin menu item (bellow Posts and Pages) to manage individual Question / Answer pages and FAQ categories.
 
-Offers a `[faq]` and `[question]` shortcode to include a list of FAQs by category, or individual Questions and Answers, in your post/page content.
+Offers `[faq]` and `[question]` shortcodes to include a list of FAQs by category, or individual Questions and Answers, in your post/page content.
 
 Optional: See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on (optionally) creating a different template specifically for FAQ category webpages based on your current theme archive template.
 
@@ -109,5 +109,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.0.0 =
 
-(2019/12/11) Added a `[faq]` and `[question]` shortcode to include FAQs or individual Questions in post/page content.
+(2019/12/11) Added `[faq]` and `[question]` shortcodes to include FAQs or individual Questions in post/page content.
 
