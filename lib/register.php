@@ -125,9 +125,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 		private function deactivate_plugin() {
 
-			unregister_taxonomy( 'faq_category' );
+			unregister_taxonomy( WPSSOFAQ_CATEGORY_TAXONOMY );
 
-			unregister_post_type( 'question' );
+			unregister_post_type( WPSSOFAQ_QUESTION_POST_TYPE );
 
 			flush_rewrite_rules();
 		}
@@ -174,7 +174,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'hierarchical'       => true,
 			);
 
-			register_taxonomy( 'faq_category', array( 'question' ), $args );
+			register_taxonomy( WPSSOFAQ_CATEGORY_TAXONOMY, array( WPSSOFAQ_QUESTION_POST_TYPE ), $args );
 		
 		}
 
@@ -240,13 +240,13 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 					'revisions',
 					'page-attributes',
 				),
-				'taxonomies'            => array( 'faq_category' ),
+				'taxonomies'            => array( WPSSOFAQ_CATEGORY_TAXONOMY ),
 				'has_archive'           => 'faqs',
 				'can_export'            => true,
 				'show_in_rest'          => true,
 			);
 
-			register_post_type( 'question', $args );
+			register_post_type( WPSSOFAQ_QUESTION_POST_TYPE, $args );
 		}
 	}
 }

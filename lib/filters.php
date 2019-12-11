@@ -36,14 +36,14 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			if ( $mod[ 'is_post' ] ) {
 
-				if ( 'question' === $mod[ 'post_type' ] ) {
+				if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
 
 					$md_defs[ 'schema_type' ] = 'question';
 				}
 			
 			} elseif ( $mod[ 'is_term' ] ) {
 
-				if ( 'faq_category' === $mod[ 'tax_slug' ] ) {
+				if ( WPSSOFAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
 
 					$md_defs[ 'schema_type' ] = 'webpage.faq';
 				}

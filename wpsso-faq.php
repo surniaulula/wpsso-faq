@@ -14,7 +14,7 @@
  * Requires PHP: 5.5
  * Requires At Least: 3.9
  * Tested Up To: 5.3
- * Version: 1.1.0
+ * Version: 2.0.0-b.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -43,7 +43,10 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 		 * Library class object variables.
 		 */
 		public $filters;	// WpssoFaqFilters
+		public $post;		// WpssoFaqPost
 		public $reg;		// WpssoFaqRegister
+		public $style;		// WpssoFaqStyle
+		public $term;		// WpssoFaqTerm
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
@@ -177,6 +180,9 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 			}
 
 			$this->filters = new WpssoFaqFilters( $this->p );
+			$this->post    = new WpssoFaqPost( $this->p );
+			$this->style   = new WpssoFaqStyle( $this->p );
+			$this->term    = new WpssoFaqTerm( $this->p );
 		}
 
 		public function wpsso_init_plugin() {

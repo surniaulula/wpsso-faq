@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 1.1.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 2.0.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -15,6 +15,10 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid "Manage FAQ categories with Question and Answer pages."
+msgstr ""
+
+#: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
+msgid "Shortcode"
 msgstr ""
 
 #: lib/register.php:141
@@ -236,13 +240,19 @@ msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr ""
 
-#: wpsso-faq.php:106
+#. translators: Maximum number of words used in a post excerpt.
+#: lib/shortcode/question.php:112
+msgctxt "excerpt_length"
+msgid "55"
+msgstr ""
+
+#: wpsso-faq.php:109
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-faq.php:204
+#: wpsso-faq.php:210
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
