@@ -16,11 +16,11 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-<p>Adds a FAQs admin menu item to manage FAQ categories with Question and Answer pages.</p>
+<p>Adds a FAQs admin menu item (like Posts and Pages) to manage Question and Answer pages along with FAQ categories.</p>
 
-<p>Note that this add-on manages FAQ categories, along with Question and Answer pages -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup in JSON-LD format for your webpages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
+<p>Note that this add-on manages Question and Answer pages along with FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup FAQ category archive webpages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that markup.</p>
 
-<p>Optionally, see the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a different template for FAQ category archives using your existing theme archive template.</p>
+<p>Optionally, see the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a different template for FAQ category archive webpages using your existing theme archive template.</p>
 
 <h3>WPSSO Core Plugin Required</h3>
 
