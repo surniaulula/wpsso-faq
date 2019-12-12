@@ -18,11 +18,11 @@
 
 <p>Adds a FAQs admin menu item (bellow Posts and Pages) to manage individual Question / Answer pages and FAQ categories.</p>
 
-<p>Offers <code>[faq]</code> and <code>[question]</code> shortcodes to include a list of FAQs by category, or individual Questions and Answers, in your post/page content.</p>
-
-<p>Optional: See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on (optionally) creating a different template specifically for FAQ category webpages based on your current theme archive template.</p>
+<p>Offers <code>[faq]</code> and <code>[question]</code> shortcodes to include a selection of FAQs by category or individual Questions and Answers in your post/page content.</p>
 
 <blockquote>
+  <p><strong>Optional</strong>: See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on (optionally) creating a different template specifically for FAQ category webpages based on your current theme archive template.</p>
+  
   <p>Note that this add-on manages Question / Answer pages and FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup for FAQ category archive webpages, you will need the <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (Premium) add-on</a> to create that Schema FAQPage markup.</p>
 </blockquote>
 
