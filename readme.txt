@@ -19,13 +19,13 @@ Manages Question / Answer pages and FAQ categories, along with offering shortcod
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-Adds a FAQs admin menu item (bellow Posts and Pages) to manage individual Question / Answer pages and FAQ categories.
+Adds a FAQs admin menu to edit and manage individual Question / Answer pages and FAQ categories.
 
-Offers `[faq]` and `[question]` shortcodes to include a selection of FAQs by category or individual Questions and Answers in your post/page content.
+Includes `[faq]` and `[question]` shortcodes to add a selection of FAQs or individual Questions and Answers in your post/page content.
 
-> **Optional**: See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on (optionally) creating a different theme template specifically for FAQ category webpages based on your current theme archive page template.
+> **Optional**: See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on optionally creating a theme template specifically for FAQ category webpages based on your current theme archive page template.
 
-> Note that this add-on manages Question / Answer pages and FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup for FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup (Premium) add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create the Schema FAQPage markup.
+> Note that this add-on manages Question / Answer pages and FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup for FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create the Schema FAQPage markup.
 
 <h3>WPSSO Core Plugin Required</h3>
 
