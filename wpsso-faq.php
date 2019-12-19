@@ -13,7 +13,7 @@
  * Description: Manage FAQ categories with Question and Answer pages.
  * Requires PHP: 5.5
  * Requires At Least: 3.9
- * Tested Up To: 5.3.1
+ * Tested Up To: 5.3.2
  * Version: 2.0.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
