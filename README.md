@@ -20,6 +20,8 @@
 
 <p>Includes <code>[faq]</code> and <code>[question]</code> shortcodes to add a selection of FAQs or individual Questions and Answers in your post/page content.</p>
 
+<p>Do you have a feature suggestion? <a href="https://wordpress.org/support/plugin/wpsso-faq/">Post your feature suggestion in the WPSSO FAQ support forum.</a></p>
+
 <blockquote>
   <p><strong>Optional</strong>: See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on optionally creating a theme template specifically for FAQ category webpages based on your current theme archive page template.</p>
   
