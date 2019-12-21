@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: shortcodes, faq, faqpage, question, answer, schema, schema.org, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires PHP: 5.5
-Requires At Least: 3.9
+Requires At Least: 4.0
 Tested Up To: 5.3.2
 Stable Tag: 2.0.0
 
@@ -23,11 +23,13 @@ Adds a FAQs admin menu to edit and manage individual Question / Answer pages and
 
 Includes `[faq]` and `[question]` shortcodes to add a selection of FAQs or individual Questions and Answers in your post/page content.
 
-Do you have a feature suggestion? [Post your feature suggestion in the WPSSO FAQ support forum.](https://wordpress.org/support/plugin/wpsso-faq/)
+Do you have a feature suggestion?
 
-> **Optional**: See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on optionally creating a theme template specifically for FAQ category webpages based on your current theme archive page template.
+[Post your suggestion in the WPSSO FAQ support forum.](https://wordpress.org/support/plugin/wpsso-faq/)
 
-> Note that this add-on manages Question / Answer pages and FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup for FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create the Schema FAQPage markup.
+**Optional**: See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on optionally creating a theme template specifically for FAQ category webpages based on your current theme archive page template.
+
+Note that this add-on manages Question / Answer pages and FAQ categories -- it does not create meta tags or Schema markup in webpages. If you need <strong>Schema FAQPage</strong> markup for FAQ category archive webpages, you will need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create the Schema FAQPage markup.
 
 <h3>WPSSO Core Plugin Required</h3>
 
@@ -89,7 +91,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* WPSSOFAQ_QUESTION_SHORTCODE_NAME = 'question'
 * **Requires At Least**
 	* PHP v5.5.
-	* WordPress v3.9.
+	* WordPress v4.0.
 	* WPSSO Core v6.16.0.
 
 **Version 1.1.0 (2019/12/08)**
@@ -104,7 +106,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Requires At Least**
 	* PHP v5.5.
-	* WordPress v3.9.
+	* WordPress v4.0.
 	* WPSSO Core v6.15.0.
 
 == Upgrade Notice ==
