@@ -118,14 +118,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				$content = wp_trim_words( $content, $excerpt_length, $excerpt_more );
 			}
 
-			$html = '<li class="wpsso-question" id="wpsso-question-' . $mod[ 'id' ] . '">' . "\n";
+			$html = '<div class="wpsso-question" id="wpsso-question-' . $mod[ 'id' ] . '">' . "\n";
 			$html .= '<div class="wpsso-question-title">' . "\n";
 			$html .= '<a href="' . $url . '">' . $title . '</a>' . "\n";
 			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
 			$html .= '<div class="wpsso-question-content">' . "\n";
 			$html .= '<p>' . $content . '</p>' . "\n";
 			$html .= '</div><!-- .wpsso-question-excerpt -->' . "\n";
-			$html .= '</li><!-- .wpsso-question -->' . "\n";
+			$html .= '</div><!-- .wpsso-question -->' . "\n";
 
 			return $html;
 		}

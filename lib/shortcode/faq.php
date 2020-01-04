@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			$html = '<ol class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
+			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
 
 			$posts_args = array(
 				'orderby' => 'title',
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '"]' );
 			}
 			
-			$html .= '</ol><!-- .wpsso-faq -->' . "\n";
+			$html .= '</div><!-- .wpsso-faq -->' . "\n";
 
 			return $html;
 		}
