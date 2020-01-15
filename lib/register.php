@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			}
 
 			/**
-			 * Priorities:
+			 * Add-on hook priorities:
 			 *
 			 * 	FAQs = 10
 			 * 	Organizations = 20
@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'separate_items_with_commas' => __( 'Separate categories with commas', 'wpsso-faq' ),
 				'add_or_remove_items'        => __( 'Add or remove categories', 'wpsso-faq' ),
 				'choose_from_most_used'      => __( 'Choose from the most used', 'wpsso-faq' ),
-				'not_found'                  => __( 'Not categories found.', 'wpsso-faq' ),
+				'not_found'                  => __( 'No categories found.', 'wpsso-faq' ),
 				'back_to_items'              => __( '← Back to categories', 'wpsso-faq' ),
 			);
 

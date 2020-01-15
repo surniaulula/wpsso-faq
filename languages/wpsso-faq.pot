@@ -87,7 +87,7 @@ msgid "Choose from the most used"
 msgstr ""
 
 #: lib/register.php:164
-msgid "Not categories found."
+msgid "No categories found."
 msgstr ""
 
 #: lib/register.php:165
