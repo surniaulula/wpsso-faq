@@ -44,6 +44,9 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 				),
 			) );
 
+			/**
+			 * Hard-code and disable these options in the settings pages.
+			 */
 			$this->p->options[ 'schema_type_for_tax_faq_category' ]    = $this->schema_type_faq;
 			$this->p->options[ 'schema_type_for_tax_faq_category:is' ] = 'disabled';
 
