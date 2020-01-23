@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 2.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 2.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-01-15 07:57-0800\n"
-"PO-Revision-Date: 2020-01-15 07:58-0800\n"
+"POT-Creation-Date: 2020-01-22 17:07-0800\n"
+"PO-Revision-Date: 2020-01-22 17:15-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,87 +25,87 @@ msgid "Shortcode"
 msgstr "Shortcode"
 
 #: lib/register.php:148
-msgid "Categories"
-msgstr "Catégories"
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
 
 #: lib/register.php:149
-msgid "Category"
-msgstr "Catégorie"
+msgid "FAQ Category"
+msgstr "Catégorie de FAQ"
 
 #: lib/register.php:150
 msgctxt "Admin menu name"
-msgid "Categories"
-msgstr "Catégories"
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
 
 #: lib/register.php:151
-msgid "All Categories"
-msgstr "Toutes catégories"
+msgid "All FAQ Categories"
+msgstr "Toutes catégories de FAQ"
 
 #: lib/register.php:152
-msgid "Edit Category"
-msgstr "Modifier la catégorie"
+msgid "Edit FAQ Category"
+msgstr "Modifier la catégorie de FAQ"
 
 #: lib/register.php:153
-msgid "View Category"
-msgstr "Voir la catégorie"
+msgid "View FAQ Category"
+msgstr "Voir la catégorie de FAQ"
 
 #: lib/register.php:154
-msgid "Update Category"
-msgstr "Mettre à jour la catégorie"
+msgid "Update FAQ Category"
+msgstr "Mettre à jour la catégorie de FAQ"
 
 #: lib/register.php:155
-msgid "Add New Category"
-msgstr "Ajouter une nouvelle catégorie"
+msgid "Add New FAQ Category"
+msgstr "Ajouter une nouvelle catégorie de FAQ"
 
 #: lib/register.php:156
-msgid "New Category Name"
-msgstr "Nom de la nouvelle catégorie"
+msgid "New FAQ Category Name"
+msgstr "Nom de la nouvelle catégorie de FAQ"
 
 #: lib/register.php:157
-msgid "Parent Category"
-msgstr "Catégorie parente"
+msgid "Parent FAQ Category"
+msgstr "Catégorie de FAQ parente"
 
 #: lib/register.php:158
-msgid "Parent Category:"
-msgstr "Catégorie parente :"
+msgid "Parent FAQ Category:"
+msgstr "Catégorie de FAQ parente :"
 
 #: lib/register.php:159
-msgid "Search Categories"
-msgstr "Rechercher dans les catégories"
+msgid "Search FAQ Categories"
+msgstr "Rechercher dans les catégories de FAQ"
 
 #: lib/register.php:160
-msgid "Popular Categories"
-msgstr "Catégories populaires"
+msgid "Popular FAQ Categories"
+msgstr "Catégories de FAQ populaires"
 
 #: lib/register.php:161
-msgid "Separate categories with commas"
-msgstr "Séparez les catégories avec des virgules"
+msgid "Separate FAQ categories with commas"
+msgstr "Séparez les catégories de FAQ avec des virgules"
 
 #: lib/register.php:162
-msgid "Add or remove categories"
-msgstr "Ajouter ou retirer des catégories"
+msgid "Add or remove FAQ categories"
+msgstr "Ajouter ou retirer des catégories de FAQ"
 
 #: lib/register.php:163
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
 #: lib/register.php:164
-msgid "No categories found."
-msgstr "Aucune catégorie trouvée."
+msgid "No FAQ categories found."
+msgstr "Aucune catégorie de FAQ trouvée."
 
 #: lib/register.php:165
-msgid "← Back to categories"
-msgstr "← Retour aux catégories"
+msgid "← Back to FAQ categories"
+msgstr "← Retour aux catégories de FAQ"
 
 #: lib/register.php:169
 msgctxt "Taxonomy label"
-msgid "Categories"
-msgstr "Catégories"
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
 
 #: lib/register.php:180
 msgctxt "Taxonomy description"
-msgid "Categories for Questions"
-msgstr "Catégories pour les questions"
+msgid "FAQ Categories for Questions"
+msgstr "Catégories de FAQ pour les questions"
 
 #: lib/register.php:191
 msgid "Questions"
@@ -276,3 +276,14 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgctxt "Admin menu name"
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgctxt "Taxonomy label"
+#~ msgid "Categories"
+#~ msgstr "Catégories"
