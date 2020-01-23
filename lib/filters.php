@@ -14,6 +14,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 	class WpssoFaqFilters {
 
 		private $p;
+		private $schema_type_faq      = 'webpage.faq';
+		private $schema_type_question = 'question';
 
 		public function __construct( &$plugin ) {
 
@@ -41,6 +43,15 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 					'get_term_options'   => 3,
 				),
 			) );
+
+			$this->p->options[ 'schema_type_for_tax_faq_category' ]    = $this->schema_type_faq;
+			$this->p->options[ 'schema_type_for_tax_faq_category:is' ] = 'disabled';
+
+			$this->p->options[ 'schema_type_for_tax_faq_tag' ]    = $this->schema_type_faq;
+			$this->p->options[ 'schema_type_for_tax_faq_tag:is' ] = 'disabled';
+
+			$this->p->options[ 'schema_type_for_question' ]    = $this->schema_type_question;
+			$this->p->options[ 'schema_type_for_question:is' ] = 'disabled';
 		}
 
 		public function filter_get_md_defaults( array $md_defs, array $mod ) {
@@ -49,14 +60,14 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
 
-					$md_defs[ 'schema_type' ] = 'question';
+					$md_defs[ 'schema_type' ] = $this->schema_type_question;
 				}
 			
 			} elseif ( $mod[ 'is_term' ] ) {
 
 				if ( WPSSOFAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
 
-					$md_defs[ 'schema_type' ] = 'webpage.faq';
+					$md_defs[ 'schema_type' ] = $this->schema_type_faq;
 				}
 			}
 
