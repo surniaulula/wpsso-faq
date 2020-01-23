@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 2.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 2.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -22,64 +22,64 @@ msgid "Shortcode"
 msgstr ""
 
 #: lib/register.php:148
-msgid "Categories"
+msgid "FAQ Categories"
 msgstr ""
 
 #: lib/register.php:149
-msgid "Category"
+msgid "FAQ Category"
 msgstr ""
 
 #: lib/register.php:150
 msgctxt "Admin menu name"
-msgid "Categories"
+msgid "FAQ Categories"
 msgstr ""
 
 #: lib/register.php:151
-msgid "All Categories"
+msgid "All FAQ Categories"
 msgstr ""
 
 #: lib/register.php:152
-msgid "Edit Category"
+msgid "Edit FAQ Category"
 msgstr ""
 
 #: lib/register.php:153
-msgid "View Category"
+msgid "View FAQ Category"
 msgstr ""
 
 #: lib/register.php:154
-msgid "Update Category"
+msgid "Update FAQ Category"
 msgstr ""
 
 #: lib/register.php:155
-msgid "Add New Category"
+msgid "Add New FAQ Category"
 msgstr ""
 
 #: lib/register.php:156
-msgid "New Category Name"
+msgid "New FAQ Category Name"
 msgstr ""
 
 #: lib/register.php:157
-msgid "Parent Category"
+msgid "Parent FAQ Category"
 msgstr ""
 
 #: lib/register.php:158
-msgid "Parent Category:"
+msgid "Parent FAQ Category:"
 msgstr ""
 
 #: lib/register.php:159
-msgid "Search Categories"
+msgid "Search FAQ Categories"
 msgstr ""
 
 #: lib/register.php:160
-msgid "Popular Categories"
+msgid "Popular FAQ Categories"
 msgstr ""
 
 #: lib/register.php:161
-msgid "Separate categories with commas"
+msgid "Separate FAQ categories with commas"
 msgstr ""
 
 #: lib/register.php:162
-msgid "Add or remove categories"
+msgid "Add or remove FAQ categories"
 msgstr ""
 
 #: lib/register.php:163
@@ -87,21 +87,21 @@ msgid "Choose from the most used"
 msgstr ""
 
 #: lib/register.php:164
-msgid "No categories found."
+msgid "No FAQ categories found."
 msgstr ""
 
 #: lib/register.php:165
-msgid "← Back to categories"
+msgid "← Back to FAQ categories"
 msgstr ""
 
 #: lib/register.php:169
 msgctxt "Taxonomy label"
-msgid "Categories"
+msgid "FAQ Categories"
 msgstr ""
 
 #: lib/register.php:180
 msgctxt "Taxonomy description"
-msgid "Categories for Questions"
+msgid "FAQ Categories for Questions"
 msgstr ""
 
 #: lib/register.php:191
