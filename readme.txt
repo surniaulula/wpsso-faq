@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.1 (2019/12/11)**
+**Version 2.0.1 (2019/12/22)**
 
 * **New Features**
 	* None.
