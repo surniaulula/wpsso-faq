@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 2.0.1
+Stable Tag: 2.1.0
 
 Manages Question / Answer pages and FAQ categories, along with offering shortcodes to include FAQs in your content.
 
@@ -66,6 +66,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-faq/)
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 2.1.0 (2019/12/22)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added the FAQ category title to the [[faq]] shortcode output.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.19.0.
 
 **Version 2.0.1 (2019/12/22)**
 
@@ -128,7 +143,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.1 =
+= 2.1.0 =
 
-(2020/01/22) Renamed the "Category" label to "FAQ Category".
+(2020/02/07) Added the FAQ category title to the [[faq]] shortcode output.
 
