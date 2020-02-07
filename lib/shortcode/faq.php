@@ -87,7 +87,17 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
+			$term_obj = get_term( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+
+			$term_link = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+
 			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
+
+			if ( is_string( $term_link ) ) {
+				$html .= '<h3><a href="' . $term_link . '">' . $term_obj->name . '</a></h3>' . "\n";
+			} else {
+				$html .= '<h3>' . $term_obj->name . '</h3>' . "\n";
+			}
 
 			$posts_args = array(
 				'orderby' => 'title',
