@@ -100,13 +100,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 				$use_bfo = SucomUtil::get_const( 'WPSSO_CONTENT_BLOCK_FILTER_OUTPUT', true );
 
-				$mtime_max = SucomUtil::get_const( 'WPSSO_CONTENT_FILTERS_MAX_TIME', 1.50 );
+				$mtime_max = SucomUtil::get_const( 'WPSSO_CONTENT_FILTERS_MAX_TIME', 1.0 );
 
 				$content = get_post_field( 'post_content', $mod[ 'id' ] );
 
 				$content = $this->p->util->safe_apply_filters( array( 'the_content', $content ), $mod, $mtime_max, $use_bfo );
-
-				$content = str_replace( ']]>', ']]&gt;', $content );
 
 				/* translators: Maximum number of words used in a post excerpt. */
 				$excerpt_length = intval( _x( '55', 'excerpt_length' ) );

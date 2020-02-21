@@ -241,7 +241,7 @@ msgid "Question and Answer"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:112
+#: lib/shortcode/question.php:110
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
