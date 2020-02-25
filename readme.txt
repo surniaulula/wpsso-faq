@@ -67,12 +67,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.5 (2020/02/25)**
+**Version 2.2.0-b.1 (2020/02/25)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added Schema FAQPage markup in the [[faq]] and [[question]] shortcode output.
+	* Added Schema markup in the [[faq]] and [[question]] shortcode output for the WPSSO JSON Premium add-on.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.19.0.
+	* WPSSO Core v6.21.3-b.1.
 
 **Version 2.1.0 (2020/02/07)**
 
@@ -158,9 +158,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.5 =
+= 2.2.0-b.1 =
 
-(2020/02/25) Added Schema FAQPage markup in the [[faq]] and [[question]] shortcode output.
+(2020/02/25) Added Schema markup in the [[faq]] and [[question]] shortcode output for the WPSSO JSON Premium add-on.
 
 = 2.1.0 =
 
