@@ -87,28 +87,19 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			$mod = $this->p->post->get_mod( $atts[ 'id' ] );
 
-			$url = get_permalink( $mod[ 'id' ] );
-
-			$title = get_the_title( $mod[ 'id' ] );
-			$title = apply_filters( 'wp_title', $title );
+			$post_url   = get_permalink( $mod[ 'id' ] );
+			$post_title = apply_filters( 'wp_title', get_the_title( $mod[ 'id' ] ) );
 
 			if ( has_excerpt( $mod[ 'id' ] ) ) {
 
-				$content = get_the_excerpt( $mod[ 'id' ] );	// Applies the 'get_the_excerpt' filter.
+				$content = $this->p->page->get_the_excerpt( $mod );
 
 			} else {
 
-				$use_bfo = SucomUtil::get_const( 'WPSSO_CONTENT_BLOCK_FILTER_OUTPUT', true );
-
-				$mtime_max = SucomUtil::get_const( 'WPSSO_CONTENT_FILTERS_MAX_TIME', 1.00 );
-
-				$content = get_post_field( 'post_content', $mod[ 'id' ] );
-
-				$content = $this->p->util->safe_apply_filters( array( 'the_content', $content ), $mod, $mtime_max, $use_bfo );
+				$content = $this->p->page->get_the_content( $mod );
 
 				/* translators: Maximum number of words used in a post excerpt. */
 				$excerpt_length = intval( _x( '55', 'excerpt_length' ) );
-
 				$excerpt_length = (int) apply_filters( 'excerpt_length', $excerpt_length );
 
 				$excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
@@ -116,9 +107,26 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				$content = wp_trim_words( $content, $excerpt_length, $excerpt_more );
 			}
 
+			/**
+			 * Add a schema json script if the 'WpssoJsonProPropHasPart' class is available to handle the markup, and
+			 * the 'schema' attribute is not '0' (ie. false).
+			 */
+			$json_html = '';
+
+			if ( class_exists( 'WpssoJsonProPropHasPart' ) ) {
+				if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+					$json_data = $this->p->schema->get_mod_json_data( $mod );
+					$json_html = '<script type="application/ld+json">' . $this->p->util->json_format( $json_data ) . '</script>' . "\n";
+				}
+			}
+
+			/**
+			 * Create the HTML.
+			 */
 			$html = '<div class="wpsso-question" id="wpsso-question-' . $mod[ 'id' ] . '">' . "\n";
+			$html .= $json_html;
 			$html .= '<div class="wpsso-question-title">' . "\n";
-			$html .= '<a href="' . $url . '">' . $title . '</a>' . "\n";
+			$html .= '<a href="' . $post_url . '">' . $post_title . '</a>' . "\n";
 			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
 			$html .= '<div class="wpsso-question-content">' . "\n";
 			$html .= '<p>' . $content . '</p>' . "\n";

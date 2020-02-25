@@ -87,27 +87,44 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			$term_obj = get_term( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+			$term_link  = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+			$term_title = $this->p->page->get_term_title( $mod[ 'id' ], $sep = '', $prefix = '' );
 
-			$term_link = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+			/**
+			 * Add a schema json script if the 'WpssoJsonProPropHasPart' class is available to handle the markup, and
+			 * the 'schema' attribute is not '0' (ie. false).
+			 */
+			$json_html = '';
 
-			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
-
-			if ( is_string( $term_link ) ) {
-				$html .= '<h3><a href="' . $term_link . '">' . $term_obj->name . '</a></h3>' . "\n";
-			} else {
-				$html .= '<h3>' . $term_obj->name . '</h3>' . "\n";
+			if ( class_exists( 'WpssoJsonProPropHasPart' ) ) {
+				if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+					$json_data = $this->p->schema->get_mod_json_data( $mod );
+					$json_html = '<script type="application/ld+json">' . $this->p->util->json_format( $json_data ) . '</script>' . "\n";
+				}
 			}
 
-			$posts_args = array(
-				'orderby' => 'title',
-				'order'   => 'ASC',
-			);
+			/**
+			 * Create the HTML.
+			 */
+			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
+			$html .= $json_html;
 
+			if ( is_string( $term_link ) ) {
+				$html .= '<h3><a href="' . $term_link . '">' . $term_title . '</a></h3>' . "\n";
+			} else {
+				$html .= '<h3>' . $term_title . '</h3>' . "\n";
+			}
+
+			$posts_args = array( 'orderby' => 'title', 'order'   => 'ASC' );
 			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp = -1, $paged = null, $posts_args );
 
 			foreach ( $posts_mods as $post_mod ) {
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '"]' );
+
+				/**
+				 * Signal the question shortcode not to include schema markup since the faq shortcode may already
+				 * include markup for all the questions.
+				 */
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" schema="0"]' );
 			}
 			
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";
