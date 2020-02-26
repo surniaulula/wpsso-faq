@@ -91,23 +91,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$term_title = $this->p->page->get_term_title( $mod[ 'id' ], $sep = '', $prefix = '' );
 
 			/**
-			 * Add a schema json script if the 'WpssoJsonProPropHasPart' class is available to handle the markup, and
-			 * the 'schema' attribute is not '0' (ie. false).
-			 */
-			$json_html = '';
-
-			if ( class_exists( 'WpssoJsonProPropHasPart' ) ) {
-				if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
-					$json_data = $this->p->schema->get_mod_json_data( $mod );
-					$json_html = '<script type="application/ld+json">' . $this->p->util->json_format( $json_data ) . '</script>' . "\n";
-				}
-			}
-
-			/**
 			 * Create the HTML.
 			 */
 			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
-			$html .= $json_html;
+		
+			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
+			}
 
 			if ( is_string( $term_link ) ) {
 				$html .= '<h3><a href="' . $term_link . '">' . $term_title . '</a></h3>' . "\n";

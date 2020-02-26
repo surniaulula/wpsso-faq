@@ -108,23 +108,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			/**
-			 * Add a schema json script if the 'WpssoJsonProPropHasPart' class is available to handle the markup, and
-			 * the 'schema' attribute is not '0' (ie. false).
-			 */
-			$json_html = '';
-
-			if ( class_exists( 'WpssoJsonProPropHasPart' ) ) {
-				if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
-					$json_data = $this->p->schema->get_mod_json_data( $mod );
-					$json_html = '<script type="application/ld+json">' . $this->p->util->json_format( $json_data ) . '</script>' . "\n";
-				}
-			}
-
-			/**
 			 * Create the HTML.
 			 */
 			$html = '<div class="wpsso-question" id="wpsso-question-' . $mod[ 'id' ] . '">' . "\n";
-			$html .= $json_html;
+
+			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
+			}
+
 			$html .= '<div class="wpsso-question-title">' . "\n";
 			$html .= '<a href="' . $post_url . '">' . $post_title . '</a>' . "\n";
 			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
