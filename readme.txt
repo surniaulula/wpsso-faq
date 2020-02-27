@@ -6,20 +6,20 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
-Tags: shortcodes, faq, faqpage, question, answer, schema, schema.org, google, rich results, faqs, faq page
+Tags: faq, faqpage, question, answer, schema, schema.org, shortcode, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
 Stable Tag: 2.2.0
 
-Manages Question / Answer pages and FAQ categories, along with offering shortcodes to include FAQs in your content.
+Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-Adds a new FAQs admin menu to create and manager Question pages and FAQ categories.
+Adds a new WordPress FAQs admin menu to create and manage Question / Answer pages and FAQ categories.
 
 Includes `[faq]` and `[question]` shortcodes to include FAQs or Questions in your post/page content.
 
