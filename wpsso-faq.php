@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Manage FAQ categories with Question and Answer pages.
+ * Description: Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.
  * Requires PHP: 5.5
  * Requires At Least: 4.0
  * Tested Up To: 5.3.2

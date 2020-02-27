@@ -3,4 +3,4 @@
 /**
  * Extract of translatable text strings from the static config array.
  */
-_x( 'Manage FAQ categories with Question and Answer pages.', 'plugin description', 'wpsso-faq' );
+_x( 'Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.', 'plugin description', 'wpsso-faq' );

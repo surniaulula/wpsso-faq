@@ -14,7 +14,9 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
-msgid "Manage FAQ categories with Question and Answer pages."
+msgid ""
+"Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs "
+"anywhere in your content."
 msgstr ""
 
 #: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
@@ -267,7 +269,9 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Manage FAQ categories with Question and Answer pages."
+msgid ""
+"Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs "
+"anywhere in your content."
 msgstr ""
 
 #. Author of the plugin/theme
