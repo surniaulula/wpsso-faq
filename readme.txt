@@ -67,12 +67,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-rc.2 (2020/02/27)**
+**Version 2.2.0 (2020/02/27)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added Schema markup in the `[faq]` and `[question]` shortcode output for the WPSSO JSON Premium add-on.
+	* Added a filter hook in the `[faq]` and `[question]` shortcodes for the [WPSSO Schema JSON-LD Markup Premium](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) add-on.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.22.0-rc.2.
+	* WPSSO Core v6.22.0.
 
 **Version 2.1.0 (2020/02/07)**
 
@@ -158,9 +158,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-rc.2 =
+= 2.2.0 =
 
-(2020/02/27) Added Schema markup in the `[faq]` and `[question]` shortcode output for the WPSSO JSON Premium add-on.
+(2020/02/27) Added a filter hook in the `[faq]` and `[question]` shortcodes for the WPSSO Schema JSON-LD Markup Premium add-on.
 
 = 2.1.0 =
 
