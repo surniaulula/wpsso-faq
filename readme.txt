@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
-Tags: faq, faqpage, question, answer, schema, schema.org, shortcode, google, rich results, faqs, faq page
+Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0

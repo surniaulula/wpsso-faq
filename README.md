@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>faq, faqpage, question, answer, schema, schema.org, shortcode, google, rich results, faqs, faq page</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page</td></tr>
 </table>
 
 <h2>Description</h2>
