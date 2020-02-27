@@ -27,7 +27,7 @@ Do you have a feature suggestion?
 
 [Post your suggestion in the WPSSO FAQ Manager support forum.](https://wordpress.org/support/plugin/wpsso-faq/)
 
-**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcodes or FAQ categories, you will need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to create the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create meta tags or Schema markup.
+**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create Schema markup or meta tags.
 
 **Optional:** See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating an archive template for FAQ categories based on your theme archive template.
 
