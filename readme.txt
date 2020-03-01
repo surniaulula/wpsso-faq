@@ -162,7 +162,3 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2020/02/27) Added a filter hook in the `[faq]` and `[question]` shortcodes for the WPSSO Schema JSON-LD Markup Premium add-on.
 
-= 2.1.0 =
-
-(2020/02/07) Added the FAQ category title to the `[faq]` shortcode output.
-
