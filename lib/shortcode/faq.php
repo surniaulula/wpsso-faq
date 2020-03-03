@@ -87,8 +87,9 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			$term_link  = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
-			$term_title = $this->p->page->get_term_title( $mod[ 'id' ], $sep = '', $prefix = '' );
+			$term_link = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+
+			$term_title = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
 
 			/**
 			 * Create the HTML.
