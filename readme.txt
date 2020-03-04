@@ -10,7 +10,7 @@ Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, ric
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
-Tested Up To: 5.3.2
+Tested Up To: 5.4
 Stable Tag: 2.2.1
 
 Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.
