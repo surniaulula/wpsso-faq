@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page
 Contributors: jsmoriss
-Requires PHP: 5.5
+Requires PHP: 5.6
 Requires At Least: 4.0
 Tested Up To: 5.4
 Stable Tag: 2.2.1
@@ -78,24 +78,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v5.5.
+	* PHP v5.6.
 	* WordPress v4.0.
-	* WPSSO Core v6.22.0.
-
-**Version 2.2.0 (2020/02/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a filter hook in the `[faq]` and `[question]` shortcodes for the [WPSSO Schema JSON-LD Markup Premium](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) add-on.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.22.0.
+	* WPSSO Core v6.23.1.
 
 == Upgrade Notice ==
 
