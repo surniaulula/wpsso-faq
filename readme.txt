@@ -67,6 +67,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.2.1-rc.1 (2020/03/04)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Removed application of the 'wp_title' filter on FAQ and Question titles.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.22.0.
+
 **Version 2.2.0 (2020/02/27)**
 
 * **New Features**
@@ -82,81 +97,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.22.0.
 
-**Version 2.1.0 (2020/02/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added the FAQ category title to the `[faq]` shortcode output.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.19.0.
-
-**Version 2.0.1 (2019/12/22)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed the "Category" label to "FAQ Category".
-	* Disabled the SSO &gt; Schema Markup &gt; Type by Post Type for Questions option.
-	* Disabled the SSO &gt; Schema Markup &gt; Type by Taxonomy for FAQ Categories option.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.16.2.
-
-**Version 2.0.0 (2019/12/11)**
-
-* **New Features**
-	* Added a `[faq]` shortcode to include a FAQ category in post/page content.
-	* Added a `[question]` shortcode to include individual Questions in post/page content.
-* **Improvements**
-	* Added a "Shortcode" column to the "All Questions" and FAQ "Category" lists.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added new library files:
-		* lib/post.php
-		* lib/style.php
-		* lib/term.php
-		* lib/shortcode/faq.php
-		* lib/shortcode/question.php
-	* Added new hard-coded / fixed constants:
-		* WPSSOFAQ_CATEGORY_TAXONOMY = 'faq_category'
-		* WPSSOFAQ_QUESTION_POST_TYPE = 'question'
-	* Added new variable constants:
-		* WPSSOFAQ_FAQ_SHORTCODE_NAME = 'faq'
-		* WPSSOFAQ_QUESTION_SHORTCODE_NAME = 'question'
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.16.2.
-
-**Version 1.1.0 (2019/12/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a `flush_rewrite_rules()` function call on plugin activation / deactivation to refresh the 'faq_category' taxonomy and 'question' post type URLs.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.15.0.
-
 == Upgrade Notice ==
+
+= 2.2.1-rc.1 =
+
+(2020/03/04) Removed application of the 'wp_title' filter on FAQ and Question titles.
 
 = 2.2.0 =
 
