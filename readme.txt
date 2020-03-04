@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 2.2.0
+Stable Tag: 2.2.1
 
 Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.
 
@@ -102,8 +102,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 2.2.1 =
 
 (2020/03/04) Removed application of the 'wp_title' filter on FAQ and Question titles.
-
-= 2.2.0 =
-
-(2020/02/27) Added a filter hook in the `[faq]` and `[question]` shortcodes for the WPSSO Schema JSON-LD Markup Premium add-on.
 
