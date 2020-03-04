@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.1-rc.1 (2020/03/04)**
+**Version 2.2.1 (2020/03/04)**
 
 * **New Features**
 	* None.
@@ -99,7 +99,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.1-rc.1 =
+= 2.2.1 =
 
 (2020/03/04) Removed application of the 'wp_title' filter on FAQ and Question titles.
 
