@@ -87,8 +87,9 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			$mod = $this->p->post->get_mod( $atts[ 'id' ] );
 
-			$post_url   = get_permalink( $mod[ 'id' ] );
-			$post_title = apply_filters( 'wp_title', get_the_title( $mod[ 'id' ] ) );
+			$post_url = get_permalink( $mod[ 'id' ] );
+
+			$title_text = get_the_title( $mod[ 'id' ] );
 
 			if ( has_excerpt( $mod[ 'id' ] ) ) {
 
@@ -117,7 +118,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			$html .= '<div class="wpsso-question-title">' . "\n";
-			$html .= '<a href="' . $post_url . '">' . $post_title . '</a>' . "\n";
+			$html .= '<a href="' . $post_url . '">' . $title_text . '</a>' . "\n";
 			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
 			$html .= '<div class="wpsso-question-content">' . "\n";
 			$html .= '<p>' . $content . '</p>' . "\n";

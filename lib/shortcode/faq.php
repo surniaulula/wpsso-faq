@@ -87,9 +87,9 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			$term_link = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+			$term_url = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
 
-			$term_title = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
+			$title_text = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
 
 			/**
 			 * Create the HTML.
@@ -100,10 +100,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
 			}
 
-			if ( is_string( $term_link ) ) {
-				$html .= '<h3><a href="' . $term_link . '">' . $term_title . '</a></h3>' . "\n";
+			if ( is_string( $term_url ) ) {
+				$html .= '<h3><a href="' . $term_url . '">' . $title_text . '</a></h3>' . "\n";
 			} else {
-				$html .= '<h3>' . $term_title . '</h3>' . "\n";
+				$html .= '<h3>' . $title_text . '</h3>' . "\n";
 			}
 
 			$posts_args = array( 'orderby' => 'title', 'order'   => 'ASC' );
