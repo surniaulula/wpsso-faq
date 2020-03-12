@@ -27,6 +27,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$this->shortcode_name = WPSSOFAQ_FAQ_SHORTCODE_NAME;
 
 			$this->add_shortcode();
+
+			$this->p->util->add_plugin_filters( $this, array(
+				'do_shortcode' => 1,
+			) );
 		}
 
 		public function add_shortcode() {
@@ -121,6 +125,18 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";
 
 			return $html;
+		}
+
+		/**
+		 * When the content filter is disabled, fallback and apply our own shortcode filter.
+		 */
+		public function filter_do_shortcode( $content ) {
+
+			if ( false !== strpos( $content, '[' . $this->shortcode_name ) ) {
+				$content = SucomUtilWP::do_shortcode_names( array( $this->shortcode_name ), $content );
+			}
+
+			return $content;
 		}
 	}
 }
