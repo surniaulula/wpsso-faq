@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.0
 Tested Up To: 5.4
-Stable Tag: 2.2.1
+Stable Tag: 2.3.0
 
 Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content.
 
