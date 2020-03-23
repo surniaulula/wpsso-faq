@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.0
  * Tested Up To: 5.4
- * Version: 2.3.0
+ * Version: 2.4.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -185,6 +185,9 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 			$this->term    = new WpssoFaqTerm( $this->p );
 		}
 
+		/**
+		 * All WPSSO objects are instantiated and configured.
+		 */
 		public function wpsso_init_plugin() {
 
 			if ( $this->p->debug->enabled ) {
@@ -193,7 +196,7 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 
 			if ( ! $this->have_min_version ) {
 
-				$this->min_version_notice();
+				$this->min_version_notice();	// Show minimum version notice.
 
 				return;	// Stop here.
 			}

@@ -14,6 +14,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 	class WpssoFaqFilters {
 
 		private $p;
+		private $og_type_faq          = 'website';
+		private $og_type_question     = 'article';
 		private $schema_type_faq      = 'webpage.faq';
 		private $schema_type_question = 'question';
 
@@ -47,11 +49,14 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			/**
 			 * Hard-code and disable these options in the settings pages.
 			 */
+			$this->p->options[ 'og_type_for_question' ]    = $this->og_type_question;
+			$this->p->options[ 'og_type_for_question:is' ] = 'disabled';
+
+			$this->p->options[ 'og_type_for_tax_faq_category' ]    = $this->og_type_faq;
+			$this->p->options[ 'og_type_for_tax_faq_category:is' ] = 'disabled';
+
 			$this->p->options[ 'schema_type_for_tax_faq_category' ]    = $this->schema_type_faq;
 			$this->p->options[ 'schema_type_for_tax_faq_category:is' ] = 'disabled';
-
-			$this->p->options[ 'schema_type_for_tax_faq_tag' ]    = $this->schema_type_faq;
-			$this->p->options[ 'schema_type_for_tax_faq_tag:is' ] = 'disabled';
 
 			$this->p->options[ 'schema_type_for_question' ]    = $this->schema_type_question;
 			$this->p->options[ 'schema_type_for_question:is' ] = 'disabled';
@@ -63,12 +68,16 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
 
+					$md_defs[ 'og_type' ] = $this->og_type_question;
+
 					$md_defs[ 'schema_type' ] = $this->schema_type_question;
 				}
 			
 			} elseif ( $mod[ 'is_term' ] ) {
 
 				if ( WPSSOFAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
+
+					$md_defs[ 'og_type' ] = $this->og_type_faq;
 
 					$md_defs[ 'schema_type' ] = $this->schema_type_faq;
 				}
