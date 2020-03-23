@@ -67,12 +67,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-dev.1 (TBD)**
+**Version 2.4.0-dev.1 (2020/03/23)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Added disabling of the Open Graph Type option for FAQ and Question pages.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -113,6 +113,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.23.2.
 
 == Upgrade Notice ==
+
+= 2.4.0-dev.1 =
+
+(2020/03/23) Added disabling of the Open Graph Type option for FAQ and Question pages.
 
 = 2.3.0 =
 
