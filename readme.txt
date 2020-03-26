@@ -67,7 +67,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-rc.1 (2020/03/26)**
+**Version 2.4.0-rc.2 (2020/03/26)**
 
 * **New Features**
 	* None.
@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.0.
-	* WPSSO Core v6.26.0-rc.1.
+	* WPSSO Core v6.26.0-rc.2.
 
 **Version 2.3.0 (2020/03/14)**
 
@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-rc.1 =
+= 2.4.0-rc.2 =
 
 (2020/03/26) Added disabling of the Open Graph Type option for FAQ and Question pages.
 
