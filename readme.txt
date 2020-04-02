@@ -27,7 +27,7 @@ Do you have a feature suggestion?
 
 [Post your suggestion in the WPSSO FAQ Manager support forum.](https://wordpress.org/support/plugin/wpsso-faq/)
 
-**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup Premium add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create Schema markup or meta tags.
+**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create Schema markup or meta tags.
 
 **Optional:** See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating an archive template for FAQ categories based on your theme archive template.
 
@@ -67,6 +67,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.5.0-dev.1 (2020/04/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored WPSSO Core active and minimum version dependency checks.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.0.
+	* WPSSO Core v6.27.1.
+
 **Version 2.4.0 (2020/03/27)**
 
 * **New Features**
@@ -97,22 +112,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.25.0.
 
-**Version 2.2.1 (2020/03/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Removed application of the 'wp_title' filter on FAQ and Question titles.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.23.2.
-
 == Upgrade Notice ==
+
+= 2.5.0-dev.1 =
+
+(2020/04/02) Refactored WPSSO Core active and minimum version dependency checks.
 
 = 2.4.0 =
 
@@ -121,8 +125,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 2.3.0 =
 
 (2020/03/14) Added a filter hook to expand the 'faq' and 'question' shortcodes when the "Use WordPress Content Filters" option is disabled.
-
-= 2.2.1 =
-
-(2020/03/04) Removed application of the 'wp_title' filter on FAQ and Question titles.
 
