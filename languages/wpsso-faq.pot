@@ -248,13 +248,13 @@ msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
 
-#: wpsso-faq.php:116
+#: wpsso-faq.php:122
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "plugin or <a href=\"%3$s\">deactivate this add-on</a>."
 msgstr ""
 
-#: wpsso-faq.php:225
+#: wpsso-faq.php:231
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
