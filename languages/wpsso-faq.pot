@@ -15,8 +15,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs "
-"anywhere in your content."
+"Create FAQ and Question / Answer Pages with Optional Shortcodes to Include "
+"FAQs and Questions in your Content."
 msgstr ""
 
 #: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
@@ -270,8 +270,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs "
-"anywhere in your content."
+"Create FAQ and Question / Answer Pages with Optional Shortcodes to Include "
+"FAQs and Questions in your Content."
 msgstr ""
 
 #. Author of the plugin/theme
