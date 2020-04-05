@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-04-03 11:24-0700\n"
-"PO-Revision-Date: 2020-04-03 11:24-0700\n"
+"POT-Creation-Date: 2020-04-05 15:44-0700\n"
+"PO-Revision-Date: 2020-04-05 15:44-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,8 +17,8 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
-msgid "Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content."
-msgstr "Créez des pages FAQ et Questions / Réponses et/ou utilisez des shortcodes pour inclure des FAQ dans votre contenu."
+msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
+msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
 msgid "Shortcode"
@@ -266,8 +266,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-faq/"
 
 #. Description of the plugin/theme
-msgid "Create FAQ and Question / Answer pages and/or use shortcodes to include FAQs anywhere in your content."
-msgstr "Créez des pages FAQ et Questions / Réponses et/ou utilisez des shortcodes pour inclure des FAQ dans votre contenu."
+msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
+msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
