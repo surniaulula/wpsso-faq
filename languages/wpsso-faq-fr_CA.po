@@ -1,0 +1,278 @@
+# Copyright (C) 2015 WPSSO App Meta (WPSSO AM)
+# This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPSSO FAQ Manager 2.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
+"POT-Creation-Date: 2020-04-05 15:44-0700\n"
+"PO-Revision-Date: 2020-04-05 15:44-0700\n"
+"Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lib/gettext-config.php:6
+msgctxt "plugin description"
+msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
+msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
+
+#: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: lib/register.php:148
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
+
+#: lib/register.php:149
+msgid "FAQ Category"
+msgstr "Catégorie de FAQ"
+
+#: lib/register.php:150
+msgctxt "Admin menu name"
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
+
+#: lib/register.php:151
+msgid "All FAQ Categories"
+msgstr "Toutes catégories de FAQ"
+
+#: lib/register.php:152
+msgid "Edit FAQ Category"
+msgstr "Modifier la catégorie de FAQ"
+
+#: lib/register.php:153
+msgid "View FAQ Category"
+msgstr "Voir la catégorie de FAQ"
+
+#: lib/register.php:154
+msgid "Update FAQ Category"
+msgstr "Mettre à jour la catégorie de FAQ"
+
+#: lib/register.php:155
+msgid "Add New FAQ Category"
+msgstr "Ajouter une nouvelle catégorie de FAQ"
+
+#: lib/register.php:156
+msgid "New FAQ Category Name"
+msgstr "Nom de la nouvelle catégorie de FAQ"
+
+#: lib/register.php:157
+msgid "Parent FAQ Category"
+msgstr "Catégorie de FAQ parente"
+
+#: lib/register.php:158
+msgid "Parent FAQ Category:"
+msgstr "Catégorie de FAQ parente :"
+
+#: lib/register.php:159
+msgid "Search FAQ Categories"
+msgstr "Rechercher dans les catégories de FAQ"
+
+#: lib/register.php:160
+msgid "Popular FAQ Categories"
+msgstr "Catégories de FAQ populaires"
+
+#: lib/register.php:161
+msgid "Separate FAQ categories with commas"
+msgstr "Séparez les catégories de FAQ avec des virgules"
+
+#: lib/register.php:162
+msgid "Add or remove FAQ categories"
+msgstr "Ajouter ou retirer des catégories de FAQ"
+
+#: lib/register.php:163
+msgid "Choose from the most used"
+msgstr "Choisir parmi les plus utilisées"
+
+#: lib/register.php:164
+msgid "No FAQ categories found."
+msgstr "Aucune catégorie de FAQ trouvée."
+
+#: lib/register.php:165
+msgid "← Back to FAQ categories"
+msgstr "← Retour aux catégories de FAQ"
+
+#: lib/register.php:169
+msgctxt "Taxonomy label"
+msgid "FAQ Categories"
+msgstr "Catégories de FAQ"
+
+#: lib/register.php:180
+msgctxt "Taxonomy description"
+msgid "FAQ Categories for Questions"
+msgstr "Catégories de FAQ pour les questions"
+
+#: lib/register.php:191
+msgid "Questions"
+msgstr "Questions"
+
+#: lib/register.php:192
+msgid "Question"
+msgstr "Question"
+
+#: lib/register.php:193
+msgid "Add New"
+msgstr "Ajouter"
+
+#: lib/register.php:194
+msgid "Add New Question"
+msgstr "Ajouter une nouvelle question"
+
+#: lib/register.php:195
+msgid "Edit Question"
+msgstr "Modifier la question"
+
+#: lib/register.php:196
+msgid "New Question"
+msgstr "Nouvelle question"
+
+#: lib/register.php:197
+msgid "View Question"
+msgstr "Voir la question"
+
+#: lib/register.php:198
+msgid "View FAQs"
+msgstr "Voir les FAQs"
+
+#: lib/register.php:199
+msgid "Search Questions"
+msgstr "Rechercher dans les questions"
+
+#: lib/register.php:200
+msgid "No questions found"
+msgstr "Aucune question trouvée"
+
+#: lib/register.php:201
+msgid "No questions found in Trash"
+msgstr "Aucune question trouvée dans la corbeille"
+
+#: lib/register.php:202
+msgid "Parent Question:"
+msgstr "Question parente :"
+
+#: lib/register.php:203
+msgid "All Questions"
+msgstr "Toutes questions"
+
+#: lib/register.php:204
+msgid "Question Archives"
+msgstr "Archives de questions"
+
+#: lib/register.php:205
+msgid "Question Attributes"
+msgstr "Attributs de question"
+
+#: lib/register.php:206
+msgid "Insert into answer"
+msgstr "Insérer dans la réponse"
+
+#: lib/register.php:207
+msgid "Uploaded to this question"
+msgstr "Téléchargé à cette question"
+
+#: lib/register.php:208
+msgid "Question Image"
+msgstr "Image de question"
+
+#: lib/register.php:209
+msgid "Set question image"
+msgstr "Définir l'image de la question"
+
+#: lib/register.php:210
+msgid "Remove question image"
+msgstr "Supprimer l'image de la question"
+
+#: lib/register.php:211
+msgid "Use as question image"
+msgstr "Utiliser comme image de question"
+
+#: lib/register.php:212
+msgctxt "Admin menu name"
+msgid "FAQs"
+msgstr "FAQs"
+
+#: lib/register.php:213
+msgid "Filter questions"
+msgstr "Filtrer les questions"
+
+#: lib/register.php:214
+msgid "Questions list navigation"
+msgstr "Navigation de la liste des questions"
+
+#: lib/register.php:215
+msgid "Questions list"
+msgstr "Liste des questions"
+
+#: lib/register.php:216
+msgctxt "Admin bar name"
+msgid "Question"
+msgstr "Question"
+
+#: lib/register.php:217
+msgid "Question published."
+msgstr "Question publiée."
+
+#: lib/register.php:218
+msgid "Question published privately."
+msgstr "Question publiée en privé."
+
+#: lib/register.php:219
+msgid "Question reverted to draft."
+msgstr "Question remis en brouillon."
+
+#: lib/register.php:220
+msgid "Question scheduled."
+msgstr "Question planifiée."
+
+#: lib/register.php:221
+msgid "Question updated."
+msgstr "Question mise à jour."
+
+#: lib/register.php:225
+msgctxt "Post type label"
+msgid "Question"
+msgstr "Question"
+
+#: lib/register.php:227
+msgctxt "Post type description"
+msgid "Question and Answer"
+msgstr "Question et Réponse"
+
+#. translators: Maximum number of words used in a post excerpt.
+#: lib/shortcode/question.php:107
+msgctxt "excerpt_length"
+msgid "55"
+msgstr "55"
+
+#: wpsso-faq.php:122
+msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
+msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension ou <a href=\"%3$s\">désactiver cet ajout</a>."
+
+#: wpsso-faq.php:231
+msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
+msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
+
+#. Plugin Name of the plugin/theme
+msgid "WPSSO FAQ Manager"
+msgstr "WPSSO FAQ Manager"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
+msgstr "https://wpsso.com/extend/plugins/wpsso-faq/"
+
+#. Description of the plugin/theme
+msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
+msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
+
+#. Author of the plugin/theme
+msgid "JS Morisset"
+msgstr "JS Morisset"
+
+#. Author URI of the plugin/theme
+msgid "https://wpsso.com/"
+msgstr "https://wpsso.com/"
