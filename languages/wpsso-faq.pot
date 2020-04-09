@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 2.5.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 2.6.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -13,6 +13,11 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "FAQ Settings"
+msgstr ""
+
+#: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
 "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include "
@@ -246,6 +251,16 @@ msgstr ""
 #: lib/shortcode/question.php:107
 msgctxt "excerpt_length"
 msgid "55"
+msgstr ""
+
+#: lib/submenu/faq-general.php:36
+msgctxt "metabox title"
+msgid "FAQ Settings"
+msgstr ""
+
+#: lib/submenu/faq-general.php:64
+msgctxt "option label"
+msgid "No Label"
 msgstr ""
 
 #: wpsso-faq.php:121

@@ -112,10 +112,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				$content = wp_trim_words( $content, $excerpt_length, $excerpt_more );
 			}
 
+			$css_id = 'wpsso-question-' . $mod[ 'id' ];
+
 			/**
 			 * Create the HTML.
 			 */
-			$html = '<div class="wpsso-question" id="wpsso-question-' . $mod[ 'id' ] . '">' . "\n";
+			$html = '<a name="' . $css_id . '"></a>' . "\n";
+			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
 			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
 				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
