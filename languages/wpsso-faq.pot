@@ -258,9 +258,22 @@ msgctxt "metabox title"
 msgid "FAQ Settings"
 msgstr ""
 
-#: lib/submenu/faq-general.php:64
+#: lib/submenu/faq-general.php:55
+msgctxt "metabox tab"
+msgid "Shortcode Defaults"
+msgstr ""
+
+#: lib/submenu/faq-general.php:82
 msgctxt "option label"
-msgid "No Label"
+msgid "Question Answer Text"
+msgstr ""
+
+#: lib/submenu/faq-general.php:85
+msgid "Content Text"
+msgstr ""
+
+#: lib/submenu/faq-general.php:86
+msgid "Excerpt"
 msgstr ""
 
 #: wpsso-faq.php:121
