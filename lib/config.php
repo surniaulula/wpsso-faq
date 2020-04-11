@@ -66,6 +66,15 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					),
 				),
 			),
+
+			/**
+			 * Additional add-on setting options.
+			 */
+			'opt' => array(
+				'defaults' => array(
+					'faq_answer_text' => 'excerpt',
+				),
+			),
 		);
 
 		public static function get_version( $add_slug = false ) {

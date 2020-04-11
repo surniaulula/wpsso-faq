@@ -95,21 +95,38 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$title_text = get_the_title( $mod[ 'id' ] );
 
-			if ( has_excerpt( $mod[ 'id' ] ) ) {
+			$answer_text = isset( $this->p->options[ 'faq_answer_text' ] ) ?
+				$this->p->options[ 'faq_answer_text' ] : 'excerpt';
 
-				$content = $this->p->page->get_the_excerpt( $mod );
+			switch ( $answer_text ) {
 
-			} else {
+				case 'content':
 
-				$content = $this->p->page->get_the_content( $mod );
+					$content = $this->p->page->get_the_content( $mod );
 
-				/* translators: Maximum number of words used in a post excerpt. */
-				$excerpt_length = intval( _x( '55', 'excerpt_length' ) );
-				$excerpt_length = (int) apply_filters( 'excerpt_length', $excerpt_length );
+					break;
 
-				$excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
+				case 'excerpt':
+				default:
 
-				$content = wp_trim_words( $content, $excerpt_length, $excerpt_more );
+					if ( has_excerpt( $mod[ 'id' ] ) ) {
+
+						$content = $this->p->page->get_the_excerpt( $mod );
+
+					} else {
+
+						$content = $this->p->page->get_the_content( $mod );
+
+						/* translators: Maximum number of words used in a post excerpt. */
+						$excerpt_length = intval( _x( '55', 'excerpt_length' ) );
+						$excerpt_length = (int) apply_filters( 'excerpt_length', $excerpt_length );
+
+						$excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
+
+						$content = wp_trim_words( $content, $excerpt_length, $excerpt_more );
+					}
+
+					break;
 			}
 
 			$css_id = 'wpsso-question-' . $mod[ 'id' ];

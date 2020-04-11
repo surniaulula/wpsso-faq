@@ -248,31 +248,26 @@ msgid "Question and Answer"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:107
+#: lib/shortcode/question.php:121
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
 
 #: lib/submenu/faq-general.php:36
 msgctxt "metabox title"
-msgid "FAQ Settings"
-msgstr ""
-
-#: lib/submenu/faq-general.php:55
-msgctxt "metabox tab"
 msgid "Shortcode Defaults"
 msgstr ""
 
-#: lib/submenu/faq-general.php:82
+#: lib/submenu/faq-general.php:80
 msgctxt "option label"
-msgid "Question Answer Text"
+msgid "Answer Text"
 msgstr ""
 
-#: lib/submenu/faq-general.php:85
-msgid "Content Text"
+#: lib/submenu/faq-general.php:83
+msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:86
+#: lib/submenu/faq-general.php:84
 msgid "Excerpt"
 msgstr ""
 

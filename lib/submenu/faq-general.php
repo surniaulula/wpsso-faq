@@ -32,8 +32,8 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
-			$metabox_id      = 'faq';
-			$metabox_title   = _x( 'FAQ Settings', 'metabox title', 'wpsso-faq' );
+			$metabox_id      = 'shortcodes';
+			$metabox_title   = _x( 'Shortcode Defaults', 'metabox title', 'wpsso-faq' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
 			$metabox_prio    = 'default';
@@ -45,15 +45,13 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
-		public function show_metabox_faq() {
+		public function show_metabox_shortcodes() {
 
-			$metabox_id = 'faq-general';
+			$metabox_id = 'shortcodes';
 
 			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_tabs' );
 
-			$tabs = apply_filters( $filter_name, array(
-				'shortcodes' => _x( 'Shortcode Defaults', 'metabox tab', 'wpsso-faq' ),
-			) );
+			$tabs = apply_filters( $filter_name, $this->p->cf[ 'plugin' ][ 'wpssofaq' ][ 'lib' ][ 'shortcode' ] );
 
 			$table_rows = array();
 
@@ -76,13 +74,13 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 			switch ( $metabox_id . '-' . $tab_key ) {
 
-				case 'faq-general-shortcodes':
+				case 'shortcodes-question':
 
 					$table_rows[ 'faq_answer_text' ] = '' .
-					$this->form->get_th_html( _x( 'Question Answer Text', 'option label', 'wpsso-faq' ),
+					$this->form->get_th_html( _x( 'Answer Text', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_answer_text' ) . 
 					'<td>' . $this->form->get_select( 'faq_answer_text', array(
-						'content' => __( 'Content Text', 'wpsso-faq' ),
+						'content' => __( 'Full Content', 'wpsso-faq' ),
 						'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
 					) ) . '</td>';
 
