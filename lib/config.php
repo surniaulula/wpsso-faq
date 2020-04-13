@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 						'wpsso' => array(
 							'class'       => 'Wpsso',
 							'name'        => 'WPSSO Core',
-							'min_version' => '6.28.0',
+							'min_version' => '6.29.0-dev.1',
 						),
 					),
 
@@ -73,6 +73,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			'opt' => array(
 				'defaults' => array(
 					'faq_answer_text' => 'excerpt',
+					'faq_answer_hide' => 0,
 				),
 			),
 		);

@@ -135,6 +135,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 * Create the HTML.
 			 */
 			$html = '<a name="' . $css_id . '"></a>' . "\n";
+
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
 			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
@@ -142,11 +143,31 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			$html .= '<div class="wpsso-question-title">' . "\n";
-			$html .= '<a href="' . $post_url . '">' . $title_text . '</a>' . "\n";
+
+			$html .= '<a';
+
+			if ( empty( $this->p->options[ 'faq_answer_hide' ] ) ) {
+				$html .= ' href="' . $post_url . '">' . $title_text . '</a>' . "\n";
+			} else {
+				$html .= ' onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';"';
+			}
+
+			$html .= '>' . $title_text . '</a>' . "\n";
+
 			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
-			$html .= '<div class="wpsso-question-content">' . "\n";
+
+			$html .= '<div class="wpsso-question-content" id="' . $css_id . '-content"';
+
+			if ( ! empty( $this->p->options[ 'faq_answer_hide' ] ) ) {
+				$html .= ' style="display:none;"';
+			}
+
+			$html .= '>' . "\n";
+
 			$html .= '<p>' . $content . '</p>' . "\n";
-			$html .= '</div><!-- .wpsso-question-excerpt -->' . "\n";
+
+			$html .= '</div><!-- .wpsso-question-content -->' . "\n";
+
 			$html .= '</div><!-- .wpsso-question -->' . "\n";
 
 			return $html;

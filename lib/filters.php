@@ -120,7 +120,13 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				case 'tooltip-faq_answer_text':
 
-					$text = __( 'Select the amount of answer text to include bellow the question.', 'wpsso-faq' );
+					$text = __( 'Select the type of answer text to include bellow the question.', 'wpsso-faq' );
+
+					break;
+
+				case 'tooltip-faq_answer_hide':
+
+					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
 
 					break;
 			}
