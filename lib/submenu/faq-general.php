@@ -79,10 +79,12 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 					$table_rows[ 'faq_answer_text' ] = '' .
 					$this->form->get_th_html( _x( 'Answer Text', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_answer_text' ) . 
-					'<td>' . $this->form->get_select( 'faq_answer_text', array(
+					'<td>' .
+					$this->form->get_select( 'faq_answer_text', array(
 						'content' => __( 'Full Content', 'wpsso-faq' ),
 						'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
-					) ) . '</td>';
+					) ) .
+					'</td>';
 
 					break;
 			}

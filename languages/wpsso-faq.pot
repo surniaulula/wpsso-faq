@@ -12,6 +12,10 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: lib/filters.php:123
+msgid "Select the amount of answer text to include bellow the question."
+msgstr ""
+
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
 msgid "FAQ Settings"
@@ -263,11 +267,11 @@ msgctxt "option label"
 msgid "Answer Text"
 msgstr ""
 
-#: lib/submenu/faq-general.php:83
+#: lib/submenu/faq-general.php:84
 msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:84
+#: lib/submenu/faq-general.php:85
 msgid "Excerpt"
 msgstr ""
 

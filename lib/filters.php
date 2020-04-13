@@ -46,6 +46,12 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 				),
 			) );
 
+			if ( is_admin() ) {
+
+				$this->p->util->add_plugin_filters( $this, array( 
+					'messages_tooltip' => 2,
+				) );
+			}
 			/**
 			 * Hard-code and disable these options in the settings pages.
 			 */
@@ -98,6 +104,28 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			}
 
 			return $md_opts;
+		}
+
+		public function filter_messages_tooltip( $text, $msg_key ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			if ( strpos( $msg_key, 'tooltip-faq_' ) !== 0 ) {
+				return $text;
+			}
+
+			switch ( $msg_key ) {
+
+				case 'tooltip-faq_answer_text':
+
+					$text = __( 'Select the amount of answer text to include bellow the question.', 'wpsso-faq' );
+
+					break;
+			}
+
+			return $text;
 		}
 	}
 }
