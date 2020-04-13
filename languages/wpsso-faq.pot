@@ -267,27 +267,32 @@ msgctxt "metabox title"
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: lib/submenu/faq-general.php:55
+#: lib/submenu/faq-general.php:58
 msgctxt "metabox tab"
 msgid "Shortcode Defaults"
 msgstr ""
 
-#: lib/submenu/faq-general.php:82
+#: lib/submenu/faq-general.php:59
+msgctxt "metabox tab"
+msgid "Add-on Settings"
+msgstr ""
+
+#: lib/submenu/faq-general.php:86
+msgctxt "option label"
+msgid "Click Question to Show Answer"
+msgstr ""
+
+#: lib/submenu/faq-general.php:91
 msgctxt "option label"
 msgid "Question Answer Text"
 msgstr ""
 
-#: lib/submenu/faq-general.php:85
+#: lib/submenu/faq-general.php:94
 msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:86
+#: lib/submenu/faq-general.php:95
 msgid "Excerpt"
-msgstr ""
-
-#: lib/submenu/faq-general.php:90
-msgctxt "option label"
-msgid "Click Question to Show Answer"
 msgstr ""
 
 #: wpsso-faq.php:121

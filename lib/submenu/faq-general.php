@@ -45,6 +45,9 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
+		/**
+		 * Frequently Asked Questions metabox.
+		 */
 		public function show_metabox_general() {
 
 			$metabox_id  = 'faq-general';
@@ -53,6 +56,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$tabs = apply_filters( $filter_name, array(
 				'shortcodes' => _x( 'Shortcode Defaults', 'metabox tab', 'wpsso-faq' ),
+				'settings'   => _x( 'Add-on Settings', 'metabox tab', 'wpsso-faq' ),
 			) );
 
 			$table_rows = array();
@@ -78,6 +82,11 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'faq-general-shortcodes':
 
+					$table_rows[ 'faq_answer_hide' ] = '' .
+					$this->form->get_th_html( _x( 'Click Question to Show Answer', 'option label', 'wpsso-faq' ),
+						$css_class = '', $css_id = 'faq_answer_hide' ) . 
+					'<td>' . $this->form->get_checkbox( 'faq_answer_hide' ) . '</td>';
+
 					$table_rows[ 'faq_answer_text' ] = '' .
 					$this->form->get_th_html( _x( 'Question Answer Text', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_answer_text' ) . 
@@ -85,11 +94,6 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 						'content' => __( 'Full Content', 'wpsso-faq' ),
 						'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
 					) ) . '</td>';
-
-					$table_rows[ 'faq_answer_hide' ] = '' .
-					$this->form->get_th_html( _x( 'Click Question to Show Answer', 'option label', 'wpsso-faq' ),
-						$css_class = '', $css_id = 'faq_answer_hide' ) . 
-					'<td>' . $this->form->get_checkbox( 'faq_answer_hide' ) . '</td>';
 
 					break;
 			}
