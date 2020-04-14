@@ -118,15 +118,21 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-faq_answer_text':
+				case 'tooltip-faq_answer_toggle':	// Click Question to Show Answer.
 
-					$text = __( 'Select the type of answer text to include bellow the question.', 'wpsso-faq' );
+					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
 
 					break;
 
-				case 'tooltip-faq_answer_hide':
+				case 'tooltip-faq_answer_text_fmt':	// Question Answer Text Format.
 
-					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
+					$text = __( 'Select the type of answer text to include bellow the question title.', 'wpsso-faq' );
+
+					break;
+
+				case 'tooltip-faq_question_public':	// FAQ and Question Pages are Public.
+
+					$text = __( 'FAQ Category archive and Question / Answer pages have a publicly accessible URL.', 'wpsso-faq' );
 
 					break;
 			}

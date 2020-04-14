@@ -137,6 +137,13 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 		public function register_taxonomy_faq_category() {
 
+			$wpsso =& Wpsso::get_instance();
+
+			/**
+			 * Check if FAQ category and question pages available publicly.
+			 */
+			$is_public = empty( $wpsso->options[ 'faq_question_public' ] ) ? false : true;
+
 			$labels = array(
 				'name'                       => __( 'FAQ Categories', 'wpsso-faq' ),
 				'singular_name'              => __( 'FAQ Category', 'wpsso-faq' ),
@@ -161,8 +168,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$args = array(
 				'label'              => _x( 'FAQ Categories', 'Taxonomy label', 'wpsso-faq' ),
 				'labels'             => $labels,
-				'public'             => true,
-				'publicly_queryable' => true,
+				'public'             => $is_public,
+				'publicly_queryable' => $is_public,
 				'show_ui'            => true,
 				'show_in_menu'       => true,
 				'show_in_nav_menus'  => true,
@@ -175,10 +182,16 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			);
 
 			register_taxonomy( WPSSOFAQ_CATEGORY_TAXONOMY, array( WPSSOFAQ_QUESTION_POST_TYPE ), $args );
-		
 		}
 
 		public function register_post_type_question() {
+
+			$wpsso =& Wpsso::get_instance();
+
+			/**
+			 * Check if FAQ category and question pages available publicly.
+			 */
+			$is_public = empty( $wpsso->options[ 'faq_question_public' ] ) ? false : true;
 
 			$labels = array(
 				'name'                     => __( 'Questions', 'Post type general name', 'wpsso-faq' ),
@@ -218,9 +231,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'label'                 => _x( 'Question', 'Post type label', 'wpsso-faq' ),
 				'labels'                => $labels,
 				'description'           => _x( 'Question and Answer', 'Post type description', 'wpsso-faq' ),
-				'public'                => true,
 				'exclude_from_search'   => false,
-				'publicly_queryable'    => true,
+				'public'                => $is_public,
+				'publicly_queryable'    => $is_public,
 				'show_ui'               => true,
 				'show_in_nav_menus'     => true,
 				'show_in_menu'          => true,

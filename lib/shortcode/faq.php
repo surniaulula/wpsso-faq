@@ -87,28 +87,48 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			/**
+			 * Check if FAQ category and question pages available publicly.
+			 */
+			$is_public = empty( $wpsso->options[ 'faq_question_public' ] ) ? false : true;
+
+			/**
 			 * Get the term module array.
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			$term_url = get_term_link( $mod[ 'id' ], $mod[ 'tax_slug' ] );
+			$css_id = 'wpsso-faq-' . $mod[ 'id' ];
+
+			if ( $is_public ) {
+				$canonical_url = $this->p->util->get_canonical_url( $mod );
+			} else {
+				$canonical_url = WpssoUtil::add_query_frag( $this->p->util->get_canonical_url(), $css_id );
+			}
 
 			$title_text = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
 
 			/**
 			 * Create the HTML.
 			 */
-			$html = '<div class="wpsso-faq" id="wpsso-faq-' . $mod[ 'id' ] . '">' . "\n";
+			$html = '<a name="' . $css_id . '"></a>' . "\n";	// Anchor.
+
+			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 		
 			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
-				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
+				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod, $canonical_url );
 			}
 
-			if ( is_string( $term_url ) ) {
-				$html .= '<h3><a href="' . $term_url . '">' . $title_text . '</a></h3>' . "\n";
+			$html .= '<h3 class="wpsso-faq-title">';
+
+			/**
+			 * Only link the title if we have a publicly accessible page.
+			 */
+			if ( $is_public ) {
+				$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 			} else {
-				$html .= '<h3>' . $title_text . '</h3>' . "\n";
+				$html .= $title_text;
 			}
+
+			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
 
 			$posts_args = array( 'orderby' => 'title', 'order'   => 'ASC' );
 			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp = -1, $paged = null, $posts_args );

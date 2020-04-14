@@ -87,16 +87,27 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			/**
+			 * Check if FAQ category and question pages available publicly.
+			 */
+			$is_public = empty( $wpsso->options[ 'faq_question_public' ] ) ? false : true;
+
+			/**
 			 * Get the post module array.
 			 */
 			$mod = $this->p->post->get_mod( $atts[ 'id' ] );
 
-			$post_url = get_permalink( $mod[ 'id' ] );
+			$css_id = 'wpsso-question-' . $mod[ 'id' ];
+
+			if ( $is_public ) {
+				$canonical_url = $this->p->util->get_canonical_url( $mod );
+			} else {
+				$canonical_url = WpssoUtil::add_query_frag( $this->p->util->get_canonical_url(), $css_id );
+			}
 
 			$title_text = get_the_title( $mod[ 'id' ] );
 
-			$answer_text = isset( $this->p->options[ 'faq_answer_text' ] ) ?
-				$this->p->options[ 'faq_answer_text' ] : 'excerpt';
+			$answer_text = isset( $this->p->options[ 'faq_answer_text_fmt' ] ) ?
+				$this->p->options[ 'faq_answer_text_fmt' ] : 'excerpt';
 
 			switch ( $answer_text ) {
 
@@ -119,6 +130,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 						/* translators: Maximum number of words used in a post excerpt. */
 						$excerpt_length = intval( _x( '55', 'excerpt_length' ) );
+
 						$excerpt_length = (int) apply_filters( 'excerpt_length', $excerpt_length );
 
 						$excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
@@ -129,36 +141,46 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 					break;
 			}
 
-			$css_id = 'wpsso-question-' . $mod[ 'id' ];
-
 			/**
 			 * Create the HTML.
 			 */
-			$html = '<a name="' . $css_id . '"></a>' . "\n";
+			$html = '<a name="' . $css_id . '"></a>' . "\n";	// Anchor.
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
 			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
-				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod );
+				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod, $canonical_url );
 			}
 
-			$html .= '<div class="wpsso-question-title">' . "\n";
+			$html .= '<h4 class="wpsso-question-title">';
 
-			$html .= '<a';
+			/**
+			 * Show / hide answer when question title is clicked.
+			 */
+			if ( empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
+			
+				/**
+				 * Only link the title if we have a publicly accessible page.
+				 */
+				if ( $is_public ) {
+					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
+				} else {
+					$html .= $title_text;
+				}
 
-			if ( empty( $this->p->options[ 'faq_answer_hide' ] ) ) {
-				$html .= ' href="' . $post_url . '">' . $title_text . '</a>' . "\n";
 			} else {
-				$html .= ' onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';"';
+				$html .= '<a onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';">' . $title_text . '</a>';
+
 			}
 
-			$html .= '>' . $title_text . '</a>' . "\n";
-
-			$html .= '</div><!-- .wpsso-question-title -->' . "\n";
+			$html .= '</h4><!-- .wpsso-question-title -->' . "\n";
 
 			$html .= '<div class="wpsso-question-content" id="' . $css_id . '-content"';
 
-			if ( ! empty( $this->p->options[ 'faq_answer_hide' ] ) ) {
+			/**
+			 * Hide answer by default.
+			 */
+			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
 				$html .= ' style="display:none;"';
 			}
 

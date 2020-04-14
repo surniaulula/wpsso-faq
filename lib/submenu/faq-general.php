@@ -82,18 +82,27 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'faq-general-shortcodes':
 
-					$table_rows[ 'faq_answer_hide' ] = '' .
+					$table_rows[ 'faq_answer_toggle' ] = '' .
 					$this->form->get_th_html( _x( 'Click Question to Show Answer', 'option label', 'wpsso-faq' ),
-						$css_class = '', $css_id = 'faq_answer_hide' ) . 
-					'<td>' . $this->form->get_checkbox( 'faq_answer_hide' ) . '</td>';
+						$css_class = '', $css_id = 'faq_answer_toggle' ) . 
+					'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
 
-					$table_rows[ 'faq_answer_text' ] = '' .
-					$this->form->get_th_html( _x( 'Question Answer Text', 'option label', 'wpsso-faq' ),
-						$css_class = '', $css_id = 'faq_answer_text' ) . 
-					'<td>' . $this->form->get_select( 'faq_answer_text', array(
+					$table_rows[ 'faq_answer_text_fmt' ] = '' .
+					$this->form->get_th_html( _x( 'Question Answer Text Format', 'option label', 'wpsso-faq' ),
+						$css_class = '', $css_id = 'faq_answer_text_fmt' ) . 
+					'<td>' . $this->form->get_select( 'faq_answer_text_fmt', array(
 						'content' => __( 'Full Content', 'wpsso-faq' ),
 						'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
 					) ) . '</td>';
+
+					break;
+
+				case 'faq-general-settings':
+
+					$table_rows[ 'faq_question_public' ] = '' .
+					$this->form->get_th_html( _x( 'FAQ and Question Pages are Public', 'option label', 'wpsso-faq' ),
+						$css_class = '', $css_id = 'faq_question_public' ) . 
+					'<td>' . $this->form->get_checkbox( 'faq_question_public' ) . '</td>';
 
 					break;
 			}
