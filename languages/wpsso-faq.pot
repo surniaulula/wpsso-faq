@@ -22,9 +22,13 @@ msgid "Select the type of answer text to include bellow the question title."
 msgstr ""
 
 #: lib/filters.php:135
+msgid "The FAQ and question pages have publicly accessible URLs by default."
+msgstr ""
+
+#: lib/filters.php:137
 msgid ""
-"FAQ Category archive and Question / Answer pages have a publicly accessible "
-"URL."
+"If you enable this option, the FAQ and question content will only be "
+"accessible by using their shortcodes."
 msgstr ""
 
 #: lib/gettext-config.php:6
@@ -263,7 +267,7 @@ msgid "Question and Answer"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:132
+#: lib/shortcode/question.php:143
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
@@ -303,7 +307,7 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:103
 msgctxt "option label"
-msgid "FAQ and Question Pages are Public"
+msgid "Disable FAQ and Question Pages"
 msgstr ""
 
 #: wpsso-faq.php:121

@@ -99,10 +99,10 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'faq-general-settings':
 
-					$table_rows[ 'faq_question_public' ] = '' .
-					$this->form->get_th_html( _x( 'FAQ and Question Pages are Public', 'option label', 'wpsso-faq' ),
-						$css_class = '', $css_id = 'faq_question_public' ) . 
-					'<td>' . $this->form->get_checkbox( 'faq_question_public' ) . '</td>';
+					$table_rows[ 'faq_pages_disabled' ] = '' .
+					$this->form->get_th_html( _x( 'Disable FAQ and Question Pages', 'option label', 'wpsso-faq' ),
+						$css_class = '', $css_id = 'faq_pages_disabled' ) . 
+					'<td>' . $this->form->get_checkbox( 'faq_pages_disabled' ) . '</td>';
 
 					break;
 			}

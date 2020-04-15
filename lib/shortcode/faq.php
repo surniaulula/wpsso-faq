@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) { 
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
+				$this->p->debug->log( $atts );
 			}
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -87,21 +87,32 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			/**
-			 * Check if FAQ category and question pages available publicly.
-			 */
-			$is_public = empty( $wpsso->options[ 'faq_question_public' ] ) ? false : true;
-
-			/**
 			 * Get the term module array.
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] . ' is ' .
+					( $mod[ 'is_public' ] ? 'public' : 'not public' ) );
+			}
+
 			$css_id = 'wpsso-faq-' . $mod[ 'id' ];
 
-			if ( $is_public ) {
+			if ( $mod[ 'is_public' ] ) {
+
 				$canonical_url = $this->p->util->get_canonical_url( $mod );
+
 			} else {
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'getting canonical URL relative to current webpage' );
+				}
+
 				$canonical_url = WpssoUtil::add_query_frag( $this->p->util->get_canonical_url(), $css_id );
+			}
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'canonical URL is ' . $canonical_url );
 			}
 
 			$title_text = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
@@ -114,7 +125,12 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 		
 			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
-				$html = apply_filters( $this->p->lca . '_content_html_script_application_ld_json', $html, $mod, $canonical_url );
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'adding schema markup for ' . $css_id );
+				}
+
+				$html .= apply_filters( $this->p->lca . '_content_html_script_application_ld_json', '', $mod, $canonical_url );
 			}
 
 			$html .= '<h3 class="wpsso-faq-title">';
@@ -122,7 +138,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			/**
 			 * Only link the title if we have a publicly accessible page.
 			 */
-			if ( $is_public ) {
+			if ( $mod[ 'is_public' ] ) {
 				$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 			} else {
 				$html .= $title_text;

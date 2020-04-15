@@ -130,9 +130,11 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 					break;
 
-				case 'tooltip-faq_question_public':	// FAQ and Question Pages are Public.
+				case 'tooltip-faq_pages_disabled':	// Disable FAQ and Question Pages.
 
-					$text = __( 'FAQ Category archive and Question / Answer pages have a publicly accessible URL.', 'wpsso-faq' );
+					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
+
+					$text .= __( 'If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.', 'wpsso-faq' );
 
 					break;
 			}

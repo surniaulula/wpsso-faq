@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 				'defaults' => array(
 					'faq_answer_toggle'   => 0,		// Click Question to Show Answer.
 					'faq_answer_text_fmt' => 'excerpt',	// Question Answer Text Format.
-					'faq_question_public' => 1,		// FAQ and Question Pages are Public.
+					'faq_pages_disabled'  => 0,		// Disable FAQ and Question Pages.
 				),
 			),
 		);
