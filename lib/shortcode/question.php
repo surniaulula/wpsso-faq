@@ -98,29 +98,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$css_id = 'wpsso-question-' . $mod[ 'id' ];
 
-			if ( $mod[ 'is_public' ] ) {
-
-				$canonical_url = $this->p->util->get_canonical_url( $mod );
-
-			} else {
-
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'getting canonical URL relative to current webpage' );
-				}
-
-				$canonical_url = WpssoUtil::add_query_frag( $this->p->util->get_canonical_url(), $css_id );
-			}
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( 'canonical URL is ' . $canonical_url );
-			}
+			$frag_anchor = WpssoUtil::get_frag_anchor( $mod );	// Returns for example "#sso-post-123".
 
 			$title_text = get_the_title( $mod[ 'id' ] );
 
-			$answer_text = isset( $this->p->options[ 'faq_answer_text_fmt' ] ) ?
-				$this->p->options[ 'faq_answer_text_fmt' ] : 'excerpt';
-
-			switch ( $answer_text ) {
+			switch ( $this->p->options[ 'faq_answer_text_fmt' ] ) {
 
 				case 'content':
 
@@ -155,7 +137,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			/**
 			 * Create the HTML.
 			 */
-			$html = '<a name="' . $css_id . '"></a>' . "\n";	// Anchor.
+			$html = '<a name="' . trim( $frag_anchor, '#' ) . '"></a>' . "\n";
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
@@ -165,7 +147,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
 				}
 
-				$html .= apply_filters( $this->p->lca . '_content_html_script_application_ld_json', '', $mod, $canonical_url );
+				$html .= apply_filters( $this->p->lca . '_content_html_script_application_ld_json', '', $mod );
 			}
 
 			$html .= '<h4 class="wpsso-question-title">';
@@ -179,7 +161,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				 * Only link the title if we have a publicly accessible page.
 				 */
 				if ( $mod[ 'is_public' ] ) {
+
+					$canonical_url = $this->p->util->get_canonical_url( $mod );
+
 					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
+
 				} else {
 					$html .= $title_text;
 				}
