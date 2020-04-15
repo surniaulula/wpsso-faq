@@ -162,7 +162,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				 */
 				if ( $mod[ 'is_public' ] ) {
 
-					$canonical_url = $this->p->util->get_canonical_url( $mod );
+					$canonical_url = $this->p->util->get_canonical_url( $mod );	// Returns a relative fragment for a non-public mod.
 
 					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
