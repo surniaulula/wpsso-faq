@@ -91,14 +91,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			$mod = $this->p->post->get_mod( $atts[ 'id' ] );
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] . ' is ' .
-					( $mod[ 'is_public' ] ? 'public' : 'not public' ) );
-			}
-
 			$css_id = 'wpsso-question-' . $mod[ 'id' ];
 
 			$frag_anchor = WpssoUtil::get_frag_anchor( $mod );	// Returns for example "#sso-post-123".
+
+			$canonical_url = $this->p->util->get_canonical_url( $mod );
 
 			$title_text = get_the_title( $mod[ 'id' ] );
 
@@ -155,24 +152,24 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			/**
 			 * Show / hide answer when question title is clicked.
 			 */
-			if ( empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
+			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
 			
+				$html .= '<a onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); ' .
+					'el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';">' .
+						$title_text . '</a>';
+
+			} else {
+
 				/**
 				 * Only link the title if we have a publicly accessible page.
 				 */
-				if ( $mod[ 'is_public' ] ) {
-
-					$canonical_url = $this->p->util->get_canonical_url( $mod );	// Returns a relative fragment for a non-public mod.
+				if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v6.29.0.
 
 					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
 				} else {
 					$html .= $title_text;
 				}
-
-			} else {
-				$html .= '<a onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';">' . $title_text . '</a>';
-
 			}
 
 			$html .= '</h4><!-- .wpsso-question-title -->' . "\n";

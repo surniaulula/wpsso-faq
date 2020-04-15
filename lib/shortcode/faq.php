@@ -91,14 +91,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			 */
 			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] . ' is ' .
-					( $mod[ 'is_public' ] ? 'public' : 'not public' ) );
-			}
-
 			$css_id = 'wpsso-faq-' . $mod[ 'id' ];
 
 			$frag_anchor = WpssoUtil::get_frag_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
+
+			$canonical_url = $this->p->util->get_canonical_url( $mod );
 
 			$title_text = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
 
@@ -123,9 +120,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			/**
 			 * Only link the title if we have a publicly accessible page.
 			 */
-			if ( $mod[ 'is_public' ] ) {
-
-				$canonical_url = $this->p->util->get_canonical_url( $mod );	// Returns a relative fragment for a non-public mod.
+			if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v6.29.0.
 
 				$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
@@ -136,6 +131,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
 
 			$posts_args = array( 'orderby' => 'title', 'order'   => 'ASC' );
+
 			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp = -1, $paged = null, $posts_args );
 
 			foreach ( $posts_mods as $post_mod ) {
