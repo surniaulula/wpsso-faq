@@ -173,10 +173,10 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'show_ui'            => true,
 				'show_in_menu'       => true,
 				'show_in_nav_menus'  => true,
+				'show_admin_column'  => true,
+				'show_in_quick_edit' => true,
 				'show_in_rest'       => true,
 				'show_tagcloud'      => false,
-				'show_in_quick_edit' => true,
-				'show_admin_column'  => true,
 				'description'        => _x( 'FAQ Categories for Questions', 'Taxonomy description', 'wpsso-faq' ),
 				'hierarchical'       => true,
 			);
@@ -231,13 +231,14 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'label'                 => _x( 'Question', 'Post type label', 'wpsso-faq' ),
 				'labels'                => $labels,
 				'description'           => _x( 'Question and Answer', 'Post type description', 'wpsso-faq' ),
-				'exclude_from_search'   => $is_public ? false : true,
+				'exclude_from_search'   => false,	// Must be false for get_posts() queries.
 				'public'                => $is_public,
 				'publicly_queryable'    => $is_public,
 				'show_ui'               => true,
-				'show_in_nav_menus'     => true,
 				'show_in_menu'          => true,
+				'show_in_nav_menus'     => true,
 				'show_in_admin_bar'     => true,
+				'show_in_rest'          => true,
 				'menu_position'         => 20,
 				'menu_icon'             => 'dashicons-editor-help',
 				'capability_type'       => 'page',
@@ -256,7 +257,6 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'taxonomies'            => array( WPSSOFAQ_CATEGORY_TAXONOMY ),
 				'has_archive'           => 'faqs',
 				'can_export'            => true,
-				'show_in_rest'          => true,
 			);
 
 			register_post_type( WPSSOFAQ_QUESTION_POST_TYPE, $args );
