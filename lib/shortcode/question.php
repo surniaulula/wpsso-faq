@@ -99,7 +99,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$title_text = get_the_title( $mod[ 'id' ] );
 
-			switch ( $this->p->options[ 'faq_answer_text_fmt' ] ) {
+			switch ( $this->p->options[ 'faq_answer_format' ] ) {
 
 				case 'content':
 

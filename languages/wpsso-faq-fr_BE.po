@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 2.5.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-04-05 15:44-0700\n"
-"PO-Revision-Date: 2020-04-05 15:44-0700\n"
+"POT-Creation-Date: 2020-04-16 06:57-0700\n"
+"PO-Revision-Date: 2020-04-16 07:16-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -15,14 +15,35 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: lib/filters.php:123
+msgid "Hide the answer text by default and show when the question title is clicked."
+msgstr "Masquez le texte de la réponse par défaut et affichez quand le titre de la question est cliqué."
+
+#: lib/filters.php:129
+msgid "Select the type of answer text to include below the question title."
+msgstr "Sélectionnez le type de texte de réponse à inclure sous le titre de la question."
+
+#: lib/filters.php:135
+msgid "The FAQ and question pages have publicly accessible URLs by default."
+msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut."
+
+#: lib/filters.php:137
+msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
+msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
+
 #: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "FAQ Settings"
+msgstr "Réglages FAQ"
+
+#: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
-msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
+msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
 msgid "Shortcode"
-msgstr "Shortcode"
+msgstr "Code court"
 
 #: lib/register.php:148
 msgid "FAQ Categories"
@@ -107,153 +128,191 @@ msgctxt "Taxonomy description"
 msgid "FAQ Categories for Questions"
 msgstr "Catégories de FAQ pour les questions"
 
-#: lib/register.php:191
+#: lib/register.php:197
 msgid "Questions"
 msgstr "Questions"
 
-#: lib/register.php:192
+#: lib/register.php:198
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:193
+#: lib/register.php:199
 msgid "Add New"
 msgstr "Ajouter"
 
-#: lib/register.php:194
+#: lib/register.php:200
 msgid "Add New Question"
 msgstr "Ajouter une nouvelle question"
 
-#: lib/register.php:195
+#: lib/register.php:201
 msgid "Edit Question"
 msgstr "Modifier la question"
 
-#: lib/register.php:196
+#: lib/register.php:202
 msgid "New Question"
 msgstr "Nouvelle question"
 
-#: lib/register.php:197
+#: lib/register.php:203
 msgid "View Question"
 msgstr "Voir la question"
 
-#: lib/register.php:198
+#: lib/register.php:204
 msgid "View FAQs"
 msgstr "Voir les FAQs"
 
-#: lib/register.php:199
+#: lib/register.php:205
 msgid "Search Questions"
 msgstr "Rechercher dans les questions"
 
-#: lib/register.php:200
+#: lib/register.php:206
 msgid "No questions found"
 msgstr "Aucune question trouvée"
 
-#: lib/register.php:201
+#: lib/register.php:207
 msgid "No questions found in Trash"
 msgstr "Aucune question trouvée dans la corbeille"
 
-#: lib/register.php:202
+#: lib/register.php:208
 msgid "Parent Question:"
 msgstr "Question parente :"
 
-#: lib/register.php:203
+#: lib/register.php:209
 msgid "All Questions"
 msgstr "Toutes questions"
 
-#: lib/register.php:204
+#: lib/register.php:210
 msgid "Question Archives"
 msgstr "Archives de questions"
 
-#: lib/register.php:205
+#: lib/register.php:211
 msgid "Question Attributes"
 msgstr "Attributs de question"
 
-#: lib/register.php:206
+#: lib/register.php:212
 msgid "Insert into answer"
 msgstr "Insérer dans la réponse"
 
-#: lib/register.php:207
+#: lib/register.php:213
 msgid "Uploaded to this question"
 msgstr "Téléchargé à cette question"
 
-#: lib/register.php:208
+#: lib/register.php:214
 msgid "Question Image"
 msgstr "Image de question"
 
-#: lib/register.php:209
+#: lib/register.php:215
 msgid "Set question image"
 msgstr "Définir l'image de la question"
 
-#: lib/register.php:210
+#: lib/register.php:216
 msgid "Remove question image"
 msgstr "Supprimer l'image de la question"
 
-#: lib/register.php:211
+#: lib/register.php:217
 msgid "Use as question image"
 msgstr "Utiliser comme image de question"
 
-#: lib/register.php:212
+#: lib/register.php:218
 msgctxt "Admin menu name"
 msgid "FAQs"
 msgstr "FAQs"
 
-#: lib/register.php:213
+#: lib/register.php:219
 msgid "Filter questions"
 msgstr "Filtrer les questions"
 
-#: lib/register.php:214
+#: lib/register.php:220
 msgid "Questions list navigation"
 msgstr "Navigation de la liste des questions"
 
-#: lib/register.php:215
+#: lib/register.php:221
 msgid "Questions list"
 msgstr "Liste des questions"
 
-#: lib/register.php:216
+#: lib/register.php:222
 msgctxt "Admin bar name"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:217
+#: lib/register.php:223
 msgid "Question published."
 msgstr "Question publiée."
 
-#: lib/register.php:218
+#: lib/register.php:224
 msgid "Question published privately."
 msgstr "Question publiée en privé."
 
-#: lib/register.php:219
+#: lib/register.php:225
 msgid "Question reverted to draft."
 msgstr "Question remis en brouillon."
 
-#: lib/register.php:220
+#: lib/register.php:226
 msgid "Question scheduled."
 msgstr "Question planifiée."
 
-#: lib/register.php:221
+#: lib/register.php:227
 msgid "Question updated."
 msgstr "Question mise à jour."
 
-#: lib/register.php:225
+#: lib/register.php:231
 msgctxt "Post type label"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:227
+#: lib/register.php:233
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:107
+#: lib/shortcode/question.php:122
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: wpsso-faq.php:122
+#: lib/submenu/faq-general.php:36
+msgctxt "metabox title"
+msgid "Frequently Asked Questions"
+msgstr "Questions fréquemment posées"
+
+#: lib/submenu/faq-general.php:58
+msgctxt "metabox tab"
+msgid "Shortcode Defaults"
+msgstr "Défauts codes courts"
+
+#: lib/submenu/faq-general.php:59
+msgctxt "metabox tab"
+msgid "Add-on Settings"
+msgstr "Réglages de l'ajout"
+
+#: lib/submenu/faq-general.php:86
+msgctxt "option label"
+msgid "Click Question to Show Answer"
+msgstr "Cliquez sur la question pour afficher la réponse"
+
+#: lib/submenu/faq-general.php:91
+msgctxt "option label"
+msgid "Question Answer Format"
+msgstr "Format de la réponse à la question"
+
+#: lib/submenu/faq-general.php:94
+msgid "Full Content"
+msgstr "Contenu complet"
+
+#: lib/submenu/faq-general.php:95
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: lib/submenu/faq-general.php:103
+msgctxt "option label"
+msgid "Disable FAQ and Question Pages"
+msgstr "Désactiver les pages de question et FAQ"
+
+#: wpsso-faq.php:121
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension ou <a href=\"%3$s\">désactiver cet ajout</a>."
 
-#: wpsso-faq.php:231
+#: wpsso-faq.php:229
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
@@ -267,7 +326,7 @@ msgstr "https://wpsso.com/extend/plugins/wpsso-faq/"
 
 #. Description of the plugin/theme
 msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
-msgstr "Créez des pages FAQ et questions / réponses avec shortcodes facultatifs pour inclure des FAQs et questions dans votre contenu."
+msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

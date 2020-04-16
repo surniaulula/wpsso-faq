@@ -72,9 +72,9 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			 */
 			'opt' => array(
 				'defaults' => array(
-					'faq_answer_toggle'   => 0,		// Click Question to Show Answer.
-					'faq_answer_text_fmt' => 'excerpt',	// Question Answer Text Format.
-					'faq_pages_disabled'  => 0,		// Disable FAQ and Question Pages.
+					'faq_answer_toggle'  => 0,		// Click Question to Show Answer.
+					'faq_answer_format'  => 'excerpt',	// Question Answer Format.
+					'faq_pages_disabled' => 0,		// Disable FAQ and Question Pages.
 				),
 			),
 		);

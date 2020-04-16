@@ -124,9 +124,9 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 					break;
 
-				case 'tooltip-faq_answer_text_fmt':	// Question Answer Text Format.
+				case 'tooltip-faq_answer_format':	// Question Answer Format.
 
-					$text = __( 'Select the type of answer text to include bellow the question title.', 'wpsso-faq' );
+					$text = __( 'Select the type of answer text to include below the question title.', 'wpsso-faq' );
 
 					break;
 

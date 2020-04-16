@@ -87,10 +87,10 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 						$css_class = '', $css_id = 'faq_answer_toggle' ) . 
 					'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
 
-					$table_rows[ 'faq_answer_text_fmt' ] = '' .
-					$this->form->get_th_html( _x( 'Question Answer Text Format', 'option label', 'wpsso-faq' ),
-						$css_class = '', $css_id = 'faq_answer_text_fmt' ) . 
-					'<td>' . $this->form->get_select( 'faq_answer_text_fmt', array(
+					$table_rows[ 'faq_answer_format' ] = '' .
+					$this->form->get_th_html( _x( 'Question Answer Format', 'option label', 'wpsso-faq' ),
+						$css_class = '', $css_id = 'faq_answer_format' ) . 
+					'<td>' . $this->form->get_select( 'faq_answer_format', array(
 						'content' => __( 'Full Content', 'wpsso-faq' ),
 						'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
 					) ) . '</td>';

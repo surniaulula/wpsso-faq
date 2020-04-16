@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:129
-msgid "Select the type of answer text to include bellow the question title."
+msgid "Select the type of answer text to include below the question title."
 msgstr ""
 
 #: lib/filters.php:135
@@ -294,7 +294,7 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:91
 msgctxt "option label"
-msgid "Question Answer Text Format"
+msgid "Question Answer Format"
 msgstr ""
 
 #: lib/submenu/faq-general.php:94
