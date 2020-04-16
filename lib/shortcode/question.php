@@ -163,7 +163,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				/**
 				 * Only link the title if we have a publicly accessible page.
 				 */
-				if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v6.29.0.
+				if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v7.0.0.
 
 					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
