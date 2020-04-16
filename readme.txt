@@ -73,7 +73,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new SSO &gt; FAQ Settings page:
 		* Shortcode Defaults
 			* Click Question to Show Answer
-			* Question Answer Text Format
+			* Question Answer Format
 		* Add-on Settings
 			* Disable FAQ and Question Pages
 * **Improvements**
