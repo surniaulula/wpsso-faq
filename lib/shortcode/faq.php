@@ -93,7 +93,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$css_id = 'wpsso-faq-' . $mod[ 'id' ];
 
-			$frag_anchor = WpssoUtil::get_frag_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
+			$frag_anchor = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
 
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 

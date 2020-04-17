@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-04-16 06:57-0700\n"
-"PO-Revision-Date: 2020-04-16 07:16-0700\n"
+"POT-Creation-Date: 2020-04-17 06:42-0700\n"
+"PO-Revision-Date: 2020-04-17 06:42-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -305,8 +305,8 @@ msgstr "Extrait"
 
 #: lib/submenu/faq-general.php:103
 msgctxt "option label"
-msgid "Disable FAQ and Question Pages"
-msgstr "Désactiver les pages de question et FAQ"
+msgid "Disable FAQ and Question URLs"
+msgstr "Désactiver les URLs de question et FAQ"
 
 #: wpsso-faq.php:121
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."

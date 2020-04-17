@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.0.0-rc.1\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -307,7 +307,7 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:103
 msgctxt "option label"
-msgid "Disable FAQ and Question Pages"
+msgid "Disable FAQ and Question URLs"
 msgstr ""
 
 #: wpsso-faq.php:121

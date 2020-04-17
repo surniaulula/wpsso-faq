@@ -130,7 +130,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 					break;
 
-				case 'tooltip-faq_pages_disabled':	// Disable FAQ and Question Pages.
+				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 
 					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
 

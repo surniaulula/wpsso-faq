@@ -142,7 +142,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			/**
 			 * Check if FAQ category and question pages available publicly.
 			 */
-			$is_public = empty( $wpsso->options[ 'faq_pages_disabled' ] ) ? true : false;
+			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
 				'name'                       => __( 'FAQ Categories', 'wpsso-faq' ),
@@ -191,7 +191,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			/**
 			 * Check if FAQ category and question pages available publicly.
 			 */
-			$is_public = empty( $wpsso->options[ 'faq_pages_disabled' ] ) ? true : false;
+			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
 				'name'                     => __( 'Questions', 'Post type general name', 'wpsso-faq' ),
