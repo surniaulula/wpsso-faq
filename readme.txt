@@ -19,9 +19,9 @@ Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs 
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-**Manage Questions / Answers in a better way than using an editor FAQ block:**
+**Manage Questions / Answers in a better way than using a FAQ editor block:**
 
-*Editor FAQ blocks* from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).
+FAQ editor blocks from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).
 
 The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a WordPress Question editing page. You can also easily categorize questions into FAQ categories just like standard WordPress Posts and Pages.
 

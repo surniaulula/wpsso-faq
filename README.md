@@ -16,9 +16,9 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-<p><strong>Manage Questions / Answers in a better way than using an editor FAQ block:</strong></p>
+<p><strong>Manage Questions / Answers in a better way than using a FAQ editor block:</strong></p>
 
-<p><em>Editor FAQ blocks</em> from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).</p>
+<p>FAQ editor blocks from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).</p>
 
 <p>The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a WordPress Question editing page. You can also easily categorize questions into FAQ categories just like standard WordPress Posts and Pages.</p>
 
