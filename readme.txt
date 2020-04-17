@@ -21,15 +21,13 @@ Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs 
 
 Adds a new WordPress FAQs admin menu to create and manage Question / Answer pages and FAQ categories.
 
-Includes `[faq]` and `[question]` shortcodes to include FAQs or Questions in your post/page content.
+Provides `[faq]` and `[question]` shortcodes to include FAQs or Questions in your post / page content.
 
-Do you have a feature suggestion?
+Unlike "FAQ blocks", that force you to update your post / page content to make any change to your FAQs, the WPSSO FAQ Manager allows you to easily manage individual Questions / Answers and add / remove them from FAQ categories.
 
-[Post your suggestion in the WPSSO FAQ Manager support forum.](https://wordpress.org/support/plugin/wpsso-faq/)
+**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.
 
-**Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create Schema markup or meta tags.
-
-**Optional:** See the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating an archive template for FAQ categories based on your theme archive template.
+**Optional:** If you need to adjust the default FAQ category archive page layout, see the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a new FAQ category archive page template based on your current theme archive page template.
 
 <h3>WPSSO Core Plugin Required</h3>
 
@@ -67,15 +65,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.0.0-rc.1 (2020/04/16)**
+**Version 3.0.0 (2020/04/17)**
+
+Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and question page URLs.
 
 * **New Features**
 	* Added a new SSO &gt; FAQ Settings page:
 		* Shortcode Defaults
-			* Click Question to Show Answer
-			* Question Answer Format
+			* Click Question to Show Answer: Hide the answer text by default and show when the question title is clicked.
+			* Question Answer Format: Select the type of answer text to include below the question title.
 		* Add-on Settings
-			* Disable FAQ and Question Pages
+			* Disable FAQ and Question URLs: The FAQ and question pages have publicly accessible URLs by default. If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.
 * **Improvements**
 	* None.
 * **Bugfixes**
@@ -85,7 +85,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.0.0-rc.1.
+	* WPSSO Core v7.0.0.
 
 **Version 2.5.0 (2020/04/06)**
 
@@ -134,9 +134,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.0.0-rc.1 =
+= 3.0.0 =
 
-(2020/04/16) Added a new SSO &gt; FAQ Settings page.
+(2020/04/17) Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and question page URLs.
 
 = 2.5.0 =
 

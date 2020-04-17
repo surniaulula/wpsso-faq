@@ -18,15 +18,13 @@
 
 <p>Adds a new WordPress FAQs admin menu to create and manage Question / Answer pages and FAQ categories.</p>
 
-<p>Includes <code>[faq]</code> and <code>[question]</code> shortcodes to include FAQs or Questions in your post/page content.</p>
+<p>Provides <code>[faq]</code> and <code>[question]</code> shortcodes to include FAQs or Questions in your post / page content.</p>
 
-<p>Do you have a feature suggestion?</p>
+<p>Unlike "FAQ blocks", that force you to update your post / page content to make any change to your FAQs, the WPSSO FAQ Manager allows you to easily manage individual Questions / Answers and add / remove them from FAQ categories.</p>
 
-<p><a href="https://wordpress.org/support/plugin/wpsso-faq/">Post your suggestion in the WPSSO FAQ Manager support forum.</a></p>
+<p><strong>Optional:</strong> If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup add-on</a> to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.</p>
 
-<p><strong>Optional:</strong> If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup add-on</a> to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question pages and FAQ categories - it does not create Schema markup or meta tags.</p>
-
-<p><strong>Optional:</strong> See the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on creating an archive template for FAQ categories based on your theme archive template.</p>
+<p><strong>Optional:</strong> If you need to adjust the default FAQ category archive page layout, see the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a new FAQ category archive page template based on your current theme archive page template.</p>
 
 <h3>WPSSO Core Plugin Required</h3>
 
