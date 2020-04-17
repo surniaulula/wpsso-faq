@@ -13,19 +13,19 @@ Requires At Least: 4.2
 Tested Up To: 5.4
 Stable Tag: 3.0.0
 
-Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content.
+Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions / Answers in your Content.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-**Manage FAQs in a better way than using editor FAQ blocks:**
+**Manage Questions / Answers in a better way than using an editor FAQ block:**
 
-*Editor FAQ blocks* from other plugins force you to re-update your post / page content to make any change (ie. adding / removing questions, updating answers, etc.).
+*Editor FAQ blocks* from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).
 
-The WPSSO FAQ Manager allows you to easily manage individual questions / answers from a WordPress Question editing page. You can also categorize questions using FAQ categories just like standard WordPress Posts and Pages.
+The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a WordPress Question editing page. You can also easily categorize questions into FAQ categories just like standard WordPress Posts and Pages.
 
-You can use the standard FAQ category archive and question page URLs, and/or use the `[faq]` and `[question]` shortcodes in your Post / Page content -- both will automatically reflect any change your make (ie. adding / removing questions, updating answers, etc.).
+Use standard FAQ category archive and question page URLs, and/or use `[faq]` and `[question]` shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).
 
 **Optional:** If you need <strong>Schema FAQPage</strong> markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.
 
