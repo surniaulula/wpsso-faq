@@ -91,7 +91,7 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.0.0.
+	* WPSSO Core v7.0.1.
 
 **Version 2.5.0 (2020/04/06)**
 
