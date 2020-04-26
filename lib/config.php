@@ -52,10 +52,6 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
-						'pro' => array(
-						),
-						'std' => array(
-						),
 						'shortcode' => array(
 							'faq'      => 'FAQ Shortcode',
 							'question' => 'Question Shortcode',
