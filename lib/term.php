@@ -54,7 +54,9 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 			}
 
 			if ( isset( $columns[ $this->sc_after_key ] ) ) {
+
 				SucomUtil::add_after_key( $columns, $this->sc_after_key, $this->sc_column_key, __( 'Shortcode', 'wpsso-faq' ) );
+
 			} else {
 				$columns[ $this->sc_column_key ] = __( 'Shortcode', 'wpsso-faq' );
 			}
