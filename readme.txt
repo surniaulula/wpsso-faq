@@ -76,7 +76,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Added support for the FAQ shortcode `order` and `orderby` attributes (default is `order="ASC" orderby="title"`).
+	* Added support for FAQ shortcode `order` and `orderby` attributes (default is `order="ASC" orderby="title"`).
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -157,7 +157,7 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 
 = 3.1.0-dev.1 =
 
-(2020/05/03) None.
+(2020/05/03) Added support for FAQ shortcode `order` and `orderby` attributes (default is `order="ASC" orderby="title"`).
 
 = 3.0.0 =
 
