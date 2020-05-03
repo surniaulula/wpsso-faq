@@ -80,6 +80,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				$this->p->debug->log( $atts );
 			}
 
+			$atts = shortcode_atts( array(	// Since WP v2.5.
+				'add_schema' => true,
+				'id'         => 0,
+			), $atts );
+
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
 				return '<!-- ' . $this->shortcode_name . ' shortcode: no id attribute -->' . "\n\n";
 			} elseif ( ! is_numeric( $atts[ 'id' ] ) ) {
@@ -138,7 +143,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
-			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ 'add_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );

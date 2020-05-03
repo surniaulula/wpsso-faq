@@ -80,6 +80,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$this->p->debug->log( $atts );
 			}
 
+			$atts = shortcode_atts( array(	// Since WP v2.5.
+				'add_schema' => true,
+				'id'         => 0,
+				'order'      => 'ASC',
+				'orderby'    => 'title',
+			), $atts );
+
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
 				return '<!-- ' . $this->shortcode_name . ' shortcode: no id attribute -->' . "\n\n";
 			} elseif ( ! is_numeric( $atts[ 'id' ] ) ) {
@@ -106,7 +113,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 		
-			if ( ! isset( $atts[ 'schema' ] ) || ! empty( $atts[ 'schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ 'add_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
@@ -130,7 +137,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
 
-			$posts_args = array( 'orderby' => 'title', 'order'   => 'ASC' );
+			$posts_args = array( 'order' => $atts[ 'order' ], 'orderby' => $atts[ 'orderby' ] );
 
 			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp = -1, $paged = null, $posts_args );
 
@@ -140,7 +147,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				 * Signal the question shortcode not to include schema markup since the faq shortcode may already
 				 * include markup for all the questions.
 				 */
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" schema="0"]' );
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" add_schema="0"]' );
 			}
 			
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";
