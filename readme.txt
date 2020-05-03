@@ -71,6 +71,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.1.0-dev.1 (2020/05/03)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added support for the FAQ shortcode `order` and `orderby` attributes (default is `order="ASC" orderby="title"`).
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.3.0.
+
 **Version 3.0.0 (2020/04/17)**
 
 Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and question page URLs.
@@ -139,6 +154,10 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 	* WPSSO Core v6.25.0.
 
 == Upgrade Notice ==
+
+= 3.1.0-dev.1 =
+
+(2020/05/03) None.
 
 = 3.0.0 =
 
