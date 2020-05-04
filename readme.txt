@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.0-rc.1 (2020/05/04)**
+**Version 3.1.0 (2020/05/04)**
 
 * **New Features**
 	* None.
@@ -155,7 +155,7 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 
 == Upgrade Notice ==
 
-= 3.1.0-rc.1 =
+= 3.1.0 =
 
 (2020/05/04) Added support for FAQ shortcode `order` and `orderby` attributes.
 
