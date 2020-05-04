@@ -81,8 +81,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'add_schema' => true,
-				'id'         => 0,
+				'__add_schema_json_ld' => true,
+				'id'                   => 0,
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -143,7 +143,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
-			if ( wp_validate_boolean( $atts[ 'add_schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__add_schema_json_ld' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );

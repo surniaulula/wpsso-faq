@@ -81,10 +81,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'add_schema' => true,
-				'id'         => 0,
-				'order'      => 'ASC',
-				'orderby'    => 'title',
+				'__add_schema_json_ld' => true,
+				'id'                   => 0,
+				'order'                => 'ASC',
+				'orderby'              => 'title',
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 		
-			if ( wp_validate_boolean( $atts[ 'add_schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__add_schema_json_ld' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
@@ -147,7 +147,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				 * Signal the question shortcode not to include schema markup since the faq shortcode may already
 				 * include markup for all the questions.
 				 */
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" add_schema="0"]' );
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __add_schema_json_ld="0"]' );
 			}
 			
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";
