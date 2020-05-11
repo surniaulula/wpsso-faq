@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.2
  * Tested Up To: 5.4.1
- * Version: 3.1.0-dev.1
+ * Version: 3.2.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -23,7 +23,7 @@
  *      {bugfix}        Backwards-compatible bug fixes or small improvements.
  *      {stage}.{level} Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
  * 
- * Copyright 2016-2020 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2019-2020 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -51,9 +51,10 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 		/**
 		 * Reference Variables (config, options, modules, etc.).
 		 */
-		private $have_min_version = true;	// Have minimum wpsso version.
-
-		private static $instance;
+		private static $ext           = 'wpssofaq';
+		private static $p_ext         = 'faq';
+		private static $missing_shown = false;
+		private static $instance      = null;
 
 		public function __construct() {
 
@@ -66,27 +67,28 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 			$this->reg = new WpssoFaqRegister();		// Activate, deactivate, uninstall hooks.
 
 			/**
-			 * Check for required plugins and show notices.
+			 * WPSSO filter hooks.
 			 */
-			add_action( 'all_admin_notices', array( __CLASS__, 'show_required_notices' ) );
+			add_filter( 'wpsso_get_config', array( __CLASS__, 'wpsso_get_config' ), 10, 2 );
+			add_filter( 'wpsso_get_avail', array( __CLASS__, 'wpsso_get_avail' ), 10, 1 );
 
 			/**
-			 * Add WPSSO filter hooks.
-			 */
-			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 10, 2 );	// Checks core version and merges config array.
-			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 10, 1 );
-
-			/**
-			 * Add WPSSO action hooks.
+			 * WPSSO action hooks.
 			 */
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			add_action( 'wpsso_init_objects', array( $this, 'wpsso_init_objects' ), 10 );
 			add_action( 'wpsso_init_plugin', array( $this, 'wpsso_init_plugin' ), 10 );
+
+			/**
+			 * WordPress action hooks.
+			 */
+			add_action( 'all_admin_notices', array( __CLASS__, 'maybe_show_notices' ) );
 		}
 
 		public static function &get_instance() {
 
-			if ( ! isset( self::$instance ) ) {
+			if ( null === self::$instance ) {
+
 				self::$instance = new self;
 			}
 
@@ -94,36 +96,33 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 		}
 
 		/**
-		 * Check for required plugins and show notices.
+		 * Checks the core plugin version and merges the extension / add-on config array.
 		 */
-		public static function show_required_notices() {
+		public static function wpsso_get_config( $cf, $plugin_version = 0 ) {
 
-			$info = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ];
+			if ( self::get_missing_requirements() ) {	// Returns false or an array of missing requirements.
 
-			foreach ( $info[ 'req' ] as $ext => $req_info ) {
-
-				if ( isset( $req_info[ 'class' ] ) ) {	// Just in case.
-					if ( class_exists( $req_info[ 'class' ] ) ) {
-						continue;	// Requirement satisfied.
-					}
-				} else continue;	// Nothing to check.
-
-				$deactivate_url = html_entity_decode( wp_nonce_url( add_query_arg( array(
-					'action'        => 'deactivate',
-					'plugin'        => $info[ 'base' ],
-					'plugin_status' => 'all',
-					'paged'         => 1,
-					's'             => '',
-				), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info[ 'base' ] ) );
-
-				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
-
-				$notice_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href="%3$s">deactivate this add-on</a>.', 'wpsso-faq' );
-
-				echo '<div class="notice notice-error error"><p>';
-				echo sprintf( $notice_msg, $info[ 'name' ], $req_info[ 'name' ], $deactivate_url );
-				echo '</p></div>';
+				return $cf;	// Stop here.
 			}
+
+			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoFaqConfig::$cf );
+		}
+
+		/**
+		 * The 'wpsso_get_avail' filter is run after the $check property is defined.
+		 */
+		public static function wpsso_get_avail( $avail ) {
+
+			if ( self::get_missing_requirements() ) {		// Returns false or an array of missing requirements.
+
+				$avail[ 'p_ext' ][ self::$p_ext ] = false;	// Signal that this extension / add-on is not available.
+
+				return $avail;
+			}
+
+			$avail[ 'p_ext' ][ self::$p_ext ] = true;		// Signal that this extension / add-on is available.
+
+			return $avail;
 		}
 
 		/**
@@ -142,42 +141,6 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 			load_plugin_textdomain( 'wpsso-faq', false, 'wpsso-faq/languages/' );
 		}
 
-		/**
-		 * Checks the core plugin version and merges the extension / add-on config array.
-		 */
-		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
-
-			$info = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ];
-
-			$req_info = $info[ 'req' ][ 'wpsso' ];
-
-			if ( version_compare( $plugin_version, $req_info[ 'min_version' ], '<' ) ) {
-
-				$this->have_min_version = false;
-
-				return $cf;
-			}
-
-			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoFaqConfig::$cf );
-		}
-
-		/**
-		 * The 'wpsso_get_avail' filter is run after the $check property is defined.
-		 */
-		public function wpsso_get_avail( $avail ) {
-
-			if ( ! $this->have_min_version ) {
-
-				$avail[ 'p_ext' ][ 'faq' ] = false;	// Signal that this extension / add-on is not available.
-
-				return $avail;
-			}
-
-			$avail[ 'p_ext' ][ 'faq' ] = true;		// Signal that this extension / add-on is available.
-
-			return $avail;
-		}
-
 		public function wpsso_init_objects() {
 
 			$this->p =& Wpsso::get_instance();
@@ -186,10 +149,10 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! $this->have_min_version ) {
+			if ( self::get_missing_requirements() ) {	// Returns false or an array of missing requirements.
 
 				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'exiting early: have_min_version is false' );
+					$this->p->debug->log( 'exiting early: have missing requirements' );
 				}
 
 				return;	// Stop here.
@@ -203,51 +166,138 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 
 		/**
 		 * All WPSSO objects are instantiated and configured.
+		 *
+		 * The $is_admin and $doing_ajax arguments are provided since WPSSO Core v7.4.0.
 		 */
-		public function wpsso_init_plugin() {
+		public function wpsso_init_plugin( $is_admin = null, $doing_ajax = null ) {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
+			$is_admin = null === $is_admin ? is_admin() : $is_admin;
 
-			if ( ! $this->have_min_version ) {
+			$doing_ajax = null === $doing_ajax ? SucomUtil::get_const( 'DOING_AJAX' ) : $doing_ajax;
 
-				$this->min_version_notice();	// Show minimum version notice.
+			$missing_reqs = self::get_missing_requirements();	// Returns false or an array of missing requirements.
+
+			self::$missing_shown = true;
+
+			if ( ! $doing_ajax && $missing_reqs ) {
+
+				$error_pre = sprintf( '%s error:', __METHOD__ );
+
+				foreach ( $missing_reqs as $key => $req_info ) {
+
+					if ( ! empty( $req_info[ 'notice' ] ) ) {
+
+						if ( $is_admin ) {
+
+							$this->p->notice->err( $req_info[ 'notice' ] );
+
+							SucomUtil::safe_error_log( $error_pre . ' ' . $req_info[ 'notice' ], $strip_html = true );
+						}
+			
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( strtolower( $req_info[ 'notice' ] ) );
+						}
+					}
+				}
 
 				return;	// Stop here.
 			}
 		}
 
-		private function min_version_notice() {
+		public static function maybe_show_notices() {
 
-			$info = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ];
+			if ( self::$missing_shown ) {	// Nothing to do.
+				return;	// Stop here.
+			}
 
-			$req_info = $info[ 'req' ][ 'wpsso' ];
+			$missing_reqs = self::get_missing_requirements();	// Returns false or an array of missing requirements.
 
-			if ( is_admin() ) {
+			if ( ! $missing_reqs ) {
+				return;	// Stop here.
+			}
 
-				$notice_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
-					'wpsso-faq' ), $info[ 'name' ], $info[ 'version' ], $req_info[ 'name' ], $req_info[ 'min_version' ],
-						$this->p->cf[ 'plugin' ][ 'wpsso' ][ 'version' ] );
+			foreach ( $missing_reqs as $key => $req_info ) {
 
-				$this->p->notice->err( $notice_msg );
+				if ( ! empty( $req_info[ 'notice' ] ) ) {
 
-				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
-	
-					$update_msg = $this->p->admin->get_check_for_updates_link();
+					echo '<div class="notice notice-error error"><p>';
+					echo $req_info[ 'notice' ];
+					echo '</p></div>';
+				}
+			}
+		}
 
-					if ( ! empty( $update_msg ) ) {
-						$this->p->notice->inf( $update_msg );
+		/**
+		 * Returns false or an array of the missing requirements (ie. 'wpsso', 'woocommerce', etc.).
+		 */
+		private static function get_missing_requirements() {
+
+			static $local_cache = null;
+
+			if ( null !== $local_cache ) {
+				return $local_cache;
+			}
+
+			$local_cache = array();
+
+			self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
+
+			$info = WpssoFaqConfig::$cf[ 'plugin' ][ self::$ext ];
+
+			$plugin_missing_transl = __( 'The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin.',
+				'wpsso-faq' );
+
+			$old_version_transl = __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
+				'wpsso-faq' );
+
+			foreach ( $info[ 'req' ] as $key => $req_info ) {
+
+				if ( ! empty( $req_info[ 'home' ] ) ) {
+
+					$req_name = '<a href="' . $req_info[ 'home' ] . '">' . $req_info[ 'name' ] . '</a>';
+
+				} else {
+
+					$req_name = $req_info[ 'name' ];
+				}
+
+				if ( ! empty( $req_info[ 'version_global' ] ) && ! empty( $GLOBALS[ $req_info[ 'version_global' ] ] ) ) {
+
+					$req_info[ 'version' ] = $GLOBALS[ $req_info[ 'version_global' ] ];
+
+				} elseif ( ! empty( $req_info[ 'version_const' ] ) && defined( $req_info[ 'version_const' ] ) ) {
+
+					$req_info[ 'version' ] = constant( $req_info[ 'version_const' ] );
+
+				} elseif ( ! empty( $req_info[ 'plugin_class' ] ) && ! class_exists( $req_info[ 'plugin_class' ] ) ) {
+
+					$req_info[ 'notice' ] = sprintf( $plugin_missing_transl, $info[ 'name' ], $info[ 'version' ], $req_name );
+				}
+
+				if ( ! empty( $req_info[ 'version' ] ) ) {
+
+					if ( ! empty( $req_info[ 'min_version' ] ) ) {
+
+						if ( version_compare( $req_info[ 'version' ], $req_info[ 'min_version' ], '<' ) ) {
+
+							$req_info[ 'notice' ] = sprintf( $old_version_transl, $info[ 'name' ], $info[ 'version' ],
+								$req_name, $req_info[ 'min_version' ], $req_info[ 'version' ] );
+						}
 					}
 				}
 
-			} else {
+				if ( ! empty( $req_info[ 'notice' ] ) ) {
 
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( sprintf( '%1$s version %2$s requires %3$s version %4$s or newer',
-						$info[ 'name' ], $info[ 'version' ], $req_info[ 'name' ], $req_info[ 'min_version' ] ) );
+					$local_cache[ $key ] = $req_info;
 				}
 			}
+
+			if ( empty( $local_cache ) ) {
+
+				$local_cache = false;
+			}
+
+			return $local_cache;
 		}
 	}
 

@@ -2,7 +2,7 @@
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Copyright 2014-2020 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2019-2020 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -81,10 +81,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_schema_json_ld' => true,
-				'id'                   => 0,
-				'order'                => 'ASC',
-				'orderby'              => 'title',
+				'__include_schema' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
+				'id'               => 0,
+				'order'            => 'ASC',
+				'orderby'          => 'title',
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -113,13 +113,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 		
-			if ( wp_validate_boolean( $atts[ '__add_schema_json_ld' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
 				}
 
-				$html .= apply_filters( $this->p->lca . '_content_html_script_application_ld_json', '', $mod );
+				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
 			}
 
 			$html .= '<h3 class="wpsso-faq-title">';
@@ -144,10 +144,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			foreach ( $posts_mods as $post_mod ) {
 
 				/**
-				 * Signal the question shortcode not to include schema markup since the faq shortcode may already
-				 * include markup for all the questions.
+				 * Since the faq shortcode already includes Schema markup for all the questions, signal the
+				 * question shortcode not to include the Schema markup.
 				 */
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __add_schema_json_ld="0"]' );
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __include_schema="0"]' );
 			}
 			
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";

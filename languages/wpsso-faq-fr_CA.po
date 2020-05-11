@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-04-17 06:42-0700\n"
-"PO-Revision-Date: 2020-04-17 06:42-0700\n"
+"POT-Creation-Date: 2020-05-08 07:11-0700\n"
+"PO-Revision-Date: 2020-05-08 07:11-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -41,7 +41,7 @@ msgctxt "plugin description"
 msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
 msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
-#: lib/post.php:75 lib/post.php:77 lib/term.php:57 lib/term.php:59
+#: lib/post.php:76 lib/post.php:79 lib/term.php:58 lib/term.php:61
 msgid "Shortcode"
 msgstr "Code court"
 
@@ -265,7 +265,7 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:122
+#: lib/shortcode/question.php:127
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
@@ -308,13 +308,13 @@ msgctxt "option label"
 msgid "Disable FAQ and Question URLs"
 msgstr "Désactiver les URLs de question et FAQ"
 
-#: wpsso-faq.php:121
-msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
-msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension ou <a href=\"%3$s\">désactiver cet ajout</a>."
+#: wpsso-faq.php:247
+msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
+msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-faq.php:229
+#: wpsso-faq.php:250
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
+msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO FAQ Manager"

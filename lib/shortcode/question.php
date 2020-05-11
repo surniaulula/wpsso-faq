@@ -2,7 +2,7 @@
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Copyright 2014-2020 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2019-2020 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -81,8 +81,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_schema_json_ld' => true,
-				'id'                   => 0,
+				'__include_schema' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
+				'id'               => 0,
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -143,13 +143,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
-			if ( wp_validate_boolean( $atts[ '__add_schema_json_ld' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
 				}
 
-				$html .= apply_filters( $this->p->lca . '_content_html_script_application_ld_json', '', $mod );
+				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
 			}
 
 			$html .= '<h4 class="wpsso-question-title">';
