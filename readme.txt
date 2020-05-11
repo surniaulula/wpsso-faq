@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4.1
-Stable Tag: 3.0.0
+Stable Tag: 3.2.0
 
 Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions / Answers in your Content.
 
@@ -48,6 +48,15 @@ WPSSO FAQ Manager (aka WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https
 
 == Frequently Asked Questions ==
 
+<h3 class="top">Frequently Asked Questions</h3>
+
+* None.
+
+<h3>Notes and Documentation</h3>
+
+* The [FAQ Shortcode](https://wpsso.com/docs/plugins/wpsso-faq/notes/faq-shortcode/)
+* The [Question Shortcode](https://wpsso.com/docs/plugins/wpsso-faq/notes/question-shortcode/)
+
 == Screenshots ==
 
 01. The FAQs menu allows you to manage individual FAQs and their categories.
@@ -70,6 +79,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-faq/)
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 3.2.0 (2020/05/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored the required plugin check to (optionally) check the class name and a version constant.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.4.0.
 
 **Version 3.1.0 (2020/05/04)**
 
@@ -154,6 +178,10 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 	* WPSSO Core v6.25.0.
 
 == Upgrade Notice ==
+
+= 3.2.0 =
+
+(2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
 
 = 3.1.0 =
 
