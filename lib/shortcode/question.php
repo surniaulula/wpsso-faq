@@ -86,8 +86,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
+
 				return '<!-- ' . $this->shortcode_name . ' shortcode: no id attribute -->' . "\n\n";
+
 			} elseif ( ! is_numeric( $atts[ 'id' ] ) ) {
+
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
 			}
 
