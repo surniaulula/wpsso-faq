@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.3.0-dev.2 (2020/05/13)**
+**Version 3.3.0-dev.2 (2020/05/14)**
 
 * **New Features**
 	* None.
@@ -196,7 +196,7 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 
 = 3.3.0-dev.2 =
 
-(2020/05/13) None.
+(2020/05/14) None.
 
 = 3.2.0 =
 
