@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$this->add_shortcode();
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'do_shortcode' => 1,
+				'do_shortcode' => 1,	// In cases where the content filter is disabled.
 			) );
 		}
 
@@ -94,18 +94,30 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
 			}
 
+			$question_post_id = $atts[ 'id' ];
+
+			/**
+			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
+			 */
+			global $post;
+
+			if ( $post->ID && $post->ID !== $question_post_id ) {
+
+				$this->p->post->add_attached( $question_post_id, $attach_name = 'post', $post->ID );
+			}
+
 			/**
 			 * Get the post module array.
 			 */
-			$mod = $this->p->post->get_mod( $atts[ 'id' ] );
+			$mod = $this->p->post->get_mod( $question_post_id );
 
-			$css_id = 'wpsso-question-' . $mod[ 'id' ];
+			$css_id = 'wpsso-question-' . $question_post_id;
 
 			$frag_anchor = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
 
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 
-			$title_text = get_the_title( $mod[ 'id' ] );
+			$title_text = get_the_title( $question_post_id );
 
 			switch ( $this->p->options[ 'faq_answer_format' ] ) {
 
@@ -118,7 +130,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				case 'excerpt':
 				default:
 
-					if ( has_excerpt( $mod[ 'id' ] ) ) {
+					if ( has_excerpt( $question_post_id ) ) {
 
 						$content = $this->p->page->get_the_excerpt( $mod );
 
@@ -208,6 +220,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 		public function filter_do_shortcode( $content ) {
 
 			if ( false !== strpos( $content, '[' . $this->shortcode_name ) ) {
+
 				$content = SucomUtilWP::do_shortcode_names( array( $this->shortcode_name ), $content );
 			}
 

@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$this->add_shortcode();
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'do_shortcode' => 1,
+				'do_shortcode' => 1,	// In cases where the content filter is disabled.
 			) );
 		}
 
@@ -96,18 +96,20 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
 			}
 
+			$faq_term_id = $atts[ 'id' ];
+
 			/**
 			 * Get the term module array.
 			 */
-			$mod = $this->p->term->get_mod( $atts[ 'id' ] );
+			$mod = $this->p->term->get_mod( $faq_term_id );
 
-			$css_id = 'wpsso-faq-' . $mod[ 'id' ];
+			$css_id = 'wpsso-faq-' . $faq_term_id;
 
 			$frag_anchor = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
 
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 
-			$title_text = $this->p->page->get_term_title( $mod[ 'id' ], $sep = false );
+			$title_text = $this->p->page->get_term_title( $faq_term_id, $sep = false );
 
 			/**
 			 * Create the HTML.
@@ -164,6 +166,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 		public function filter_do_shortcode( $content ) {
 
 			if ( false !== strpos( $content, '[' . $this->shortcode_name ) ) {
+
 				$content = SucomUtilWP::do_shortcode_names( array( $this->shortcode_name ), $content );
 			}
 
