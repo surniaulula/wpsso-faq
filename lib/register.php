@@ -108,7 +108,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				/**
 				 * Register plugin install, activation, update times.
 				 */
-				if ( class_exists( 'WpssoUtilReg' ) ) {	// Since WPSSO v6.13.1.
+				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
 
 					$version = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ][ 'version' ];
 

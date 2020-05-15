@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO App Meta (WPSSO AM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.2.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-05-08 07:11-0700\n"
-"PO-Revision-Date: 2020-05-08 07:11-0700\n"
+"POT-Creation-Date: 2020-05-14 11:07-0700\n"
+"PO-Revision-Date: 2020-05-14 11:07-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -265,7 +265,7 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:127
+#: lib/shortcode/question.php:142
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
