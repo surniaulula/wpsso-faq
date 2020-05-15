@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.3.0-dev.3 (2020/05/14)**
+**Version 3.3.0-dev.4 (2020/05/15)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.6.0-dev.3.
+	* WPSSO Core v7.6.0-dev.4.
 
 **Version 3.2.0 (2020/05/09)**
 
@@ -194,9 +194,9 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 
 == Upgrade Notice ==
 
-= 3.3.0-dev.3 =
+= 3.3.0-dev.4 =
 
-(2020/05/14) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
+(2020/05/15) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
 
 = 3.2.0 =
 
