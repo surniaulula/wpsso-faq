@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.3.0-rc.1 (2020/05/19)**
+**Version 3.3.0-rc.1 (2020/05/20)**
 
 * **New Features**
 	* None.
@@ -196,7 +196,7 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 
 = 3.3.0-rc.1 =
 
-(2020/05/19) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
+(2020/05/20) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
 
 = 3.2.0 =
 
