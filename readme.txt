@@ -132,10 +132,10 @@ Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and questio
 * **New Features**
 	* Added a new SSO &gt; FAQ Settings page:
 		* Shortcode Defaults
-			* Click Question to Show Answer: Hide the answer text by default and show when the question title is clicked.
-			* Question Answer Format: Select the type of answer text to include below the question title.
+			* Clicking a Question Shows its Answer: Hide the answer text by default and show when the question title is clicked.
+			* Answer Format Bellow the Question: Select the type of answer text to include below the question title.
 		* Add-on Settings
-			* Disable FAQ and Question URLs: The FAQ and question pages have publicly accessible URLs by default. If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.
+			* Disable FAQ and Question Page URLs: The FAQ and question pages have publicly accessible URLs by default. If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.
 * **Improvements**
 	* None.
 * **Bugfixes**
