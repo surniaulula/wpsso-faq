@@ -70,9 +70,9 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			 */
 			'opt' => array(
 				'defaults' => array(
-					'faq_answer_toggle'   => 0,		// Click Question to Show Answer.
-					'faq_answer_format'   => 'excerpt',	// Question Answer Format.
-					'faq_public_disabled' => 0,		// Disable FAQ and Question URLs.
+					'faq_answer_toggle'   => 0,		// Clicking a Question Shows its Answer.
+					'faq_answer_format'   => 'excerpt',	// Answer Format Bellow the Question.
+					'faq_public_disabled' => 0,		// Disable FAQ and Question Page URLs.
 				),
 			),
 		);

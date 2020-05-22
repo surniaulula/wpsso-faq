@@ -289,12 +289,12 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:86
 msgctxt "option label"
-msgid "Click Question to Show Answer"
+msgid "Clicking a Question Shows its Answer"
 msgstr ""
 
 #: lib/submenu/faq-general.php:91
 msgctxt "option label"
-msgid "Question Answer Format"
+msgid "Answer Format Bellow the Question"
 msgstr ""
 
 #: lib/submenu/faq-general.php:94
@@ -307,7 +307,7 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:103
 msgctxt "option label"
-msgid "Disable FAQ and Question URLs"
+msgid "Disable FAQ and Question Page URLs"
 msgstr ""
 
 #: wpsso-faq.php:247

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-05-19 07:23-0700\n"
-"PO-Revision-Date: 2020-05-19 07:23-0700\n"
+"POT-Creation-Date: 2020-05-22 15:43-0700\n"
+"PO-Revision-Date: 2020-05-22 15:44-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -287,13 +287,13 @@ msgstr "Réglages de l'ajout"
 
 #: lib/submenu/faq-general.php:86
 msgctxt "option label"
-msgid "Click Question to Show Answer"
-msgstr "Cliquez sur la question pour afficher la réponse"
+msgid "Clicking a Question Shows its Answer"
+msgstr "Cliquez sur une question pour afficher sa réponse"
 
 #: lib/submenu/faq-general.php:91
 msgctxt "option label"
-msgid "Question Answer Format"
-msgstr "Format de la réponse à la question"
+msgid "Answer Format Bellow the Question"
+msgstr "Format de réponse sous la question"
 
 #: lib/submenu/faq-general.php:94
 msgid "Full Content"
@@ -305,7 +305,7 @@ msgstr "Extrait"
 
 #: lib/submenu/faq-general.php:103
 msgctxt "option label"
-msgid "Disable FAQ and Question URLs"
+msgid "Disable FAQ and Question Page URLs"
 msgstr "Désactiver les URLs de question et FAQ"
 
 #: wpsso-faq.php:247

@@ -83,12 +83,12 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 				case 'faq-general-shortcodes':
 
 					$table_rows[ 'faq_answer_toggle' ] = '' .
-					$this->form->get_th_html( _x( 'Click Question to Show Answer', 'option label', 'wpsso-faq' ),
+					$this->form->get_th_html( _x( 'Clicking a Question Shows its Answer', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_answer_toggle' ) . 
 					'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
 
 					$table_rows[ 'faq_answer_format' ] = '' .
-					$this->form->get_th_html( _x( 'Question Answer Format', 'option label', 'wpsso-faq' ),
+					$this->form->get_th_html( _x( 'Answer Format Bellow the Question', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_answer_format' ) . 
 					'<td>' . $this->form->get_select( 'faq_answer_format', array(
 						'content' => __( 'Full Content', 'wpsso-faq' ),
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 				case 'faq-general-settings':
 
 					$table_rows[ 'faq_public_disabled' ] = '' .
-					$this->form->get_th_html( _x( 'Disable FAQ and Question URLs', 'option label', 'wpsso-faq' ),
+					$this->form->get_th_html( _x( 'Disable FAQ and Question Page URLs', 'option label', 'wpsso-faq' ),
 						$css_class = '', $css_id = 'faq_public_disabled' ) . 
 					'<td>' . $this->form->get_checkbox( 'faq_public_disabled' ) . '</td>';
 
