@@ -80,6 +80,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.4.0-dev.2 (2020/07/31)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.15.0-dev.2.
+
 **Version 3.3.0 (2020/05/22)**
 
 * **New Features**
@@ -95,130 +110,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.2.
 	* WPSSO Core v7.6.0.
 
-**Version 3.2.0 (2020/05/09)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the required plugin check to (optionally) check the class name and a version constant.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.5.0.
-
-**Version 3.1.0 (2020/05/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added support for FAQ shortcode `order` and `orderby` attributes (default is `order="ASC" orderby="title"`).
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.3.0.
-
-**Version 3.0.0 (2020/04/17)**
-
-Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and question page URLs.
-
-* **New Features**
-	* Added a new SSO &gt; FAQ Settings page:
-		* Shortcode Defaults
-			* Clicking a Question Shows its Answer: Hide the answer text by default and show when the question title is clicked.
-			* Answer Format Bellow the Question: Select the type of answer text to include below the question title.
-		* Add-on Settings
-			* Disable FAQ and Question Page URLs: The FAQ and question pages have publicly accessible URLs by default. If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.3.0.
-
-**Version 2.5.0 (2020/04/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated "Requires At Least" to WordPress v4.2.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored WPSSO Core active and minimum version dependency checks.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v6.28.0.
-
-**Version 2.4.0 (2020/03/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added disabling of the Open Graph Type option for FAQ and Question pages.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.27.1.
-
-**Version 2.3.0 (2020/03/14)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a filter hook to expand the 'faq' and 'question' shortcodes when the "Use WordPress Content Filters" option is disabled.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.25.0.
-
 == Upgrade Notice ==
+
+= 3.4.0-dev.2 =
+
+(2020/07/31) Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
 
 = 3.3.0 =
 
 (2020/05/22) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
-
-= 3.2.0 =
-
-(2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
-
-= 3.1.0 =
-
-(2020/05/04) Added support for FAQ shortcode `order` and `orderby` attributes.
-
-= 3.0.0 =
-
-(2020/04/17) Added a new SSO &gt; FAQ Settings page with an option to disable FAQ and question page URLs.
-
-= 2.5.0 =
-
-(2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.4.0 =
-
-(2020/03/27) Added disabling of the Open Graph Type option for FAQ and Question pages.
-
-= 2.3.0 =
-
-(2020/03/14) Added a filter hook to expand the 'faq' and 'question' shortcodes when the "Use WordPress Content Filters" option is disabled.
 
