@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.4.0-rc.1 (2020/08/02)**
+**Version 3.4.0 (2020/08/02)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.15.0-rc.1.
+	* WPSSO Core v7.15.0.
 
 **Version 3.3.0 (2020/05/22)**
 
@@ -112,11 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.4.0-rc.1 =
+= 3.4.0 =
 
 (2020/08/02) Tested with WordPress v5.5.
-
-= 3.3.0 =
-
-(2020/05/22) Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
 
