@@ -310,13 +310,13 @@ msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr ""
 
-#: wpsso-faq.php:255
+#: wpsso-faq.php:276
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-faq.php:258
+#: wpsso-faq.php:289
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
