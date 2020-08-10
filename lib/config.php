@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -16,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '3.5.0-dev.10',	// Plugin version.
+					'version'     => '3.5.0-b.1',	// Plugin version.
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -36,7 +37,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.0.0-dev.10',
+							'min_version'   => '8.0.0-b.1',
 						),
 					),
 
@@ -89,6 +90,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOFAQ_VERSION' ) ) {	// Define constants only once.
+
 				return;
 			}
 
@@ -116,6 +118,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static function set_variable_constants( $var_const = null ) {
 
 			if ( ! is_array( $var_const ) ) {
+
 				$var_const = (array) self::get_variable_constants();
 			}
 
@@ -125,6 +128,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			foreach ( $var_const as $name => $value ) {
 
 				if ( ! defined( $name ) ) {
+
 					define( $name, $value );
 				}
 			}
@@ -143,6 +147,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			foreach ( $var_const as $name => $value ) {
 
 				if ( defined( $name ) ) {
+
 					$var_const[$name] = constant( $name );
 				}
 			}
