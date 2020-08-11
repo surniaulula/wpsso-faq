@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.5.0-rc.1 (2020/08/11)**
+**Version 3.5.0 (2020/08/11)**
 
 * **New Features**
 	* None.
@@ -93,45 +93,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.0.0-rc.1.
-
-**Version 3.4.0 (2020/08/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Tested with WordPress v5.5.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.15.0.
-
-**Version 3.3.0 (2020/05/22)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a `WpssoPost->add_attached()` call for question shortcodes so WPSSO Core can clear the post cache when a question is updated.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.6.0.
+	* WPSSO Core v8.0.0.
 
 == Upgrade Notice ==
 
-= 3.5.0-rc.1 =
+= 3.5.0 =
 
 (2020/08/11) Added support for the new WpssoUtilMetabox class in WPSSO Core v8.0.0.
-
-= 3.4.0 =
-
-(2020/08/02) Tested with WordPress v5.5.
 
