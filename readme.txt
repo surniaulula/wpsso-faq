@@ -50,7 +50,7 @@ WPSSO FAQ Manager (aka WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https
 
 <h3 class="top">Frequently Asked Questions</h3>
 
-* None.
+* [How are questions sorted in the FAQ shortcode?](https://wpsso.com/docs/plugins/wpsso-faq/faqs/how-are-questions-sorted-in-the-faq-shortcode/)
 
 <h3>Notes and Documentation</h3>
 
