@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -21,6 +22,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -38,6 +40,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			if ( shortcode_exists( $this->shortcode_name ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'cannot add ' . $this->shortcode_name . ' shortcode - already exists' );
 				}
 
@@ -47,6 +50,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
         		add_shortcode( $this->shortcode_name, array( $this, 'do_shortcode' ) );
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( $this->shortcode_name . ' shortcode added' );
 			}
 
@@ -60,6 +64,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				remove_shortcode( $this->shortcode_name );
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( $this->shortcode_name . ' shortcode removed' );
 				}
 
@@ -68,6 +73,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 			
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'cannot remove ' . $this->shortcode_name . ' shortcode - does not exist' );
 			}
 
@@ -77,6 +83,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) { 
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( $atts );
 			}
 
@@ -121,6 +128,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'adding schema markup for ' . $css_id );
 				}
 
