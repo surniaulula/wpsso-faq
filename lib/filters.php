@@ -14,6 +14,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 	class WpssoFaqFilters {
 
 		private $p;
+		private $msgs;		// WpssoFaqFiltersMessages class object.
 		private $og_type_faq          = 'website';
 		private $og_type_question     = 'article';
 		private $schema_type_faq      = 'webpage.faq';
@@ -44,14 +45,22 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 					'get_post_options' => 3,
 					'get_term_options' => 3,
 				),
+				'bc_category_tax_slug' => 2,
 			) );
 
 			if ( is_admin() ) {
 
-				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_tooltip' => 2,
-				) );
+				/**
+				 * Instantiate the WpssoFaqFiltersMessages class object.
+				 */
+				if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
+
+					require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-messages.php';
+				}
+
+				$this->msgs = new WpssoFaqFiltersMessages( $plugin );
 			}
+
 			/**
 			 * Hard-code and disable these options in the settings pages.
 			 */
@@ -106,40 +115,14 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			return $md_opts;
 		}
 
-		public function filter_messages_tooltip( $text, $msg_key ) {
+		public function filter_bc_category_tax_slug( $tax_slug, $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
+			if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
+
+				$tax_slug = WPSSOFAQ_CATEGORY_TAXONOMY;
 			}
 
-			if ( strpos( $msg_key, 'tooltip-faq_' ) !== 0 ) {
-				return $text;
-			}
-
-			switch ( $msg_key ) {
-
-				case 'tooltip-faq_answer_toggle':	// Clicking a Question Shows its Answer.
-
-					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
-
-					break;
-
-				case 'tooltip-faq_answer_format':	// Answer Format Bellow the Question.
-
-					$text = __( 'Select the type of answer text to include below the question title.', 'wpsso-faq' );
-
-					break;
-
-				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question Page URLs.
-
-					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
-
-					$text .= __( 'If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.', 'wpsso-faq' );
-
-					break;
-			}
-
-			return $text;
+			return $tax_slug;
 		}
 	}
 }
