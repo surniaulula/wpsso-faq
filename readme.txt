@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.0-b.2 (2020/09/03)**
+**Version 3.6.0-b.3 (2020/09/03)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.2.3-b.2.
+	* WPSSO Core v8.3.0-b.3.
 
 **Version 3.5.0 (2020/08/11)**
 
@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.6.0-b.2 =
+= 3.6.0-b.3 =
 
 (2020/09/03) Added support for the new 'bc_category_tax_slug' filter in WPSSO BC v3.0.0.
 
