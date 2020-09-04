@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.5.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-08-11 10:23-0700\n"
-"PO-Revision-Date: 2020-08-11 10:23-0700\n"
+"POT-Creation-Date: 2020-09-04 12:40-0700\n"
+"PO-Revision-Date: 2020-09-04 12:40-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,19 +13,19 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/filters.php:123
+#: lib/filters-messages.php:62
 msgid "Hide the answer text by default and show when the question title is clicked."
 msgstr "Masquez le texte de la réponse par défaut et affichez quand le titre de la question est cliqué."
 
-#: lib/filters.php:129
+#: lib/filters-messages.php:68
 msgid "Select the type of answer text to include below the question title."
 msgstr "Sélectionnez le type de texte de réponse à inclure sous le titre de la question."
 
-#: lib/filters.php:135
+#: lib/filters-messages.php:74
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut."
 
-#: lib/filters.php:137
+#: lib/filters-messages.php:76
 msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
 
@@ -263,7 +263,7 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:142
+#: lib/shortcode/question.php:149
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
