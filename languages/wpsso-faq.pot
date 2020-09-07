@@ -43,7 +43,7 @@ msgid ""
 "FAQs and Questions in your Content."
 msgstr ""
 
-#: lib/post.php:76 lib/post.php:79 lib/term.php:58 lib/term.php:61
+#: lib/post.php:77 lib/post.php:80 lib/term.php:59 lib/term.php:62
 msgid "Shortcode"
 msgstr ""
 

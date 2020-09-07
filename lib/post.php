@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 						/**
 						 * See https://codex.wordpress.org/Plugin_API/Filter_Reference/manage_$post_type_posts_columns.
 						 */
-						add_filter( 'manage_' . $ptn . '_posts_columns', array( $this, 'add_column_headings' ), 10, 1 );
+						add_filter( 'manage_' . $ptn . '_posts_columns', array( $this, 'add_post_column_headings' ), 10, 1 );
 
 						/**
 						 * See https://codex.wordpress.org/Plugin_API/Action_Reference/manage_$post_type_posts_custom_column.
@@ -65,9 +65,10 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			}
 		}
 
-		public function add_column_headings( $columns ) {
+		public function add_post_column_headings( $columns ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
