@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			if ( $post->ID && $post->ID !== $question_post_id ) {
 
-				$this->p->post->add_attached( $question_post_id, $attach_name = 'post', $post->ID );
+				WpssoPost::add_attached( $question_post_id, $attach_name = 'post', $post->ID );
 			}
 
 			/**

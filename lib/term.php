@@ -75,6 +75,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 				$value = SucomForm::get_no_input_clipboard( '[' . WPSSOFAQ_FAQ_SHORTCODE_NAME . ' id="' . $term_id . '"]',
 					$css_class = $column_name, $css_id = $column_name . '_' . $term_id );
 			}
+
 			return $value;
 		}
 	}
