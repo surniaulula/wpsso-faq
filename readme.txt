@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.1-dev.1 (TBD)**
+**Version 3.6.1-dev.2 (2020/09/08)**
 
 * **New Features**
 	* None.
@@ -111,6 +111,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.3.0.
 
 == Upgrade Notice ==
+
+= 3.6.1-dev.2 =
+
+(2020/09/08) Updated `add_attached()` method call to static method for WPSSO Core v8.4.0.
 
 = 3.6.0 =
 
