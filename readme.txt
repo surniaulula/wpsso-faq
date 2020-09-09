@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.1-dev.2 (2020/09/08)**
+**Version 3.6.1-dev.3 (2020/09/08)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.3.0.
+	* WPSSO Core v8.4.0-dev.3.
 
 **Version 3.6.0 (2020/09/05)**
 
@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.6.1-dev.2 =
+= 3.6.1-dev.3 =
 
 (2020/09/08) Updated `add_attached()` method call to static method for WPSSO Core v8.4.0.
 
