@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.6.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.6.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-09-04 12:40-0700\n"
-"PO-Revision-Date: 2020-09-04 12:40-0700\n"
+"POT-Creation-Date: 2020-09-09 09:30-0700\n"
+"PO-Revision-Date: 2020-09-09 09:30-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -39,7 +39,7 @@ msgctxt "plugin description"
 msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
 msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
-#: lib/post.php:76 lib/post.php:79 lib/term.php:58 lib/term.php:61
+#: lib/post.php:77 lib/post.php:80 lib/term.php:59 lib/term.php:62
 msgid "Shortcode"
 msgstr "Code court"
 
