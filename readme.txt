@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.1-dev.3 (2020/09/08)**
+**Version 3.6.1-dev.3 (2020/09/09)**
 
 * **New Features**
 	* None.
@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 3.6.1-dev.3 =
 
-(2020/09/08) Updated `add_attached()` method call to static method for WPSSO Core v8.4.0.
+(2020/09/09) Updated `add_attached()` method call to static method for WPSSO Core v8.4.0.
 
 = 3.6.0 =
 
