@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.5
-Stable Tag: 3.6.0
+Stable Tag: 3.6.1
 
 Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions / Answers in your Content.
 
@@ -115,8 +115,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 3.6.1 =
 
 (2020/09/11) Updated `add_attached()` method call to static method for WPSSO Core v8.4.0.
-
-= 3.6.0 =
-
-(2020/09/05) Added support for the new 'bc_category_tax_slug' filter in WPSSO BC v3.0.0.
 
