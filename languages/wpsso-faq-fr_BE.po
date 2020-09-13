@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.6.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-09-10 11:44-0700\n"
-"PO-Revision-Date: 2020-09-10 11:44-0700\n"
+"POT-Creation-Date: 2020-09-13 12:21-0700\n"
+"PO-Revision-Date: 2020-09-13 12:21-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -12,6 +12,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "FAQ Settings"
+msgstr "Réglages FAQ"
+
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
+msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #: lib/filters-messages.php:62
 msgid "Hide the answer text by default and show when the question title is clicked."
@@ -28,16 +38,6 @@ msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut
 #: lib/filters-messages.php:76
 msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
-
-#: lib/gettext-config.php:6
-msgctxt "lib file description"
-msgid "FAQ Settings"
-msgstr "Réglages FAQ"
-
-#: lib/gettext-config.php:7
-msgctxt "plugin description"
-msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
-msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
 
 #: lib/post.php:77 lib/post.php:80 lib/term.php:59 lib/term.php:62
 msgid "Shortcode"
