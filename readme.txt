@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.2-b.2 (2020/09/15)**
+**Version 3.6.2-rc.1 (2020/09/15)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.5.0-b.2.
+	* WPSSO Core v8.5.0-rc.1.
 
 **Version 3.6.1 (2020/09/11)**
 
@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.6.2-b.2 =
+= 3.6.2-rc.1 =
 
 (2020/09/15) Updated the French plugin translations.
 
