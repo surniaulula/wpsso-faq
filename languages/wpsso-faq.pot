@@ -18,6 +18,11 @@ msgid "FAQ Settings"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
+msgctxt "plugin name"
+msgid "WPSSO FAQ Manager"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
 "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include "
