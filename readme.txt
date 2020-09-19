@@ -19,17 +19,13 @@ Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs 
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
 
-**A better way to manage Questions / Answers than using a FAQ editor block:**
-
-FAQ editor blocks from other plugins force you to re-update your Post / Page content to make any change (ie. adding / removing questions, updating answers, etc.).
-
 The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress Question editing page. You can also categorize your Questions / Answers into FAQ categories, just like standard WordPress Posts.
 
 Use the standard WordPress FAQ category archive and question pages, and/or use `[faq]` and `[question]` shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).
 
 **Optional:**
 
-If you need **Schema FAQPage** markup for the **FAQ shortcode** or **FAQ categories** you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.
+If you need **Schema FAQPage** markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup. The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.
 
 **Optional:**
 
