@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 					$md_defs[ 'schema_type' ] = $this->schema_type_question;
 				}
-			
+
 			} elseif ( $mod[ 'is_term' ] ) {
 
 				if ( WPSSOFAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {

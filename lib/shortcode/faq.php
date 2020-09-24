@@ -71,7 +71,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				return true;
 
 			}
-			
+
 			if ( $this->p->debug->enabled ) {
 
 				$this->p->debug->log( 'cannot remove ' . $this->shortcode_name . ' shortcode - does not exist' );
@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$html = '<a name="' . trim( $frag_anchor, '#' ) . '"></a>' . "\n";
 
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
-		
+
 			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
@@ -162,7 +162,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				 */
 				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __include_schema="0"]' );
 			}
-			
+
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";
 
 			return $html;

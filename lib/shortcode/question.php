@@ -71,7 +71,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				return true;
 
 			}
-			
+
 			if ( $this->p->debug->enabled ) {
 
 				$this->p->debug->log( 'cannot remove ' . $this->shortcode_name . ' shortcode - does not exist' );
@@ -181,7 +181,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 * Show / hide answer when question title is clicked.
 			 */
 			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
-			
+
 				$html .= '<a onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); ' .
 					'el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';">' .
 						$title_text . '</a>';
