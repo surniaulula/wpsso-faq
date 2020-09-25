@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires PHP: 5.6
-Requires At Least: 4.2
+Requires At Least: 4.4
 Tested Up To: 5.5.1
 Stable Tag: 3.6.3
 
@@ -89,7 +89,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added support for the new WPSSO_ADMIN_SCRIPTS_PRIORITY constant in WPSSO Core v8.5.1.
 * **Requires At Least**
 	* PHP v5.6.
-	* WordPress v4.2.
+	* WordPress v4.4.
 	* WPSSO Core v8.5.1.
 
 **Version 3.6.2 (2020/09/15)**
