@@ -40,22 +40,12 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 
 	class WpssoFaq extends WpssoAddOn {
 
-		/**
-		 * Library class object variables.
-		 */
 		public $filters;	// WpssoFaqFilters class.
 		public $post;		// WpssoFaqPost class.
-		public $reg;		// WpssoFaqRegister class.
 		public $style;		// WpssoFaqStyle class.
 		public $term;		// WpssoFaqTerm class.
 
-		/**
-		 * Reference Variables (config, options, modules, etc.).
-		 */
 		protected $p;
-		protected $ext   = 'wpssofaq';
-		protected $p_ext = 'faq';
-		protected $cf    = array();
 
 		private static $instance = null;
 
