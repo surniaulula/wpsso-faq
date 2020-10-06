@@ -26,9 +26,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_faq_category' ), 10 );
+			add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_faq_category' ), 10, 0 );
 
-			add_action( 'wpsso_init_options', array( $this, 'register_post_type_question' ), 10 );
+			add_action( 'wpsso_init_options', array( $this, 'register_post_type_question' ), 10, 0 );
 		}
 
 		/**
