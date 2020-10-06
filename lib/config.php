@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file_path ) { 
+		public static function set_constants( $plugin_file ) { 
 
 			if ( defined( 'WPSSOFAQ_VERSION' ) ) {	// Define constants only once.
 
@@ -99,11 +99,11 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOFAQ_FILEPATH', $plugin_file_path );						
+			define( 'WPSSOFAQ_FILEPATH', $plugin_file );						
 			define( 'WPSSOFAQ_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-faq/wpsso-faq.php.
-			define( 'WPSSOFAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
+			define( 'WPSSOFAQ_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOFAQ_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-faq.
-			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
+			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
 			define( 'WPSSOFAQ_VERSION', $info[ 'version' ] );						
 
 			define( 'WPSSOFAQ_CATEGORY_TAXONOMY', 'faq_category' );
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			return $var_const;
 		}
 
-		public static function require_libs( $plugin_file_path ) {
+		public static function require_libs( $plugin_file ) {
 
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/post.php';
