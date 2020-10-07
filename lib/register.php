@@ -132,8 +132,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			flush_rewrite_rules();
 		}
 
-		private static function uninstall_plugin() {
-		}
+		private static function uninstall_plugin() {}
 
 		public function register_taxonomy_faq_category() {
 
