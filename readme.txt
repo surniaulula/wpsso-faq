@@ -77,7 +77,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.7.0-dev.6 (2020/10/14)**
+**Version 3.7.0-b.1 (2020/10/15)**
 
 * **New Features**
 	* None.
@@ -91,7 +91,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.8.0-dev.6.
+	* WPSSO Core v8.8.0-b.1.
 
 **Version 3.6.3 (2020/09/18)**
 
@@ -155,9 +155,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.7.0-dev.6 =
+= 3.7.0-b.1 =
 
-(2020/10/14) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2020/10/15) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
 = 3.6.3 =
 
