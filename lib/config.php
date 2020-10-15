@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
-					'desc'        => 'Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content.',
+					'desc'        => 'Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.',
 					'slug'        => 'wpsso-faq',
 					'base'        => 'wpsso-faq/wpsso-faq.php',
 					'update_auth' => '',		// No premium version.

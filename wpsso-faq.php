@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content.
+ * Description: Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
  * Requires PHP: 5.6
  * Requires At Least: 4.4
  * Tested Up To: 5.5.1
