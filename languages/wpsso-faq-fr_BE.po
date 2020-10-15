@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.6.3\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.7.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-09-18 10:52-0700\n"
-"PO-Revision-Date: 2020-09-18 10:52-0700\n"
+"POT-Creation-Date: 2020-10-07 16:22-0700\n"
+"PO-Revision-Date: 2020-10-07 16:22-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -12,6 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
+msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
+
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
+msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "lib file description"
@@ -48,221 +56,221 @@ msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront
 msgid "Shortcode"
 msgstr "Code court"
 
-#: lib/register.php:148
+#: lib/register.php:147
 msgid "FAQ Categories"
 msgstr "Catégories de FAQ"
 
-#: lib/register.php:149
+#: lib/register.php:148
 msgid "FAQ Category"
 msgstr "Catégorie de FAQ"
 
-#: lib/register.php:150
+#: lib/register.php:149
 msgctxt "Admin menu name"
 msgid "FAQ Categories"
 msgstr "Catégories de FAQ"
 
-#: lib/register.php:151
+#: lib/register.php:150
 msgid "All FAQ Categories"
 msgstr "Toutes catégories de FAQ"
 
-#: lib/register.php:152
+#: lib/register.php:151
 msgid "Edit FAQ Category"
 msgstr "Modifier la catégorie de FAQ"
 
-#: lib/register.php:153
+#: lib/register.php:152
 msgid "View FAQ Category"
 msgstr "Voir la catégorie de FAQ"
 
-#: lib/register.php:154
+#: lib/register.php:153
 msgid "Update FAQ Category"
 msgstr "Mettre à jour la catégorie de FAQ"
 
-#: lib/register.php:155
+#: lib/register.php:154
 msgid "Add New FAQ Category"
 msgstr "Ajouter une nouvelle catégorie de FAQ"
 
-#: lib/register.php:156
+#: lib/register.php:155
 msgid "New FAQ Category Name"
 msgstr "Nom de la nouvelle catégorie de FAQ"
 
-#: lib/register.php:157
+#: lib/register.php:156
 msgid "Parent FAQ Category"
 msgstr "Catégorie de FAQ parente"
 
-#: lib/register.php:158
+#: lib/register.php:157
 msgid "Parent FAQ Category:"
 msgstr "Catégorie de FAQ parente :"
 
-#: lib/register.php:159
+#: lib/register.php:158
 msgid "Search FAQ Categories"
 msgstr "Rechercher dans les catégories de FAQ"
 
-#: lib/register.php:160
+#: lib/register.php:159
 msgid "Popular FAQ Categories"
 msgstr "Catégories de FAQ populaires"
 
-#: lib/register.php:161
+#: lib/register.php:160
 msgid "Separate FAQ categories with commas"
 msgstr "Séparez les catégories de FAQ avec des virgules"
 
-#: lib/register.php:162
+#: lib/register.php:161
 msgid "Add or remove FAQ categories"
 msgstr "Ajouter ou retirer des catégories de FAQ"
 
-#: lib/register.php:163
+#: lib/register.php:162
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
-#: lib/register.php:164
+#: lib/register.php:163
 msgid "No FAQ categories found."
 msgstr "Aucune catégorie de FAQ trouvée."
 
-#: lib/register.php:165
+#: lib/register.php:164
 msgid "← Back to FAQ categories"
 msgstr "← Retour aux catégories de FAQ"
 
-#: lib/register.php:169
+#: lib/register.php:168
 msgctxt "Taxonomy label"
 msgid "FAQ Categories"
 msgstr "Catégories de FAQ"
 
-#: lib/register.php:180
+#: lib/register.php:179
 msgctxt "Taxonomy description"
 msgid "FAQ Categories for Questions"
 msgstr "Catégories de FAQ pour les questions"
 
-#: lib/register.php:197
+#: lib/register.php:196
 msgid "Questions"
 msgstr "Questions"
 
-#: lib/register.php:198
+#: lib/register.php:197
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:199
+#: lib/register.php:198
 msgid "Add New"
 msgstr "Ajouter"
 
-#: lib/register.php:200
+#: lib/register.php:199
 msgid "Add New Question"
 msgstr "Ajouter une nouvelle question"
 
-#: lib/register.php:201
+#: lib/register.php:200
 msgid "Edit Question"
 msgstr "Modifier la question"
 
-#: lib/register.php:202
+#: lib/register.php:201
 msgid "New Question"
 msgstr "Nouvelle question"
 
-#: lib/register.php:203
+#: lib/register.php:202
 msgid "View Question"
 msgstr "Voir la question"
 
-#: lib/register.php:204
+#: lib/register.php:203
 msgid "View FAQs"
 msgstr "Voir les FAQs"
 
-#: lib/register.php:205
+#: lib/register.php:204
 msgid "Search Questions"
 msgstr "Rechercher dans les questions"
 
-#: lib/register.php:206
+#: lib/register.php:205
 msgid "No questions found"
 msgstr "Aucune question trouvée"
 
-#: lib/register.php:207
+#: lib/register.php:206
 msgid "No questions found in Trash"
 msgstr "Aucune question trouvée dans la corbeille"
 
-#: lib/register.php:208
+#: lib/register.php:207
 msgid "Parent Question:"
 msgstr "Question parente :"
 
-#: lib/register.php:209
+#: lib/register.php:208
 msgid "All Questions"
 msgstr "Toutes questions"
 
-#: lib/register.php:210
+#: lib/register.php:209
 msgid "Question Archives"
 msgstr "Archives de questions"
 
-#: lib/register.php:211
+#: lib/register.php:210
 msgid "Question Attributes"
 msgstr "Attributs de question"
 
-#: lib/register.php:212
+#: lib/register.php:211
 msgid "Insert into answer"
 msgstr "Insérer dans la réponse"
 
-#: lib/register.php:213
+#: lib/register.php:212
 msgid "Uploaded to this question"
 msgstr "Téléchargé à cette question"
 
-#: lib/register.php:214
+#: lib/register.php:213
 msgid "Question Image"
 msgstr "Image de question"
 
-#: lib/register.php:215
+#: lib/register.php:214
 msgid "Set question image"
 msgstr "Définir l'image de la question"
 
-#: lib/register.php:216
+#: lib/register.php:215
 msgid "Remove question image"
 msgstr "Supprimer l'image de la question"
 
-#: lib/register.php:217
+#: lib/register.php:216
 msgid "Use as question image"
 msgstr "Utiliser comme image de question"
 
-#: lib/register.php:218
+#: lib/register.php:217
 msgctxt "Admin menu name"
 msgid "FAQs"
 msgstr "FAQs"
 
-#: lib/register.php:219
+#: lib/register.php:218
 msgid "Filter questions"
 msgstr "Filtrer les questions"
 
-#: lib/register.php:220
+#: lib/register.php:219
 msgid "Questions list navigation"
 msgstr "Navigation de la liste des questions"
 
-#: lib/register.php:221
+#: lib/register.php:220
 msgid "Questions list"
 msgstr "Liste des questions"
 
-#: lib/register.php:222
+#: lib/register.php:221
 msgctxt "Admin bar name"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:223
+#: lib/register.php:222
 msgid "Question published."
 msgstr "Question publiée."
 
-#: lib/register.php:224
+#: lib/register.php:223
 msgid "Question published privately."
 msgstr "Question publiée en privé."
 
-#: lib/register.php:225
+#: lib/register.php:224
 msgid "Question reverted to draft."
 msgstr "Question remis en brouillon."
 
-#: lib/register.php:226
+#: lib/register.php:225
 msgid "Question scheduled."
 msgstr "Question planifiée."
 
-#: lib/register.php:227
+#: lib/register.php:226
 msgid "Question updated."
 msgstr "Question mise à jour."
 
-#: lib/register.php:231
+#: lib/register.php:230
 msgctxt "Post type label"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:233
+#: lib/register.php:232
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr "Question et Réponse"
@@ -310,14 +318,6 @@ msgstr "Extrait"
 msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr "Désactiver les URLs de question et FAQ"
-
-#: wpsso-faq.php:276
-msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
-msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
-
-#: wpsso-faq.php:289
-msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO FAQ Manager"
