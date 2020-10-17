@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.7.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.7.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-10-07 16:22-0700\n"
-"PO-Revision-Date: 2020-10-07 16:22-0700\n"
+"POT-Creation-Date: 2020-10-17 11:37-0700\n"
+"PO-Revision-Date: 2020-10-17 11:37-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
 msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
@@ -33,8 +33,8 @@ msgstr "WPSSO gestionnaire de FAQ"
 
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
-msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
-msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
+msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
+msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions / réponses dans votre contenu."
 
 #: lib/filters-messages.php:62
 msgid "Hide the answer text by default and show when the question title is clicked."
@@ -328,8 +328,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-faq/"
 
 #. Description of the plugin/theme
-msgid "Create FAQ and Question / Answer Pages with Optional Shortcodes to Include FAQs and Questions in your Content."
-msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions dans votre contenu."
+msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
+msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions / réponses dans votre contenu."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
