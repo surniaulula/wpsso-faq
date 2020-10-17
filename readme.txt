@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.1
-Stable Tag: 3.6.3
+Stable Tag: 3.7.0
 
 Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
 
@@ -95,73 +95,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.4.
 	* WPSSO Core v8.8.0.
 
-**Version 3.6.3 (2020/09/18)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for the new WPSSO_ADMIN_SCRIPTS_PRIORITY constant in WPSSO Core v8.5.1.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.5.1.
-
-**Version 3.6.2 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v8.5.0.
-
-**Version 3.6.1 (2020/09/11)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `WpssoPost->add_attached()` to `WpssoPost::add_attached()` for WPSSO Core v8.4.0.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v8.4.1.
-
-**Version 3.6.0 (2020/09/05)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added support for the new 'bc_category_tax_slug' filter in WPSSO BC v3.0.0.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added a new lib/filters-messages.php library file.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v8.3.0.
-
 == Upgrade Notice ==
 
 = 3.7.0 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 3.6.3 =
-
-(2020/09/18) Added support for the new WPSSO_ADMIN_SCRIPTS_PRIORITY constant in WPSSO Core v8.5.1.
 
