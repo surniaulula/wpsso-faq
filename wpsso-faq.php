@@ -40,14 +40,14 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 
 	class WpssoFaq extends WpssoAddOn {
 
-		public $filters;	// WpssoFaqFilters class.
-		public $post;		// WpssoFaqPost class.
-		public $style;		// WpssoFaqStyle class.
-		public $term;		// WpssoFaqTerm class.
+		public $filters;	// WpssoFaqFilters class object.
+		public $post;		// WpssoFaqPost class object.
+		public $style;		// WpssoFaqStyle class object.
+		public $term;		// WpssoFaqTerm class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoFaq class object.
 
 		public function __construct() {
 

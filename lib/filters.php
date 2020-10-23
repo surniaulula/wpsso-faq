@@ -14,8 +14,9 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 	class WpssoFaqFilters {
 
-		private $p;
-		private $msgs;		// WpssoFaqFiltersMessages class object.
+		private $p;	// Wpsso class object.
+		private $msgs;	// WpssoFaqFiltersMessages class object.
+
 		private $og_type_faq          = 'website';
 		private $og_type_question     = 'article';
 		private $schema_type_faq      = 'webpage.faq';

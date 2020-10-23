@@ -13,7 +13,8 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 	class WpssoFaqPost {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $sc_after_key  = 'title';
 		private $sc_column_key = 'wpsso_faq_shortcode';
 

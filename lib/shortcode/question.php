@@ -14,7 +14,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 	class WpssoFaqShortcodeQuestion {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $shortcode_name = 'question';	// Default shortcode name.
 
 		public function __construct( &$plugin ) {
