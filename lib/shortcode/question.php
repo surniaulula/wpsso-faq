@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			return false;
 		}
 
-		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) { 
+		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
 			if ( $this->p->debug->enabled ) {
 

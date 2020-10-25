@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file ) { 
+		public static function set_constants( $plugin_file ) {
 
 			if ( defined( 'WPSSOFAQ_VERSION' ) ) {	// Define constants only once.
 
@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			}
 		}
 
-		public static function get_variable_constants() { 
+		public static function get_variable_constants() {
 
 			$var_const = array();
 
