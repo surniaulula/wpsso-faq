@@ -289,40 +289,40 @@ msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
 
-#: lib/submenu/faq-general.php:36
+#: lib/submenu/faq-general.php:38
 msgctxt "metabox title"
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: lib/submenu/faq-general.php:58
+#: lib/submenu/faq-general.php:60
 msgctxt "metabox tab"
 msgid "Shortcode Defaults"
 msgstr ""
 
-#: lib/submenu/faq-general.php:59
+#: lib/submenu/faq-general.php:61
 msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr ""
 
-#: lib/submenu/faq-general.php:86
+#: lib/submenu/faq-general.php:88
 msgctxt "option label"
 msgid "Clicking a Question Shows its Answer"
 msgstr ""
 
-#: lib/submenu/faq-general.php:91
+#: lib/submenu/faq-general.php:93
 msgctxt "option label"
 msgid "Answer Format Bellow the Question"
 msgstr ""
 
-#: lib/submenu/faq-general.php:94
+#: lib/submenu/faq-general.php:96
 msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:95
+#: lib/submenu/faq-general.php:97
 msgid "Excerpt"
 msgstr ""
 
-#: lib/submenu/faq-general.php:103
+#: lib/submenu/faq-general.php:105
 msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr ""
