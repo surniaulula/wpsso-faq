@@ -1,4 +1,4 @@
-=== FAQ Manager | WPSSO Add-on ===
+=== WPSSO FAQ Manager ===
 Plugin Name: WPSSO FAQ Manager
 Plugin Slug: wpsso-faq
 Text Domain: wpsso-faq
