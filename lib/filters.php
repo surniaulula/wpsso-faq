@@ -51,13 +51,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			if ( is_admin() ) {
 
-				/**
-				 * Instantiate the WpssoFaqFiltersMessages class object.
-				 */
-				if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
-
-					require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-messages.php';
-				}
+				require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-messages.php';
 
 				$this->msgs = new WpssoFaqFiltersMessages( $plugin );
 			}

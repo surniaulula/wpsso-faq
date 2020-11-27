@@ -41,20 +41,20 @@ msgid ""
 "FAQs and Questions / Answers in your content."
 msgstr ""
 
-#: lib/filters-messages.php:62
+#: lib/filters-messages.php:55
 msgid ""
 "Hide the answer text by default and show when the question title is clicked."
 msgstr ""
 
-#: lib/filters-messages.php:68
+#: lib/filters-messages.php:61
 msgid "Select the type of answer text to include below the question title."
 msgstr ""
 
-#: lib/filters-messages.php:74
+#: lib/filters-messages.php:67
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr ""
 
-#: lib/filters-messages.php:76
+#: lib/filters-messages.php:69
 msgid ""
 "If you enable this option, the FAQ and question content will only be "
 "accessible by using their shortcodes."

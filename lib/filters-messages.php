@@ -21,15 +21,6 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 		 */
 		public function __construct( &$plugin ) {
 
-			static $do_once = null;
-
-			if ( true === $do_once ) {
-
-				return;	// Stop here.
-			}
-
-			$do_once = true;
-
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
@@ -48,10 +39,12 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 		public function filter_messages_tooltip( $text, $msg_key ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( strpos( $msg_key, 'tooltip-faq_' ) !== 0 ) {
+
 				return $text;
 			}
 
