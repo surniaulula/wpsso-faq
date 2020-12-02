@@ -15,6 +15,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 	class WpssoFaqFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoFaq class object.
 		private $msgs;	// WpssoFaqFiltersMessages class object.
 
 		private $og_type_faq          = 'website';
@@ -22,7 +23,10 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 		private $schema_type_faq      = 'webpage.faq';
 		private $schema_type_question = 'question';
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoFaq->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -34,11 +38,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults' => 2,
@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-messages.php';
 
-				$this->msgs = new WpssoFaqFiltersMessages( $plugin );
+				$this->msgs = new WpssoFaqFiltersMessages( $plugin, $addon );
 			}
 
 			/**

@@ -15,15 +15,15 @@ if ( ! class_exists( 'WpssoFaqStyle' ) ) {
 	class WpssoFaqStyle {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoFaq class object.
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoFaq->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			if ( is_admin() ) {
 
@@ -33,20 +33,10 @@ if ( ! class_exists( 'WpssoFaqStyle' ) ) {
 
 		public function admin_enqueue_styles( $hook_name ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$this->add_admin_page_style();
 		}
 
 		private function add_admin_page_style() {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			$custom_style_css = '
 

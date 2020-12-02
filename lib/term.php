@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -14,17 +15,18 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 	class WpssoFaqTerm {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoFaq class object.
 
 		private $sc_after_key  = 'name';
 		private $sc_column_key = 'wpsso_faq_shortcode';
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoFaq->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			add_action( 'wp_loaded', array( $this, 'add_wp_hooks' ) );
 		}
@@ -34,13 +36,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 		 */
 		public function add_wp_hooks() {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			$is_admin = is_admin();	// Only check once.
-
-			if ( $is_admin ) {
+			if ( is_admin() ) {
 
 				add_filter( 'manage_edit-' . WPSSOFAQ_CATEGORY_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
 
@@ -49,11 +45,6 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 		}
 
 		public function add_term_column_headings( $columns ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( isset( $columns[ $this->sc_after_key ] ) ) {
 
@@ -69,6 +60,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 		public function get_column_content( $value, $column_name, $term_id ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( $column_name . ' for term ID ' . $term_id );
 			}
 

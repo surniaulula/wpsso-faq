@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.7.1\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -41,26 +41,26 @@ msgid ""
 "FAQs and Questions / Answers in your content."
 msgstr ""
 
-#: lib/filters-messages.php:55
+#: lib/filters-messages.php:44
 msgid ""
 "Hide the answer text by default and show when the question title is clicked."
 msgstr ""
 
-#: lib/filters-messages.php:61
+#: lib/filters-messages.php:50
 msgid "Select the type of answer text to include below the question title."
 msgstr ""
 
-#: lib/filters-messages.php:67
+#: lib/filters-messages.php:56
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr ""
 
-#: lib/filters-messages.php:69
+#: lib/filters-messages.php:58
 msgid ""
 "If you enable this option, the FAQ and question content will only be "
 "accessible by using their shortcodes."
 msgstr ""
 
-#: lib/post.php:78 lib/post.php:81 lib/term.php:60 lib/term.php:63
+#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:54
 msgid "Shortcode"
 msgstr ""
 

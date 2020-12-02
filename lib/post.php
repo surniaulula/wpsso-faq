@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -14,17 +15,18 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 	class WpssoFaqPost {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoFaq class object.
 
 		private $sc_after_key  = 'title';
 		private $sc_column_key = 'wpsso_faq_shortcode';
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoFaq->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			add_action( 'wp_loaded', array( $this, 'add_wp_hooks' ) );
 		}
@@ -34,13 +36,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		 */
 		public function add_wp_hooks() {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			$is_admin = is_admin();	// Only check once.
-
-			if ( $is_admin ) {
+			if ( is_admin() ) {
 
 				$ptns = array( WPSSOFAQ_QUESTION_POST_TYPE );
 
@@ -49,6 +45,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 					foreach ( $ptns as $ptn ) {
 
 						if ( $this->p->debug->enabled ) {
+
 							$this->p->debug->log( 'adding column filters for post type ' . $ptn );
 						}
 
@@ -68,16 +65,12 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 		public function add_post_column_headings( $columns ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			if ( isset( $columns[ $this->sc_after_key ] ) ) {
 
 				SucomUtil::add_after_key( $columns, $this->sc_after_key, $this->sc_column_key, __( 'Shortcode', 'wpsso-faq' ) );
 
 			} else {
+
 				$columns[ $this->sc_column_key ] = __( 'Shortcode', 'wpsso-faq' );
 			}
 
@@ -87,6 +80,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		public function show_column_content( $column_name, $post_id ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( $column_name . ' for post ID ' . $post_id );
 			}
 
