@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->log( $column_name . ' for post ID ' . $post_id );
+				$this->p->debug->log( $column_name . ' for post id ' . $post_id );
 			}
 
 			if ( $this->sc_column_key === $column_name ) {
