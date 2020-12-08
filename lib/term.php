@@ -61,7 +61,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->log( $column_name . ' for term id ' . $term_id );
+				$this->p->debug->log( $column_name . ' for term ID ' . $term_id );
 			}
 
 			if ( $this->sc_column_key === $column_name ) {

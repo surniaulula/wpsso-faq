@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$question_post_id = $atts[ 'id' ];
 
 			/**
-			 * Attach the post id to the question so the post cache can be cleared when the question is updated.
+			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
 			 */
 			global $post;
 
