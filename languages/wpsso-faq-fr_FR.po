@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.7.1\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-10-17 11:37-0700\n"
-"PO-Revision-Date: 2020-10-17 11:37-0700\n"
+"POT-Creation-Date: 2020-12-08 06:26-0800\n"
+"PO-Revision-Date: 2020-12-08 06:26-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:178
 msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:196
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
@@ -36,23 +36,23 @@ msgctxt "plugin description"
 msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
 msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions / réponses dans votre contenu."
 
-#: lib/filters-messages.php:62
+#: lib/filters-messages.php:44
 msgid "Hide the answer text by default and show when the question title is clicked."
 msgstr "Masquez le texte de la réponse par défaut et affichez quand le titre de la question est cliqué."
 
-#: lib/filters-messages.php:68
+#: lib/filters-messages.php:50
 msgid "Select the type of answer text to include below the question title."
 msgstr "Sélectionnez le type de texte de réponse à inclure sous le titre de la question."
 
-#: lib/filters-messages.php:74
+#: lib/filters-messages.php:56
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut."
 
-#: lib/filters-messages.php:76
+#: lib/filters-messages.php:58
 msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:77 lib/post.php:80 lib/term.php:59 lib/term.php:62
+#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:54
 msgid "Shortcode"
 msgstr "Code court"
 
@@ -276,45 +276,45 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:149
+#: lib/shortcode/question.php:150
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: lib/submenu/faq-general.php:36
+#: lib/submenu/faq-general.php:38
 msgctxt "metabox title"
 msgid "Frequently Asked Questions"
 msgstr "Questions fréquemment posées"
 
-#: lib/submenu/faq-general.php:58
+#: lib/submenu/faq-general.php:60
 msgctxt "metabox tab"
 msgid "Shortcode Defaults"
 msgstr "Défauts codes courts"
 
-#: lib/submenu/faq-general.php:59
+#: lib/submenu/faq-general.php:61
 msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr "Réglages de l'ajout"
 
-#: lib/submenu/faq-general.php:86
+#: lib/submenu/faq-general.php:88
 msgctxt "option label"
 msgid "Clicking a Question Shows its Answer"
 msgstr "Cliquez sur une question pour afficher sa réponse"
 
-#: lib/submenu/faq-general.php:91
+#: lib/submenu/faq-general.php:93
 msgctxt "option label"
 msgid "Answer Format Bellow the Question"
 msgstr "Format de réponse sous la question"
 
-#: lib/submenu/faq-general.php:94
+#: lib/submenu/faq-general.php:96
 msgid "Full Content"
 msgstr "Contenu complet"
 
-#: lib/submenu/faq-general.php:95
+#: lib/submenu/faq-general.php:97
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: lib/submenu/faq-general.php:103
+#: lib/submenu/faq-general.php:105
 msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr "Désactiver les URLs de question et FAQ"
