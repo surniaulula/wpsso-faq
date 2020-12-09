@@ -79,6 +79,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.9.0 (2020/12/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Updated `get_posts_mods()` module object calls for WPSSO Core v8.17.0.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.5.
+	* WPSSO Core v8.17.0-dev.1.
+
 **Version 3.8.0 (2020/12/02)**
 
 * **New Features**
@@ -111,6 +126,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 3.9.0-dev.1 =
+
+(2020/12/09) Updated `get_posts_mods()` module object calls for WPSSO Core v8.17.0.
 
 = 3.8.0 =
 
