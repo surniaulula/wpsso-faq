@@ -89,10 +89,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__include_schema' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
-				'id'               => 0,
-				'order'            => 'ASC',
-				'orderby'          => 'title',
+				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
+				'id'         => 0,
+				'order'      => 'ASC',
+				'orderby'    => 'title',
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -126,7 +126,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '<div class="wpsso-faq" id="' . $css_id . '">' . "\n";
 
-			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__add_json' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
@@ -146,14 +146,20 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
 			} else {
+
 				$html .= $title_text;
 			}
 
 			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
 
-			$posts_args = array( 'order' => $atts[ 'order' ], 'orderby' => $atts[ 'orderby' ] );
+			$posts_args = array(
+				'order'          => $atts[ 'order' ],
+				'orderby'        => $atts[ 'orderby' ],
+				'paged'          => 0,
+				'posts_per_page' => -1,
+			);
 
-			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp = -1, $paged = null, $posts_args );
+			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $posts_args );
 
 			foreach ( $posts_mods as $post_mod ) {
 
@@ -161,7 +167,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				 * Since the faq shortcode already includes Schema markup for all the questions, signal the
 				 * question shortcode not to include the Schema markup.
 				 */
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __include_schema="0"]' );
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __add_json="0"]' );
 			}
 
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";

@@ -89,8 +89,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			}
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__include_schema' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
-				'id'               => 0,
+				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
+				'id'         => 0,
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -166,7 +166,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
 
-			if ( wp_validate_boolean( $atts[ '__include_schema' ] ) ) {
+			if ( wp_validate_boolean( $atts[ '__add_json' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
