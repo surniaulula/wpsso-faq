@@ -88,11 +88,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated `get_posts_mods()` module object calls for WPSSO Core v8.17.0.
+	* Updated the `get_posts_mods()` module object call for WPSSO Core v8.17.0.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.5.
-	* WPSSO Core v8.17.0-dev.1.
+	* WPSSO Core v8.17.0-dev.2.
 
 **Version 3.8.0 (2020/12/02)**
 
@@ -127,9 +127,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.9.0-dev.1 =
+= 3.9.0-dev.2 =
 
-(2020/12/09) Updated `get_posts_mods()` module object calls for WPSSO Core v8.17.0.
+(2020/12/09) Updated the `get_posts_mods()` module object call for WPSSO Core v8.17.0.
 
 = 3.8.0 =
 
