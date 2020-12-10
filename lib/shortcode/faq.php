@@ -152,14 +152,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
 
-			$posts_args = array(
+			$extra_args = array(
 				'order'          => $atts[ 'order' ],
 				'orderby'        => $atts[ 'orderby' ],
-				'paged'          => 0,
-				'posts_per_page' => -1,
+				'paged'          => 0,		// Just in case.
+				'posts_per_page' => -1,	// Just in case.
 			);
 
-			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $posts_args );
+			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $extra_args );
 
 			foreach ( $posts_mods as $post_mod ) {
 
