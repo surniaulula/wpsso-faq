@@ -106,12 +106,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			/**
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
+			 *
+			 * Use SucomUtil::get_post_object(), which is back-end compatible, instead of using "global $post".
 			 */
-			global $post;
+			$post_obj = SucomUtil::get_post_object( $use_post = true );
 
-			if ( $post->ID && $post->ID !== $question_post_id ) {
+			if ( ! empty( $post_obj->ID ) && $post_obj->ID !== $question_post_id ) {
 
-				WpssoPost::add_attached( $question_post_id, $attach_name = 'post', $post->ID );
+				WpssoPost::add_attached( $question_post_id, $attach_name = 'post', $post_obj->ID );
 			}
 
 			/**
