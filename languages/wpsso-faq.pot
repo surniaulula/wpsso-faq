@@ -60,7 +60,7 @@ msgid ""
 "accessible by using their shortcodes."
 msgstr ""
 
-#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:54
+#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:55
 msgid "Shortcode"
 msgstr ""
 

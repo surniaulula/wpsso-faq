@@ -104,20 +104,12 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
 			}
 
-			$faq_term_id = $atts[ 'id' ];
-
-			/**
-			 * Get the term module array.
-			 */
-			$mod = $this->p->term->get_mod( $faq_term_id );
-
-			$css_id = 'wpsso-faq-' . $faq_term_id;
-
-			$frag_anchor = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
-
+			$faq_term_id   = $atts[ 'id' ];
+			$mod           = $this->p->term->get_mod( $faq_term_id );
+			$css_id        = 'wpsso-faq-' . $faq_term_id;
+			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
-
-			$title_text = $this->p->page->get_term_title( $faq_term_id, $sep = false );
+			$title_text    = $this->p->page->get_term_title( $faq_term_id, $title_sep = false );
 
 			/**
 			 * Create the HTML.
