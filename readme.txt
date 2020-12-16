@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page
 Contributors: jsmoriss
-Requires PHP: 5.6
+Requires PHP: 7.0
 Requires At Least: 4.5
 Tested Up To: 5.6
 Stable Tag: 3.9.0
@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated the `get_posts_mods()` module object call for WPSSO Core v8.17.0.
 * **Requires At Least**
-	* PHP v5.6.
+	* PHP v7.0.
 	* WordPress v4.5.
 	* WPSSO Core v8.17.0.
 
