@@ -174,7 +174,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'show_in_nav_menus'  => true,
 				'show_admin_column'  => true,
 				'show_in_quick_edit' => true,
-				'show_in_rest'       => true,
+				'show_in_rest'       => true,	// Show this taxonomy in the block editor.
 				'show_tagcloud'      => false,
 				'description'        => _x( 'FAQ Categories for Questions', 'Taxonomy description', 'wpsso-faq' ),
 				'hierarchical'       => true,
