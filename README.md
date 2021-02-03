@@ -14,9 +14,7 @@
 
 <h2>Description</h2>
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"></p>
-
-<p>The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress Question editing page. You can also categorize your Questions / Answers into FAQ categories, just like standard WordPress Posts.</p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"> The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress Question editing page. You can also categorize your Questions / Answers into FAQ categories, just like standard WordPress Posts.</p>
 
 <p>Use the standard WordPress FAQ category archive and question pages, and/or use <code>[faq]</code> and <code>[question]</code> shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).</p>
 
