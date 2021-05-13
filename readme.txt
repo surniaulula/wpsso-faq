@@ -75,12 +75,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.10.0-dev.1 (TBD)**
+**Version 3.10.0-dev.1 (2021/05/13)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Added new options in the SSO &gt; FAQ Settings page:
+		* FAQ Shortcode Title Heading
+		* Question Shortcode Title Heading
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -155,7 +157,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 3.10.0-dev.1 =
 
-(TBD) None.
+(2021/05/13) Added new options in the SSO &gt; FAQ Settings page.
 
 = 3.9.1 =
 
