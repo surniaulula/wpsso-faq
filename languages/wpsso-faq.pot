@@ -41,20 +41,58 @@ msgid ""
 "FAQs and Questions / Answers in your content."
 msgstr ""
 
+#: gettext/gettext-lib-config.php:9
+msgctxt "option value"
+msgid "Heading 1"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:10
+msgctxt "option value"
+msgid "Heading 2"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:11
+msgctxt "option value"
+msgid "Heading 3"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:12
+msgctxt "option value"
+msgid "Heading 4"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:13
+msgctxt "option value"
+msgid "Heading 5"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:14
+msgctxt "option value"
+msgid "Heading 6"
+msgstr ""
+
 #: lib/filters-messages.php:44
+msgid "Select an HTML heading level for the FAQ category shortcode title."
+msgstr ""
+
+#: lib/filters-messages.php:50
+msgid "Select an HTML heading level for the question shortcode title."
+msgstr ""
+
+#: lib/filters-messages.php:56
+msgid "Select the type of answer text to include under the question title."
+msgstr ""
+
+#: lib/filters-messages.php:62
 msgid ""
 "Hide the answer text by default and show when the question title is clicked."
 msgstr ""
 
-#: lib/filters-messages.php:50
-msgid "Select the type of answer text to include below the question title."
-msgstr ""
-
-#: lib/filters-messages.php:56
+#: lib/filters-messages.php:67
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr ""
 
-#: lib/filters-messages.php:58
+#: lib/filters-messages.php:69
 msgid ""
 "If you enable this option, the FAQ and question content will only be "
 "accessible by using their shortcodes."
@@ -284,7 +322,7 @@ msgid "Question and Answer"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:152
+#: lib/shortcode/question.php:153
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
@@ -306,23 +344,33 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:88
 msgctxt "option label"
-msgid "Clicking a Question Shows its Answer"
+msgid "FAQ Shortcode Title Heading"
 msgstr ""
 
 #: lib/submenu/faq-general.php:93
 msgctxt "option label"
-msgid "Answer Format Bellow the Question"
+msgid "Question Shortcode Title Heading"
 msgstr ""
 
-#: lib/submenu/faq-general.php:96
+#: lib/submenu/faq-general.php:98
+msgctxt "option label"
+msgid "Question Shortcode Answer Format"
+msgstr ""
+
+#: lib/submenu/faq-general.php:101
 msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:97
+#: lib/submenu/faq-general.php:102
 msgid "Excerpt"
 msgstr ""
 
-#: lib/submenu/faq-general.php:105
+#: lib/submenu/faq-general.php:106
+msgctxt "option label"
+msgid "Clicking a Question Shows its Answer"
+msgstr ""
+
+#: lib/submenu/faq-general.php:115
 msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr ""

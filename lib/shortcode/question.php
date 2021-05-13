@@ -91,6 +91,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$atts = shortcode_atts( array(	// Since WP v2.5.
 				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
 				'id'         => 0,
+				'heading'    => $this->p->options[ 'faq_question_heading' ],
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -178,7 +179,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
 			}
 
-			$html .= '<h4 class="wpsso-question-title">';
+			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-question-title">';
 
 			/**
 			 * Show / hide answer when question title is clicked.
@@ -203,7 +204,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				}
 			}
 
-			$html .= '</h4><!-- .wpsso-question-title -->' . "\n";
+			$html .= '</' . esc_attr( $atts[ 'heading' ] ) . '><!-- .wpsso-question-title -->' . "\n";
 
 			$html .= '<div class="wpsso-question-content" id="' . $css_id . '-content"';
 

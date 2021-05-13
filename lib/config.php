@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
 					'version'     => '3.10.0-dev.1',	// Plugin version.
-					'opt_version' => '7',		// Increment when changing default option values.
+					'opt_version' => '9',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
 					'desc'        => 'Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.',
@@ -73,9 +73,21 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			 */
 			'opt' => array(
 				'defaults' => array(
-					'faq_answer_toggle'   => 0,		// Clicking a Question Shows its Answer.
-					'faq_answer_format'   => 'excerpt',	// Answer Format Bellow the Question.
-					'faq_public_disabled' => 0,		// Disable FAQ and Question Page URLs.
+					'faq_heading'          => 'h2',
+					'faq_question_heading' => 'h3',
+					'faq_answer_format'    => 'excerpt',	// Question Shortcode Answer Format.
+					'faq_answer_toggle'    => 0,		// Clicking a Question Shows its Answer.
+					'faq_public_disabled'  => 0,		// Disable FAQ and Question Page URLs.
+				),
+			),
+			'form' => array(
+				'html_headings' => array(
+					'h1' => 'Heading 1',
+					'h2' => 'Heading 2',
+					'h3' => 'Heading 3',
+					'h4' => 'Heading 4',
+					'h5' => 'Heading 5',
+					'h6' => 'Heading 6',
 				),
 			),
 		);

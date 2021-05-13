@@ -39,18 +39,29 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 			switch ( $msg_key ) {
 
+				case 'tooltip-faq_heading':		// FAQ Shortcode Title Heading.
+
+					$text = __( 'Select an HTML heading level for the FAQ category shortcode title.', 'wpsso-faq' );
+
+					break;
+
+				case 'tooltip-faq_question_heading':	// Question Shortcode Title Heading.
+
+					$text = __( 'Select an HTML heading level for the question shortcode title.', 'wpsso-faq' );
+
+					break;
+
+				case 'tooltip-faq_answer_format':	// Question Shortcode Answer Format.
+
+					$text = __( 'Select the type of answer text to include under the question title.', 'wpsso-faq' );
+
+					break;
+
 				case 'tooltip-faq_answer_toggle':	// Clicking a Question Shows its Answer.
 
 					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
 
 					break;
-
-				case 'tooltip-faq_answer_format':	// Answer Format Bellow the Question.
-
-					$text = __( 'Select the type of answer text to include below the question title.', 'wpsso-faq' );
-
-					break;
-
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question Page URLs.
 
 					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';

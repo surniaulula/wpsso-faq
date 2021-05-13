@@ -91,6 +91,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$atts = shortcode_atts( array(	// Since WP v2.5.
 				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
 				'id'         => 0,
+				'heading'    => $this->p->options[ 'faq_heading' ],
 				'order'      => 'ASC',
 				'orderby'    => 'title',
 			), $atts );
@@ -128,7 +129,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
 			}
 
-			$html .= '<h3 class="wpsso-faq-title">';
+			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-faq-title">';
 
 			/**
 			 * Only link the title if we have a publicly accessible page.
@@ -142,7 +143,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$html .= $title_text;
 			}
 
-			$html .= '</h3><!-- .wpsso-faq-title -->' . "\n";
+			$html .= '</' . esc_attr( $atts[ 'heading' ] ) . '><!-- .wpsso-faq-title -->' . "\n";
 
 			$extra_args = array(
 				'order'          => $atts[ 'order' ],
