@@ -1,16 +1,21 @@
 
-<p>The &#91;faq&#93; shortcode can be used to include a FAQ category (ie. a group of Questions) from the FAQs &gt; FAQ Categories list.</p>
+<p>The &#91;faq&#93; shortcode can be used to include a FAQ category (ie. a group of Questions) from the <em>FAQs &gt; FAQ Categories</em> list.</p>
 
 <pre class="lang:xhtml decode:true">
 &#91;faq id="123"&#93;
 </pre>
 
-<p>By default, the &#91;faq&#93; shortcode includes Questions sorted by title. You can change this the default sort order by using
-the "order" and "orderby" shortcode attribute.</p>
+<p>By default, the &#91;faq&#93; shortcode includes Questions sorted by title. You can change the default sort order using the 'order' and 'orderby' shortcode attribute.</p>
 
 <pre class="lang:xhtml decode:true">
-&#91;faq order="ASC" orderby="menu_order"&#93;
+&#91;faq id="123" order="ASC" orderby="menu_order"&#93;
 </pre>
 
 <p>See the <a href="https://developer.wordpress.org/reference/classes/wp_query/#order-orderby-parameters">Order and Orderby Parameters section in the WordPress WP_Query code reference</a> for additional information on these WordPress query attributes.</p>
+
+<p>You can change the default heading level and the FAQ title using the 'heading' and 'title' attributes.</p>
+
+<pre class="lang:xhtml decode:true">
+&#91;faq id="123" heading="h2" title="Alternate FAQ Title"&#93;
+</pre>
 

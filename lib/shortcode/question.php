@@ -92,6 +92,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
 				'id'         => 0,
 				'heading'    => $this->p->options[ 'faq_question_heading' ],
+				'title'      => null,
 			), $atts );
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
@@ -103,7 +104,15 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
 			}
 
-			$question_post_id = $atts[ 'id' ];
+			$post_id       = $atts[ 'id' ];
+			$mod           = $this->p->post->get_mod( $post_id );
+			$css_id        = 'wpsso-question-' . $post_id;
+			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
+			$canonical_url = $this->p->util->get_canonical_url( $mod );
+			$title_text    = empty( $atts[ 'title' ] ) ?
+				get_the_title( $post_id ) :
+				sanitize_text_field( $atts[ 'title' ] );
+
 
 			/**
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
@@ -112,23 +121,10 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			$post_obj = SucomUtil::get_post_object( $use_post = true );
 
-			if ( ! empty( $post_obj->ID ) && $post_obj->ID !== $question_post_id ) {
+			if ( ! empty( $post_obj->ID ) && $post_obj->ID !== $post_id ) {
 
-				WpssoPost::add_attached( $question_post_id, $attach_name = 'post', $post_obj->ID );
+				WpssoPost::add_attached( $post_id, $attach_name = 'post', $post_obj->ID );
 			}
-
-			/**
-			 * Get the post module array.
-			 */
-			$mod = $this->p->post->get_mod( $question_post_id );
-
-			$css_id = 'wpsso-question-' . $question_post_id;
-
-			$frag_anchor = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
-
-			$canonical_url = $this->p->util->get_canonical_url( $mod );
-
-			$title_text = get_the_title( $question_post_id );
 
 			switch ( $this->p->options[ 'faq_answer_format' ] ) {
 
@@ -141,7 +137,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				case 'excerpt':
 				default:
 
-					if ( has_excerpt( $question_post_id ) ) {
+					if ( has_excerpt( $post_id ) ) {
 
 						$content = $this->p->page->get_the_excerpt( $mod );
 
