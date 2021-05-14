@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.10.0-dev.1 (2021/05/13)**
+**Version 3.10.0-dev.2 (2021/05/13)**
 
 * **New Features**
 	* None.
@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.28.2-dev.1.
+	* WPSSO Core v8.28.2-dev.2.
 
 **Version 3.9.1 (2021/02/25)**
 
@@ -155,7 +155,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.10.0-dev.1 =
+= 3.10.0-dev.2 =
 
 (2021/05/13) Added new options in the SSO &gt; FAQ Settings page.
 
