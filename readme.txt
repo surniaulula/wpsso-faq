@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.10.0-dev.2 (2021/05/13)**
+**Version 3.10.0-dev.2 (2021/05/14)**
 
 * **New Features**
 	* None.
@@ -83,6 +83,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added new options in the SSO &gt; FAQ Settings page:
 		* FAQ Shortcode Title Heading
 		* Question Shortcode Title Heading
+	* Added new 'heading' and 'title' shortcode attributes:
+		* See the [FAQ shortcode documentation](https://wpsso.com/docs/plugins/wpsso-faq/notes/faq-shortcode/).
+		* See the [Question shortcode documentation](https://wpsso.com/docs/plugins/wpsso-faq/notes/question-shortcode/).
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -157,7 +160,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 3.10.0-dev.2 =
 
-(2021/05/13) Added new options in the SSO &gt; FAQ Settings page.
+(2021/05/14) Added new options in the SSO &gt; FAQ Settings page. Added new 'heading' and 'title' shortcode attributes.
 
 = 3.9.1 =
 
