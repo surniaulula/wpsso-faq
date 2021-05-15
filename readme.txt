@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.10.0-dev.3 (2021/05/14)**
+**Version 3.10.0-b.1 (2021/05/15)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.28.2-dev.3.
+	* WPSSO Core v8.28.2-b.1.
 
 **Version 3.9.1 (2021/02/25)**
 
@@ -158,9 +158,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.10.0-dev.3 =
+= 3.10.0-b.1 =
 
-(2021/05/14) Added new options in the SSO &gt; FAQ Settings page. Added new 'heading' and 'title' shortcode attributes.
+(2021/05/15) Added new options in the SSO &gt; FAQ Settings page. Added new 'heading' and 'title' shortcode attributes.
 
 = 3.9.1 =
 
