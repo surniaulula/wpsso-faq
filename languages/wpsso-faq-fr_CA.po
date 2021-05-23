@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.9.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.10.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2020-12-10 10:31-0800\n"
-"PO-Revision-Date: 2020-12-10 10:31-0800\n"
+"POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-05-23 16:19-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:178
@@ -36,23 +36,61 @@ msgctxt "plugin description"
 msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
 msgstr "Créez des pages FAQ et questions / réponses avec codes courts facultatifs pour inclure des FAQs et questions / réponses dans votre contenu."
 
+#: gettext/gettext-lib-config.php:9
+msgctxt "option value"
+msgid "Heading 1"
+msgstr "Entête 1"
+
+#: gettext/gettext-lib-config.php:10
+msgctxt "option value"
+msgid "Heading 2"
+msgstr "Entête 2"
+
+#: gettext/gettext-lib-config.php:11
+msgctxt "option value"
+msgid "Heading 3"
+msgstr "Entête 3"
+
+#: gettext/gettext-lib-config.php:12
+msgctxt "option value"
+msgid "Heading 4"
+msgstr "Entête 4"
+
+#: gettext/gettext-lib-config.php:13
+msgctxt "option value"
+msgid "Heading 5"
+msgstr "Entête 5"
+
+#: gettext/gettext-lib-config.php:14
+msgctxt "option value"
+msgid "Heading 6"
+msgstr "Entête 6"
+
 #: lib/filters-messages.php:44
+msgid "Select an HTML heading level for the FAQ category shortcode title."
+msgstr "Sélectionnez un niveau d'en-tête HTML pour le titre du code court de catégorie FAQ."
+
+#: lib/filters-messages.php:50
+msgid "Select an HTML heading level for the question shortcode title."
+msgstr "Sélectionnez un niveau d'en-tête HTML pour le titre du code court de question."
+
+#: lib/filters-messages.php:56
+msgid "Select the type of answer text to include under the question title."
+msgstr "Sélectionnez le type de texte de réponse à inclure sous le titre de la question."
+
+#: lib/filters-messages.php:62
 msgid "Hide the answer text by default and show when the question title is clicked."
 msgstr "Masquez le texte de la réponse par défaut et affichez quand le titre de la question est cliqué."
 
-#: lib/filters-messages.php:50
-msgid "Select the type of answer text to include below the question title."
-msgstr "Sélectionnez le type de texte de réponse à inclure sous le titre de la question."
-
-#: lib/filters-messages.php:56
+#: lib/filters-messages.php:67
 msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut."
 
-#: lib/filters-messages.php:58
+#: lib/filters-messages.php:69
 msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:54
+#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:55
 msgid "Shortcode"
 msgstr "Code court"
 
@@ -276,7 +314,7 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:150
+#: lib/shortcode/question.php:149
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
@@ -298,23 +336,33 @@ msgstr "Réglages de l'ajout"
 
 #: lib/submenu/faq-general.php:88
 msgctxt "option label"
-msgid "Clicking a Question Shows its Answer"
-msgstr "Cliquez sur une question pour afficher sa réponse"
+msgid "FAQ Shortcode Title Heading"
+msgstr "En-tête du titre du code court de catégorie FAQ"
 
 #: lib/submenu/faq-general.php:93
 msgctxt "option label"
-msgid "Answer Format Bellow the Question"
-msgstr "Format de réponse sous la question"
+msgid "Question Shortcode Title Heading"
+msgstr "En-tête du titre du code court de question"
 
-#: lib/submenu/faq-general.php:96
+#: lib/submenu/faq-general.php:98
+msgctxt "option label"
+msgid "Question Shortcode Answer Format"
+msgstr "Format de réponse pour code court de question"
+
+#: lib/submenu/faq-general.php:101
 msgid "Full Content"
 msgstr "Contenu complet"
 
-#: lib/submenu/faq-general.php:97
+#: lib/submenu/faq-general.php:102
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: lib/submenu/faq-general.php:105
+#: lib/submenu/faq-general.php:106
+msgctxt "option label"
+msgid "Clicking a Question Shows its Answer"
+msgstr "Cliquez sur une question pour afficher sa réponse"
+
+#: lib/submenu/faq-general.php:115
 msgctxt "option label"
 msgid "Disable FAQ and Question Page URLs"
 msgstr "Désactiver les URLs de question et FAQ"
@@ -338,3 +386,7 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
+
+#~ msgctxt "option label"
+#~ msgid "Answer Format Bellow the Question"
+#~ msgstr "Format de réponse sous la question"
