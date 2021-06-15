@@ -77,12 +77,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 **Version 3.10.1-dev.1 (2021/05/15)**
 
-Maintenance release for WPSSO Core v8.30.2.
-
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Minor update for FAQ Manager settings page translation strings.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -177,7 +175,7 @@ Maintenance release for WPSSO Core v8.30.2.
 
 = 3.10.1-dev.1 =
 
-(2021/07/15) Maintenance release for WPSSO Core v8.30.2.
+(2021/07/15) Minor update for FAQ Manager settings page translation strings.
 
 = 3.10.0 =
 
