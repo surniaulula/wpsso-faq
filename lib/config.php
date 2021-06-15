@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '3.10.0',	// Plugin version.
+					'version'     => '3.10.1-dev.1',	// Plugin version.
 					'opt_version' => '9',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.28.2',
+							'min_version'   => '8.30.1-dev.1',
 						),
 					),
 
@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'faq_question_heading' => 'h3',
 					'faq_answer_format'    => 'excerpt',	// Question Shortcode Answer Format.
 					'faq_answer_toggle'    => 0,		// Clicking a Question Shows its Answer.
-					'faq_public_disabled'  => 0,		// Disable FAQ and Question Page URLs.
+					'faq_public_disabled'  => 0,		// Disable FAQ and Question URLs.
 				),
 			),
 			'form' => array(

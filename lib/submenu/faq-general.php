@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 				case 'faq-general-settings':
 
 					$table_rows[ 'faq_public_disabled' ] = '' .
-						$this->form->get_th_html( _x( 'Disable FAQ and Question Page URLs', 'option label', 'wpsso-faq' ),
+						$this->form->get_th_html( _x( 'Disable FAQ and Question URLs', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_public_disabled' ) . 
 						'<td>' . $this->form->get_checkbox( 'faq_public_disabled' ) . '</td>';
 

@@ -62,11 +62,11 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
 
 					break;
-				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question Page URLs.
+				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 
 					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
 
-					$text .= __( 'If you enable this option, the FAQ and question content will only be accessible by using their shortcodes.', 'wpsso-faq' );
+					$text .= __( 'If you enable this option, the FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
 
 					break;
 			}
