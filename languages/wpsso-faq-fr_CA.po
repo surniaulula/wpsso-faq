@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.10.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.10.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-06-11 11:49-0700\n"
+"PO-Revision-Date: 2021-06-15 13:11-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -87,8 +87,8 @@ msgid "The FAQ and question pages have publicly accessible URLs by default."
 msgstr "Les pages FAQ et questions ont des URL accessibles au public par défaut."
 
 #: lib/filters-messages.php:69
-msgid "If you enable this option, the FAQ and question content will only be accessible by using their shortcodes."
-msgstr "Si vous activez cette option, le contenu des FAQs et questions ne seront accessibles qu'en utilisant leurs codes courts."
+msgid "If you enable this option, the FAQs and questions will only be accessible by using their shortcodes."
+msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
 #: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:55
 msgid "Shortcode"
@@ -364,7 +364,7 @@ msgstr "Cliquez sur une question pour afficher sa réponse"
 
 #: lib/submenu/faq-general.php:115
 msgctxt "option label"
-msgid "Disable FAQ and Question Page URLs"
+msgid "Disable FAQ and Question URLs"
 msgstr "Désactiver les URLs de question et FAQ"
 
 #. Plugin Name of the plugin/theme
@@ -386,7 +386,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
-
-#~ msgctxt "option label"
-#~ msgid "Answer Format Bellow the Question"
-#~ msgstr "Format de réponse sous la question"
