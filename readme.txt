@@ -75,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.10.1-rc.1 (2021/06/16)**
+**Version 3.10.1 (2021/06/16)**
 
 * **New Features**
 	* None.
@@ -88,7 +88,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.30.2-rc.1.
+	* WPSSO Core v8.30.2.
 
 **Version 3.10.0 (2021/05/15)**
 
@@ -173,7 +173,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.10.1-rc.1 =
+= 3.10.1 =
 
 (2021/06/16) Minor update for FAQ Manager settings page translation strings.
 
