@@ -19,7 +19,9 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"> The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress Question editing page. You can also categorize your Questions / Answers into FAQ categories, just like standard WordPress Posts.</p>
 
-Use the standard WordPress FAQ category archive and question pages, and/or use `[faq]` and `[question]` shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).
+Use the standard WordPress FAQ category archive and question page URLs, and/or use `[faq]` and `[question]` shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).
+
+The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage Questions / Answers and FAQs.
 
 **Optional:**
 
