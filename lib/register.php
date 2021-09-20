@@ -26,9 +26,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_faq_category' ), 10, 0 );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_taxonomy_faq_category' ), 10, 0 );
 
-			add_action( 'wpsso_init_options', array( $this, 'register_post_type_question' ), 10, 0 );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_post_type_question' ), 10, 0 );
 		}
 
 		/**
@@ -115,9 +115,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 					WpssoUtilReg::update_ext_version( 'wpssofaq', $version );
 				}
 
-				$this->register_taxonomy_faq_category();
+				self::register_taxonomy_faq_category();
 
-				$this->register_post_type_question();
+				self::register_post_type_question();
 
 				flush_rewrite_rules();
 			}
@@ -134,12 +134,12 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 		private static function uninstall_plugin() {}
 
-		public function register_taxonomy_faq_category() {
+		public static function register_taxonomy_faq_category() {
 
 			$wpsso =& Wpsso::get_instance();
 
 			/**
-			 * Check if FAQ category and question pages available publicly.
+			 * Check if FAQ category and question pages are available publicly.
 			 */
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
@@ -183,12 +183,12 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			register_taxonomy( WPSSOFAQ_CATEGORY_TAXONOMY, array( WPSSOFAQ_QUESTION_POST_TYPE ), $args );
 		}
 
-		public function register_post_type_question() {
+		public static function register_post_type_question() {
 
 			$wpsso =& Wpsso::get_instance();
 
 			/**
-			 * Check if FAQ category and question pages available publicly.
+			 * Check if FAQ category and question pages are available publicly.
 			 */
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
