@@ -79,6 +79,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.11.0-rc.1 (2021/09/23)**
+
+Maintenance release for WPSSO Core v9.0.0.
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v9.0.0-rc.1.
+
 **Version 3.10.1 (2021/06/16)**
 
 * **New Features**
@@ -176,6 +193,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 3.11.0-rc.1 =
+
+(2021/09/23) Maintenance release for WPSSO Core v9.0.0.
 
 = 3.10.1 =
 
