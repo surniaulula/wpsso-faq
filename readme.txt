@@ -17,21 +17,11 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"> The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress Question editing page. You can also categorize your Questions / Answers into FAQ categories, just like standard WordPress Posts.</p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-faq/assets/icon-256x256.png"> The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress editing page and categorize your Questions / Answers into FAQ categories.</p>
 
-Use the standard WordPress FAQ category archive and question page URLs, and/or use <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your Post / Page content -- both will automatically reflect any change your make to your Questions / Answers or FAQ categories (ie. adding / removing questions, updating answers, etc.).
+You can use the standard WordPress FAQ category archive and question page templates and URLs, and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
 
-The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage Questions / Answers and FAQs.
-
-**Optional:**
-
-If you need **Schema FAQPage** markup for the FAQ shortcode or FAQ categories you create, you will also need the [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) to generate the Schema FAQPage markup.
-
-The WPSSO FAQ Manager add-on manages Question / Answer pages and FAQ categories - it does not create Schema markup or meta tags.
-
-**Optional:**
-
-If you need to adjust the default FAQ category archive page layout, see the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a new FAQ category archive page template based on your current theme archive page template.
+The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage Questions / Answers and FAQs. If you need to adjust the default FAQ category archive page layout, see the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a new FAQ category archive page template based on your current theme archive page template.
 
 <h3>WPSSO Core Required</h3>
 
@@ -79,7 +69,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.11.0-rc.1 (2021/09/23)**
+**Version 3.11.0-rc.2 (2021/09/23)**
 
 Maintenance release for WPSSO Core v9.0.0.
 
@@ -94,7 +84,7 @@ Maintenance release for WPSSO Core v9.0.0.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
-	* WPSSO Core v9.0.0-rc.1.
+	* WPSSO Core v9.0.0-rc.2.
 
 **Version 3.10.1 (2021/06/16)**
 
@@ -194,7 +184,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.11.0-rc.1 =
+= 3.11.0-rc.2 =
 
 (2021/09/23) Maintenance release for WPSSO Core v9.0.0.
 
