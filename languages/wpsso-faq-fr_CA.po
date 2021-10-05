@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.11.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.11.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-23 11:30-0700\n"
+"PO-Revision-Date: 2021-10-05 08:55-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -334,35 +334,35 @@ msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr "Réglages de l'ajout"
 
-#: lib/submenu/faq-general.php:88
+#: lib/submenu/faq-general.php:87
 msgctxt "option label"
 msgid "FAQ Shortcode Title Heading"
 msgstr "En-tête du titre du code court de catégorie FAQ"
 
-#: lib/submenu/faq-general.php:93
+#: lib/submenu/faq-general.php:92
 msgctxt "option label"
 msgid "Question Shortcode Title Heading"
 msgstr "En-tête du titre du code court de question"
 
-#: lib/submenu/faq-general.php:98
+#: lib/submenu/faq-general.php:97
 msgctxt "option label"
 msgid "Question Shortcode Answer Format"
 msgstr "Format de réponse pour code court de question"
 
-#: lib/submenu/faq-general.php:101
+#: lib/submenu/faq-general.php:100
 msgid "Full Content"
 msgstr "Contenu complet"
 
-#: lib/submenu/faq-general.php:102
+#: lib/submenu/faq-general.php:101
 msgid "Excerpt"
 msgstr "Extrait"
 
-#: lib/submenu/faq-general.php:106
+#: lib/submenu/faq-general.php:105
 msgctxt "option label"
 msgid "Clicking a Question Shows its Answer"
 msgstr "Cliquez sur une question pour afficher sa réponse"
 
-#: lib/submenu/faq-general.php:115
+#: lib/submenu/faq-general.php:114
 msgctxt "option label"
 msgid "Disable FAQ and Question URLs"
 msgstr "Désactiver les URLs de question et FAQ"
