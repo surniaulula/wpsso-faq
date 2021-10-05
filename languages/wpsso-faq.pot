@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.11.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.11.1-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -342,35 +342,35 @@ msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr ""
 
-#: lib/submenu/faq-general.php:88
+#: lib/submenu/faq-general.php:87
 msgctxt "option label"
 msgid "FAQ Shortcode Title Heading"
 msgstr ""
 
-#: lib/submenu/faq-general.php:93
+#: lib/submenu/faq-general.php:92
 msgctxt "option label"
 msgid "Question Shortcode Title Heading"
 msgstr ""
 
-#: lib/submenu/faq-general.php:98
+#: lib/submenu/faq-general.php:97
 msgctxt "option label"
 msgid "Question Shortcode Answer Format"
 msgstr ""
 
-#: lib/submenu/faq-general.php:101
+#: lib/submenu/faq-general.php:100
 msgid "Full Content"
 msgstr ""
 
-#: lib/submenu/faq-general.php:102
+#: lib/submenu/faq-general.php:101
 msgid "Excerpt"
 msgstr ""
 
-#: lib/submenu/faq-general.php:106
+#: lib/submenu/faq-general.php:105
 msgctxt "option label"
 msgid "Clicking a Question Shows its Answer"
 msgstr ""
 
-#: lib/submenu/faq-general.php:115
+#: lib/submenu/faq-general.php:114
 msgctxt "option label"
 msgid "Disable FAQ and Question URLs"
 msgstr ""
