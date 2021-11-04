@@ -83,11 +83,6 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->log( $atts );
-			}
-
 			$atts = shortcode_atts( array(	// Since WP v2.5.
 				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
 				'id'         => 0,
@@ -96,6 +91,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				'orderby'    => 'title',
 				'title'      => null,
 			), $atts );
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->log_arr( '$atts', $atts );
+			}
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
 
@@ -126,7 +126,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
-					$this->p->debug->log( 'adding schema markup for ' . $css_id );
+					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
+					$this->p->debug->log( 'applying wpsso_content_html_script_application_ld_json filter' );
 				}
 
 				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
@@ -152,10 +153,15 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				'order'          => $atts[ 'order' ],
 				'orderby'        => $atts[ 'orderby' ],
 				'paged'          => 0,		// Just in case.
-				'posts_per_page' => -1,	// Just in case.
+				'posts_per_page' => -1,		// Just in case.
 			);
 
 			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $extra_args );
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->log( 'found ' . count( $posts_mods ) . ' post mods' );
+			}
 
 			foreach ( $posts_mods as $post_mod ) {
 

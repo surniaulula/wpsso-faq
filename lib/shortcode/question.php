@@ -83,17 +83,17 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->log( $atts );
-			}
-
 			$atts = shortcode_atts( array(	// Since WP v2.5.
 				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
 				'id'         => 0,
 				'heading'    => $this->p->options[ 'faq_question_heading' ],
 				'title'      => null,
 			), $atts );
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->log_arr( '$atts', $atts );
+			}
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
 
@@ -112,7 +112,6 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$title_text    = empty( $atts[ 'title' ] ) ?
 				get_the_title( $post_id ) :
 				sanitize_text_field( $atts[ 'title' ] );
-
 
 			/**
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
@@ -169,7 +168,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 				if ( $this->p->debug->enabled ) {
 
-					$this->p->debug->log( 'adding schema markup for ' . $css_id );
+					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
+					$this->p->debug->log( 'applying wpsso_content_html_script_application_ld_json filter' );
 				}
 
 				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
@@ -196,6 +196,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
 
 				} else {
+
 					$html .= $title_text;
 				}
 			}
@@ -208,6 +209,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 * Hide answer by default.
 			 */
 			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
+
 				$html .= ' style="display:none;"';
 			}
 
