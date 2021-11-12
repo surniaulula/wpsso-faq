@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				 */
 				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
 
-					$version = WpssoFaqConfig::$cf[ 'plugin' ][ 'wpssofaq' ][ 'version' ];
+					$version = WpssoFaqConfig::get_version();
 
 					WpssoUtilReg::update_ext_version( 'wpssofaq', $version );
 				}
