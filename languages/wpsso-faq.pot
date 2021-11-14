@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.11.1\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.11.2-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:180
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:213
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr ""
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:196
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:227
 msgid ""
 "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
 "currently installed)."
@@ -40,31 +40,36 @@ msgid ""
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9
-msgctxt "option value"
-msgid "Heading 1"
+msgctxt "plugin name"
+msgid "WPSSO Core"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:10
 msgctxt "option value"
-msgid "Heading 2"
+msgid "Heading 1"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:11
 msgctxt "option value"
-msgid "Heading 3"
+msgid "Heading 2"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:12
 msgctxt "option value"
-msgid "Heading 4"
+msgid "Heading 3"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:13
 msgctxt "option value"
-msgid "Heading 5"
+msgid "Heading 4"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:14
+msgctxt "option value"
+msgid "Heading 5"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:15
 msgctxt "option value"
 msgid "Heading 6"
 msgstr ""
