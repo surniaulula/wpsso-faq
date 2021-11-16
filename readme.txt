@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.11.2 (2021/11/15)**
+**Version 3.11.2 (2021/11/16)**
 
 * **New Features**
 	* None.
@@ -226,7 +226,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.11.2 =
 
-(2021/11/15) Refactored the `SucomAddOn->get_missing_requirements()` method.
+(2021/11/16) Refactored the `SucomAddOn->get_missing_requirements()` method.
 
 = 3.11.1 =
 
