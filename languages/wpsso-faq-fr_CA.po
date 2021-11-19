@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.11.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-15 09:03-0800\n"
+"PO-Revision-Date: 2021-11-19 11:43-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -183,10 +183,12 @@ msgid "FAQ Categories for Questions"
 msgstr "Catégories de FAQ pour les questions"
 
 #: lib/register.php:199
+msgctxt "Post type general name"
 msgid "Questions"
 msgstr "Questions"
 
 #: lib/register.php:200
+msgctxt "Post type singular name"
 msgid "Question"
 msgstr "Question"
 
