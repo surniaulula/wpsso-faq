@@ -196,8 +196,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
-				'name'                     => __( 'Questions', 'Post type general name', 'wpsso-faq' ),
-				'singular_name'            => __( 'Question', 'Post type singular name', 'wpsso-faq' ),
+				'name'                     => _x( 'Questions', 'Post type general name', 'wpsso-faq' ),
+				'singular_name'            => _x( 'Question', 'Post type singular name', 'wpsso-faq' ),
 				'add_new'                  => __( 'Add New', 'wpsso-faq' ),
 				'add_new_item'             => __( 'Add New Question', 'wpsso-faq' ),
 				'edit_item'                => __( 'Edit Question', 'wpsso-faq' ),

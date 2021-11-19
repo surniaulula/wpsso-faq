@@ -189,10 +189,12 @@ msgid "FAQ Categories for Questions"
 msgstr ""
 
 #: lib/register.php:199
+msgctxt "Post type general name"
 msgid "Questions"
 msgstr ""
 
 #: lib/register.php:200
+msgctxt "Post type singular name"
 msgid "Question"
 msgstr ""
 
