@@ -79,6 +79,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.12.0-dev.1 (2021/11/20)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a new "Show Document SSO Metabox" option for the question post type and faq_category taxonomy.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the WPSSOFAQ_CATEGORY_TAXONOMY constant to WPSSOFAQ_FAQ_CATEGORY_TAXONOMY.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v9.8.1-dev.1.
+
 **Version 3.11.2 (2021/11/16)**
 
 * **New Features**
@@ -223,6 +238,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 3.12.0-dev.1 =
+
+(2021/11/20) Added a new "Show Document SSO Metabox" option for the question post type and faq_category taxonomy.
 
 = 3.11.2 =
 
