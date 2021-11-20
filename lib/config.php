@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '3.11.2',	// Plugin version.
+					'version'     => '3.12.0-dev.1',	// Plugin version.
 					'opt_version' => '9',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '9.8.0',
+							'min_version'   => '9.8.1-dev.1',
 						),
 					),
 
@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'faq_heading'          => 'h2',
 					'faq_question_heading' => 'h3',
 					'faq_answer_format'    => 'excerpt',	// Question Shortcode Answer Format.
-					'faq_answer_toggle'    => 0,		// Clicking a Question Shows its Answer.
+					'faq_answer_toggle'    => 0,		// Click Question to Show Answer.
 					'faq_public_disabled'  => 0,		// Disable FAQ and Question URLs.
 				),
 			),
@@ -120,8 +120,8 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			define( 'WPSSOFAQ_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
 			define( 'WPSSOFAQ_VERSION', $info[ 'version' ] );
 
-			define( 'WPSSOFAQ_CATEGORY_TAXONOMY', 'faq_category' );
 			define( 'WPSSOFAQ_QUESTION_POST_TYPE', 'question' );
+			define( 'WPSSOFAQ_FAQ_CATEGORY_TAXONOMY', 'faq_category' );
 
 			/**
 			 * Define variable constants.

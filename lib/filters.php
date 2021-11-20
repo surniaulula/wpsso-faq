@@ -85,7 +85,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			} elseif ( $mod[ 'is_term' ] ) {
 
-				if ( WPSSOFAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
+				if ( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
 
 					$md_defs[ 'og_type' ] = $this->og_type_faq;
 
@@ -114,7 +114,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
 
-				$tax_slug = WPSSOFAQ_CATEGORY_TAXONOMY;
+				$tax_slug = WPSSOFAQ_FAQ_CATEGORY_TAXONOMY;
 			}
 
 			return $tax_slug;

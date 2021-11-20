@@ -53,20 +53,20 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 				case 'tooltip-faq_answer_format':	// Question Shortcode Answer Format.
 
-					$text = __( 'Select the type of answer text to include under the question title.', 'wpsso-faq' );
+					$text = __( 'Select the answer text to include under the question title.', 'wpsso-faq' );
 
 					break;
 
-				case 'tooltip-faq_answer_toggle':	// Clicking a Question Shows its Answer.
+				case 'tooltip-faq_answer_toggle':	// Click Question to Show Answer.
 
-					$text = __( 'Hide the answer text by default and show when the question title is clicked.', 'wpsso-faq' );
+					$text = __( 'Hide the answer text by default, and show the answer only when the question title is clicked.', 'wpsso-faq' );
 
 					break;
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 
-					$text = __( 'The FAQ and question pages have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
+					$text = __( 'The FAQ archive and question post type pages are public have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
 
-					$text .= __( 'If you enable this option, the FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
+					$text .= __( 'If you enable this option, FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
 
 					break;
 			}

@@ -38,9 +38,9 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 
 			if ( is_admin() ) {
 
-				add_filter( 'manage_edit-' . WPSSOFAQ_CATEGORY_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
+				add_filter( 'manage_edit-' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
 
-				add_filter( 'manage_' . WPSSOFAQ_CATEGORY_TAXONOMY . '_custom_column', array( $this, 'get_column_content' ), 10, 3 );
+				add_filter( 'manage_' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_custom_column', array( $this, 'get_column_content' ), 10, 3 );
 			}
 		}
 
