@@ -59,7 +59,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 				case 'tooltip-faq_answer_toggle':	// Click Question to Show Answer.
 
-					$text = __( 'Hide the answer text by default, and show the answer only when the question title is clicked.', 'wpsso-faq' );
+					$text = __( 'Hide the answer text by default and show the answer only when the question title is clicked.', 'wpsso-faq' );
 
 					break;
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
