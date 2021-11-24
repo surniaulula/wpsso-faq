@@ -86,8 +86,12 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 			if ( $this->sc_column_key === $column_name ) {
 
-				echo SucomForm::get_no_input_clipboard( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_id . '"]',
-					$css_class = $column_name, $css_id = $column_name . '_' . $post_id );
+				$form      = $this->p->admin->get_form_object( $menu_ext = 'wpsso' );
+				$shortcode = '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_id . '"]';
+				$css_class = $column_name;
+				$css_id    = $column_name . '_' . $post_id;
+
+				echo $form->get_no_input_clipboard( $shortcode, $css_class, $css_id );
 			}
 		}
 	}
