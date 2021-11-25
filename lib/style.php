@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoFaqStyle' ) ) {
 				}
 			';
 
-			wp_add_inline_style( 'sucom-admin-page', $custom_style_css );	// Since WP v3.3.0.
+			wp_add_inline_style( 'wpsso-admin-page', $custom_style_css );	// Since WP v3.3.0.
 		}
 	}
 }
