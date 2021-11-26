@@ -177,12 +177,25 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/style.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/term.php';
 
-			add_filter( 'wpssofaq_load_lib', array( 'WpssoFaqConfig', 'load_lib' ), 10, 3 );
+			add_filter( 'wpssofaq_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );
 		}
 
 		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $success && ! empty( $filespec ) ) {
+			if ( false !== $success ) {
+
+				return $success;
+			}
+
+			if ( ! empty( $classname ) ) {
+
+				if ( class_exists( $classname ) ) {
+
+					return $classname;
+				}
+			}
+
+			if ( ! empty( $filespec ) ) {
 
 				$file_path = WPSSOFAQ_PLUGINDIR . 'lib/' . $filespec . '.php';
 
@@ -193,7 +206,6 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					if ( empty( $classname ) ) {
 
 						return SucomUtil::sanitize_classname( 'wpssofaq' . $filespec, $allow_underscore = false );
-
 					}
 
 					return $classname;
