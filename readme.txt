@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.12.1-b.1 (2021/11/25)**
+**Version 3.12.1-rc.1 (2021/11/27)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v9.9.0-b.1.
+	* WPSSO Core v9.9.0-rc.1.
 
 **Version 3.12.0 (2021/11/20)**
 
@@ -254,9 +254,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.12.1-b.1 =
+= 3.12.1-rc.1 =
 
-(2021/11/25) Updated `SucomForm::get_no_input_clipboard()` calls to `SucomForm->get_no_input_clipboard()`.
+(2021/11/27) Updated `SucomForm::get_no_input_clipboard()` calls to `SucomForm->get_no_input_clipboard()`.
 
 = 3.12.0 =
 
