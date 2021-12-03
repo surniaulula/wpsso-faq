@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 3.12.1\n"
+"Project-Id-Version: WPSSO FAQ Manager 3.12.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-27 06:51-0800\n"
+"PO-Revision-Date: 2021-12-03 10:20-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -95,9 +95,9 @@ msgstr "Les pages d'archive de FAQs et de type d'article question sont publiques
 msgid "If you enable this option, FAQs and questions will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:55
-msgid "Shortcode"
-msgstr "Code court"
+#: lib/post.php:68
+msgid "Question Shortcode"
+msgstr "Code court de question"
 
 #: lib/register.php:147
 msgctxt "Post type general name"
@@ -109,11 +109,7 @@ msgctxt "Post type singular name"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:149
-msgid "Add New"
-msgstr "Ajouter"
-
-#: lib/register.php:150
+#: lib/register.php:149 lib/register.php:150
 msgid "Add New Question"
 msgstr "Ajouter une nouvelle question"
 
@@ -130,8 +126,8 @@ msgid "View Question"
 msgstr "Voir la question"
 
 #: lib/register.php:154
-msgid "View FAQs"
-msgstr "Voir les FAQs"
+msgid "View Questions"
+msgstr "Voir les questions"
 
 #: lib/register.php:155
 msgid "Search Questions"
@@ -238,87 +234,89 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #: lib/register.php:222
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+#| msgctxt "admin menu name"
+#| msgid "FAQs"
+msgid "FAQs"
+msgstr "FAQs"
 
 #: lib/register.php:223
-msgid "FAQ Category"
-msgstr "Catégorie de FAQ"
+msgid "FAQ Group"
+msgstr "Groupe de FAQ"
 
 #: lib/register.php:224
 msgctxt "admin menu name"
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+msgid "Frequently Asked Questions"
+msgstr "Questions fréquemment posées"
 
 #: lib/register.php:225
-msgid "All FAQ Categories"
-msgstr "Toutes catégories de FAQ"
+msgid "All FAQ Groups"
+msgstr "Tous groupes de FAQ"
 
 #: lib/register.php:226
-msgid "Edit FAQ Category"
-msgstr "Modifier la catégorie de FAQ"
+msgid "Edit FAQ Group"
+msgstr "Modifier groupe de FAQ"
 
 #: lib/register.php:227
-msgid "View FAQ Category"
-msgstr "Voir la catégorie de FAQ"
+msgid "View FAQ Group"
+msgstr "Voir groupe de FAQ"
 
 #: lib/register.php:228
-msgid "Update FAQ Category"
-msgstr "Mettre à jour la catégorie de FAQ"
+msgid "Update FAQ Group"
+msgstr "Mettre à jour le groupe de FAQ"
 
 #: lib/register.php:229
-msgid "Add New FAQ Category"
-msgstr "Ajouter une nouvelle catégorie de FAQ"
+msgid "Add New FAQ Group"
+msgstr "Ajouter nouveau groupe de FAQ"
 
 #: lib/register.php:230
-msgid "New FAQ Category Name"
-msgstr "Nom de la nouvelle catégorie de FAQ"
+msgid "New FAQ Group Name"
+msgstr "Nouveau nom de groupe de FAQ"
 
 #: lib/register.php:231
-msgid "Parent FAQ Category"
-msgstr "Catégorie de FAQ parente"
+msgid "Parent FAQ Group"
+msgstr "Groupe de FAQ parent"
 
 #: lib/register.php:232
-msgid "Parent FAQ Category:"
-msgstr "Catégorie de FAQ parente :"
+msgid "Parent FAQ Group:"
+msgstr "Groupe de FAQ parent :"
 
 #: lib/register.php:233
-msgid "Search FAQ Categories"
-msgstr "Rechercher dans les catégories de FAQ"
+msgid "Search FAQ Groups"
+msgstr "Rechercher dans les groupes de FAQ"
 
 #: lib/register.php:234
-msgid "Popular FAQ Categories"
-msgstr "Catégories de FAQ populaires"
+msgid "Popular FAQ Groups"
+msgstr "Groupes de FAQ populaires"
 
 #: lib/register.php:235
-msgid "Separate FAQ categories with commas"
-msgstr "Séparez les catégories de FAQ avec des virgules"
+msgid "Separate FAQ groups with commas"
+msgstr "Séparez les groupes de FAQ avec des virgules"
 
 #: lib/register.php:236
-msgid "Add or remove FAQ categories"
-msgstr "Ajouter ou retirer des catégories de FAQ"
+msgid "Add or remove FAQ groups"
+msgstr "Ajouter ou retirer des groupes de FAQ"
 
 #: lib/register.php:237
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
 #: lib/register.php:238
-msgid "No FAQ categories found."
-msgstr "Aucune catégorie de FAQ trouvée."
+msgid "No FAQ groups found."
+msgstr "Aucun groupe de FAQ trouvé."
 
 #: lib/register.php:239
-msgid "← Back to FAQ categories"
-msgstr "← Retour aux catégories de FAQ"
+msgid "← Back to FAQ groups"
+msgstr "← Retour aux groupes de FAQ"
 
 #: lib/register.php:243
 msgctxt "Taxonomy label"
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+msgid "FAQ Groups"
+msgstr "Groupes de FAQ"
 
 #: lib/register.php:254
 msgctxt "Taxonomy description"
-msgid "FAQ Categories for Questions"
-msgstr "Catégories de FAQ pour les questions"
+msgid "FAQ Groups for Questions and Answers"
+msgstr "Groupes de FAQ pour les questions et réponses"
 
 #. translators: Maximum number of words used in a post excerpt.
 #: lib/shortcode/question.php:148
@@ -390,6 +388,10 @@ msgstr "Taxonomie"
 msgctxt "option label"
 msgid "Show %s Metabox"
 msgstr "Afficher métabox %s"
+
+#: lib/term.php:49
+msgid "FAQ Shortcode"
+msgstr "Code court de FAQ"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO FAQ Manager"
