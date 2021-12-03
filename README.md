@@ -16,11 +16,11 @@
 
 <!-- about -->
 
-<p>The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and categorize your Questions / Answers into FAQ categories.</p>
+<p>The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.</p>
 
-<p>You can use the standard WordPress FAQ category archive and question page templates and URLs, and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.</p>
+<p>You can use the standard WordPress FAQ group archive and question page templates and URLs, and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.</p>
 
-<p>The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage Questions / Answers and FAQs. If you need to adjust the default FAQ category archive page layout, see the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a new FAQ category archive page template based on your current theme templates.</p>
+<p>The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage single Questions / Answers and FAQ groups. If you need to adjust the default FAQ group archive page layout, see the <a href="https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy">WordPress Theme Handbook &gt; Custom Taxonomy section</a> for details on creating a new FAQ group archive template based on your current theme templates.</p>
 
 <!-- /about -->
 
