@@ -75,7 +75,7 @@ msgid "Heading 6"
 msgstr ""
 
 #: lib/filters-messages.php:44
-msgid "Select an HTML heading level for the FAQ category shortcode title."
+msgid "Select an HTML heading level for the FAQ shortcode title."
 msgstr ""
 
 #: lib/filters-messages.php:50

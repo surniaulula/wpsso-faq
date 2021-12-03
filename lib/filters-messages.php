@@ -41,7 +41,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 				case 'tooltip-faq_heading':		// FAQ Shortcode Title Heading.
 
-					$text = __( 'Select an HTML heading level for the FAQ category shortcode title.', 'wpsso-faq' );
+					$text = __( 'Select an HTML heading level for the FAQ shortcode title.', 'wpsso-faq' );
 
 					break;
 
