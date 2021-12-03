@@ -154,8 +154,6 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 					$postexcerpt[ 'title' ] = __( 'Answer Excerpt', 'wpsso-faq' );
 				}
 			}
-
-			return $wp_meta_boxes;
 		}
 
 		/**

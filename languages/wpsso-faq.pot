@@ -120,11 +120,11 @@ msgstr ""
 msgid "Answer Excerpt"
 msgstr ""
 
-#: lib/post.php:176
+#: lib/post.php:174
 msgid "Add Answer"
 msgstr ""
 
-#: lib/post.php:180
+#: lib/post.php:178
 msgid "Edit Answer"
 msgstr ""
 
