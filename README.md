@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO FAQ Manager</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>3.12.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>3.12.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>7.2 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>5.2 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.8.2</td></tr>
