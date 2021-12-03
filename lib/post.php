@@ -50,9 +50,20 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 				 */
 				add_action( 'manage_' . $post_type . '_posts_custom_column', array( $this, 'show_column_content' ), 10, 2 );
 
+				/**
+				 * Maybe change the default 'Add title' text.
+				 */
 				add_filter( 'enter_title_here', array( $this, 'maybe_modify_enter_title' ), 10, 2 );
 
+				/**
+				 * Maybe change the default 'Type / to choose a block' text.
+				 */
 				add_filter( 'write_your_story', array( $this, 'maybe_modify_enter_content' ), 10, 2 );
+
+				/**
+				 * Maybe add a second title for the classic editor.
+				 */
+				add_action( 'edit_form_after_title', array( $this, 'maybe_show_edit_form_after_title' ), 10, 1 );
 			}
 		}
 
@@ -118,6 +129,32 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			}
 
 			return $text;
+		}
+
+		/**
+		 * Maybe add a second title for the classic editor.
+		 */
+		public function maybe_show_edit_form_after_title( $post ) {
+
+			$post_type = get_post_type( $post );
+
+			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
+
+				$post_status = get_post_status( $post );
+
+				echo '<h1 style="margin:0;padding:15px 0 0 0;">';
+
+				if ( 'auto-draft' === $post_status ) {
+
+					echo __( 'Add Answer', 'wpsso-faq' );
+
+				} else {
+
+					echo __( 'Edit Answer', 'wpsso-faq' );
+				}
+
+				echo '</h1>';
+			}
 		}
 	}
 }

@@ -146,8 +146,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$labels = array(
 				'name'                     => _x( 'Questions', 'Post type general name', 'wpsso-faq' ),
 				'singular_name'            => _x( 'Question', 'Post type singular name', 'wpsso-faq' ),
-				'add_new'                  => __( 'Add New Question', 'wpsso-faq' ),
-				'add_new_item'             => __( 'Add New Question', 'wpsso-faq' ),
+				'add_new'                  => __( 'Add Question', 'wpsso-faq' ),
+				'add_new_item'             => __( 'Add Question', 'wpsso-faq' ),
 				'edit_item'                => __( 'Edit Question', 'wpsso-faq' ),
 				'new_item'                 => __( 'New Question', 'wpsso-faq' ),
 				'view_item'                => __( 'View Question', 'wpsso-faq' ),
