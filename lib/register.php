@@ -177,6 +177,20 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'item_updated'             => __( 'Question updated.', 'wpsso-faq' ),
 			);
 
+			$supports = array(
+				'title',
+				'editor',
+				'author',
+				'thumbnail',
+				'excerpt',
+				'trackbacks',
+				'comments',
+				'revisions',
+				'page-attributes',
+			);
+
+			$taxonomies = array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
+
 			$args = array(
 				'label'                 => _x( 'Question', 'Post type label', 'wpsso-faq' ),
 				'labels'                => $labels,
@@ -193,18 +207,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'menu_icon'             => 'dashicons-editor-help',
 				'capability_type'       => 'page',
 				'hierarchical'          => false,
-				'supports'              => array(
-					'title',
-					'editor',
-					'author',
-					'thumbnail',
-					'excerpt',
-					'trackbacks',
-					'comments',
-					'revisions',
-					'page-attributes',
-				),
-				'taxonomies'            => array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY ),
+				'supports'              => $supports,
+				'taxonomies'            => $taxonomies,
 				'has_archive'           => 'faqs',
 				'can_export'            => true,
 			);

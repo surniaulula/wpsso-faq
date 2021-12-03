@@ -104,8 +104,16 @@ msgid ""
 "using their shortcodes."
 msgstr ""
 
-#: lib/post.php:68
+#: lib/post.php:61
 msgid "Question Shortcode"
+msgstr ""
+
+#: lib/post.php:102
+msgid "Question title"
+msgstr ""
+
+#: lib/post.php:117
+msgid "Answer text / to choose a block"
 msgstr ""
 
 #: lib/register.php:147
@@ -232,95 +240,95 @@ msgstr ""
 msgid "Question updated."
 msgstr ""
 
-#: lib/register.php:181
+#: lib/register.php:195
 msgctxt "Post type label"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:183
+#: lib/register.php:197
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr ""
 
-#: lib/register.php:222
+#: lib/register.php:226
 msgid "FAQs"
 msgstr ""
 
-#: lib/register.php:223
+#: lib/register.php:227
 msgid "FAQ Group"
 msgstr ""
 
-#: lib/register.php:224
+#: lib/register.php:228
 msgctxt "admin menu name"
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: lib/register.php:225
+#: lib/register.php:229
 msgid "All FAQ Groups"
 msgstr ""
 
-#: lib/register.php:226
+#: lib/register.php:230
 msgid "Edit FAQ Group"
 msgstr ""
 
-#: lib/register.php:227
+#: lib/register.php:231
 msgid "View FAQ Group"
 msgstr ""
 
-#: lib/register.php:228
+#: lib/register.php:232
 msgid "Update FAQ Group"
 msgstr ""
 
-#: lib/register.php:229
+#: lib/register.php:233
 msgid "Add New FAQ Group"
 msgstr ""
 
-#: lib/register.php:230
+#: lib/register.php:234
 msgid "New FAQ Group Name"
 msgstr ""
 
-#: lib/register.php:231
+#: lib/register.php:235
 msgid "Parent FAQ Group"
 msgstr ""
 
-#: lib/register.php:232
+#: lib/register.php:236
 msgid "Parent FAQ Group:"
 msgstr ""
 
-#: lib/register.php:233
+#: lib/register.php:237
 msgid "Search FAQ Groups"
 msgstr ""
 
-#: lib/register.php:234
+#: lib/register.php:238
 msgid "Popular FAQ Groups"
 msgstr ""
 
-#: lib/register.php:235
+#: lib/register.php:239
 msgid "Separate FAQ groups with commas"
 msgstr ""
 
-#: lib/register.php:236
+#: lib/register.php:240
 msgid "Add or remove FAQ groups"
 msgstr ""
 
-#: lib/register.php:237
+#: lib/register.php:241
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:238
+#: lib/register.php:242
 msgid "No FAQ groups found."
 msgstr ""
 
-#: lib/register.php:239
+#: lib/register.php:243
 msgid "← Back to FAQ groups"
 msgstr ""
 
-#: lib/register.php:243
+#: lib/register.php:247
 msgctxt "Taxonomy label"
 msgid "FAQ Groups"
 msgstr ""
 
-#: lib/register.php:254
+#: lib/register.php:258
 msgctxt "Taxonomy description"
 msgid "FAQ Groups for Questions and Answers"
 msgstr ""

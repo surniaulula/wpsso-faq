@@ -38,28 +38,21 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 			if ( is_admin() ) {
 
-				$ptns = array( WPSSOFAQ_QUESTION_POST_TYPE );
+				$post_type = WPSSOFAQ_QUESTION_POST_TYPE;
 
-				if ( is_array( $ptns ) ) {
+				/**
+				 * See https://codex.wordpress.org/Plugin_API/Filter_Reference/manage_$post_type_posts_columns.
+				 */
+				add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_post_column_headings' ), 10, 1 );
 
-					foreach ( $ptns as $ptn ) {
+				/**
+				 * See https://codex.wordpress.org/Plugin_API/Action_Reference/manage_$post_type_posts_custom_column.
+				 */
+				add_action( 'manage_' . $post_type . '_posts_custom_column', array( $this, 'show_column_content' ), 10, 2 );
 
-						if ( $this->p->debug->enabled ) {
+				add_filter( 'enter_title_here', array( $this, 'maybe_modify_enter_title' ), 10, 2 );
 
-							$this->p->debug->log( 'adding column filters for post type ' . $ptn );
-						}
-
-						/**
-						 * See https://codex.wordpress.org/Plugin_API/Filter_Reference/manage_$post_type_posts_columns.
-						 */
-						add_filter( 'manage_' . $ptn . '_posts_columns', array( $this, 'add_post_column_headings' ), 10, 1 );
-
-						/**
-						 * See https://codex.wordpress.org/Plugin_API/Action_Reference/manage_$post_type_posts_custom_column.
-						 */
-						add_action( 'manage_' . $ptn . '_posts_custom_column', array( $this, 'show_column_content' ), 10, 2 );
-					}
-				}
+				add_filter( 'write_your_story', array( $this, 'maybe_modify_enter_content' ), 10, 2 );
 			}
 		}
 
@@ -95,6 +88,36 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 				echo $form->get_no_input_clipboard( $shortcode, $css_class, $css_id );
 			}
+		}
+
+		/**
+		 * Maybe change the default 'Add title' text.
+		 */
+		public function maybe_modify_enter_title( $text, $post ) {
+
+			$post_type = get_post_type( $post );
+
+			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
+
+				$text = __( 'Question title', 'wpsso-faq' );
+			}
+
+			return $text;
+		}
+
+		/**
+		 * Maybe change the default 'Type / to choose a block' text.
+		 */
+		public function maybe_modify_enter_content( $text, $post ) {
+
+			$post_type = get_post_type( $post );
+
+			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
+
+				$text = __( 'Answer text / to choose a block', 'wpsso-faq' );
+			}
+
+			return $text;
 		}
 	}
 }
