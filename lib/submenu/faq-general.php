@@ -97,8 +97,8 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->get_th_html( _x( 'Question Shortcode Answer Format', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_answer_format' ) . 
 						'<td>' . $this->form->get_select( 'faq_answer_format', array(
-							'content' => __( 'Full Content', 'wpsso-faq' ),
-							'excerpt' => __( 'Excerpt', 'wpsso-faq' ),
+							'content' => __( 'Full Answer', 'wpsso-faq' ),
+							'excerpt' => __( 'Answer Excerpt', 'wpsso-faq' ),
 						) ) . '</td>';
 
 					$table_rows[ 'faq_answer_toggle' ] = '' .

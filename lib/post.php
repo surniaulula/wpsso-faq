@@ -61,6 +61,13 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 				add_filter( 'write_your_story', array( $this, 'maybe_modify_enter_content' ), 10, 2 );
 
 				/**
+				 * Maybe change the 'Excerpt' metabox title to 'Answer Excerpt'.
+				 *
+				 * The 'add_meta_boxes' action fires after all built-in meta boxes have been added.
+				 */
+				add_action( 'add_meta_boxes', array( $this, 'maybe_modify_excerpt_metabox' ), 10, 2 );
+
+				/**
 				 * Maybe add a second title for the classic editor.
 				 */
 				add_action( 'edit_form_after_title', array( $this, 'maybe_show_edit_form_after_title' ), 10, 1 );
@@ -129,6 +136,26 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			}
 
 			return $text;
+		}
+
+		/**
+		 * Maybe change the 'Excerpt' metabox title to 'Answer Excerpt'.
+		 */
+		public function maybe_modify_excerpt_metabox( $post_type, $post ) {
+
+			 if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
+
+				global $wp_meta_boxes;
+
+				if ( isset( $wp_meta_boxes[ $post_type ][ 'normal' ][ 'core' ][ 'postexcerpt' ] ) ) {
+					
+					$postexcerpt =& $wp_meta_boxes[ $post_type ][ 'normal' ][ 'core' ][ 'postexcerpt' ];
+
+					$postexcerpt[ 'title' ] = __( 'Answer Excerpt', 'wpsso-faq' );
+				}
+			}
+
+			return $wp_meta_boxes;
 		}
 
 		/**
