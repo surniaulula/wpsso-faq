@@ -65,13 +65,15 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 		public function add_post_column_headings( $columns ) {
 
+			$sc_title_transl = __( 'Question Shortcode', 'wpsso-faq' );
+
 			if ( isset( $columns[ $this->sc_after_key ] ) ) {
 
-				SucomUtil::add_after_key( $columns, $this->sc_after_key, $this->sc_column_key, __( 'Shortcode', 'wpsso-faq' ) );
+				SucomUtil::add_after_key( $columns, $this->sc_after_key, $this->sc_column_key, $sc_title_transl );
 
 			} else {
 
-				$columns[ $this->sc_column_key ] = __( 'Shortcode', 'wpsso-faq' );
+				$columns[ $this->sc_column_key ] = $sc_title_transl;
 			}
 
 			return $columns;

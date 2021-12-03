@@ -104,8 +104,8 @@ msgid ""
 "using their shortcodes."
 msgstr ""
 
-#: lib/post.php:70 lib/post.php:74 lib/term.php:51 lib/term.php:55
-msgid "Shortcode"
+#: lib/post.php:68
+msgid "Question Shortcode"
 msgstr ""
 
 #: lib/register.php:147
@@ -118,11 +118,7 @@ msgctxt "Post type singular name"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:149
-msgid "Add New"
-msgstr ""
-
-#: lib/register.php:150
+#: lib/register.php:149 lib/register.php:150
 msgid "Add New Question"
 msgstr ""
 
@@ -139,7 +135,7 @@ msgid "View Question"
 msgstr ""
 
 #: lib/register.php:154
-msgid "View FAQs"
+msgid "View Questions"
 msgstr ""
 
 #: lib/register.php:155
@@ -247,64 +243,64 @@ msgid "Question and Answer"
 msgstr ""
 
 #: lib/register.php:222
-msgid "FAQ Categories"
+msgid "FAQs"
 msgstr ""
 
 #: lib/register.php:223
-msgid "FAQ Category"
+msgid "FAQ Group"
 msgstr ""
 
 #: lib/register.php:224
 msgctxt "admin menu name"
-msgid "FAQ Categories"
+msgid "Frequently Asked Questions"
 msgstr ""
 
 #: lib/register.php:225
-msgid "All FAQ Categories"
+msgid "All FAQ Groups"
 msgstr ""
 
 #: lib/register.php:226
-msgid "Edit FAQ Category"
+msgid "Edit FAQ Group"
 msgstr ""
 
 #: lib/register.php:227
-msgid "View FAQ Category"
+msgid "View FAQ Group"
 msgstr ""
 
 #: lib/register.php:228
-msgid "Update FAQ Category"
+msgid "Update FAQ Group"
 msgstr ""
 
 #: lib/register.php:229
-msgid "Add New FAQ Category"
+msgid "Add New FAQ Group"
 msgstr ""
 
 #: lib/register.php:230
-msgid "New FAQ Category Name"
+msgid "New FAQ Group Name"
 msgstr ""
 
 #: lib/register.php:231
-msgid "Parent FAQ Category"
+msgid "Parent FAQ Group"
 msgstr ""
 
 #: lib/register.php:232
-msgid "Parent FAQ Category:"
+msgid "Parent FAQ Group:"
 msgstr ""
 
 #: lib/register.php:233
-msgid "Search FAQ Categories"
+msgid "Search FAQ Groups"
 msgstr ""
 
 #: lib/register.php:234
-msgid "Popular FAQ Categories"
+msgid "Popular FAQ Groups"
 msgstr ""
 
 #: lib/register.php:235
-msgid "Separate FAQ categories with commas"
+msgid "Separate FAQ groups with commas"
 msgstr ""
 
 #: lib/register.php:236
-msgid "Add or remove FAQ categories"
+msgid "Add or remove FAQ groups"
 msgstr ""
 
 #: lib/register.php:237
@@ -312,21 +308,21 @@ msgid "Choose from the most used"
 msgstr ""
 
 #: lib/register.php:238
-msgid "No FAQ categories found."
+msgid "No FAQ groups found."
 msgstr ""
 
 #: lib/register.php:239
-msgid "← Back to FAQ categories"
+msgid "← Back to FAQ groups"
 msgstr ""
 
 #: lib/register.php:243
 msgctxt "Taxonomy label"
-msgid "FAQ Categories"
+msgid "FAQ Groups"
 msgstr ""
 
 #: lib/register.php:254
 msgctxt "Taxonomy description"
-msgid "FAQ Categories for Questions"
+msgid "FAQ Groups for Questions and Answers"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
@@ -398,6 +394,10 @@ msgstr ""
 #: lib/submenu/faq-general.php:132
 msgctxt "option label"
 msgid "Show %s Metabox"
+msgstr ""
+
+#: lib/term.php:49
+msgid "FAQ Shortcode"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
