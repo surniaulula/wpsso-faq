@@ -79,6 +79,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.12.2 (2021/12/03)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed the Question and FAQ shortcode list column width.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v9.10.1.
+
 **Version 3.12.1 (2021/11/27)**
 
 * **New Features**
@@ -253,6 +268,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 3.12.2 =
+
+(2021/12/03) Fixed the Question and FAQ shortcode list column width.
 
 = 3.12.1 =
 
