@@ -79,12 +79,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.12.2 (2021/12/03)**
+**Version 3.12.3 (2021/12/03)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* Renamed "FAQ Categories" to "FAQ Groups".
+	* Added a filter to change 'Add title' to 'Question title' in the classic and block editors.
+	* Added a filter to change 'Type / to choose a block' to 'Answer text / to choose a block' in the block editor.
+	* Added an action to show 'Add Answer' or 'Edit Answer' between the title and content areas in the classic editor.
 * **Bugfixes**
 	* Fixed the Question and FAQ shortcode list column width.
 * **Developer Notes**
@@ -269,9 +272,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.12.2 =
+= 3.12.3 =
 
-(2021/12/03) Renamed "FAQ Categories" to "FAQ Groups". Fixed the Question and FAQ shortcode list column width.
+(2021/12/03) Renamed "FAQ Categories" to "FAQ Groups". Added filters and actions to modify default text in the classic and block editors. Fixed the Question and FAQ shortcode list column width.
 
 = 3.12.1 =
 
