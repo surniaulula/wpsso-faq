@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.12.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-12-03 11:28-0800\n"
+"PO-Revision-Date: 2021-12-03 12:03-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -95,17 +95,25 @@ msgstr "Les pages d'archive de FAQs et de type d'article question sont publiques
 msgid "If you enable this option, FAQs and questions will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:61
+#: lib/post.php:72
 msgid "Question Shortcode"
 msgstr "Code court de question"
 
-#: lib/post.php:102
+#: lib/post.php:113
 msgid "Question title"
 msgstr "Titre de la question"
 
-#: lib/post.php:117
+#: lib/post.php:128
 msgid "Answer text / to choose a block"
 msgstr "Texte de réponse / pour choisir un bloc"
+
+#: lib/post.php:149
+msgid "Add Answer"
+msgstr "Ajouter une réponse"
+
+#: lib/post.php:153
+msgid "Edit Answer"
+msgstr "Modifier la réponse"
 
 #: lib/register.php:147
 msgctxt "Post type general name"
@@ -118,8 +126,8 @@ msgid "Question"
 msgstr "Question"
 
 #: lib/register.php:149 lib/register.php:150
-msgid "Add New Question"
-msgstr "Ajouter une nouvelle question"
+msgid "Add Question"
+msgstr "Ajouter une question"
 
 #: lib/register.php:151
 msgid "Edit Question"
