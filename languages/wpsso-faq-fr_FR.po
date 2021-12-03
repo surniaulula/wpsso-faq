@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO FAQ Manager 3.12.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-12-03 10:30-0800\n"
+"PO-Revision-Date: 2021-12-03 11:28-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -95,9 +95,17 @@ msgstr "Les pages d'archive de FAQs et de type d'article question sont publiques
 msgid "If you enable this option, FAQs and questions will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:68
+#: lib/post.php:61
 msgid "Question Shortcode"
 msgstr "Code court de question"
+
+#: lib/post.php:102
+msgid "Question title"
+msgstr "Titre de la question"
+
+#: lib/post.php:117
+msgid "Answer text / to choose a block"
+msgstr "Texte de réponse / pour choisir un bloc"
 
 #: lib/register.php:147
 msgctxt "Post type general name"
@@ -223,95 +231,95 @@ msgstr "Question planifiée."
 msgid "Question updated."
 msgstr "Question mise à jour."
 
-#: lib/register.php:181
+#: lib/register.php:195
 msgctxt "Post type label"
 msgid "Question"
 msgstr "Question"
 
-#: lib/register.php:183
+#: lib/register.php:197
 msgctxt "Post type description"
 msgid "Question and Answer"
 msgstr "Question et Réponse"
 
-#: lib/register.php:222
+#: lib/register.php:226
 msgid "FAQs"
 msgstr "FAQs"
 
-#: lib/register.php:223
+#: lib/register.php:227
 msgid "FAQ Group"
 msgstr "Groupe de FAQ"
 
-#: lib/register.php:224
+#: lib/register.php:228
 msgctxt "admin menu name"
 msgid "Frequently Asked Questions"
 msgstr "Questions fréquemment posées"
 
-#: lib/register.php:225
+#: lib/register.php:229
 msgid "All FAQ Groups"
 msgstr "Tous groupes de FAQ"
 
-#: lib/register.php:226
+#: lib/register.php:230
 msgid "Edit FAQ Group"
 msgstr "Modifier groupe de FAQ"
 
-#: lib/register.php:227
+#: lib/register.php:231
 msgid "View FAQ Group"
 msgstr "Voir groupe de FAQ"
 
-#: lib/register.php:228
+#: lib/register.php:232
 msgid "Update FAQ Group"
 msgstr "Mettre à jour le groupe de FAQ"
 
-#: lib/register.php:229
+#: lib/register.php:233
 msgid "Add New FAQ Group"
 msgstr "Ajouter nouveau groupe de FAQ"
 
-#: lib/register.php:230
+#: lib/register.php:234
 msgid "New FAQ Group Name"
 msgstr "Nouveau nom de groupe de FAQ"
 
-#: lib/register.php:231
+#: lib/register.php:235
 msgid "Parent FAQ Group"
 msgstr "Groupe de FAQ parent"
 
-#: lib/register.php:232
+#: lib/register.php:236
 msgid "Parent FAQ Group:"
 msgstr "Groupe de FAQ parent :"
 
-#: lib/register.php:233
+#: lib/register.php:237
 msgid "Search FAQ Groups"
 msgstr "Rechercher dans les groupes de FAQ"
 
-#: lib/register.php:234
+#: lib/register.php:238
 msgid "Popular FAQ Groups"
 msgstr "Groupes de FAQ populaires"
 
-#: lib/register.php:235
+#: lib/register.php:239
 msgid "Separate FAQ groups with commas"
 msgstr "Séparez les groupes de FAQ avec des virgules"
 
-#: lib/register.php:236
+#: lib/register.php:240
 msgid "Add or remove FAQ groups"
 msgstr "Ajouter ou retirer des groupes de FAQ"
 
-#: lib/register.php:237
+#: lib/register.php:241
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
-#: lib/register.php:238
+#: lib/register.php:242
 msgid "No FAQ groups found."
 msgstr "Aucun groupe de FAQ trouvé."
 
-#: lib/register.php:239
+#: lib/register.php:243
 msgid "← Back to FAQ groups"
 msgstr "← Retour aux groupes de FAQ"
 
-#: lib/register.php:243
+#: lib/register.php:247
 msgctxt "Taxonomy label"
 msgid "FAQ Groups"
 msgstr "Groupes de FAQ"
 
-#: lib/register.php:254
+#: lib/register.php:258
 msgctxt "Taxonomy description"
 msgid "FAQ Groups for Questions and Answers"
 msgstr "Groupes de FAQ pour les questions et réponses"
