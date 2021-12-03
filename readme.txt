@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Renamed "FAQ Categories" to "FAQ Groups".
 * **Bugfixes**
 	* Fixed the Question and FAQ shortcode list column width.
 * **Developer Notes**
@@ -271,7 +271,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.12.2 =
 
-(2021/12/03) Fixed the Question and FAQ shortcode list column width.
+(2021/12/03) Renamed "FAQ Categories" to "FAQ Groups". Fixed the Question and FAQ shortcode list column width.
 
 = 3.12.1 =
 
