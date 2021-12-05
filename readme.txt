@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Added an 'href' attribute and 'return false;' to the onClick event for the "Click Question to Show Answer" option.
+	* Added an 'href' and 'return false;' to the onClick event for the "Click Question to Show Answer" option feature.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -289,7 +289,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.12.4 =
 
-(2021/12/05) Added an 'href' attribute and 'return false;' to the onClick event for the "Click Question to Show Answer" option.
+(2021/12/05) Added an 'href' and 'return false;' to the onClick event for the "Click Question to Show Answer" option feature.
 
 = 3.12.3 =
 
