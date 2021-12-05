@@ -78,8 +78,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				if ( WPSSOFAQ_QUESTION_POST_TYPE === $mod[ 'post_type' ] ) {
 
-					$md_defs[ 'og_type' ] = $this->og_type_question;
-
+					$md_defs[ 'og_type' ]     = $this->og_type_question;
 					$md_defs[ 'schema_type' ] = $this->schema_type_question;
 				}
 
@@ -87,8 +86,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 				if ( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
 
-					$md_defs[ 'og_type' ] = $this->og_type_faq;
-
+					$md_defs[ 'og_type' ]     = $this->og_type_faq;
 					$md_defs[ 'schema_type' ] = $this->schema_type_faq;
 				}
 			}

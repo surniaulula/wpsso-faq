@@ -51,12 +51,12 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 				add_action( 'manage_' . $post_type . '_posts_custom_column', array( $this, 'show_column_content' ), 10, 2 );
 
 				/**
-				 * Maybe change the default 'Add title' text.
+				 * Maybe change 'Add title' to 'Question title'.
 				 */
 				add_filter( 'enter_title_here', array( $this, 'maybe_modify_enter_title' ), 10, 2 );
 
 				/**
-				 * Maybe change the default 'Type / to choose a block' text.
+				 * Maybe change 'Type / to choose a block' to 'Answer text / to choose a block'.
 				 */
 				add_filter( 'write_your_story', array( $this, 'maybe_modify_enter_content' ), 10, 2 );
 
@@ -68,7 +68,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 				add_action( 'add_meta_boxes', array( $this, 'maybe_modify_excerpt_metabox' ), 10, 2 );
 
 				/**
-				 * Maybe add a second title for the classic editor.
+				 * Maybe add a 'Add Answer' or 'Edit Answer' title above the content for the classic editor.
 				 */
 				add_action( 'edit_form_after_title', array( $this, 'maybe_show_edit_form_after_title' ), 10, 1 );
 			}
@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		}
 
 		/**
-		 * Maybe change the default 'Add title' text.
+		 * Maybe change 'Add title' to 'Question title'.
 		 */
 		public function maybe_modify_enter_title( $text, $post ) {
 
@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		}
 
 		/**
-		 * Maybe change the default 'Type / to choose a block' text.
+		 * Maybe change 'Type / to choose a block' to 'Answer text / to choose a block'.
 		 */
 		public function maybe_modify_enter_content( $text, $post ) {
 
@@ -157,7 +157,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		}
 
 		/**
-		 * Maybe add a second title for the classic editor.
+		 * Maybe add a 'Add Answer' or 'Edit Answer' title above the content for the classic editor.
 		 */
 		public function maybe_show_edit_form_after_title( $post ) {
 

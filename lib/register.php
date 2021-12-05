@@ -186,7 +186,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'trackbacks',
 				'comments',
 				'revisions',
-				'page-attributes',
+				'page-attributes',	// Supports menu order.
 			);
 
 			$taxonomies = array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
