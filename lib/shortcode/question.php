@@ -182,8 +182,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
 
-				$html .= '<a onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); ' .
-					'el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\';">' .
+				$html .= '<a href="#" onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); ' .
+					'el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\'; return false;">' .
 						$title_text . '</a>';
 
 			} else {
