@@ -133,7 +133,6 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 					break;
 
-				case 'excerpt':
 				default:
 
 					if ( has_excerpt( $post_id ) ) {

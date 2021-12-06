@@ -346,7 +346,7 @@ msgid "FAQ Groups for Questions and Answers"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:148
+#: lib/shortcode/question.php:147
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""

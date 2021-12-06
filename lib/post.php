@@ -148,7 +148,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 				global $wp_meta_boxes;
 
 				if ( isset( $wp_meta_boxes[ $post_type ][ 'normal' ][ 'core' ][ 'postexcerpt' ] ) ) {
-					
+
 					$postexcerpt =& $wp_meta_boxes[ $post_type ][ 'normal' ][ 'core' ][ 'postexcerpt' ];
 
 					$postexcerpt[ 'title' ] = __( 'Answer Excerpt', 'wpsso-faq' );
