@@ -111,9 +111,9 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		/**
 		 * Maybe change 'Add title' to 'Question title'.
 		 */
-		public function maybe_modify_enter_title( $text, $post ) {
+		public function maybe_modify_enter_title( $text, $post_obj ) {
 
-			$post_type = get_post_type( $post );
+			$post_type = get_post_type( $post_obj );
 
 			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
 
@@ -126,9 +126,9 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		/**
 		 * Maybe change 'Type / to choose a block' to 'Answer text / to choose a block'.
 		 */
-		public function maybe_modify_enter_content( $text, $post ) {
+		public function maybe_modify_enter_content( $text, $post_obj ) {
 
-			$post_type = get_post_type( $post );
+			$post_type = get_post_type( $post_obj );
 
 			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
 
@@ -141,7 +141,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		/**
 		 * Maybe change the 'Excerpt' metabox title to 'Answer Excerpt'.
 		 */
-		public function maybe_modify_excerpt_metabox( $post_type, $post ) {
+		public function maybe_modify_excerpt_metabox( $post_type, $post_obj ) {
 
 			 if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
 
@@ -159,13 +159,13 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		/**
 		 * Maybe add a 'Add Answer' or 'Edit Answer' title above the content for the classic editor.
 		 */
-		public function maybe_show_edit_form_after_title( $post ) {
+		public function maybe_show_edit_form_after_title( $post_obj ) {
 
-			$post_type = get_post_type( $post );
+			$post_type = get_post_type( $post_obj );
 
 			if ( WPSSOFAQ_QUESTION_POST_TYPE === $post_type ) {
 
-				$post_status = get_post_status( $post );
+				$post_status = get_post_status( $post_obj );
 
 				echo '<h1 style="margin:0;padding:15px 0 0 0;">';
 
