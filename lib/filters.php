@@ -59,17 +59,17 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			/**
 			 * Hard-code and disable these options in the settings pages.
 			 */
-			$this->p->options[ 'og_type_for_question' ]    = $this->og_type_question;
-			$this->p->options[ 'og_type_for_question:is' ] = 'disabled';
+			$this->p->options[ 'og_type_for_question' ]          = $this->og_type_question;
+			$this->p->options[ 'og_type_for_question:disabled' ] = true;
 
-			$this->p->options[ 'og_type_for_tax_faq_category' ]    = $this->og_type_faq;
-			$this->p->options[ 'og_type_for_tax_faq_category:is' ] = 'disabled';
+			$this->p->options[ 'og_type_for_tax_faq_category' ]          = $this->og_type_faq;
+			$this->p->options[ 'og_type_for_tax_faq_category:disabled' ] = true;
 
-			$this->p->options[ 'schema_type_for_tax_faq_category' ]    = $this->schema_type_faq;
-			$this->p->options[ 'schema_type_for_tax_faq_category:is' ] = 'disabled';
+			$this->p->options[ 'schema_type_for_tax_faq_category' ]          = $this->schema_type_faq;
+			$this->p->options[ 'schema_type_for_tax_faq_category:disabled' ] = true;
 
-			$this->p->options[ 'schema_type_for_question' ]    = $this->schema_type_question;
-			$this->p->options[ 'schema_type_for_question:is' ] = 'disabled';
+			$this->p->options[ 'schema_type_for_question' ]          = $this->schema_type_question;
+			$this->p->options[ 'schema_type_for_question:disabled' ] = true;
 		}
 
 		public function filter_get_md_defaults( array $md_defs, array $mod ) {
@@ -100,9 +100,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			foreach ( $faq_opts as $opt_key => $opt_val ) {
 
-				$md_opts[ $opt_key ] = $opt_val;
-
-				$md_opts[ $opt_key . ':is' ] = 'disabled';
+				$md_opts[ $opt_key ]               = $opt_val;
+				$md_opts[ $opt_key . ':disabled' ] = true;
 			}
 
 			return $md_opts;
