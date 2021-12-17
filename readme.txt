@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.12.4 (2021/12/15)**
+**Version 3.12.4 (2021/12/05)**
 
 * **New Features**
 	* None.
