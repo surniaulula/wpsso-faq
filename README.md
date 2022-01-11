@@ -28,7 +28,6 @@
 
 <p>WPSSO FAQ Manager (WPSSO FAQ) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
-
 <h2>Installation</h2>
 
 <h3 class="top">Install and Uninstall</h3>
@@ -37,7 +36,6 @@
 <li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/">Install the WPSSO FAQ Manager add-on</a>.</li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/">Uninstall the WPSSO FAQ Manager add-on</a>.</li>
 </ul>
-
 
 <h2>Frequently Asked Questions</h2>
 
@@ -54,5 +52,4 @@
 <li>The <a href="https://wpsso.com/docs/plugins/wpsso-faq/notes/faq-shortcode/">FAQ Shortcode</a></li>
 <li>The <a href="https://wpsso.com/docs/plugins/wpsso-faq/notes/question-shortcode/">Question Shortcode</a></li>
 </ul>
-
 
