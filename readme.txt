@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.13.0-rc.1 (2022/01/19)**
+**Version 3.13.0 (2022/01/19)**
 
 * **New Features**
 	* None.
@@ -95,7 +95,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v9.14.0-rc.1.
+	* WPSSO Core v9.14.0.
 
 **Version 3.12.4 (2021/12/05)**
 
@@ -305,7 +305,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.13.0-rc.1 =
+= 3.13.0 =
 
 (2022/01/19) Renamed the lib/abstracts/ folder and its classes.
 
