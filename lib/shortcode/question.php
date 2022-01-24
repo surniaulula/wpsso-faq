@@ -84,7 +84,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_json' => true,	// Apply the 'wpsso_content_html_script_application_ld_json' filter.
+				'__add_json' => true,
 				'id'         => 0,
 				'heading'    => $this->p->options[ 'faq_question_heading' ],
 				'title'      => null,
@@ -168,10 +168,9 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				if ( $this->p->debug->enabled ) {
 
 					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
-					$this->p->debug->log( 'applying wpsso_content_html_script_application_ld_json filter' );
 				}
 
-				$html .= apply_filters( 'wpsso_content_html_script_application_ld_json', '', $mod );
+				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $mod );
 			}
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-question-title">';
