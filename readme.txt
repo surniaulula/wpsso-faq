@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.13.1-dev.2 (2022/01/24)**
+**Version 3.13.1-dev.3 (2022/01/24)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v9.14.3-dev.2.
+	* WPSSO Core v9.14.3-dev.3.
 
 **Version 3.13.0 (2022/01/19)**
 
@@ -320,7 +320,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.13.1-dev.2 =
+= 3.13.1-dev.3 =
 
 (2022/01/24) Added support for the new `WpssoSchema->get_mod_script_type_application_ld_json_html()` method.
 
