@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.13.1-b.1 (2022/01/25)**
+**Version 3.13.1-b.1 (2022/01/26)**
 
 * **New Features**
 	* None.
@@ -322,7 +322,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.13.1-b.1 =
 
-(2022/01/25) Added support for the new `WpssoSchema->get_mod_script_type_application_ld_json_html()` method.
+(2022/01/26) Added support for the new `WpssoSchema->get_mod_script_type_application_ld_json_html()` method.
 
 = 3.13.0 =
 
