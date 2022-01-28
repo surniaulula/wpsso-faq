@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.13.2-dev.4 (2022/01/27)**
+**Version 3.13.2-dev.5 (2022/01/27)**
 
 * **New Features**
 	* None.
@@ -335,7 +335,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.13.2-dev.4 =
+= 3.13.2-dev.5 =
 
 (2022/01/27) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
 
