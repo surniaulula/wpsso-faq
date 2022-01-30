@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 			$title_text    = empty( $atts[ 'title' ] ) ?
 				$this->p->page->get_term_title( $term_id, $title_sep = false ) : 
-				sanitize_text_field( $atts[ 'title' ] );
+					sanitize_text_field( $atts[ 'title' ] );
 
 			/**
 			 * Create the HTML.
