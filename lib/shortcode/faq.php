@@ -151,7 +151,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$extra_args = array(
 				'order'          => $atts[ 'order' ],
 				'orderby'        => $atts[ 'orderby' ],
-				'paged'          => 0,		// Just in case.
+				'paged'          => false,	// Just in case.
 				'posts_per_page' => -1,		// Just in case.
 			);
 
