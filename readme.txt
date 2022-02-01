@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.0-b.3 (2022/02/01)**
+**Version 4.0.0-rc.1 (2022/02/01)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v10.0.0-b.3.
+	* WPSSO Core v10.0.0-rc.1.
 
 **Version 3.13.1 (2022/01/27)**
 
@@ -335,7 +335,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 4.0.0-b.3 =
+= 4.0.0-rc.1 =
 
 (2022/02/01) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
 
