@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 5.9.0
-Stable Tag: 3.13.1
+Stable Tag: 4.0.0
 
 Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
 
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.0 (2022/02/01)**
+**Version 4.0.0 (2022/02/02)**
 
 * **New Features**
 	* None.
@@ -337,7 +337,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 4.0.0 =
 
-(2022/02/01) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
+(2022/02/02) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
 
 = 3.13.1 =
 
