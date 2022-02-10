@@ -41,11 +41,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			$this->a =& $addon;
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'get_md_defaults' => 2,
-				'get_md_options'  => array(
-					'get_post_options' => 3,
-					'get_term_options' => 3,
-				),
+				'get_md_defaults'      => 2,
+				'get_md_options'       => 2,
 				'bc_category_tax_slug' => 2,
 			) );
 
@@ -94,8 +91,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			return $md_defs;
 		}
 
-		public function filter_get_md_options( array $md_opts, $post_id, array $mod ) {
-
+		public function filter_get_md_options( array $md_opts, array $mod ) {
+	
 			$faq_opts = $this->filter_get_md_defaults( array(), $mod );
 
 			foreach ( $faq_opts as $opt_key => $opt_val ) {
