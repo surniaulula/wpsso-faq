@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 		}
 
 		public function filter_get_md_options( array $md_opts, array $mod ) {
-	
+
 			$faq_opts = $this->filter_get_md_defaults( array(), $mod );
 
 			foreach ( $faq_opts as $opt_key => $opt_val ) {
