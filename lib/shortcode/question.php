@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->log_arr( '$atts', $atts );
+				$this->p->debug->log_arr( 'atts', $atts );
 			}
 
 			if ( empty( $atts[ 'id' ] ) ) {	// Nothing to do.
