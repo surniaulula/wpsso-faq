@@ -121,12 +121,12 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 					// translators: Please ignore - translation uses a different text domain.
 					$label_prefix  = _x( 'Post Type', 'option label', 'wpsso' );
 					$post_type_obj = get_post_type_object( WPSSOFAQ_QUESTION_POST_TYPE );
-					$add_to_values = SucomUtilWP::get_post_type_labels( $val_prefix = '', $label_prefix, array( $post_type_obj ) );
+					$add_to_values = SucomUtil::get_post_type_labels( $val_prefix = '', $label_prefix, array( $post_type_obj ) );
 
 					// translators: Please ignore - translation uses a different text domain.
 					$label_prefix  = _x( 'Taxonomy', 'option label', 'wpsso' );
 					$taxonomy_obj  = get_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
-					$add_to_values += SucomUtilWP::get_taxonomy_labels( $val_prefix = 'tax_', $label_prefix, array( $taxonomy_obj ) );
+					$add_to_values += SucomUtil::get_taxonomy_labels( $val_prefix = 'tax_', $label_prefix, array( $taxonomy_obj ) );
 
 					$table_rows[ 'plugin_add_to' ] = '' .	// Show Document SSO Metabox.
 						$this->form->get_th_html( sprintf( _x( 'Show %s Metabox', 'option label', 'wpsso' ), $add_to_metabox_title ),
