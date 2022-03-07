@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.1-b.2 (2022/03/06)**
+**Version 4.0.1-rc.1 (2022/03/07)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v11.5.0-b.2.
+	* WPSSO Core v11.5.0-rc.1.
 
 **Version 4.0.0 (2022/02/02)**
 
@@ -350,9 +350,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 4.0.1-b.2 =
+= 4.0.1-rc.1 =
 
-(2022/03/06) Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
+(2022/03/07) Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
 
 = 4.0.0 =
 
