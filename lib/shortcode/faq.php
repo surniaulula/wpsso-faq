@@ -115,6 +115,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$this->p->page->get_term_title( $term_id, $title_sep = false ) : 
 					sanitize_text_field( $atts[ 'title' ] );
 
+			$mod[ 'posts_args' ] = array(
+				'order'          => $atts[ 'order' ],
+				'orderby'        => $atts[ 'orderby' ],
+				'paged'          => false,	// Just in case.
+				'posts_per_page' => -1,		// Just in case.
+			);
+
 			/**
 			 * Create the HTML.
 			 */
@@ -148,14 +155,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '</' . esc_attr( $atts[ 'heading' ] ) . '><!-- .wpsso-faq-title -->' . "\n";
 
-			$extra_args = array(
-				'order'          => $atts[ 'order' ],
-				'orderby'        => $atts[ 'orderby' ],
-				'paged'          => false,	// Just in case.
-				'posts_per_page' => -1,		// Just in case.
-			);
-
-			$posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $extra_args );
+			$posts_mods = $this->p->page->get_posts_mods( $mod );
 
 			if ( $this->p->debug->enabled ) {
 
