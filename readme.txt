@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Added support for the new 'posts_args' array in the `$mod` variable.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -367,7 +367,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 4.0.2-dev.2 =
 
-(2022/03/20) None.
+(2022/03/20) Added support for the new 'posts_args' array in the `$mod` variable.
 
 = 4.0.1 =
 
