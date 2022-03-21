@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.2-dev.5 (2022/03/21)**
+**Version 4.0.2-b.1 (2022/03/21)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v11.7.2-dev.5.
+	* WPSSO Core v11.7.2-b.1.
 
 **Version 4.0.1 (2022/03/07)**
 
@@ -365,7 +365,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 4.0.2-dev.5 =
+= 4.0.2-b.1 =
 
 (2022/03/21) Added support for the new 'posts_args' array in the `$mod` variable.
 
