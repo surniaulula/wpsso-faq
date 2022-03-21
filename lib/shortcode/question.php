@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			$html = '<a name="' . trim( $frag_anchor, '#' ) . '"></a>' . "\n";
 
-			$html .= '<div class="wpsso-question" id="' . $css_id. '">' . "\n";
+			$html .= '<div class="wpsso-question" id="' . $css_id . '">' . "\n";
 
 			if ( wp_validate_boolean( $atts[ '__add_json' ] ) ) {
 
@@ -170,7 +170,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
 				}
 
-				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $mod );
+				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $mod, $css_id . '-json' );
 			}
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-question-title">';
