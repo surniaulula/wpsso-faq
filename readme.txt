@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 5.9.2
-Stable Tag: 4.0.1
+Stable Tag: 4.0.2
 
 Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
 
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.2 (2022/03/22)**
+**Version 4.0.2 (2022/03/23)**
 
 * **New Features**
 	* None.
@@ -367,7 +367,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 4.0.2 =
 
-(2022/03/22) Added support for the new 'posts_args' array in the `$mod` variable.
+(2022/03/23) Added support for the new 'posts_args' array in the `$mod` variable.
 
 = 4.0.1 =
 
