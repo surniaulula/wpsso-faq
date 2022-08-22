@@ -92,17 +92,13 @@ msgid ""
 "clicked."
 msgstr ""
 
-#: lib/filters-messages.php:64
-msgid "You can use the %s shortcode attribute to show an answer by default."
-msgstr ""
-
-#: lib/filters-messages.php:70
+#: lib/filters-messages.php:67
 msgid ""
 "The FAQ archive and question post type pages are public have publicly "
 "accessible URLs by default."
 msgstr ""
 
-#: lib/filters-messages.php:72
+#: lib/filters-messages.php:69
 msgid ""
 "If you enable this option, FAQs and questions will only be accessible by "
 "using their shortcodes."
