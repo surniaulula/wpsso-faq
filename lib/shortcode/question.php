@@ -84,10 +84,11 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_json' => true,
-				'id'         => 0,
-				'heading'    => $this->p->options[ 'faq_question_heading' ],
-				'title'      => null,
+				'__add_json'  => true,
+				'id'          => 0,
+				'heading'     => $this->p->options[ 'faq_question_heading' ],
+				'title'       => null,
+				'show_answer' => $this->p->options[ 'faq_answer_toggle' ] ? false : null,
 			), $atts );
 
 			if ( $this->p->debug->enabled ) {
@@ -178,7 +179,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			/**
 			 * Show / hide answer when question title is clicked.
 			 */
-			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
+			if ( $this->p->options[ 'faq_answer_toggle' ] ) {
 
 				$html .= '<a href="#" onClick="var el = document.getElementById( \'' . $css_id . '-content\' ); ' .
 					'el.style.display === \'none\' ? el.style.display = \'block\' : el.style.display = \'none\'; return false;">' .
@@ -206,9 +207,12 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			/**
 			 * Hide answer by default.
 			 */
-			if ( ! empty( $this->p->options[ 'faq_answer_toggle' ] ) ) {
+			if ( $this->p->options[ 'faq_answer_toggle' ] ) {
 
-				$html .= ' style="display:none;"';
+				if ( ! WpssoUtil::get_bool( $atts[ 'show_answer' ] ) ) {
+
+					$html .= ' style="display:none;"';
+				}
 			}
 
 			$html .= '>' . "\n";

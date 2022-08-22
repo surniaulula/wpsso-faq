@@ -102,7 +102,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 						) ) . '</td>';
 
 					$table_rows[ 'faq_answer_toggle' ] = '' .
-						$this->form->get_th_html( _x( 'Click Question to Show Answer', 'option label', 'wpsso-faq' ),
+						$this->form->get_th_html( _x( 'Click Question to Show/Hide Answer', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_answer_toggle' ) . 
 						'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
 

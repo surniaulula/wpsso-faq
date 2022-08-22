@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 4.0.2\n"
+"Project-Id-Version: WPSSO FAQ Manager 4.1.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -88,17 +88,21 @@ msgstr ""
 
 #: lib/filters-messages.php:62
 msgid ""
-"Hide the answer text by default and show the answer only when the question "
-"title is clicked."
+"Hide answers by default and show/hide an answer when its question title is "
+"clicked."
 msgstr ""
 
-#: lib/filters-messages.php:67
+#: lib/filters-messages.php:64
+msgid "You can use the %s shortcode attribute to show an answer by default."
+msgstr ""
+
+#: lib/filters-messages.php:70
 msgid ""
 "The FAQ archive and question post type pages are public have publicly "
 "accessible URLs by default."
 msgstr ""
 
-#: lib/filters-messages.php:69
+#: lib/filters-messages.php:72
 msgid ""
 "If you enable this option, FAQs and questions will only be accessible by "
 "using their shortcodes."
@@ -346,7 +350,7 @@ msgid "FAQ Groups for Questions and Answers"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:147
+#: lib/shortcode/question.php:148
 msgctxt "excerpt_length"
 msgid "55"
 msgstr ""
@@ -387,7 +391,7 @@ msgstr ""
 
 #: lib/submenu/faq-general.php:105
 msgctxt "option label"
-msgid "Click Question to Show Answer"
+msgid "Click Question to Show/Hide Answer"
 msgstr ""
 
 #: lib/submenu/faq-general.php:114

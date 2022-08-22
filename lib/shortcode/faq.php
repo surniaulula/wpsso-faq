@@ -84,12 +84,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_json' => true,
-				'id'         => 0,
-				'heading'    => $this->p->options[ 'faq_heading' ],
-				'order'      => 'ASC',
-				'orderby'    => 'title',
-				'title'      => null,
+				'__add_json'      => true,
+				'id'              => 0,
+				'heading'         => $this->p->options[ 'faq_heading' ],
+				'order'           => 'ASC',
+				'orderby'         => 'title',
+				'title'           => null,
+				'show_answer_id'  => null,
+				'show_answer_num' => null,
 			), $atts );
 
 			if ( $this->p->debug->enabled ) {
@@ -162,13 +164,21 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				$this->p->debug->log( 'found ' . count( $posts_mods ) . ' post mods' );
 			}
 
-			foreach ( $posts_mods as $post_mod ) {
+			foreach ( $posts_mods as $num => $post_mod ) {
 
 				/**
 				 * Since the faq shortcode already includes Schema markup for all the questions, signal the
 				 * question shortcode not to include the Schema markup.
 				 */
-				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_mod[ 'id' ] . '" __add_json="0"]' );
+				$question_atts = '__add_json="0" id="' . $post_mod[ 'id' ] . '"';
+
+				if ( ( null !== $atts[ 'show_answer_num' ] && $num + 1 === (int) $atts[ 'show_answer_num' ] ) ||
+					null !== $atts[ 'show_answer_id' ] && $post_mod[ 'id' ] === (int) $atts[ 'show_answer_id' ] ) {
+
+					$question_atts .= ' show_answer="true"';
+				}
+
+				$html .= do_shortcode( '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' ' . $question_atts . ']' );
 			}
 
 			$html .= '</div><!-- .wpsso-faq -->' . "\n";

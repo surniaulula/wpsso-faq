@@ -57,9 +57,12 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-faq_answer_toggle':	// Click Question to Show Answer.
+				case 'tooltip-faq_answer_toggle':	// Click Question to Show/Hide Answer.
 
-					$text = __( 'Hide the answer text by default and show the answer only when the question title is clicked.', 'wpsso-faq' );
+					$text = __( 'Hide answers by default and show/hide an answer when its question title is clicked.', 'wpsso-faq' ) . ' ';
+					
+					$text = sprintf( __( 'You can use the %s shortcode attribute to show an answer by default.', 'wpsso-faq' ),
+						'<code>show_answer="1"</code>' );
 
 					break;
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
