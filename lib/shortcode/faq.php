@@ -84,14 +84,14 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
 			$atts = shortcode_atts( array(	// Since WP v2.5.
-				'__add_json'      => true,
-				'id'              => 0,
-				'heading'         => $this->p->options[ 'faq_heading' ],
-				'order'           => 'ASC',
-				'orderby'         => 'title',
-				'title'           => null,
-				'show_answer_id'  => null,
-				'show_answer_num' => null,
+				'__add_json'       => true,
+				'id'               => 0,
+				'heading'          => $this->p->options[ 'faq_heading' ],
+				'order'            => 'ASC',
+				'orderby'          => 'title',
+				'title'            => null,
+				'show_answer_ids'  => null,
+				'show_answer_nums' => null,
 			), $atts );
 
 			if ( $this->p->debug->enabled ) {
@@ -106,6 +106,16 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			} elseif ( ! is_numeric( $atts[ 'id' ] ) ) {
 
 				return '<!-- ' . $this->shortcode_name . ' shortcode: id attribute is not numeric -->' . "\n\n";
+			}
+
+			if ( null !== $atts[ 'show_answer_ids' ] ) {
+
+				$atts[ 'show_answer_ids' ] = array_map( 'trim', explode( ',', $atts[ 'show_answer_ids' ] ) );
+			}
+
+			if ( null !== $atts[ 'show_answer_nums' ] ) {
+
+				$atts[ 'show_answer_nums' ] = array_map( 'trim', explode( ',', $atts[ 'show_answer_nums' ] ) );
 			}
 
 			$term_id       = $atts[ 'id' ];
@@ -172,8 +182,8 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				 */
 				$question_atts = '__add_json="0" id="' . $post_mod[ 'id' ] . '"';
 
-				if ( ( null !== $atts[ 'show_answer_num' ] && $num + 1 === (int) $atts[ 'show_answer_num' ] ) ||
-					null !== $atts[ 'show_answer_id' ] && $post_mod[ 'id' ] === (int) $atts[ 'show_answer_id' ] ) {
+				if ( ( null !== $atts[ 'show_answer_nums' ] && in_array( $num + 1, $atts[ 'show_answer_nums' ] ) ) ||
+					null !== $atts[ 'show_answer_ids' ] && in_array( $post_mod[ 'id' ], $atts[ 'show_answer_ids' ] ) ) {
 
 					$question_atts .= ' show_answer="true"';
 				}
