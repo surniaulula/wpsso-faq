@@ -79,6 +79,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.1.0-dev.4 (2022/08/22)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added <code>&#91;faq&#93;</code> 'show_answer_num' and 'show_answer_id' shortcode attributes to show an answer number or ID by default (when the "Click Question to Show/Hide Answer" option is enabled).
+	* Added a <code>&#91;question&#93;</code> 'show_answer' shortcode attribute to show an answer by default (when the "Click Question to Show/Hide Answer" option is enabled).
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v13.0.0-dev.4.
+
 **Version 4.0.2 (2022/03/23)**
 
 * **New Features**
@@ -364,6 +380,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 4.1.0-dev.4 =
+
+(2022/08/22) Added <code>&#91;faq&#93;</code> 'show_answer_num' and 'show_answer_id' shortcode attributes and <code>&#91;question&#93;</code> 'show_answer' shortcode attribute.
 
 = 4.0.2 =
 
