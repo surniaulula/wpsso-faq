@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-b.1 (2022/08/22)**
+**Version 4.1.0-b.2 (2022/08/22)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v13.0.0-b.1.
+	* WPSSO Core v13.0.0-b.2.
 
 **Version 4.0.2 (2022/03/23)**
 
@@ -381,7 +381,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 4.1.0-b.1 =
+= 4.1.0-b.2 =
 
 (2022/08/22) Added <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes and <code>&#91;question&#93;</code> 'show_answer' shortcode attribute.
 
