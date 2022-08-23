@@ -10,7 +10,7 @@ Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, ric
 Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
-Tested Up To: 6.0.1
+Tested Up To: 6.0.2
 Stable Tag: 4.0.2
 
 Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-b.2 (2022/08/22)**
+**Version 4.1.0-rc.1 (2022/08/23)**
 
 * **New Features**
 	* None.
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v13.0.0-b.2.
+	* WPSSO Core v13.0.0-rc.1.
 
 **Version 4.0.2 (2022/03/23)**
 
@@ -381,9 +381,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 4.1.0-b.2 =
+= 4.1.0-rc.1 =
 
-(2022/08/22) Added <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes and <code>&#91;question&#93;</code> 'show_answer' shortcode attribute.
+(2022/08/23) Added <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes and <code>&#91;question&#93;</code> 'show_answer' shortcode attribute.
 
 = 4.0.2 =
 
