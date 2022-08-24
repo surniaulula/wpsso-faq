@@ -84,8 +84,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Added <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes to show an answer number or ID by default (when the "Click Question to Show/Hide Answer" option is enabled).
-	* Added a <code>&#91;question&#93;</code> 'show_answer' shortcode attribute to show an answer by default (when the "Click Question to Show/Hide Answer" option is enabled).
+	* Added new <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes to show an answer number or ID by default when the "Click Question to Show/Hide Answer" option is enabled.
+	* Added a new <code>&#91;question&#93;</code> 'show_answer' shortcode attribute to show an answer by default when the "Click Question to Show/Hide Answer" option is enabled.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -383,7 +383,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 4.1.0 =
 
-(2022/08/24) Added <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes and <code>&#91;question&#93;</code> 'show_answer' shortcode attribute.
+(2022/08/24) Added new <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode attributes.
 
 = 4.0.2 =
 
