@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 4.0.2\n"
+"Project-Id-Version: WPSSO FAQ Manager 4.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-22 11:07-0700\n"
+"PO-Revision-Date: 2022-09-06 10:38-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:207
 msgid "The %1$s add-on requires the %2$s plugin."
@@ -84,8 +84,8 @@ msgid "Select the answer text to include under the question title."
 msgstr "Sélectionnez le texte de réponse à inclure sous le titre de la question."
 
 #: lib/filters-messages.php:62
-msgid "Hide the answer text by default and show the answer only when the question title is clicked."
-msgstr "Masquez le texte de la réponse par défaut et affichez la réponse uniquement lorsque le titre de la question est cliqué."
+msgid "Hide answers by default and show/hide an answer when its question title is clicked."
+msgstr "Masquer les réponses par défaut et afficher/masquer une réponse lorsque le titre de la question est cliqué."
 
 #: lib/filters-messages.php:67
 msgid "The FAQ archive and question post type pages are public have publicly accessible URLs by default."
@@ -337,7 +337,7 @@ msgid "FAQ Groups for Questions and Answers"
 msgstr "Groupes de FAQ pour les questions et réponses"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:147
+#: lib/shortcode/question.php:148
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
@@ -378,8 +378,8 @@ msgstr "Réponse complète"
 
 #: lib/submenu/faq-general.php:105
 msgctxt "option label"
-msgid "Click Question to Show Answer"
-msgstr "Cliquez sur la question pour afficher la réponse"
+msgid "Click Question to Show/Hide Answer"
+msgstr "Cliquez la question pour afficher/masquer la réponse"
 
 #: lib/submenu/faq-general.php:114
 msgctxt "option label"
