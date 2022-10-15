@@ -25,7 +25,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'messages_tooltip' => 2,
 			) );
 		}
@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 				case 'tooltip-faq_answer_toggle':	// Click Question to Show/Hide Answer.
 
 					$text = __( 'Hide answers by default and show/hide an answer when its question title is clicked.', 'wpsso-faq' );
-					
+
 					break;
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 

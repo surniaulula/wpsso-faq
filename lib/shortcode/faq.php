@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 			$title_text    = empty( $atts[ 'title' ] ) ?
-				$this->p->page->get_term_title( $term_id, $title_sep = false ) : 
+				$this->p->page->get_term_title( $term_id, $title_sep = false ) :
 					sanitize_text_field( $atts[ 'title' ] );
 
 			$mod[ 'posts_args' ] = array(
