@@ -11,6 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
+ * Requires Plugins: wpsso
  * Requires PHP: 7.2
  * Requires At Least: 5.2
  * Tested Up To: 6.1.0
