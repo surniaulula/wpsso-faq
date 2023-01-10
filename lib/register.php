@@ -122,7 +122,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 				self::register_faq_category_taxonomy();
 
-				flush_rewrite_rules();
+				flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option.
 			}
 		}
 
@@ -132,7 +132,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 			unregister_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
 
-			flush_rewrite_rules();
+			flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option.
 		}
 
 		private static function uninstall_plugin() {}
