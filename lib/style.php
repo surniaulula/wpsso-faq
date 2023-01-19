@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqStyle' ) ) {
 		private $p;	// Wpsso class object.
 		private $a;	// WpssoFaq class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoFaq->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {

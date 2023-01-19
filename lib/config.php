@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					'text_domain' => 'wpsso-faq',
 					'domain_path' => '/languages',
 
-					/**
+					/*
 					 * Required plugin and its version.
 					 */
 					'req' => array(
@@ -41,12 +41,12 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 
-						/**
+						/*
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
@@ -55,7 +55,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 				),
 			),
 
-			/**
+			/*
 			 * Additional add-on setting options.
 			 */
 			'opt' => array(
@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 
 			$info =& self::$cf[ 'plugin' ][ 'wpssofaq' ];
 
-			/**
+			/*
 			 * Define fixed constants.
 			 */
 			define( 'WPSSOFAQ_FILEPATH', $plugin_file );
@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			define( 'WPSSOFAQ_QUESTION_POST_TYPE', 'question' );
 			define( 'WPSSOFAQ_FAQ_CATEGORY_TAXONOMY', 'faq_category' );
 
-			/**
+			/*
 			 * Define variable constants.
 			 */
 			self::set_variable_constants();
@@ -136,7 +136,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 				$var_const = (array) self::get_variable_constants();
 			}
 
-			/**
+			/*
 			 * Define the variable constants, if not already defined.
 			 */
 			foreach ( $var_const as $name => $value ) {
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			$var_const[ 'WPSSOFAQ_FAQ_SHORTCODE_NAME' ]      = 'faq';
 			$var_const[ 'WPSSOFAQ_QUESTION_SHORTCODE_NAME' ] = 'question';
 
-			/**
+			/*
 			 * Maybe override the default constant value with a pre-defined constant value.
 			 */
 			foreach ( $var_const as $name => $value ) {

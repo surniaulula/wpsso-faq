@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 		private $sc_after_key  = 'title';
 		private $sc_column_key = 'wpsso_faq_shortcode';
 
-		/**
+		/*
 		 * Instantiated by WpssoFaq->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -31,7 +31,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			add_action( 'wp_loaded', array( $this, 'add_wp_hooks' ) );
 		}
 
-		/**
+		/*
 		 * Add WordPress action and filters hooks.
 		 */
 		public function add_wp_hooks() {
@@ -40,34 +40,34 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 				$post_type = WPSSOFAQ_QUESTION_POST_TYPE;
 
-				/**
+				/*
 				 * See https://codex.wordpress.org/Plugin_API/Filter_Reference/manage_$post_type_posts_columns.
 				 */
 				add_filter( 'manage_' . $post_type . '_posts_columns', array( $this, 'add_post_column_headings' ), 10, 1 );
 
-				/**
+				/*
 				 * See https://codex.wordpress.org/Plugin_API/Action_Reference/manage_$post_type_posts_custom_column.
 				 */
 				add_action( 'manage_' . $post_type . '_posts_custom_column', array( $this, 'show_column_content' ), 10, 2 );
 
-				/**
+				/*
 				 * Maybe change 'Add title' to 'Question title'.
 				 */
 				add_filter( 'enter_title_here', array( $this, 'maybe_modify_enter_title' ), 10, 2 );
 
-				/**
+				/*
 				 * Maybe change 'Type / to choose a block' to 'Answer text / to choose a block'.
 				 */
 				add_filter( 'write_your_story', array( $this, 'maybe_modify_enter_content' ), 10, 2 );
 
-				/**
+				/*
 				 * Maybe change the 'Excerpt' metabox title to 'Answer Excerpt'.
 				 *
 				 * The 'add_meta_boxes' action fires after all built-in meta boxes have been added.
 				 */
 				add_action( 'add_meta_boxes', array( $this, 'maybe_modify_excerpt_metabox' ), 10, 2 );
 
-				/**
+				/*
 				 * Maybe add a 'Add Answer' or 'Edit Answer' title above the content for the classic editor.
 				 */
 				add_action( 'edit_form_after_title', array( $this, 'maybe_show_edit_form_after_title' ), 10, 1 );
@@ -108,7 +108,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			}
 		}
 
-		/**
+		/*
 		 * Maybe change 'Add title' to 'Question title'.
 		 */
 		public function maybe_modify_enter_title( $text, $post_obj ) {
@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			return $text;
 		}
 
-		/**
+		/*
 		 * Maybe change 'Type / to choose a block' to 'Answer text / to choose a block'.
 		 */
 		public function maybe_modify_enter_content( $text, $post_obj ) {
@@ -138,7 +138,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			return $text;
 		}
 
-		/**
+		/*
 		 * Maybe change the 'Excerpt' metabox title to 'Answer Excerpt'.
 		 */
 		public function maybe_modify_excerpt_metabox( $post_type, $post_obj ) {
@@ -156,7 +156,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			}
 		}
 
-		/**
+		/*
 		 * Maybe add a 'Add Answer' or 'Edit Answer' title above the content for the classic editor.
 		 */
 		public function maybe_show_edit_form_after_title( $post_obj ) {

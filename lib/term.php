@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 		private $sc_after_key  = 'name';
 		private $sc_column_key = 'wpsso_faq_shortcode';
 
-		/**
+		/*
 		 * Instantiated by WpssoFaq->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -31,7 +31,7 @@ if ( ! class_exists( 'WpssoFaqTerm' ) ) {
 			add_action( 'wp_loaded', array( $this, 'add_wp_hooks' ) );
 		}
 
-		/**
+		/*
 		 * Add WordPress action and filters hooks.
 		 */
 		public function add_wp_hooks() {

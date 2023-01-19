@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 		private $schema_type_faq      = 'webpage.faq';
 		private $schema_type_question = 'question';
 
-		/**
+		/*
 		 * Instantiated by WpssoFaq->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 				$this->msgs = new WpssoFaqFiltersMessages( $plugin, $addon );
 			}
 
-			/**
+			/*
 			 * Hard-code and disable these options in the settings pages.
 			 */
 			$this->p->options[ 'og_type_for_question' ]          = $this->og_type_question;

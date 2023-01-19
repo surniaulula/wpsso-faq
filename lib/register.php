@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ), 10, 0 );
 		}
 
-		/**
+		/*
 		 * Fires immediately after a new site is created.
 		 */
 		public function wpmu_new_blog( $blog_id, $user_id, $domain, $path, $site_id, $meta ) {
@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			restore_current_blog();
 		}
 
-		/**
+		/*
 		 * Fires immediately after a site is activated (not called when users and sites are created by a Super Admin).
 		 */
 		public function wpmu_activate_blog( $blog_id, $user_id, $password, $signup_title, $meta ) {
@@ -66,14 +66,14 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			self::do_multisite( $sitewide, array( $this, 'deactivate_plugin' ) );
 		}
 
-		/**
+		/*
 		 * uninstall.php defines constants before calling network_uninstall().
 		 */
 		public static function network_uninstall() {
 
 			$sitewide = true;
 
-			/**
+			/*
 			 * Uninstall from the individual blogs first.
 			 */
 			self::do_multisite( $sitewide, array( __CLASS__, 'uninstall_plugin' ) );
@@ -108,7 +108,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 			if ( class_exists( 'Wpsso' ) ) {
 
-				/**
+				/*
 				 * Register plugin install, activation, update times.
 				 */
 				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.

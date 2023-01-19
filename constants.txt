@@ -1,5 +1,5 @@
 
-/**
+/*
  * Hard-coded / fixed constants. These values cannot be modified.
  */
 WPSSOFAQ_FILEPATH
@@ -11,7 +11,7 @@ WPSSOFAQ_VERSION
 WPSSOFAQ_QUESTION_POST_TYPE
 WPSSOFAQ_FAQ_CATEGORY_TAXONOMY
 
-/**
+/*
  * Define in your wp-config.php file to change the default value.
  */
 WPSSOFAQ_FAQ_SHORTCODE_NAME

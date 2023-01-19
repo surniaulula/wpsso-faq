@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 				'posts_per_page' => -1,		// Just in case.
 			);
 
-			/**
+			/*
 			 * Create the HTML.
 			 */
 			$html = '<a name="' . trim( $frag_anchor, '#' ) . '"></a>' . "\n";
@@ -153,7 +153,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-faq-title">';
 
-			/**
+			/*
 			 * Only link the title if we have a publicly accessible page.
 			 */
 			if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v7.0.0.
@@ -176,7 +176,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			foreach ( $posts_mods as $num => $post_mod ) {
 
-				/**
+				/*
 				 * Since the faq shortcode already includes Schema markup for all the questions, signal the
 				 * question shortcode not to include the Schema markup.
 				 */
@@ -196,7 +196,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			return $html;
 		}
 
-		/**
+		/*
 		 * When the content filter is disabled, fallback and apply our own shortcode filter.
 		 */
 		public function filter_do_shortcode( $content ) {

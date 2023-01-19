@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext  = $ext;
 		}
 
-		/**
+		/*
 		 * Called by the extended WpssoAdmin class.
 		 */
 		protected function add_meta_boxes() {
@@ -47,7 +47,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqGeneral' ) && class_exists( 'WpssoAdmin'
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
-		/**
+		/*
 		 * Frequently Asked Questions metabox.
 		 */
 		public function show_metabox_general() {

@@ -114,7 +114,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 				get_the_title( $post_id ) :
 				sanitize_text_field( $atts[ 'title' ] );
 
-			/**
+			/*
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
 			 *
 			 * Use SucomUtil::get_post_object(), which is back-end compatible, instead of using "global $post".
@@ -157,7 +157,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 					break;
 			}
 
-			/**
+			/*
 			 * Create the HTML.
 			 */
 			$html = '<a name="' . trim( $frag_anchor, '#' ) . '"></a>' . "\n";
@@ -176,7 +176,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-question-title">';
 
-			/**
+			/*
 			 * Show / hide answer when question title is clicked.
 			 */
 			if ( $this->p->options[ 'faq_answer_toggle' ] ) {
@@ -187,7 +187,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			} else {
 
-				/**
+				/*
 				 * Only link the title if we have a publicly accessible page.
 				 */
 				if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v7.0.0.
@@ -204,7 +204,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 			$html .= '<div class="wpsso-question-content" id="' . $css_id . '-content"';
 
-			/**
+			/*
 			 * Hide answer by default.
 			 */
 			if ( $this->p->options[ 'faq_answer_toggle' ] ) {
@@ -226,7 +226,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			return $html;
 		}
 
-		/**
+		/*
 		 * When the content filter is disabled, fallback and apply our own shortcode filter.
 		 */
 		public function filter_do_shortcode( $content ) {
