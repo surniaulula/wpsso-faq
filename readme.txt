@@ -80,6 +80,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.2.1-dev.2 (2023/01/24)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added compatibility declaration for WooCommerce HPOS.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Updated the `WpssoAbstractAddOn` class.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v14.6.1-dev.2.
+
 **Version 4.2.0 (2023/01/20)**
 
 * **New Features**
@@ -156,246 +171,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.2.
 	* WPSSO Core v10.0.0.
 
-**Version 3.13.1 (2022/01/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for the new `WpssoSchema->get_mod_script_type_application_ld_json_html()` method.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.15.0.
-
-**Version 3.13.0 (2022/01/19)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the lib/abstracts/ folder to lib/abstract/.
-	* Renamed the `SucomAddOn` class to `SucomAbstractAddOn`.
-	* Renamed the `WpssoAddOn` class to `WpssoAbstractAddOn`.
-	* Renamed the `WpssoWpMeta` class to `WpssoAbstractWpMeta`.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.14.0.
-
-**Version 3.12.4 (2021/12/05)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added an 'href' and 'return false;' to the onClick event for the "Click Question to Show Answer" option feature.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.10.1.
-
-**Version 3.12.3 (2021/12/03)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed "FAQ Categories" to "FAQ Groups".
-	* Added a filter to change 'Add title' to 'Question title' in the classic and block editors.
-	* Added a filter to change 'Type / to choose a block' to 'Answer text / to choose a block' in the block editor.
-	* Added an action to show 'Add Answer' or 'Edit Answer' between the title and content areas in the classic editor.
-* **Bugfixes**
-	* Fixed the Question and FAQ shortcode list column width.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.10.1.
-
-**Version 3.12.1 (2021/11/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `SucomForm::get_no_input_clipboard()` calls to `SucomForm->get_no_input_clipboard()`.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.9.0.
-
-**Version 3.12.0 (2021/11/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a new "Show Document SSO Metabox" option for the question post type and faq_category taxonomy.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the WPSSOFAQ_CATEGORY_TAXONOMY constant to WPSSOFAQ_FAQ_CATEGORY_TAXONOMY.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.8.1.
-
-**Version 3.11.2 (2021/11/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the `SucomAddOn->get_missing_requirements()` method.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.8.0.
-
-**Version 3.11.1 (2021/10/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.1.0.
-
-**Version 3.11.0 (2021/09/24)**
-
-Maintenance release for WPSSO Core v9.0.0.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.0.0.
-
-**Version 3.10.1 (2021/06/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update for FAQ Manager settings page translation strings.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v8.34.0.
-
-**Version 3.10.0 (2021/05/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added new options in the SSO &gt; FAQ Settings page:
-		* FAQ Shortcode Title Heading
-		* Question Shortcode Title Heading
-	* Added new 'heading' and 'title' shortcode attributes:
-		* See the [FAQ shortcode documentation](https://wpsso.com/docs/plugins/wpsso-faq/notes/faq-shortcode/).
-		* See the [Question shortcode documentation](https://wpsso.com/docs/plugins/wpsso-faq/notes/question-shortcode/).
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.28.2.
-
-**Version 3.9.1 (2021/02/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the banners and icons of WPSSO Core and its add-ons.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.25.2.
-
-**Version 3.9.0 (2020/12/11)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `get_posts_mods()` module object call for WPSSO Core v8.17.0.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.17.0.
-
-**Version 3.8.0 (2020/12/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Included the `$addon` argument for library class constructors.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.5.
-	* WPSSO Core v8.16.0.
-
-**Version 3.7.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.13.0.
-
 == Upgrade Notice ==
+
+= 4.2.1-dev.2 =
+
+(2023/01/24) Added compatibility declaration for WooCommerce HPOS.
 
 = 4.2.0 =
 
@@ -416,64 +196,4 @@ Maintenance release for WPSSO Core v9.0.0.
 = 4.0.0 =
 
 (2022/02/02) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
-
-= 3.13.1 =
-
-(2022/01/27) Added support for the new `WpssoSchema->get_mod_script_type_application_ld_json_html()` method.
-
-= 3.13.0 =
-
-(2022/01/19) Renamed the lib/abstracts/ folder and its classes.
-
-= 3.12.4 =
-
-(2021/12/05) Added an 'href' and 'return false;' to the onClick event for the "Click Question to Show Answer" option feature.
-
-= 3.12.3 =
-
-(2021/12/03) Renamed "FAQ Categories" to "FAQ Groups". Added filters and actions to modify default text in the classic and block editors. Fixed the Question and FAQ shortcode list column width.
-
-= 3.12.1 =
-
-(2021/11/27) Updated `SucomForm::get_no_input_clipboard()` calls to `SucomForm->get_no_input_clipboard()`.
-
-= 3.12.0 =
-
-(2021/11/20) Added a new "Show Document SSO Metabox" option for the question post type and faq_category taxonomy.
-
-= 3.11.2 =
-
-(2021/11/16) Refactored the `SucomAddOn->get_missing_requirements()` method.
-
-= 3.11.1 =
-
-(2021/10/06) Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-
-= 3.11.0 =
-
-(2021/09/24) Maintenance release for WPSSO Core v9.0.0.
-
-= 3.10.1 =
-
-(2021/06/16) Minor update for FAQ Manager settings page translation strings.
-
-= 3.10.0 =
-
-(2021/05/15) Added new options in the SSO &gt; FAQ Settings page. Added new 'heading' and 'title' shortcode attributes.
-
-= 3.9.1 =
-
-(2021/02/25) Updated the banners and icons of WPSSO Core and its add-ons.
-
-= 3.9.0 =
-
-(2020/12/11) Updated the `get_posts_mods()` module object call for WPSSO Core v8.17.0.
-
-= 3.8.0 =
-
-(2020/12/02) Included the `$addon` argument for library class constructors.
-
-= 3.7.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
