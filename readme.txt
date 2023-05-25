@@ -22,9 +22,7 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.
 
-You can use the standard WordPress FAQ group archive and question page templates and URLs, and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
-
-The WPSSO FAQ Manager add-on uses a 'question' custom post type and 'faq_category' custom taxonomy to manage single Questions / Answers and FAQ groups. If you need to adjust the default FAQ group archive page layout, see the [WordPress Theme Handbook &gt; Custom Taxonomy section](https://developer.wordpress.org/themes/template-files-section/taxonomy-templates/#custom-taxonomy) for details on creating a new FAQ group archive template based on your current theme templates.
+You can use the standard WordPress FAQ group archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
 
 <!-- /about -->
 
@@ -53,8 +51,8 @@ WPSSO FAQ Manager (WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https://w
 
 == Screenshots ==
 
-01. The FAQs menu allows you to manage individual FAQs and their categories.
-02. The FAQ editing page allows you to create and edit individual FAQs.
+01. The FAQ menu allows you to manage individual FAQ and their categories.
+02. The FAQ editing page allows you to create and edit individual FAQ.
 
 == Changelog ==
 
@@ -81,6 +79,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 <p><strong>WPSSO Core Standard edition users (ie. the plugin hosted on WordPress.org) have access to <a href="https://wordpress.org/plugins/wpsso-faq/advanced/">the latest development version under the Advanced Options section</a>.</strong></p>
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 4.3.0-dev.5 (2023/05/25)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Renamed the "FAQs" menu item to "SSO - FAQs".
+	* Moved the menu item below the "SSO" settings menu item.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.5.
+	* WordPress v5.5.
+	* WPSSO Core v15.12.0-dev.5.
 
 **Version 4.2.1 (2023/01/26)**
 
@@ -174,6 +188,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v10.0.0.
 
 == Upgrade Notice ==
+
+= 4.3.0-dev.5 =
+
+(2023/05/25) Renamed and moved the "FAQs" menu item.
 
 = 4.2.1 =
 
