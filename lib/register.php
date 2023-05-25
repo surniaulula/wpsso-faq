@@ -27,9 +27,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			add_action( 'wpsso_init_options', array( __CLASS__, 'register_question_post_type' ), 10, 0 );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_question_post_type' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
 
-			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ), 10, 0 );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
 		}
 
 		/*
@@ -165,7 +165,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'set_featured_image'       => __( 'Set question image', 'wpsso-faq' ),
 				'remove_featured_image'    => __( 'Remove question image', 'wpsso-faq' ),
 				'use_featured_image'       => __( 'Use as question image', 'wpsso-faq' ),
-				'menu_name'                => _x( 'FAQs', 'admin menu name', 'wpsso-faq' ),
+				'menu_name'                => _x( 'SSO - FAQs', 'admin menu name', 'wpsso-faq' ),
 				'filter_items_list'        => __( 'Filter questions', 'wpsso-faq' ),
 				'items_list_navigation'    => __( 'Questions list navigation', 'wpsso-faq' ),
 				'items_list'               => __( 'Questions list', 'wpsso-faq' ),
@@ -203,7 +203,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'show_in_nav_menus'     => true,
 				'show_in_admin_bar'     => true,
 				'show_in_rest'          => true,
-				'menu_position'         => 20,
+				'menu_position'         => WPSSOFAQ_FAQ_MENU_ORDER,
 				'menu_icon'             => 'dashicons-editor-help',
 				'capability_type'       => 'page',
 				'hierarchical'          => false,
@@ -223,9 +223,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
-				'name'                       => __( 'FAQs', 'wpsso-faq' ),
+				'name'                       => __( 'FAQ', 'wpsso-faq' ),
 				'singular_name'              => __( 'FAQ Group', 'wpsso-faq' ),
-				'menu_name'                  => _x( 'Frequently Asked Questions', 'admin menu name', 'wpsso-faq' ),
+				'menu_name'                  => _x( 'FAQ Groups', 'admin menu name', 'wpsso-faq' ),
 				'all_items'                  => __( 'All FAQ Groups', 'wpsso-faq' ),
 				'edit_item'                  => __( 'Edit FAQ Group', 'wpsso-faq' ),
 				'view_item'                  => __( 'View FAQ Group', 'wpsso-faq' ),

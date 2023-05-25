@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '4.2.1',	// Plugin version.
+					'version'     => '4.3.0-dev.5',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '14.7.0',
+							'min_version'   => '15.12.0-dev.5',
 						),
 					),
 
@@ -152,6 +152,23 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 
 			$var_const = array();
 
+			/*
+			 * MENU_ORDER (aka menu_position):
+			 *
+			 *	null – below Comments
+			 *	5 – below Posts
+			 *	10 – below Media
+			 *	15 – below Links
+			 *	20 – below Pages
+			 *	25 – below comments
+			 *	60 – below first separator
+			 *	65 – below Plugins
+			 *	70 – below Users
+			 *	75 – below Tools
+			 *	80 – below Settings
+			 *	100 – below second separator
+			 */
+			$var_const[ 'WPSSOFAQ_FAQ_MENU_ORDER' ]          = 81;
 			$var_const[ 'WPSSOFAQ_FAQ_SHORTCODE_NAME' ]      = 'faq';
 			$var_const[ 'WPSSOFAQ_QUESTION_SHORTCODE_NAME' ] = 'question';
 
