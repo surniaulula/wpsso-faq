@@ -85,7 +85,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Renamed the "FAQs" menu item to "SSO - FAQs".
+	* Renamed the "FAQs" menu item to "SSO FAQs".
 	* Moved the menu item below the "SSO" settings menu item.
 * **Bugfixes**
 	* None.
