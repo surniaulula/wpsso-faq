@@ -80,7 +80,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.3.0-dev.5 (2023/05/25)**
+**Version 4.3.0-rc.1 (2023/05/26)**
 
 * **New Features**
 	* None.
@@ -94,7 +94,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.5.
 	* WordPress v5.5.
-	* WPSSO Core v15.12.0-dev.5.
+	* WPSSO Core v15.12.0-rc.1.
 
 **Version 4.2.1 (2023/01/26)**
 
@@ -189,9 +189,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.3.0-dev.5 =
+= 4.3.0-rc.1 =
 
-(2023/05/25) Renamed and moved the "FAQs" menu item.
+(2023/05/26) Renamed and moved the "FAQs" menu item.
 
 = 4.2.1 =
 
