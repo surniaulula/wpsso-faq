@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 4.2.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 4.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-01-18 11:55-0800\n"
+"PO-Revision-Date: 2023-05-26 04:09-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,13 +11,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
-#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:206
+#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:220
+#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:223
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -29,7 +29,7 @@ msgstr "Réglages FAQ"
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
 msgid "WPSSO FAQ Manager"
-msgstr "WPSSO gestionnaire de FAQ"
+msgstr "WPSSO Gestionnaire de FAQ"
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
@@ -120,12 +120,12 @@ msgid "Edit Answer"
 msgstr "Modifier la réponse"
 
 #: lib/register.php:147
-msgctxt "Post type general name"
+msgctxt "post type general name"
 msgid "Questions"
 msgstr "Questions"
 
 #: lib/register.php:148
-msgctxt "Post type singular name"
+msgctxt "post type singular name"
 msgid "Question"
 msgstr "Question"
 
@@ -203,8 +203,8 @@ msgstr "Utiliser comme image de question"
 
 #: lib/register.php:168
 msgctxt "admin menu name"
-msgid "FAQs"
-msgstr "FAQs"
+msgid "SSO FAQs"
+msgstr "SSO FAQs"
 
 #: lib/register.php:169
 msgid "Filter questions"
@@ -244,18 +244,18 @@ msgid "Question updated."
 msgstr "Question mise à jour."
 
 #: lib/register.php:195
-msgctxt "Post type label"
+msgctxt "post type label"
 msgid "Question"
 msgstr "Question"
 
 #: lib/register.php:197
-msgctxt "Post type description"
+msgctxt "post type description"
 msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #: lib/register.php:226
-msgid "FAQs"
-msgstr "FAQs"
+msgid "FAQ"
+msgstr "FAQ"
 
 #: lib/register.php:227
 msgid "FAQ Group"
@@ -263,8 +263,8 @@ msgstr "Groupe de FAQ"
 
 #: lib/register.php:228
 msgctxt "admin menu name"
-msgid "Frequently Asked Questions"
-msgstr "Questions fréquemment posées"
+msgid "FAQ Groups"
+msgstr "Groupes de FAQ"
 
 #: lib/register.php:229
 msgid "All FAQ Groups"
@@ -327,12 +327,12 @@ msgid "← Back to FAQ groups"
 msgstr "← Retour aux groupes de FAQ"
 
 #: lib/register.php:247
-msgctxt "Taxonomy label"
+msgctxt "taxonomy label"
 msgid "FAQ Groups"
 msgstr "Groupes de FAQ"
 
 #: lib/register.php:258
-msgctxt "Taxonomy description"
+msgctxt "taxonomy description"
 msgid "FAQ Groups for Questions and Answers"
 msgstr "Groupes de FAQ pour les questions et réponses"
 
@@ -409,7 +409,7 @@ msgstr "Code court de FAQ"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO FAQ Manager"
-msgstr "WPSSO gestionnaire de FAQ"
+msgstr "WPSSO Gestionnaire de FAQ"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-faq/"

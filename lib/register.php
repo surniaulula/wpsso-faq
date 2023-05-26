@@ -144,8 +144,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
-				'name'                     => _x( 'Questions', 'Post type general name', 'wpsso-faq' ),
-				'singular_name'            => _x( 'Question', 'Post type singular name', 'wpsso-faq' ),
+				'name'                     => _x( 'Questions', 'post type general name', 'wpsso-faq' ),
+				'singular_name'            => _x( 'Question', 'post type singular name', 'wpsso-faq' ),
 				'add_new'                  => __( 'Add Question', 'wpsso-faq' ),
 				'add_new_item'             => __( 'Add Question', 'wpsso-faq' ),
 				'edit_item'                => __( 'Edit Question', 'wpsso-faq' ),
@@ -165,7 +165,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'set_featured_image'       => __( 'Set question image', 'wpsso-faq' ),
 				'remove_featured_image'    => __( 'Remove question image', 'wpsso-faq' ),
 				'use_featured_image'       => __( 'Use as question image', 'wpsso-faq' ),
-				'menu_name'                => _x( 'SSO - FAQs', 'admin menu name', 'wpsso-faq' ),
+				'menu_name'                => _x( 'SSO FAQs', 'admin menu name', 'wpsso-faq' ),
 				'filter_items_list'        => __( 'Filter questions', 'wpsso-faq' ),
 				'items_list_navigation'    => __( 'Questions list navigation', 'wpsso-faq' ),
 				'items_list'               => __( 'Questions list', 'wpsso-faq' ),
@@ -192,9 +192,9 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$taxonomies = array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
 
 			$args = array(
-				'label'                 => _x( 'Question', 'Post type label', 'wpsso-faq' ),
+				'label'                 => _x( 'Question', 'post type label', 'wpsso-faq' ),
 				'labels'                => $labels,
-				'description'           => _x( 'Question and Answer', 'Post type description', 'wpsso-faq' ),
+				'description'           => _x( 'Question and Answer', 'post type description', 'wpsso-faq' ),
 				'exclude_from_search'   => false,	// Must be false for get_posts() queries.
 				'public'                => $is_public,
 				'publicly_queryable'    => $is_public,
@@ -244,7 +244,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			);
 
 			$args = array(
-				'label'              => _x( 'FAQ Groups', 'Taxonomy label', 'wpsso-faq' ),
+				'label'              => _x( 'FAQ Groups', 'taxonomy label', 'wpsso-faq' ),
 				'labels'             => $labels,
 				'public'             => $is_public,
 				'publicly_queryable' => $is_public,
@@ -255,7 +255,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'show_in_quick_edit' => true,
 				'show_in_rest'       => true,	// Show this taxonomy in the block editor.
 				'show_tagcloud'      => false,
-				'description'        => _x( 'FAQ Groups for Questions and Answers', 'Taxonomy description', 'wpsso-faq' ),
+				'description'        => _x( 'FAQ Groups for Questions and Answers', 'taxonomy description', 'wpsso-faq' ),
 				'hierarchical'       => true,
 			);
 

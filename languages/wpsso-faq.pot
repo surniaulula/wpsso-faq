@@ -100,7 +100,7 @@ msgstr ""
 
 #: lib/filters-messages.php:69
 msgid ""
-"If you enable this option, FAQ and questions will only be accessible by "
+"If you enable this option, FAQs and questions will only be accessible by "
 "using their shortcodes."
 msgstr ""
 
@@ -129,12 +129,12 @@ msgid "Edit Answer"
 msgstr ""
 
 #: lib/register.php:147
-msgctxt "Post type general name"
+msgctxt "post type general name"
 msgid "Questions"
 msgstr ""
 
 #: lib/register.php:148
-msgctxt "Post type singular name"
+msgctxt "post type singular name"
 msgid "Question"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 
 #: lib/register.php:168
 msgctxt "admin menu name"
-msgid "SSO - FAQs"
+msgid "SSO FAQs"
 msgstr ""
 
 #: lib/register.php:169
@@ -253,12 +253,12 @@ msgid "Question updated."
 msgstr ""
 
 #: lib/register.php:195
-msgctxt "Post type label"
+msgctxt "post type label"
 msgid "Question"
 msgstr ""
 
 #: lib/register.php:197
-msgctxt "Post type description"
+msgctxt "post type description"
 msgid "Question and Answer"
 msgstr ""
 
@@ -336,12 +336,12 @@ msgid "← Back to FAQ groups"
 msgstr ""
 
 #: lib/register.php:247
-msgctxt "Taxonomy label"
+msgctxt "taxonomy label"
 msgid "FAQ Groups"
 msgstr ""
 
 #: lib/register.php:258
-msgctxt "Taxonomy description"
+msgctxt "taxonomy description"
 msgid "FAQ Groups for Questions and Answers"
 msgstr ""
 
