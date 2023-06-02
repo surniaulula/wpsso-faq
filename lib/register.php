@@ -192,25 +192,25 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$taxonomies = array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
 
 			$args = array(
-				'label'                 => _x( 'Question', 'post type label', 'wpsso-faq' ),
-				'labels'                => $labels,
-				'description'           => _x( 'Question and Answer', 'post type description', 'wpsso-faq' ),
-				'exclude_from_search'   => false,	// Must be false for get_posts() queries.
-				'public'                => $is_public,
-				'publicly_queryable'    => $is_public,
-				'show_ui'               => true,
-				'show_in_menu'          => true,
-				'show_in_nav_menus'     => true,
-				'show_in_admin_bar'     => true,
-				'show_in_rest'          => true,
-				'menu_position'         => WPSSOFAQ_FAQ_MENU_ORDER,
-				'menu_icon'             => 'dashicons-editor-help',
-				'capability_type'       => 'page',
-				'hierarchical'          => false,
-				'supports'              => $supports,
-				'taxonomies'            => $taxonomies,
-				'has_archive'           => 'faqs',
-				'can_export'            => true,
+				'label'               => _x( 'Question', 'post type label', 'wpsso-faq' ),
+				'labels'              => $labels,
+				'description'         => _x( 'Question and Answer', 'post type description', 'wpsso-faq' ),
+				'exclude_from_search' => false,	// Must be false for get_posts() queries.
+				'public'              => $is_public,
+				'publicly_queryable'  => $is_public,
+				'show_ui'             => true,
+				'show_in_menu'        => true,
+				'show_in_nav_menus'   => true,
+				'show_in_admin_bar'   => true,
+				'show_in_rest'        => true,
+				'menu_position'       => WPSSOFAQ_FAQ_MENU_ORDER,
+				'menu_icon'           => 'dashicons-editor-help',
+				'capability_type'     => 'page',
+				'hierarchical'        => false,
+				'supports'            => $supports,
+				'taxonomies'          => $taxonomies,
+				'has_archive'         => 'faqs',
+				'can_export'          => true,
 			);
 
 			register_post_type( WPSSOFAQ_QUESTION_POST_TYPE, $args );
