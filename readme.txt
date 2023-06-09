@@ -51,8 +51,7 @@ WPSSO FAQ Manager (WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https://w
 
 == Screenshots ==
 
-01. The FAQ menu allows you to manage individual FAQ and their categories.
-02. The FAQ editing page allows you to create and edit individual FAQ.
+01. The FAQ editing page.
 
 == Changelog ==
 
