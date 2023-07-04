@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: faq, faqpage, question, shortcode, schema, schema.org, answer, google, rich results, faqs, faq page
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.5
+Requires PHP: 7.2.34
 Requires At Least: 5.5
 Tested Up To: 6.2.2
 Stable Tag: 4.3.0
@@ -91,7 +91,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v7.2.5.
+	* PHP v7.2.34.
 	* WordPress v5.5.
 	* WPSSO Core v15.12.0.
 
@@ -106,7 +106,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated the `WpssoAbstractAddOn` library class.
 * **Requires At Least**
-	* PHP v7.2.5.
+	* PHP v7.2.
 	* WordPress v5.5.
 	* WPSSO Core v14.7.0.
 
@@ -141,51 +141,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.2.
 	* WPSSO Core v13.0.0.
 
-**Version 4.0.2 (2022/03/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added support for the new 'posts_args' array in the `$mod` variable.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v11.7.2.
-
-**Version 4.0.1 (2022/03/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v11.5.0.
-
-**Version 4.0.0 (2022/02/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v10.0.0.
-
 == Upgrade Notice ==
 
 = 4.3.0 =
@@ -203,16 +158,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.1.0 =
 
 (2022/08/24) Added new <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode attributes.
-
-= 4.0.2 =
-
-(2022/03/23) Added support for the new 'posts_args' array in the `$mod` variable.
-
-= 4.0.1 =
-
-(2022/03/07) Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
-
-= 4.0.0 =
-
-(2022/02/02) Updated `SucomUtilWP::get_post_types()` and `SucomUtilWP::get_taxonomies()` method arguments.
 
