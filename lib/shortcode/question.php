@@ -83,7 +83,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {
 
-			$atts = shortcode_atts( array(	// Since WP v2.5.
+			$atts = shortcode_atts( array(
 				'__add_json'  => true,
 				'id'          => 0,
 				'heading'     => $this->p->options[ 'faq_question_heading' ],
@@ -188,16 +188,9 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			} else {
 
 				/*
-				 * Only link the title if we have a publicly accessible page.
+				 * Link the title if we have a publicly accessible page.
 				 */
-				if ( $mod[ 'is_public' ] ) {	// Since WPSSO Core v7.0.0.
-
-					$html .= '<a href="' . $canonical_url . '">' . $title_text . '</a>';
-
-				} else {
-
-					$html .= $title_text;
-				}
+				$html .= $mod[ 'is_public' ] ? '<a href="' . $canonical_url . '">' . $title_text . '</a>' : $title_text;
 			}
 
 			$html .= '</' . esc_attr( $atts[ 'heading' ] ) . '><!-- .wpsso-question-title -->' . "\n";
