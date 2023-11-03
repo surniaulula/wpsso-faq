@@ -28,13 +28,13 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			add_action( 'wp_loaded', array( $this, 'add_wp_hooks' ) );
+			add_action( 'wp_loaded', array( $this, 'add_wp_callbacks' ) );
 		}
 
 		/*
 		 * Add WordPress action and filters hooks.
 		 */
-		public function add_wp_hooks() {
+		public function add_wp_callbacks() {
 
 			if ( is_admin() ) {
 
@@ -99,7 +99,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 			if ( $this->sc_column_key === $column_name ) {
 
-				$form      = $this->p->admin->get_form_object( $menu_ext = 'wpsso' );
+				$form      = $this->p->admin->get_form_object( $menu_ext = 'wpsso' );	// Return and maybe set/reset the WpssoAdmin->form value.
 				$shortcode = '[' . WPSSOFAQ_QUESTION_SHORTCODE_NAME . ' id="' . $post_id . '"]';
 				$css_class = $column_name;
 				$css_id    = $column_name . '_' . $post_id;

@@ -64,9 +64,9 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 					break;
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 
-					$text = __( 'The FAQ archive and question post type pages are public have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
+					$text = __( 'The FAQ archive and question post type pages are public, and have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
 
-					$text .= __( 'If you enable this option, FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
+					$text .= __( 'If you enable this option FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
 
 					break;
 			}

@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '4.3.0',	// Plugin version.
+					'version'     => '4.4.0-dev.8',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '15.12.0',
+							'min_version'   => '16.7.0-dev.8',
 						),
 					),
 
@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 							'question' => 'Question Shortcode',
 						),
 						'submenu' => array(
-							'faq-general' => 'FAQ Settings',
+							'faq-settings' => 'FAQ Settings',
 						),
 					),
 				),
