@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 4.3.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 4.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-06-07 03:32-0700\n"
+"PO-Revision-Date: 2023-11-03 21:27-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
 msgid "The %1$s add-on requires the %2$s plugin."
@@ -88,11 +88,11 @@ msgid "Hide answers by default and show/hide an answer when its question title i
 msgstr "Masquer les réponses par défaut et afficher/masquer une réponse lorsque le titre de la question est cliqué."
 
 #: lib/filters-messages.php:67
-msgid "The FAQ archive and question post type pages are public have publicly accessible URLs by default."
-msgstr "Les pages d'archive de FAQs et de type d'article question sont publiques et ont des URL accessibles au public par défaut."
+msgid "The FAQ archive and question post type pages are public, and have publicly accessible URLs by default."
+msgstr "Les pages d'archives de FAQs et de types d'articles de questions sont publiques et ont des URL accessibles publiquement par défaut."
 
 #: lib/filters-messages.php:69
-msgid "If you enable this option, FAQs and questions will only be accessible by using their shortcodes."
+msgid "If you enable this option FAQs and questions will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
 #: lib/post.php:79
@@ -107,7 +107,7 @@ msgstr "Titre de la question"
 msgid "Answer text / to choose a block"
 msgstr "Texte de réponse / pour choisir un bloc"
 
-#: lib/post.php:154 lib/submenu/faq-general.php:101
+#: lib/post.php:154 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr "Extrait de réponse"
 
@@ -342,63 +342,63 @@ msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: lib/submenu/faq-general.php:38
+#: lib/submenu/faq-settings.php:32
 msgctxt "metabox title"
 msgid "Frequently Asked Questions"
 msgstr "Questions fréquemment posées"
 
-#: lib/submenu/faq-general.php:60
+#: lib/submenu/faq-settings.php:44
 msgctxt "metabox tab"
 msgid "Shortcode Defaults"
 msgstr "Défauts codes courts"
 
-#: lib/submenu/faq-general.php:61
+#: lib/submenu/faq-settings.php:45
 msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr "Réglages de l'ajout"
 
-#: lib/submenu/faq-general.php:87
+#: lib/submenu/faq-settings.php:61
 msgctxt "option label"
 msgid "FAQ Shortcode Title Heading"
 msgstr "En-tête du titre du code court de catégorie FAQ"
 
-#: lib/submenu/faq-general.php:92
+#: lib/submenu/faq-settings.php:66
 msgctxt "option label"
 msgid "Question Shortcode Title Heading"
 msgstr "En-tête du titre du code court de question"
 
-#: lib/submenu/faq-general.php:97
+#: lib/submenu/faq-settings.php:71
 msgctxt "option label"
 msgid "Question Shortcode Answer Format"
 msgstr "Format de réponse pour code court de question"
 
-#: lib/submenu/faq-general.php:100
+#: lib/submenu/faq-settings.php:74
 msgid "Full Answer"
 msgstr "Réponse complète"
 
-#: lib/submenu/faq-general.php:105
+#: lib/submenu/faq-settings.php:79
 msgctxt "option label"
 msgid "Click Question to Show/Hide Answer"
 msgstr "Cliquez la question pour afficher/masquer la réponse"
 
-#: lib/submenu/faq-general.php:114
+#: lib/submenu/faq-settings.php:88
 msgctxt "option label"
 msgid "Disable FAQ and Question URLs"
 msgstr "Désactiver les URLs de question et FAQ"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/submenu/faq-general.php:122
+#: lib/submenu/faq-settings.php:96
 msgctxt "option label"
 msgid "Post Type"
 msgstr "Type d'article"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/submenu/faq-general.php:127
+#: lib/submenu/faq-settings.php:101
 msgctxt "option label"
 msgid "Taxonomy"
 msgstr "Taxonomie"
 
-#: lib/submenu/faq-general.php:132
+#: lib/submenu/faq-settings.php:106
 msgctxt "option label"
 msgid "Show %s Metabox"
 msgstr "Afficher métabox %s"
