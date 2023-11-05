@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.0-dev.11 (2021/11/05)**
+**Version 5.0.0-dev.13 (2021/11/05)**
 
 * **New Features**
 	* None.
@@ -88,11 +88,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Refactored the settings page load process.
+	* Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.5.
-	* WPSSO Core v16.7.0-dev.11.
+	* WPSSO Core v17.0.0-dev.13.
 
 **Version 4.3.0 (2023/05/26)**
 
@@ -110,71 +110,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 	* WPSSO Core v15.12.0.
 
-**Version 4.2.1 (2023/01/26)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.5.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `WpssoAbstractAddOn` library class.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.5.
-	* WPSSO Core v14.7.0.
-
-**Version 4.2.0 (2023/01/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `SucomAbstractAddOn` common library class.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v14.5.0.
-
-**Version 4.1.0 (2022/08/24)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added new <code>&#91;faq&#93;</code> 'show_answer_nums' and 'show_answer_ids' shortcode attributes to show an answer number or ID by default when the "Click Question to Show/Hide Answer" option is enabled.
-	* Added a new <code>&#91;question&#93;</code> 'show_answer' shortcode attribute to show an answer by default when the "Click Question to Show/Hide Answer" option is enabled.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v13.0.0.
-
 == Upgrade Notice ==
 
-= 4.4.0-dev.11 =
+= 5.0.0-dev.13 =
 
-(2021/11/05) Refactored the settings page load process.
+(2021/11/05) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 
 = 4.3.0 =
 
 (2023/05/26) Renamed and moved the "FAQs" menu item.
-
-= 4.2.1 =
-
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
-
-= 4.2.0 =
-
-(2023/01/20) Updated the `SucomAbstractAddOn` common library class.
-
-= 4.1.0 =
-
-(2022/08/24) Added new <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode attributes.
 
