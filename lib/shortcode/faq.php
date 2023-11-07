@@ -119,20 +119,13 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			}
 
 			$term_id       = $atts[ 'id' ];
-			$mod           = $this->p->term->get_mod( $term_id );
+			$term_mod      = $this->p->term->get_mod( $term_id );
 			$css_id        = 'wpsso-faq-' . $term_id;
-			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-term-123-tax-faq-category".
-			$canonical_url = $this->p->util->get_canonical_url( $mod );
+			$frag_anchor   = WpssoUtil::get_fragment_anchor( $term_mod );	// Returns for example "#sso-term-123-tax-faq-category".
+			$canonical_url = $this->p->util->get_canonical_url( $term_mod );
 			$title_text    = empty( $atts[ 'title' ] ) ?
 				$this->p->page->get_term_title( $term_id, $title_sep = false ) :
 					sanitize_text_field( $atts[ 'title' ] );
-
-			$mod[ 'posts_args' ] = array(
-				'order'          => $atts[ 'order' ],
-				'orderby'        => $atts[ 'orderby' ],
-				'paged'          => false,	// Just in case.
-				'posts_per_page' => -1,		// Just in case.
-			);
 
 			/*
 			 * Create the HTML.
@@ -148,7 +141,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
 				}
 
-				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $mod, 'wpsso-schema-json-faq-' . $term_id );
+				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $term_mod, 'wpsso-schema-json-faq-' . $term_id );
 			}
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-faq-title">';
@@ -156,11 +149,21 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			/*
 			 * Link the title if we have a publicly accessible page.
 			 */
-			$html .= $mod[ 'is_public' ] ? '<a href="' . $canonical_url . '">' . $title_text . '</a>' : $title_text;
+			$html .= $term_mod[ 'is_public' ] ? '<a href="' . $canonical_url . '">' . $title_text . '</a>' : $title_text;
 
 			$html .= '</' . esc_attr( $atts[ 'heading' ] ) . '><!-- .wpsso-faq-title -->' . "\n";
 
-			$posts_mods = $this->p->page->get_posts_mods( $mod );
+			/*
+			 * Get all question posts for this term.
+			 */
+			$term_mod[ 'posts_args' ] = array(
+				'order'          => $atts[ 'order' ],
+				'orderby'        => $atts[ 'orderby' ],
+				'paged'          => false,
+				'posts_per_page' => -1,		// Get all questons.
+			);
+
+			$posts_mods = $this->p->page->get_posts_mods( $term_mod );
 
 			if ( $this->p->debug->enabled ) {
 
@@ -169,11 +172,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 
 			foreach ( $posts_mods as $num => $post_mod ) {
 
-				/*
-				 * Since the faq shortcode already includes Schema markup for all the questions, signal the
-				 * question shortcode not to include the Schema markup.
-				 */
-				$question_atts = '__add_json="0" id="' . $post_mod[ 'id' ] . '"';
+				$question_atts = '__add_json="0" id="' . $post_mod[ 'id' ] . '"';	// Signal the question shortcode not to include Schema markup.
 
 				if ( ( null !== $atts[ 'show_answer_nums' ] && in_array( $num + 1, $atts[ 'show_answer_nums' ] ) ) ||
 					null !== $atts[ 'show_answer_ids' ] && in_array( $post_mod[ 'id' ], $atts[ 'show_answer_ids' ] ) ) {
