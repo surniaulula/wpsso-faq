@@ -104,27 +104,27 @@ msgid ""
 "using their shortcodes."
 msgstr ""
 
-#: lib/post.php:79
+#: lib/post.php:82
 msgid "Question Shortcode"
 msgstr ""
 
-#: lib/post.php:120
+#: lib/post.php:123
 msgid "Question title"
 msgstr ""
 
-#: lib/post.php:135
+#: lib/post.php:138
 msgid "Answer text / to choose a block"
 msgstr ""
 
-#: lib/post.php:154 lib/submenu/faq-settings.php:75
+#: lib/post.php:157 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr ""
 
-#: lib/post.php:174
+#: lib/post.php:177
 msgid "Add Answer"
 msgstr ""
 
-#: lib/post.php:178
+#: lib/post.php:181
 msgid "Edit Answer"
 msgstr ""
 
@@ -412,7 +412,7 @@ msgctxt "option label"
 msgid "Show %s Metabox"
 msgstr ""
 
-#: lib/term.php:49
+#: lib/term.php:52
 msgid "FAQ Shortcode"
 msgstr ""
 
