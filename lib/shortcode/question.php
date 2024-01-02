@@ -2,7 +2,7 @@
 /*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Copyright 2019-2023 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2019-2024 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -110,9 +110,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$css_id        = 'wpsso-question-' . $post_id;
 			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
-			$title_text    = empty( $atts[ 'title' ] ) ?
-				get_the_title( $post_id ) :
-				sanitize_text_field( $atts[ 'title' ] );
+			$title_text    = empty( $atts[ 'title' ] ) ? get_the_title( $post_id ) : sanitize_text_field( $atts[ 'title' ] );
 
 			/*
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
