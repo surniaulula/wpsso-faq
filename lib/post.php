@@ -85,10 +85,7 @@ if ( ! class_exists( 'WpssoFaqPost' ) ) {
 
 				SucomUtil::add_after_key( $columns, $this->sc_after_key, $this->sc_column_key, $sc_title_transl );
 
-			} else {
-
-				$columns[ $this->sc_column_key ] = $sc_title_transl;
-			}
+			} else $columns[ $this->sc_column_key ] = $sc_title_transl;
 
 			return $columns;
 		}

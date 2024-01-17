@@ -121,7 +121,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 			$term_id       = $atts[ 'id' ];
 			$term_mod      = $this->p->term->get_mod( $term_id );
 			$css_id        = 'wpsso-faq-' . $term_id;
-			$frag_anchor   = WpssoUtil::get_fragment_anchor( $term_mod );	// Returns for example "#sso-term-123-tax-faq-category".
+			$frag_anchor   = $this->p->util->get_fragment_anchor( $term_mod );	// Returns for example "#sso-term-123-tax-faq-category".
 			$canonical_url = $this->p->util->get_canonical_url( $term_mod );
 			$title_text    = empty( $atts[ 'title' ] ) ?
 				$this->p->page->get_term_title( $term_id, $title_sep = false ) :

@@ -108,16 +108,16 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			$post_id       = $atts[ 'id' ];
 			$mod           = $this->p->post->get_mod( $post_id );
 			$css_id        = 'wpsso-question-' . $post_id;
-			$frag_anchor   = WpssoUtil::get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
+			$frag_anchor   = $this->p->util->get_fragment_anchor( $mod );	// Returns for example "#sso-post-123".
 			$canonical_url = $this->p->util->get_canonical_url( $mod );
 			$title_text    = empty( $atts[ 'title' ] ) ? get_the_title( $post_id ) : sanitize_text_field( $atts[ 'title' ] );
 
 			/*
 			 * Attach the post ID to the question so the post cache can be cleared when the question is updated.
 			 *
-			 * Use SucomUtil::get_post_object(), which is back-end compatible, instead of using "global $post".
+			 * Use SucomUtilWP::get_post_object(), which is back-end compatible, instead of using "global $post".
 			 */
-			$post_obj = SucomUtil::get_post_object( $use_post = true );
+			$post_obj = SucomUtilWP::get_post_object( $use_post = true );
 
 			if ( ! empty( $post_obj->ID ) && $post_obj->ID !== $post_id ) {
 
@@ -200,7 +200,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeQuestion' ) ) {
 			 */
 			if ( $this->p->options[ 'faq_answer_toggle' ] ) {
 
-				if ( ! WpssoUtil::get_bool( $atts[ 'show_answer' ] ) ) {
+				if ( ! SucomUtil::get_bool( $atts[ 'show_answer' ] ) ) {	// Maybe convert string to boolean.
 
 					$html .= ' style="display:none;"';
 				}

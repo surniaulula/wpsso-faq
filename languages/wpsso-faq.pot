@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 5.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 5.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -108,23 +108,23 @@ msgstr ""
 msgid "Question Shortcode"
 msgstr ""
 
-#: lib/post.php:123
+#: lib/post.php:120
 msgid "Question title"
 msgstr ""
 
-#: lib/post.php:138
+#: lib/post.php:135
 msgid "Answer text / to choose a block"
 msgstr ""
 
-#: lib/post.php:157 lib/submenu/faq-settings.php:75
+#: lib/post.php:154 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr ""
 
-#: lib/post.php:177
+#: lib/post.php:174
 msgid "Add Answer"
 msgstr ""
 
-#: lib/post.php:181
+#: lib/post.php:178
 msgid "Edit Answer"
 msgstr ""
 
