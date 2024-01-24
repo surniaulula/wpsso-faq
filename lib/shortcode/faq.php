@@ -141,7 +141,7 @@ if ( ! class_exists( 'WpssoFaqShortcodeFaq' ) ) {
 					$this->p->debug->log( 'adding schema json-ld markup for ' . $css_id );
 				}
 
-				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $term_mod, 'wpsso-schema-json-faq-' . $term_id );
+				$html .= $this->p->schema->get_mod_script_type_application_ld_json_html( $term_mod, 'wpsso-schema-faq-' . $term_id );
 			}
 
 			$html .= '<' . esc_attr( $atts[ 'heading' ] ) . ' class="wpsso-faq-title">';
