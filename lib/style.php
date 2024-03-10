@@ -39,30 +39,27 @@ if ( ! class_exists( 'WpssoFaqStyle' ) ) {
 		private function add_admin_page_style() {
 
 			$custom_style_css = '
-
 				body.taxonomy-faq_category #col-container #col-left {
 					width:25%;
 				}
-
 				body.taxonomy-faq_category #col-container #col-right {
 					width:75%;
 				}
-
 				table.wp-list-table > thead > tr > th.column-wpsso_faq_shortcode,
 				table.wp-list-table > tbody > tr > td.column-wpsso_faq_shortcode {
 					width:200px;
 					height:auto;
 				}
-
 				table.wp-list-table.tags > thead > tr > th.column-wpsso_faq_shortcode,
 				table.wp-list-table.tags > tbody > tr > td.column-wpsso_faq_shortcode {
 					width:160px;
 				}
-
 				table.wp-list-table > tbody > tr > td.column-wpsso_faq_shortcode input {
 					width:100%;
 				}
 			';
+
+			$custom_style_css = SucomUtil::minify_css( $custom_style_css, $filter_prefix = 'wpsso' );
 
 			wp_add_inline_style( 'sucom-admin-page', $custom_style_css );
 		}
