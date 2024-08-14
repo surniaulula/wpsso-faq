@@ -88,11 +88,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Renamed 'input_vertical_list' CSS class to 'column-list'.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
-	* WPSSO Core v18.0.0-dev.3.
+	* WPSSO Core v18.0.0-dev.4.
 
 **Version 5.1.1 (2024/01/13)**
 
@@ -143,7 +143,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 5.2.0-dev.4 =
 
-(2024/08/13) None.
+(2024/08/13) Renamed 'input_vertical_list' CSS class to 'column-list'.
 
 = 5.1.1 =
 
