@@ -106,7 +106,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 						$this->form->get_th_html( sprintf( _x( 'Show %s Metabox', 'option label', 'wpsso' ), $add_to_metabox_title ),
 							$css_class = '', $css_id = 'plugin_add_to' ) .
 						'<td>' . $this->form->get_checklist( $name_prefix = 'plugin_add_to', $add_to_values,
-							$css_class = 'input_vertical_list' ) . '</td>';
+							$css_class = 'column-list' ) . '</td>';
 
 					break;
 			}
