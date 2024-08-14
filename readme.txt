@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.2.0-dev.5 (2024/08/13)**
+**Version 5.2.0-dev.6 (2024/08/14)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
-	* WPSSO Core v18.0.0-dev.5.
+	* WPSSO Core v18.0.0-dev.6.
 
 **Version 5.1.1 (2024/01/13)**
 
@@ -141,9 +141,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.2.0-dev.5 =
+= 5.2.0-dev.6 =
 
-(2024/08/13) Renamed 'input_vertical_list' CSS class to 'column-list'.
+(2024/08/14) Renamed 'input_vertical_list' CSS class to 'column-list'.
 
 = 5.1.1 =
 
