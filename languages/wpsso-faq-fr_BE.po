@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 5.0.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 5.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
-"POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-11-26 10:54-0800\n"
+"POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-08-15 07:24-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:243
 msgid "The %1$s add-on requires the %2$s plugin."
@@ -99,23 +99,23 @@ msgstr "Si vous activez cette option, les FAQs et les questions ne seront access
 msgid "Question Shortcode"
 msgstr "Code court de question"
 
-#: lib/post.php:123
+#: lib/post.php:120
 msgid "Question title"
 msgstr "Titre de la question"
 
-#: lib/post.php:138
+#: lib/post.php:135
 msgid "Answer text / to choose a block"
 msgstr "Texte de réponse / pour choisir un bloc"
 
-#: lib/post.php:157 lib/submenu/faq-settings.php:75
+#: lib/post.php:154 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr "Extrait de réponse"
 
-#: lib/post.php:177
+#: lib/post.php:174
 msgid "Add Answer"
 msgstr "Ajouter une réponse"
 
-#: lib/post.php:181
+#: lib/post.php:178
 msgid "Edit Answer"
 msgstr "Modifier la réponse"
 
@@ -337,7 +337,7 @@ msgid "FAQ Groups for Questions and Answers"
 msgstr "Groupes de FAQ pour les questions et réponses"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: lib/shortcode/question.php:148
+#: lib/shortcode/question.php:146
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
