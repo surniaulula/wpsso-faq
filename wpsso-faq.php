@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.6.1
- * Version: 5.2.0
+ * Version: 5.3.0-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -40,11 +40,6 @@ if ( ! class_exists( 'WpssoAbstractAddOn' ) ) {
 if ( ! class_exists( 'WpssoFaq' ) ) {
 
 	class WpssoFaq extends WpssoAbstractAddOn {
-
-		public $filters;	// WpssoFaqFilters class object.
-		public $post;		// WpssoFaqPost class object.
-		public $style;		// WpssoFaqStyle class object.
-		public $term;		// WpssoFaqTerm class object.
 
 		protected $p;	// Wpsso class object.
 
@@ -73,7 +68,7 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 		/*
 		 * Called by Wpsso->set_objects() which runs at init priority 10.
 		 */
-		public function init_objects() {
+		public function init_objects_preloader() {
 
 			$this->p =& Wpsso::get_instance();
 
@@ -87,14 +82,12 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->filters = new WpssoFaqFilters( $this->p, $this );
-			$this->post    = new WpssoFaqPost( $this->p, $this );
-			$this->style   = new WpssoFaqStyle( $this->p, $this );
-			$this->term    = new WpssoFaqTerm( $this->p, $this );
+			new WpssoFaqFilters( $this->p, $this );
+			new WpssoFaqPost( $this->p, $this );
+			new WpssoFaqStyle( $this->p, $this );
+			new WpssoFaqTerm( $this->p, $this );
 		}
 	}
 
-        global $wpssofaq;
-
-	$wpssofaq =& WpssoFaq::get_instance();
+	WpssoFaq::get_instance();
 }
