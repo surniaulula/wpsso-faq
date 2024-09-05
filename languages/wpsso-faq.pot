@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO FAQ Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 5.3.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 5.4.0-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -104,28 +104,32 @@ msgid ""
 "using their shortcodes."
 msgstr ""
 
-#: lib/post.php:82
+#: lib/integ/admin/post.php:78
 msgid "Question Shortcode"
 msgstr ""
 
-#: lib/post.php:120
+#: lib/integ/admin/post.php:116
 msgid "Question title"
 msgstr ""
 
-#: lib/post.php:135
+#: lib/integ/admin/post.php:131
 msgid "Answer text / to choose a block"
 msgstr ""
 
-#: lib/post.php:154 lib/submenu/faq-settings.php:75
+#: lib/integ/admin/post.php:150 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr ""
 
-#: lib/post.php:174
+#: lib/integ/admin/post.php:170
 msgid "Add Answer"
 msgstr ""
 
-#: lib/post.php:178
+#: lib/integ/admin/post.php:172
 msgid "Edit Answer"
+msgstr ""
+
+#: lib/integ/admin/term.php:45
+msgid "FAQ Shortcode"
 msgstr ""
 
 #: lib/register.php:147
@@ -410,10 +414,6 @@ msgstr ""
 #: lib/submenu/faq-settings.php:106
 msgctxt "option label"
 msgid "Show %s Metabox"
-msgstr ""
-
-#: lib/term.php:52
-msgid "FAQ Shortcode"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

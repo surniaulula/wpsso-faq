@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '5.3.0',	// Plugin version.
+					'version'     => '5.4.0-dev.2',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
@@ -59,6 +59,12 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
+						'integ' => array(
+							'admin' => array(
+								'post' => 'Post Edit Page',
+								'term' => 'Term Edit Page',
+							),
+						),
 						'shortcode' => array(
 							'faq'      => 'FAQ Shortcode',
 							'question' => 'Question Shortcode',
@@ -189,10 +195,8 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static function require_libs( $plugin_file ) {
 
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters.php';
-			require_once WPSSOFAQ_PLUGINDIR . 'lib/post.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/style.php';
-			require_once WPSSOFAQ_PLUGINDIR . 'lib/term.php';
 
 			add_filter( 'wpssofaq_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );
 		}

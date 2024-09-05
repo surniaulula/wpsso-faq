@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.6.1
- * Version: 5.3.0
+ * Version: 5.4.0-dev.2
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -83,9 +83,7 @@ if ( ! class_exists( 'WpssoFaq' ) ) {
 			}
 
 			new WpssoFaqFilters( $this->p, $this );
-			new WpssoFaqPost( $this->p, $this );
 			new WpssoFaqStyle( $this->p, $this );
-			new WpssoFaqTerm( $this->p, $this );
 		}
 	}
 
