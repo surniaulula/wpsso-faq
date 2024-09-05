@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.4.0-dev.2 (2024/09/05)**
+**Version 5.4.0-b.1 (2024/09/05)**
 
 * **New Features**
 	* None.
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.8.
-	* WPSSO Core v18.7.0-dev.2.
+	* WPSSO Core v18.7.0-b.1.
 
 **Version 5.3.0 (2024/08/25)**
 
@@ -171,7 +171,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.4.0-dev.2 =
+= 5.4.0-b.1 =
 
 (2024/08/05) Renamed and moved the `WpssoFaqPost` class to `WpssoFaqIntegAdminPost`.
 
