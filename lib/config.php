@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssofaq' => array(			// Plugin acronym.
-					'version'     => '5.4.0-dev.2',	// Plugin version.
+					'version'     => '5.4.0-b.1',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO FAQ',	// Short plugin name.
 					'name'        => 'WPSSO FAQ Manager',
