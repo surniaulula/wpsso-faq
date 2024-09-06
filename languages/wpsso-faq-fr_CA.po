@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO FAQ Manager 5.2.0\n"
+"Project-Id-Version: WPSSO FAQ Manager 5.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-08-15 07:24-0700\n"
+"PO-Revision-Date: 2024-09-05 15:34-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,11 +13,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:243
+#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:235
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:262
+#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:254
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -95,29 +95,33 @@ msgstr "Les pages d'archives de FAQs et de types d'articles de questions sont pu
 msgid "If you enable this option FAQs and questions will only be accessible by using their shortcodes."
 msgstr "Si vous activez cette option, les FAQs et les questions ne seront accessibles qu'en utilisant leurs codes courts."
 
-#: lib/post.php:82
+#: lib/integ/admin/post.php:78
 msgid "Question Shortcode"
 msgstr "Code court de question"
 
-#: lib/post.php:120
+#: lib/integ/admin/post.php:116
 msgid "Question title"
 msgstr "Titre de la question"
 
-#: lib/post.php:135
+#: lib/integ/admin/post.php:131
 msgid "Answer text / to choose a block"
 msgstr "Texte de réponse / pour choisir un bloc"
 
-#: lib/post.php:154 lib/submenu/faq-settings.php:75
+#: lib/integ/admin/post.php:150 lib/submenu/faq-settings.php:75
 msgid "Answer Excerpt"
 msgstr "Extrait de réponse"
 
-#: lib/post.php:174
+#: lib/integ/admin/post.php:170
 msgid "Add Answer"
 msgstr "Ajouter une réponse"
 
-#: lib/post.php:178
+#: lib/integ/admin/post.php:172
 msgid "Edit Answer"
 msgstr "Modifier la réponse"
+
+#: lib/integ/admin/term.php:45
+msgid "FAQ Shortcode"
+msgstr "Code court de FAQ"
 
 #: lib/register.php:147
 msgctxt "post type general name"
@@ -402,10 +406,6 @@ msgstr "Taxonomie"
 msgctxt "option label"
 msgid "Show %s Metabox"
 msgstr "Afficher métabox %s"
-
-#: lib/term.php:52
-msgid "FAQ Shortcode"
-msgstr "Code court de FAQ"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO FAQ Manager"
