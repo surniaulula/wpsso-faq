@@ -9,8 +9,8 @@ Assets URI: https://surniaulula.github.io/wpsso-faq/assets/
 Tags: schema, faqpage, faq, google, rich results
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.34
-Requires At Least: 5.8
+Requires PHP: 7.4.33
+Requires At Least: 5.9
 Tested Up To: 6.6.2
 Stable Tag: 5.4.0
 
@@ -90,9 +90,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Renamed and moved the `WpssoFaqPost` class to `WpssoFaqIntegAdminPost`.
 * **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v18.7.0.
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v18.7.3.
 
 **Version 5.3.0 (2024/08/25)**
 
@@ -109,66 +109,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.8.
 	* WPSSO Core v18.5.0.
 
-**Version 5.2.0 (2024/08/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed 'input_vertical_list' CSS class to 'column-list'.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v18.0.0.
-
-**Version 5.1.1 (2024/01/13)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed incorrect class name for `SucomUtil::get_bool()`.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.18.0.
-
-**Version 5.1.0 (2024/01/12)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.8.0.
-
-**Version 5.0.0 (2023/11/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.0.0.
-
 == Upgrade Notice ==
 
 = 5.4.0 =
@@ -178,20 +118,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 5.3.0 =
 
 (2024/08/25) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
-
-= 5.2.0 =
-
-(2024/08/15) Renamed 'input_vertical_list' CSS class to 'column-list'.
-
-= 5.1.1 =
-
-(2024/01/13) Fixed incorrect class name for `SucomUtil::get_bool()`.
-
-= 5.1.0 =
-
-(2024/01/12) Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
-
-= 5.0.0 =
-
-(2023/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 
