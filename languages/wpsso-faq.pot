@@ -132,219 +132,219 @@ msgstr ""
 msgid "FAQ Shortcode"
 msgstr ""
 
-#: lib/register.php:147
+#: lib/register.php:144
 msgctxt "post type general name"
 msgid "Questions"
 msgstr ""
 
-#: lib/register.php:148
+#: lib/register.php:145
 msgctxt "post type singular name"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:149 lib/register.php:150
+#: lib/register.php:146 lib/register.php:147
 msgid "Add Question"
 msgstr ""
 
-#: lib/register.php:151
+#: lib/register.php:148
 msgid "Edit Question"
 msgstr ""
 
-#: lib/register.php:152
+#: lib/register.php:149
 msgid "New Question"
 msgstr ""
 
-#: lib/register.php:153
+#: lib/register.php:150
 msgid "View Question"
 msgstr ""
 
-#: lib/register.php:154
+#: lib/register.php:151
 msgid "View Questions"
 msgstr ""
 
-#: lib/register.php:155
+#: lib/register.php:152
 msgid "Search Questions"
 msgstr ""
 
-#: lib/register.php:156
+#: lib/register.php:153
 msgid "No questions found"
 msgstr ""
 
-#: lib/register.php:157
+#: lib/register.php:154
 msgid "No questions found in Trash"
 msgstr ""
 
-#: lib/register.php:158
+#: lib/register.php:155
 msgid "Parent Question:"
 msgstr ""
 
-#: lib/register.php:159
+#: lib/register.php:156
 msgid "All Questions"
 msgstr ""
 
-#: lib/register.php:160
+#: lib/register.php:157
 msgid "Question Archives"
 msgstr ""
 
-#: lib/register.php:161
+#: lib/register.php:158
 msgid "Question Attributes"
 msgstr ""
 
-#: lib/register.php:162
+#: lib/register.php:159
 msgid "Insert into answer"
 msgstr ""
 
-#: lib/register.php:163
+#: lib/register.php:160
 msgid "Uploaded to this question"
 msgstr ""
 
-#: lib/register.php:164
+#: lib/register.php:161
 msgid "Question Image"
 msgstr ""
 
-#: lib/register.php:165
+#: lib/register.php:162
 msgid "Set question image"
 msgstr ""
 
-#: lib/register.php:166
+#: lib/register.php:163
 msgid "Remove question image"
 msgstr ""
 
-#: lib/register.php:167
+#: lib/register.php:164
 msgid "Use as question image"
 msgstr ""
 
-#: lib/register.php:168
+#: lib/register.php:165
 msgctxt "admin menu name"
 msgid "SSO FAQs"
 msgstr ""
 
-#: lib/register.php:169
+#: lib/register.php:166
 msgid "Filter questions"
 msgstr ""
 
-#: lib/register.php:170
+#: lib/register.php:167
 msgid "Questions list navigation"
 msgstr ""
 
-#: lib/register.php:171
+#: lib/register.php:168
 msgid "Questions list"
 msgstr ""
 
-#: lib/register.php:172
+#: lib/register.php:169
 msgctxt "admin bar name"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:173
+#: lib/register.php:170
 msgid "Question published."
 msgstr ""
 
-#: lib/register.php:174
+#: lib/register.php:171
 msgid "Question published privately."
 msgstr ""
 
-#: lib/register.php:175
+#: lib/register.php:172
 msgid "Question reverted to draft."
 msgstr ""
 
-#: lib/register.php:176
+#: lib/register.php:173
 msgid "Question scheduled."
 msgstr ""
 
-#: lib/register.php:177
+#: lib/register.php:174
 msgid "Question updated."
 msgstr ""
 
-#: lib/register.php:195
+#: lib/register.php:192
 msgctxt "post type label"
 msgid "Question"
 msgstr ""
 
-#: lib/register.php:197
+#: lib/register.php:194
 msgctxt "post type description"
 msgid "Question and Answer"
 msgstr ""
 
-#: lib/register.php:226
+#: lib/register.php:223
 msgid "FAQ"
 msgstr ""
 
-#: lib/register.php:227
+#: lib/register.php:224
 msgid "FAQ Group"
 msgstr ""
 
-#: lib/register.php:228
+#: lib/register.php:225
 msgctxt "admin menu name"
 msgid "FAQ Groups"
 msgstr ""
 
-#: lib/register.php:229
+#: lib/register.php:226
 msgid "All FAQ Groups"
 msgstr ""
 
-#: lib/register.php:230
+#: lib/register.php:227
 msgid "Edit FAQ Group"
 msgstr ""
 
-#: lib/register.php:231
+#: lib/register.php:228
 msgid "View FAQ Group"
 msgstr ""
 
-#: lib/register.php:232
+#: lib/register.php:229
 msgid "Update FAQ Group"
 msgstr ""
 
-#: lib/register.php:233
+#: lib/register.php:230
 msgid "Add New FAQ Group"
 msgstr ""
 
-#: lib/register.php:234
+#: lib/register.php:231
 msgid "New FAQ Group Name"
 msgstr ""
 
-#: lib/register.php:235
+#: lib/register.php:232
 msgid "Parent FAQ Group"
 msgstr ""
 
-#: lib/register.php:236
+#: lib/register.php:233
 msgid "Parent FAQ Group:"
 msgstr ""
 
-#: lib/register.php:237
+#: lib/register.php:234
 msgid "Search FAQ Groups"
 msgstr ""
 
-#: lib/register.php:238
+#: lib/register.php:235
 msgid "Popular FAQ Groups"
 msgstr ""
 
-#: lib/register.php:239
+#: lib/register.php:236
 msgid "Separate FAQ groups with commas"
 msgstr ""
 
-#: lib/register.php:240
+#: lib/register.php:237
 msgid "Add or remove FAQ groups"
 msgstr ""
 
-#: lib/register.php:241
+#: lib/register.php:238
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:242
+#: lib/register.php:239
 msgid "No FAQ groups found."
 msgstr ""
 
-#: lib/register.php:243
+#: lib/register.php:240
 msgid "← Back to FAQ groups"
 msgstr ""
 
-#: lib/register.php:247
+#: lib/register.php:244
 msgctxt "taxonomy label"
 msgid "FAQ Groups"
 msgstr ""
 
-#: lib/register.php:258
+#: lib/register.php:255
 msgctxt "taxonomy description"
 msgid "FAQ Groups for Questions and Answers"
 msgstr ""
