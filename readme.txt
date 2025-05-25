@@ -79,6 +79,24 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 6.0.0-dev.1 (2025/05/25)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Renamed "FAQ Groups" to "FAQ Categories".
+	* Added new options under the SSO &gt; FAQ Settings &gt; Add-on Settings tab:
+		* Disable FAQ Categories
+		* Disable FAQ Tags
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v18.20.0.
+
 **Version 5.4.1 (2025/03/08)**
 
 * **New Features**
@@ -125,6 +143,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v18.5.0.
 
 == Upgrade Notice ==
+
+= 6.0.0-dev.1 =
+
+(2025/05/25) Renamed "FAQ Groups" to "FAQ Categories". Added new "Disable FAQ Categories" and "Disable FAQ Tags" options.
 
 = 5.4.1 =
 
