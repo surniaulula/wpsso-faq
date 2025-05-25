@@ -62,11 +62,24 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 					$text = __( 'Hide answers by default and show/hide an answer when its question title is clicked.', 'wpsso-faq' );
 
 					break;
+
+				case 'tooltip-faq_category_disabled':	// Disable FAQ Categories.
+
+					$text = __( 'Disable FAQ question categories.', 'wpsso-faq' );
+
+					break;
+
+				case 'tooltip-faq_tag_disabled':	// Disable FAQ Tags.
+
+					$text = __( 'Disable FAQ question tags.', 'wpsso-faq' );
+
+					break;
+
 				case 'tooltip-faq_public_disabled':	// Disable FAQ and Question URLs.
 
-					$text = __( 'The FAQ archive and question post type pages are public, and have publicly accessible URLs by default.', 'wpsso-faq' ) . ' ';
+					$text = __( 'The FAQ archive and question post type pages are public by default and have publicly accessible URLs.', 'wpsso-faq' ) . ' ';
 
-					$text .= __( 'If you enable this option FAQs and questions will only be accessible by using their shortcodes.', 'wpsso-faq' );
+					$text .= __( 'If you enable this option, FAQs and questions will only be accessible by using shortcodes in your content.', 'wpsso-faq' );
 
 					break;
 			}

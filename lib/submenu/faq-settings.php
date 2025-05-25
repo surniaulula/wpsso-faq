@@ -84,6 +84,16 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 
 				case 'faq-settings-faq-addon-settings':
 
+					$table_rows[ 'faq_category_disabled' ] = '' .
+						$this->form->get_th_html( _x( 'Disable FAQ Categories', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_category_disabled' ) .
+						'<td>' . $this->form->get_checkbox( 'faq_category_disabled' ) . '</td>';
+
+					$table_rows[ 'faq_tag_disabled' ] = '' .
+						$this->form->get_th_html( _x( 'Disable FAQ Tags', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_tag_disabled' ) .
+						'<td>' . $this->form->get_checkbox( 'faq_tag_disabled' ) . '</td>';
+
 					$table_rows[ 'faq_public_disabled' ] = '' .
 						$this->form->get_th_html( _x( 'Disable FAQ and Question URLs', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_public_disabled' ) .
@@ -100,6 +110,11 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 					// translators: Please ignore - translation uses a different text domain.
 					$label_prefix  = _x( 'Taxonomy', 'option label', 'wpsso' );
 					$taxonomy_obj  = get_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
+					$add_to_values += SucomUtilWP::get_taxonomy_labels( $val_prefix = 'tax_', $label_prefix, array( $taxonomy_obj ) );
+
+					// translators: Please ignore - translation uses a different text domain.
+					$label_prefix  = _x( 'Taxonomy', 'option label', 'wpsso' );
+					$taxonomy_obj  = get_taxonomy( WPSSOFAQ_FAQ_TAG_TAXONOMY );
 					$add_to_values += SucomUtilWP::get_taxonomy_labels( $val_prefix = 'tax_', $label_prefix, array( $taxonomy_obj ) );
 
 					$table_rows[ 'plugin_add_to' ] = '' .	// Show Document SSO Metabox.

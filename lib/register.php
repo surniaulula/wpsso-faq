@@ -30,6 +30,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			add_action( 'wpsso_init_options', array( __CLASS__, 'register_question_post_type' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
 
 			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
+			
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_tag_taxonomy' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
 		}
 
 		/*
@@ -120,6 +122,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 			self::register_faq_category_taxonomy();
 
+			self::register_faq_tag_taxonomy();
+
 			flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option, not the .htaccess file.
 		}
 
@@ -128,6 +132,8 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			unregister_post_type( WPSSOFAQ_QUESTION_POST_TYPE );
 
 			unregister_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
+			
+			unregister_taxonomy( WPSSOFAQ_FAQ_TAG_TAXONOMY );
 
 			flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option, not the .htaccess file.
 		}
@@ -186,7 +192,17 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'page-attributes',	// Supports menu order.
 			);
 
-			$taxonomies = array( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
+			$taxonomies = array();
+
+			if ( empty( $wpsso->options[ 'faq_category_disabled' ] ) ) {
+			
+				$taxonomies[] = WPSSOFAQ_FAQ_CATEGORY_TAXONOMY;
+			}
+
+			if ( empty( $wpsso->options[ 'faq_tag_disabled' ] ) ) {
+
+				$taxonomies[] = WPSSOFAQ_FAQ_TAG_TAXONOMY;
+			}
 
 			$args = array(
 				'label'               => _x( 'Question', 'post type label', 'wpsso-faq' ),
@@ -217,22 +233,24 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
+			if ( ! empty( $wpsso->options[ 'faq_category_disabled' ] ) ) return;
+
 			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
 
 			$labels = array(
-				'name'                       => __( 'FAQ', 'wpsso-faq' ),
-				'singular_name'              => __( 'FAQ Group', 'wpsso-faq' ),
-				'menu_name'                  => _x( 'FAQ Groups', 'admin menu name', 'wpsso-faq' ),
-				'all_items'                  => __( 'All FAQ Groups', 'wpsso-faq' ),
-				'edit_item'                  => __( 'Edit FAQ Group', 'wpsso-faq' ),
-				'view_item'                  => __( 'View FAQ Group', 'wpsso-faq' ),
-				'update_item'                => __( 'Update FAQ Group', 'wpsso-faq' ),
-				'add_new_item'               => __( 'Add New FAQ Group', 'wpsso-faq' ),
-				'new_item_name'              => __( 'New FAQ Group Name', 'wpsso-faq' ),
-				'parent_item'                => __( 'Parent FAQ Group', 'wpsso-faq' ),
-				'parent_item_colon'          => __( 'Parent FAQ Group:', 'wpsso-faq' ),
-				'search_items'               => __( 'Search FAQ Groups', 'wpsso-faq' ),
-				'popular_items'              => __( 'Popular FAQ Groups', 'wpsso-faq' ),
+				'name'                       => __( 'FAQ Categories', 'wpsso-faq' ),
+				'singular_name'              => __( 'FAQ Category', 'wpsso-faq' ),
+				'menu_name'                  => _x( 'FAQ Categories', 'admin menu name', 'wpsso-faq' ),
+				'all_items'                  => __( 'All FAQ Categories', 'wpsso-faq' ),
+				'edit_item'                  => __( 'Edit FAQ Category', 'wpsso-faq' ),
+				'view_item'                  => __( 'View FAQ Category', 'wpsso-faq' ),
+				'update_item'                => __( 'Update FAQ Category', 'wpsso-faq' ),
+				'add_new_item'               => __( 'Add New FAQ Category', 'wpsso-faq' ),
+				'new_item_name'              => __( 'New FAQ Category Name', 'wpsso-faq' ),
+				'parent_item'                => __( 'Parent FAQ Category', 'wpsso-faq' ),
+				'parent_item_colon'          => __( 'Parent FAQ Category:', 'wpsso-faq' ),
+				'search_items'               => __( 'Search FAQ Categories', 'wpsso-faq' ),
+				'popular_items'              => __( 'Popular FAQ Categories', 'wpsso-faq' ),
 				'separate_items_with_commas' => __( 'Separate FAQ groups with commas', 'wpsso-faq' ),
 				'add_or_remove_items'        => __( 'Add or remove FAQ groups', 'wpsso-faq' ),
 				'choose_from_most_used'      => __( 'Choose from the most used', 'wpsso-faq' ),
@@ -241,7 +259,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			);
 
 			$args = array(
-				'label'              => _x( 'FAQ Groups', 'taxonomy label', 'wpsso-faq' ),
+				'label'              => _x( 'FAQ Categories', 'taxonomy label', 'wpsso-faq' ),
 				'labels'             => $labels,
 				'public'             => $is_public,
 				'publicly_queryable' => $is_public,
@@ -252,11 +270,59 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 				'show_in_quick_edit' => true,
 				'show_in_rest'       => true,	// Show this taxonomy in the block editor.
 				'show_tagcloud'      => false,
-				'description'        => _x( 'FAQ Groups for Questions and Answers', 'taxonomy description', 'wpsso-faq' ),
+				'description'        => _x( 'FAQ Categories for Questions and Answers', 'taxonomy description', 'wpsso-faq' ),
 				'hierarchical'       => true,
 			);
 
 			register_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY, array( WPSSOFAQ_QUESTION_POST_TYPE ), $args );
+		}
+
+		public static function register_faq_tag_taxonomy() {
+
+			$wpsso =& Wpsso::get_instance();
+
+			if ( ! empty( $wpsso->options[ 'faq_tag_disabled' ] ) ) return;
+
+			$is_public = empty( $wpsso->options[ 'faq_public_disabled' ] ) ? true : false;
+
+			$labels = array(
+				'name'                       => __( 'FAQ Tags', 'wpsso-faq' ),
+				'singular_name'              => __( 'FAQ Tag', 'wpsso-faq' ),
+				'menu_name'                  => _x( 'FAQ Tags', 'admin menu name', 'wpsso-faq' ),
+				'all_items'                  => __( 'All FAQ Tags', 'wpsso-faq' ),
+				'edit_item'                  => __( 'Edit FAQ Tag', 'wpsso-faq' ),
+				'view_item'                  => __( 'View FAQ Tag', 'wpsso-faq' ),
+				'update_item'                => __( 'Update FAQ Tag', 'wpsso-faq' ),
+				'add_new_item'               => __( 'Add New FAQ Tag', 'wpsso-faq' ),
+				'new_item_name'              => __( 'New FAQ Tag Name', 'wpsso-faq' ),
+				'parent_item'                => __( 'Parent FAQ Tag', 'wpsso-faq' ),
+				'parent_item_colon'          => __( 'Parent FAQ Tag:', 'wpsso-faq' ),
+				'search_items'               => __( 'Search FAQ Tags', 'wpsso-faq' ),
+				'popular_items'              => __( 'Popular FAQ Tags', 'wpsso-faq' ),
+				'separate_items_with_commas' => __( 'Separate FAQ groups with commas', 'wpsso-faq' ),
+				'add_or_remove_items'        => __( 'Add or remove FAQ groups', 'wpsso-faq' ),
+				'choose_from_most_used'      => __( 'Choose from the most used', 'wpsso-faq' ),
+				'not_found'                  => __( 'No FAQ groups found.', 'wpsso-faq' ),
+				'back_to_items'              => __( '← Back to FAQ groups', 'wpsso-faq' ),
+			);
+
+			$args = array(
+				'label'              => _x( 'FAQ Tags', 'taxonomy label', 'wpsso-faq' ),
+				'labels'             => $labels,
+				'public'             => $is_public,
+				'publicly_queryable' => $is_public,
+				'show_ui'            => true,
+				'show_in_menu'       => true,
+				'show_in_nav_menus'  => true,
+				'show_admin_column'  => true,
+				'show_in_quick_edit' => true,
+				'show_in_rest'       => true,	// Show this taxonomy in the block editor.
+				'show_tagcloud'      => true,
+				'description'        => _x( 'FAQ Tags for Questions and Answers', 'taxonomy description', 'wpsso-faq' ),
+				'hierarchical'       => false,
+			);
+
+			register_taxonomy( WPSSOFAQ_FAQ_TAG_TAXONOMY, array( WPSSOFAQ_QUESTION_POST_TYPE ), $args );
 		}
 	}
 }

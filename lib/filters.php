@@ -42,6 +42,10 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 				'bc_category_tax_slug' => 2,
 			) );
 
+			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-options.php';
+			
+			new WpssoFaqFiltersOptions( $plugin, $addon );
+
 			if ( is_admin() ) {
 
 				require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-messages.php';
@@ -77,7 +81,8 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 
 			} elseif ( $mod[ 'is_term' ] ) {
 
-				if ( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ) {
+				if ( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY === $mod[ 'tax_slug' ] ||
+					WPSSOFAQ_FAQ_TAG_TAXONOMY === $mod[ 'tax_slug' ] ) {
 
 					$md_defs[ 'og_type' ]     = $this->og_type_faq;
 					$md_defs[ 'schema_type' ] = $this->schema_type_faq;

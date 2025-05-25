@@ -33,11 +33,22 @@ if ( ! class_exists( 'WpssoFaqIntegAdminTerm' ) ) {
 		 */
 		public function add_wp_callbacks() {
 
-			if ( ! is_admin() ) return;	// Just in case.
+			if ( is_admin() ) {	// Just in case.
 
-			add_filter( 'manage_edit-' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
+				if ( empty( $this->p->options[ 'faq_category_disabled' ] ) ) {
 
-			add_filter( 'manage_' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_custom_column', array( $this, 'get_column_content' ), 10, 3 );
+					add_filter( 'manage_edit-' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
+
+					add_filter( 'manage_' . WPSSOFAQ_FAQ_CATEGORY_TAXONOMY . '_custom_column', array( $this, 'get_column_content' ), 10, 3 );
+				}
+
+				if ( empty( $this->p->options[ 'faq_tag_disabled' ] ) ) {
+			
+					add_filter( 'manage_edit-' . WPSSOFAQ_FAQ_TAG_TAXONOMY . '_columns', array( $this, 'add_term_column_headings' ), 10, 1 );
+
+					add_filter( 'manage_' . WPSSOFAQ_FAQ_TAG_TAXONOMY . '_custom_column', array( $this, 'get_column_content' ), 10, 3 );
+				}
+			}
 		}
 
 		public function add_term_column_headings( $columns ) {
