@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 6.0.0-rc.1 (2025/05/28)**
+**Version 6.0.0 (2025/05/28)**
 
 * **New Features**
 	* None.
@@ -95,7 +95,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.4.33.
 	* WordPress v5.9.
-	* WPSSO Core v18.21.0-rc.1.
+	* WPSSO Core v18.21.0.
 
 **Version 5.4.1 (2025/03/08)**
 
@@ -144,7 +144,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 6.0.0-rc.1 =
+= 6.0.0 =
 
 (2025/05/28) Renamed "FAQ Groups" to "FAQ Categories". Added new "Disable FAQ Categories" and "Disable FAQ Tags" options.
 
