@@ -1,5 +1,5 @@
-=== WPSSO FAQ Manager ===
-Plugin Name: WPSSO FAQ Manager
+=== WPSSO Schema FAQPage Manager ===
+Plugin Name: WPSSO Schema FAQPage Manager
 Plugin Slug: wpsso-faq
 Text Domain: wpsso-faq
 Domain Path: /languages
@@ -20,7 +20,7 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 <!-- about -->
 
-The WPSSO FAQ Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.
+The WPSSO Schema FAQPage Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.
 
 You can use the standard WordPress FAQ group archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
 
@@ -28,14 +28,14 @@ You can use the standard WordPress FAQ group archive and question page templates
 
 <h3>WPSSO Core Required</h3>
 
-WPSSO FAQ Manager (WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/), which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.
+WPSSO Schema FAQPage Manager (WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/), which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO FAQ Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/).
-* [Uninstall the WPSSO FAQ Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/).
+* [Install the WPSSO Schema FAQPage Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/).
+* [Uninstall the WPSSO Schema FAQPage Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 
@@ -78,6 +78,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 <p><strong>WPSSO Core Standard edition users (ie. the plugin hosted on WordPress.org) have access to <a href="https://wordpress.org/plugins/wpsso-faq/advanced/">the latest development version under the Advanced Options section</a>.</strong></p>
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 7.0.0-dev.4 (2025/06/14)**
+
+* **New Features**
+	* Renamed the add-on to "WPSSO Schema PAQPage Manager".
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v20.0.0-dev.4.
 
 **Version 6.0.0 (2025/05/28)**
 
@@ -143,6 +158,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v18.5.0.
 
 == Upgrade Notice ==
+
+= 7.0.0-dev.4 =
+
+(2025/06/14) Renamed the add-on to "WPSSO Schema PAQPage Manager".
 
 = 6.0.0 =
 
