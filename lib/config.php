@@ -19,8 +19,8 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 				'wpssofaq' => array(			// Plugin acronym.
 					'version'     => '7.0.0-dev.4',	// Plugin version.
 					'opt_version' => '13',		// Increment when changing default option values.
-					'short'       => 'WPSSO Schema FAQPage',	// Short plugin name.
-					'name'        => 'WPSSO Schema FAQPage Manager',
+					'short'       => 'WPSSO FAQ',	// Short plugin name.
+					'name'        => 'WPSSO Schema FAQ Page Manager',
 					'desc'        => 'Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.',
 					'slug'        => 'wpsso-faq',
 					'base'        => 'wpsso-faq/wpsso-faq.php',

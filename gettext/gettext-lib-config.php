@@ -3,7 +3,7 @@
 // Extract of translatable strings from lib/config.php.
 // 
 _x( 'FAQ Settings', 'lib file description', 'wpsso-faq' );
-_x( 'WPSSO Schema FAQPage Manager', 'plugin name', 'wpsso-faq' );
+_x( 'WPSSO Schema FAQ Page Manager', 'plugin name', 'wpsso-faq' );
 _x( 'Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.', 'plugin description', 'wpsso-faq' );
 _x( 'WPSSO Core', 'plugin name', 'wpsso-faq' );
 _x( 'Heading 1', 'option value', 'wpsso-faq' );

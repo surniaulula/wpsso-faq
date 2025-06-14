@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO Schema FAQPage Manager
+ * Plugin Name: WPSSO Schema FAQ Page Manager
  * Plugin Slug: wpsso-faq
  * Text Domain: wpsso-faq
  * Domain Path: /languages
