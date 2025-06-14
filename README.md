@@ -1,7 +1,7 @@
-<h1>WPSSO Schema FAQPage Manager</h1>
+<h1>WPSSO Schema FAQ Page Manager</h1>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema FAQPage Manager</td></tr>
+<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema FAQ Page Manager</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>6.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>7.4.33 or newer</td></tr>
@@ -16,23 +16,23 @@
 
 <!-- about -->
 
-<p>The WPSSO Schema FAQPage Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.</p>
+<p>The WPSSO Schema FAQ Page Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ categories.</p>
 
-<p>You can use the standard WordPress FAQ group archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.</p>
+<p>You can use the standard WordPress FAQ category archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.</p>
 
 <!-- /about -->
 
 <h3>WPSSO Core Required</h3>
 
-<p>WPSSO Schema FAQPage Manager (WPSSO FAQ) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>, which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.</p>
+<p>WPSSO Schema FAQ Page Manager is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>, which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.</p>
 
 <h2>Installation</h2>
 
 <h3 class="top">Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/">Install the WPSSO Schema FAQPage Manager add-on</a>.</li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/">Uninstall the WPSSO Schema FAQPage Manager add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/">Install the WPSSO Schema FAQ Page Manager add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/">Uninstall the WPSSO Schema FAQ Page Manager add-on</a>.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
