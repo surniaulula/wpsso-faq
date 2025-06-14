@@ -1,5 +1,5 @@
-=== WPSSO Schema FAQPage Manager ===
-Plugin Name: WPSSO Schema FAQPage Manager
+=== WPSSO Schema FAQ Page Manager ===
+Plugin Name: WPSSO Schema FAQ Page Manager
 Plugin Slug: wpsso-faq
 Text Domain: wpsso-faq
 Domain Path: /languages
@@ -20,22 +20,22 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 <!-- about -->
 
-The WPSSO Schema FAQPage Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ groups.
+The WPSSO Schema FAQ Page Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ categories.
 
-You can use the standard WordPress FAQ group archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
+You can use the standard WordPress FAQ category archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
 
 <!-- /about -->
 
 <h3>WPSSO Core Required</h3>
 
-WPSSO Schema FAQPage Manager (WPSSO FAQ) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/), which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.
+WPSSO Schema FAQ Page Manager is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/), which creates extensive and complete structured data to present your content at its best for social sites and search results – no matter how URLs are shared, reshared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO Schema FAQPage Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/).
-* [Uninstall the WPSSO Schema FAQPage Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/).
+* [Install the WPSSO Schema FAQ Page Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/install-the-plugin/).
+* [Uninstall the WPSSO Schema FAQ Page Manager add-on](https://wpsso.com/docs/plugins/wpsso-faq/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 
