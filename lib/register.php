@@ -17,21 +17,20 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 		public function __construct() {
 
 			register_activation_hook( WPSSOFAQ_FILEPATH, array( $this, 'network_activate' ) );
-
 			register_deactivation_hook( WPSSOFAQ_FILEPATH, array( $this, 'network_deactivate' ) );
 
 			if ( is_multisite() ) {
 
 				add_action( 'wpmu_new_blog', array( $this, 'wpmu_new_blog' ), 10, 6 );
-
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			add_action( 'wpsso_init_options', array( __CLASS__, 'register_question_post_type' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
-
-			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
-			
-			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_tag_taxonomy' ), WPSSOFAQ_FAQ_MENU_ORDER, 0 );
+			/*
+			 * Wpsso->set_objects() runs at init priority 10.
+			 */
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_question_post_type' ) );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_category_taxonomy' ) );
+			add_action( 'wpsso_init_options', array( __CLASS__, 'register_faq_tag_taxonomy' ) );
 		}
 
 		/*
@@ -119,9 +118,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			}
 
 			self::register_question_post_type();
-
 			self::register_faq_category_taxonomy();
-
 			self::register_faq_tag_taxonomy();
 
 			flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option, not the .htaccess file.
@@ -132,7 +129,6 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			unregister_post_type( WPSSOFAQ_QUESTION_POST_TYPE );
 
 			unregister_taxonomy( WPSSOFAQ_FAQ_CATEGORY_TAXONOMY );
-			
 			unregister_taxonomy( WPSSOFAQ_FAQ_TAG_TAXONOMY );
 
 			flush_rewrite_rules( $hard = false );	// Update only the 'rewrite_rules' option, not the .htaccess file.
@@ -195,7 +191,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 			$taxonomies = array();
 
 			if ( empty( $wpsso->options[ 'faq_category_disabled' ] ) ) {
-			
+
 				$taxonomies[] = WPSSOFAQ_FAQ_CATEGORY_TAXONOMY;
 			}
 

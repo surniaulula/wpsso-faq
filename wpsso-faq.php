@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO FAQ Manager
+ * Plugin Name: WPSSO Schema FAQPage Manager
  * Plugin Slug: wpsso-faq
  * Text Domain: wpsso-faq
  * Domain Path: /languages
@@ -15,7 +15,7 @@
  * Requires PHP: 7.4.33
  * Requires At Least: 5.9
  * Tested Up To: 6.8.1
- * Version: 6.0.0
+ * Version: 7.0.0-dev.4
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *

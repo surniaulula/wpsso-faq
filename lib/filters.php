@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoFaqFilters' ) ) {
 			) );
 
 			require_once WPSSOFAQ_PLUGINDIR . 'lib/filters-options.php';
-			
+
 			new WpssoFaqFiltersOptions( $plugin, $addon );
 
 			if ( is_admin() ) {
