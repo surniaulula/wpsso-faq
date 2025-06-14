@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 7.0.0-dev.5 (2025/06/14)**
+**Version 7.0.0-dev.6 (2025/06/14)**
 
 * **New Features**
 	* Renamed the add-on to "WPSSO Schema PAQPage Manager".
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.4.33.
 	* WordPress v5.9.
-	* WPSSO Core v20.0.0-dev.5.
+	* WPSSO Core v20.0.0-dev.6.
 
 **Version 6.0.0 (2025/05/28)**
 
@@ -159,7 +159,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.0.0-dev.5 =
+= 7.0.0-dev.6 =
 
 (2025/06/14) Renamed the add-on to "WPSSO Schema PAQPage Manager".
 
