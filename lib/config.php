@@ -176,7 +176,7 @@ if ( ! class_exists( 'WpssoFaqConfig' ) ) {
 			 *	80 – below Settings
 			 *	100 – below second separator
 			 */
-			$var_const[ 'WPSSOFAQ_FAQ_MENU_ORDER' ]          = 86;
+			$var_const[ 'WPSSOFAQ_FAQ_MENU_ORDER' ]          = 87;
 			$var_const[ 'WPSSOFAQ_FAQ_SHORTCODE_NAME' ]      = 'faq';
 			$var_const[ 'WPSSOFAQ_QUESTION_SHORTCODE_NAME' ] = 'question';
 
