@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters-messages.php:68
-msgid "Disable FAQ question categories."
+msgid "Disable FAQ pages."
 msgstr ""
 
 #: lib/filters-messages.php:74
