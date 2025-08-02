@@ -174,7 +174,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 7.1.0-rc.1 =
+= 7.1.0 =
 
 (2025/07/02) Renamed "FAQ Categories" to "FAQ Pages".
 
