@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema FAQ Page Manager package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema FAQ Page Manager 7.0.0\n"
+"Project-Id-Version: WPSSO Schema FAQ Page Manager 7.1.0-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2025-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -275,86 +275,86 @@ msgid "Question and Answer"
 msgstr ""
 
 #: lib/register.php:237
-msgid "FAQ Categories"
+msgid "FAQ Pages"
 msgstr ""
 
 #: lib/register.php:238
-msgid "FAQ Category"
+msgid "FAQ Page"
 msgstr ""
 
 #: lib/register.php:239
 msgctxt "admin menu name"
-msgid "FAQ Categories"
+msgid "FAQ Pages"
 msgstr ""
 
 #: lib/register.php:240
-msgid "All FAQ Categories"
+msgid "All FAQ Pages"
 msgstr ""
 
 #: lib/register.php:241
-msgid "Edit FAQ Category"
+msgid "Edit FAQ Page"
 msgstr ""
 
 #: lib/register.php:242
-msgid "View FAQ Category"
+msgid "View FAQ Page"
 msgstr ""
 
 #: lib/register.php:243
-msgid "Update FAQ Category"
+msgid "Update FAQ Page"
 msgstr ""
 
 #: lib/register.php:244
-msgid "Add New FAQ Category"
+msgid "Add New FAQ Page"
 msgstr ""
 
 #: lib/register.php:245
-msgid "New FAQ Category Name"
+msgid "New FAQ Page Name"
 msgstr ""
 
 #: lib/register.php:246
-msgid "Parent FAQ Category"
+msgid "Parent FAQ Page"
 msgstr ""
 
 #: lib/register.php:247
-msgid "Parent FAQ Category:"
+msgid "Parent FAQ Page:"
 msgstr ""
 
 #: lib/register.php:248
-msgid "Search FAQ Categories"
+msgid "Search FAQ Pages"
 msgstr ""
 
 #: lib/register.php:249
-msgid "Popular FAQ Categories"
+msgid "Popular FAQ Pages"
 msgstr ""
 
-#: lib/register.php:250 lib/register.php:298
-msgid "Separate FAQ groups with commas"
+#: lib/register.php:250
+msgid "Separate FAQ pages with commas"
 msgstr ""
 
-#: lib/register.php:251 lib/register.php:299
-msgid "Add or remove FAQ groups"
+#: lib/register.php:251
+msgid "Add or remove FAQ pages"
 msgstr ""
 
 #: lib/register.php:252 lib/register.php:300
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:253 lib/register.php:301
-msgid "No FAQ groups found."
+#: lib/register.php:253
+msgid "No FAQ pages found."
 msgstr ""
 
-#: lib/register.php:254 lib/register.php:302
-msgid "← Back to FAQ groups"
+#: lib/register.php:254
+msgid "← Back to FAQ pages"
 msgstr ""
 
 #: lib/register.php:258
 msgctxt "taxonomy label"
-msgid "FAQ Categories"
+msgid "FAQ Pages"
 msgstr ""
 
 #: lib/register.php:269
 msgctxt "taxonomy description"
-msgid "FAQ Categories for Questions and Answers"
+msgid "FAQ Pages for Questions and Answers"
 msgstr ""
 
 #: lib/register.php:285
@@ -408,6 +408,22 @@ msgstr ""
 
 #: lib/register.php:297
 msgid "Popular FAQ Tags"
+msgstr ""
+
+#: lib/register.php:298
+msgid "Separate FAQ tags with commas"
+msgstr ""
+
+#: lib/register.php:299
+msgid "Add or remove FAQ tags"
+msgstr ""
+
+#: lib/register.php:301
+msgid "No FAQ tags found."
+msgstr ""
+
+#: lib/register.php:302
+msgid "← Back to FAQ tags"
 msgstr ""
 
 #: lib/register.php:306
@@ -467,7 +483,7 @@ msgstr ""
 
 #: lib/submenu/faq-settings.php:88
 msgctxt "option label"
-msgid "Disable FAQ Categories"
+msgid "Disable FAQ Pages"
 msgstr ""
 
 #: lib/submenu/faq-settings.php:93

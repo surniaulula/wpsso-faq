@@ -63,7 +63,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-faq_category_disabled':	// Disable FAQ Categories.
+				case 'tooltip-faq_category_disabled':	// Disable FAQ Pages.
 
 					$text = __( 'Disable FAQ question categories.', 'wpsso-faq' );
 

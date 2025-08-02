@@ -85,7 +85,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 				case 'faq-settings-faq-addon-settings':
 
 					$table_rows[ 'faq_category_disabled' ] = '' .
-						$this->form->get_th_html( _x( 'Disable FAQ Categories', 'option label', 'wpsso-faq' ),
+						$this->form->get_th_html( _x( 'Disable FAQ Pages', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_category_disabled' ) .
 						'<td>' . $this->form->get_checkbox( 'faq_category_disabled' ) . '</td>';
 
