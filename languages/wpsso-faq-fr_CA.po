@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Schema FAQ Page Manager 7.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-faq\n"
 "POT-Creation-Date: 2025-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-06-15 21:42-0700\n"
+"PO-Revision-Date: 2025-08-02 05:21-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -266,87 +266,87 @@ msgid "Question and Answer"
 msgstr "Question et Réponse"
 
 #: lib/register.php:237
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+msgid "FAQ Pages"
+msgstr "Pages de FAQ"
 
 #: lib/register.php:238
-msgid "FAQ Category"
-msgstr "Catégorie de FAQ"
+msgid "FAQ Page"
+msgstr "Page de FAQ"
 
 #: lib/register.php:239
 msgctxt "admin menu name"
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+msgid "FAQ Pages"
+msgstr "Pages de FAQ"
 
 #: lib/register.php:240
-msgid "All FAQ Categories"
-msgstr "Toutes catégories de FAQ"
+msgid "All FAQ Pages"
+msgstr "Toutes pages de FAQ"
 
 #: lib/register.php:241
-msgid "Edit FAQ Category"
-msgstr "Modifier la catégorie de FAQ"
+msgid "Edit FAQ Page"
+msgstr "Modifier page de FAQ"
 
 #: lib/register.php:242
-msgid "View FAQ Category"
-msgstr "Voir la catégorie de FAQ"
+msgid "View FAQ Page"
+msgstr "Voir page de FAQ"
 
 #: lib/register.php:243
-msgid "Update FAQ Category"
-msgstr "Mettre à jour la catégorie de FAQ"
+msgid "Update FAQ Page"
+msgstr "Mettre à jour la page de FAQ"
 
 #: lib/register.php:244
-msgid "Add New FAQ Category"
-msgstr "Ajouter une nouvelle catégorie de FAQ"
+msgid "Add New FAQ Page"
+msgstr "Ajouter une nouvelle page de FAQ"
 
 #: lib/register.php:245
-msgid "New FAQ Category Name"
-msgstr "Nom de la nouvelle catégorie de FAQ"
+msgid "New FAQ Page Name"
+msgstr "Nouveau nom de page de FAQ"
 
 #: lib/register.php:246
-msgid "Parent FAQ Category"
-msgstr "Catégorie de FAQ parente"
+msgid "Parent FAQ Page"
+msgstr "Page de FAQ parent"
 
 #: lib/register.php:247
-msgid "Parent FAQ Category:"
-msgstr "Catégorie de FAQ parente:"
+msgid "Parent FAQ Page:"
+msgstr "Page de FAQ parent:"
 
 #: lib/register.php:248
-msgid "Search FAQ Categories"
-msgstr "Rechercher dans les catégories de FAQ"
+msgid "Search FAQ Pages"
+msgstr "Rechercher dans les pages de FAQ"
 
 #: lib/register.php:249
-msgid "Popular FAQ Categories"
-msgstr "Catégories de FAQ populaires"
+msgid "Popular FAQ Pages"
+msgstr "Pages de FAQ populaires"
 
-#: lib/register.php:250 lib/register.php:298
-msgid "Separate FAQ groups with commas"
-msgstr "Séparez les groupes de FAQ avec des virgules"
+#: lib/register.php:250
+msgid "Separate FAQ pages with commas"
+msgstr "Séparez les pages de FAQ avec des virgules"
 
-#: lib/register.php:251 lib/register.php:299
-msgid "Add or remove FAQ groups"
-msgstr "Ajouter ou retirer des groupes de FAQ"
+#: lib/register.php:251
+msgid "Add or remove FAQ pages"
+msgstr "Ajouter ou retirer des pages de FAQ"
 
 #: lib/register.php:252 lib/register.php:300
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
-#: lib/register.php:253 lib/register.php:301
-msgid "No FAQ groups found."
-msgstr "Aucun groupe de FAQ trouvé."
+#: lib/register.php:253
+msgid "No FAQ pages found."
+msgstr "Aucune page de FAQ trouvée."
 
-#: lib/register.php:254 lib/register.php:302
-msgid "← Back to FAQ groups"
-msgstr "← Retour aux groupes de FAQ"
+#: lib/register.php:254
+msgid "← Back to FAQ pages"
+msgstr "← Retour aux pages de FAQ"
 
 #: lib/register.php:258
 msgctxt "taxonomy label"
-msgid "FAQ Categories"
-msgstr "Catégories de FAQ"
+msgid "FAQ Pages"
+msgstr "Pages de FAQ"
 
 #: lib/register.php:269
 msgctxt "taxonomy description"
-msgid "FAQ Categories for Questions and Answers"
-msgstr "Catégories de FAQ pour les questions et réponses"
+msgid "FAQ Pages for Questions and Answers"
+msgstr "Pages de FAQ pour les questions et réponses"
 
 #: lib/register.php:285
 msgid "FAQ Tags"
@@ -400,6 +400,22 @@ msgstr "Rechercher dans les étiquettes de FAQ"
 #: lib/register.php:297
 msgid "Popular FAQ Tags"
 msgstr "Étiquette de FAQ populaires"
+
+#: lib/register.php:298
+msgid "Separate FAQ tags with commas"
+msgstr "Séparez les étiquettes de FAQ avec des virgules"
+
+#: lib/register.php:299
+msgid "Add or remove FAQ tags"
+msgstr "Ajouter ou retirer des étiquettes de FAQ"
+
+#: lib/register.php:301
+msgid "No FAQ tags found."
+msgstr "Aucune étiquette de FAQ trouvée."
+
+#: lib/register.php:302
+msgid "← Back to FAQ tags"
+msgstr "← Retour aux étiquettes de FAQ"
 
 #: lib/register.php:306
 msgctxt "taxonomy label"
@@ -458,8 +474,8 @@ msgstr "Cliquez la question pour afficher/masquer la réponse"
 
 #: lib/submenu/faq-settings.php:88
 msgctxt "option label"
-msgid "Disable FAQ Categories"
-msgstr "Désactiver les catégories de FAQ"
+msgid "Disable FAQ Pages"
+msgstr "Désactiver les pages de FAQ"
 
 #: lib/submenu/faq-settings.php:93
 msgctxt "option label"
