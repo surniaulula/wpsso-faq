@@ -93,11 +93,11 @@ msgid ""
 msgstr ""
 
 #: lib/filters-messages.php:68
-msgid "Disable FAQ pages."
+msgid "Disable the FAQ pages taxonomy."
 msgstr ""
 
 #: lib/filters-messages.php:74
-msgid "Disable FAQ question tags."
+msgid "Disable the FAQ tags taxonomy."
 msgstr ""
 
 #: lib/filters-messages.php:80

@@ -65,13 +65,13 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 				case 'tooltip-faq_category_disabled':	// Disable FAQ Pages.
 
-					$text = __( 'Disable FAQ pages.', 'wpsso-faq' );
+					$text = __( 'Disable the FAQ pages taxonomy.', 'wpsso-faq' );
 
 					break;
 
 				case 'tooltip-faq_tag_disabled':	// Disable FAQ Tags.
 
-					$text = __( 'Disable FAQ question tags.', 'wpsso-faq' );
+					$text = __( 'Disable the FAQ tags taxonomy.', 'wpsso-faq' );
 
 					break;
 
