@@ -79,7 +79,7 @@ if ( ! class_exists( 'WpssoFaqFiltersMessages' ) ) {
 
 					$text = __( 'The FAQ archive and question post type pages are public by default and have publicly accessible URLs.', 'wpsso-faq' ) . ' ';
 
-					$text .= __( 'If you enable this option, FAQs and questions will only be accessible by using shortcodes in your content.', 'wpsso-faq' );
+					$text .= __( 'If you enable this option, FAQ pages and questions will only be accessible by using shortcodes in your content.', 'wpsso-faq' );
 
 					break;
 			}

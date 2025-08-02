@@ -41,8 +41,8 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 			}
 
 			$tabs = array(
-				'shortcode-defaults' => _x( 'Shortcode Defaults', 'metabox tab', 'wpsso-faq' ),
 				'addon-settings'     => _x( 'Add-on Settings', 'metabox tab', 'wpsso-faq' ),
+				'shortcode-defaults' => _x( 'Shortcode Defaults', 'metabox tab', 'wpsso-faq' ),
 			);
 
 			$this->show_metabox_tabbed( $obj, $mb, $tabs );
@@ -54,33 +54,6 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 			$match_rows = trim( $page_id . '-' . $metabox_id . '-' . $tab_key, '-' );
 
 			switch ( $match_rows ) {
-
-				case 'faq-settings-faq-shortcode-defaults':
-
-					$table_rows[ 'faq_heading' ] = '' .
-						$this->form->get_th_html( _x( 'FAQ Shortcode Title Heading', 'option label', 'wpsso-faq' ),
-							$css_class = '', $css_id = 'faq_heading' ) .
-						'<td>' . $this->form->get_select( 'faq_heading', $this->p->cf[ 'form' ][ 'html_headings' ] ) . '</td>';
-
-					$table_rows[ 'faq_question_heading' ] = '' .
-						$this->form->get_th_html( _x( 'Question Shortcode Title Heading', 'option label', 'wpsso-faq' ),
-							$css_class = '', $css_id = 'faq_question_heading' ) .
-						'<td>' . $this->form->get_select( 'faq_question_heading', $this->p->cf[ 'form' ][ 'html_headings' ] ) . '</td>';
-
-					$table_rows[ 'faq_answer_format' ] = '' .
-						$this->form->get_th_html( _x( 'Question Shortcode Answer Format', 'option label', 'wpsso-faq' ),
-							$css_class = '', $css_id = 'faq_answer_format' ) .
-						'<td>' . $this->form->get_select( 'faq_answer_format', array(
-							'content' => __( 'Full Answer', 'wpsso-faq' ),
-							'excerpt' => __( 'Answer Excerpt', 'wpsso-faq' ),
-						) ) . '</td>';
-
-					$table_rows[ 'faq_answer_toggle' ] = '' .
-						$this->form->get_th_html( _x( 'Click Question to Show/Hide Answer', 'option label', 'wpsso-faq' ),
-							$css_class = '', $css_id = 'faq_answer_toggle' ) .
-						'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
-
-					break;
 
 				case 'faq-settings-faq-addon-settings':
 
@@ -95,7 +68,7 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 						'<td>' . $this->form->get_checkbox( 'faq_tag_disabled' ) . '</td>';
 
 					$table_rows[ 'faq_public_disabled' ] = '' .
-						$this->form->get_th_html( _x( 'Disable FAQ and Question URLs', 'option label', 'wpsso-faq' ),
+						$this->form->get_th_html( _x( 'Disable FAQ Page and Question URLs', 'option label', 'wpsso-faq' ),
 							$css_class = '', $css_id = 'faq_public_disabled' ) .
 						'<td>' . $this->form->get_checkbox( 'faq_public_disabled' ) . '</td>';
 
@@ -122,6 +95,33 @@ if ( ! class_exists( 'WpssoFaqSubmenuFaqSettings' ) && class_exists( 'WpssoAdmin
 							$css_class = '', $css_id = 'plugin_add_to' ) .
 						'<td>' . $this->form->get_checklist( $name_prefix = 'plugin_add_to', $add_to_values,
 							$css_class = 'column-list' ) . '</td>';
+
+					break;
+
+				case 'faq-settings-faq-shortcode-defaults':
+
+					$table_rows[ 'faq_heading' ] = '' .
+						$this->form->get_th_html( _x( 'FAQ Shortcode Title Heading', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_heading' ) .
+						'<td>' . $this->form->get_select( 'faq_heading', $this->p->cf[ 'form' ][ 'html_headings' ] ) . '</td>';
+
+					$table_rows[ 'faq_question_heading' ] = '' .
+						$this->form->get_th_html( _x( 'Question Shortcode Title Heading', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_question_heading' ) .
+						'<td>' . $this->form->get_select( 'faq_question_heading', $this->p->cf[ 'form' ][ 'html_headings' ] ) . '</td>';
+
+					$table_rows[ 'faq_answer_format' ] = '' .
+						$this->form->get_th_html( _x( 'Question Shortcode Answer Format', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_answer_format' ) .
+						'<td>' . $this->form->get_select( 'faq_answer_format', array(
+							'content' => __( 'Full Answer', 'wpsso-faq' ),
+							'excerpt' => __( 'Answer Excerpt', 'wpsso-faq' ),
+						) ) . '</td>';
+
+					$table_rows[ 'faq_answer_toggle' ] = '' .
+						$this->form->get_th_html( _x( 'Click Question to Show/Hide Answer', 'option label', 'wpsso-faq' ),
+							$css_class = '', $css_id = 'faq_answer_toggle' ) .
+						'<td>' . $this->form->get_checkbox( 'faq_answer_toggle' ) . '</td>';
 
 					break;
 			}
