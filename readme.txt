@@ -79,6 +79,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 7.1.0 (2025/07/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Renamed "FAQ Categories" to "FAQ Pages".
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v21.4.1.
+
 **Version 7.0.0 (2025/06/14)**
 
 * **New Features**
@@ -158,6 +173,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v18.5.0.
 
 == Upgrade Notice ==
+
+= 7.1.0-rc.1 =
+
+(2025/07/02) Renamed "FAQ Categories" to "FAQ Pages".
 
 = 7.0.0 =
 
