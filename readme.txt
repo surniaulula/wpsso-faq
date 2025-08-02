@@ -20,9 +20,9 @@ Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs 
 
 <!-- about -->
 
-The WPSSO Schema FAQ Page Manager allows you to easily manage Questions / Answers from a standard WordPress editing page, and combine your Questions / Answers into FAQ categories.
+The WPSSO Schema FAQ Page Manager allows you to easily manage questions / answers from a standard WordPress editing page, and combine your questions / answers into FAQ pages.
 
-You can use the standard WordPress FAQ category archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
+You can use the standard WordPress FAQ archive and question page templates and/or use the <code>&#91;faq&#93;</code> and <code>&#91;question&#93;</code> shortcode(s) in your content.
 
 <!-- /about -->
 
