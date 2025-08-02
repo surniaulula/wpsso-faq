@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.4.33
 Requires At Least: 5.9
 Tested Up To: 6.8.2
-Stable Tag: 7.0.0
+Stable Tag: 7.1.0
 
 Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content.
 
