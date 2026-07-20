@@ -86,7 +86,7 @@ if ( ! class_exists( 'WpssoFaqRegister' ) ) {
 
 				global $wpdb;
 
-				$db_query = 'SELECT blog_id FROM '.$wpdb->blogs;
+				$db_query = 'SELECT blog_id FROM ' . $wpdb->blogs;
 
 				$blog_ids = $wpdb->get_col( $db_query );
 
