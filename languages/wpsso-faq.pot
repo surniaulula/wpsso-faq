@@ -17,9 +17,7 @@ msgid "The %1$s add-on requires the %2$s plugin."
 msgstr ""
 
 #: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:254
-msgid ""
-"The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
-"currently installed)."
+msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:5
@@ -34,9 +32,7 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
-msgid ""
-"Create FAQ and Question / Answer Pages with optional shortcodes to include "
-"FAQs and Questions / Answers in your content."
+msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:8
@@ -87,9 +83,7 @@ msgid "Select the answer text to include under the question title."
 msgstr ""
 
 #: lib/filters-messages.php:62
-msgid ""
-"Hide answers by default and show/hide an answer when its question title is "
-"clicked."
+msgid "Hide answers by default and show/hide an answer when its question title is clicked."
 msgstr ""
 
 #: lib/filters-messages.php:68
@@ -101,15 +95,11 @@ msgid "Disable the FAQ tags taxonomy."
 msgstr ""
 
 #: lib/filters-messages.php:80
-msgid ""
-"The FAQ archive and question post type pages are public by default and have "
-"publicly accessible URLs."
+msgid "The FAQ archive and question post type pages are public by default and have publicly accessible URLs."
 msgstr ""
 
 #: lib/filters-messages.php:82
-msgid ""
-"If you enable this option, FAQ pages and questions will only be accessible "
-"by using shortcodes in your content."
+msgid "If you enable this option, FAQ pages and questions will only be accessible by using shortcodes in your content."
 msgstr ""
 
 #: lib/integ/admin/post.php:78
@@ -437,6 +427,7 @@ msgid "FAQ Tags for Questions and Answers"
 msgstr ""
 
 #. translators: Maximum number of words used in a post excerpt.
+
 #: lib/shortcode/question.php:146
 msgctxt "excerpt_length"
 msgid "55"
@@ -473,12 +464,14 @@ msgid "Disable FAQ Page and Question URLs"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
+
 #: lib/submenu/faq-settings.php:79
 msgctxt "option label"
 msgid "Post Type"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
+
 #: lib/submenu/faq-settings.php:84 lib/submenu/faq-settings.php:89
 msgctxt "option label"
 msgid "Taxonomy"
@@ -512,7 +505,6 @@ msgstr ""
 msgctxt "option label"
 msgid "Click Question to Show/Hide Answer"
 msgstr ""
-
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Schema FAQ Page Manager"
 msgstr ""
@@ -522,9 +514,7 @@ msgid "https://wpsso.com/extend/plugins/wpsso-faq/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Create FAQ and Question / Answer Pages with optional shortcodes to include "
-"FAQs and Questions / Answers in your content."
+msgid "Create FAQ and Question / Answer Pages with optional shortcodes to include FAQs and Questions / Answers in your content."
 msgstr ""
 
 #. Author of the plugin/theme
